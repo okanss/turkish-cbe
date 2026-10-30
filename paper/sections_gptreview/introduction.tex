@@ -1,0 +1,76 @@
+\section{Introduction}
+
+A logical conclusion can remain unchanged when its premises are reordered, a relation is expressed through
+its converse, or a language uses a different grammatical realization. A model that changes its answer under
+such transformations presents a different evaluation problem from a model that consistently reaches the
+wrong conclusion, and both differ from a model that appears stable only because it repeats a biased answer.
+Aggregate accuracy on a single linguistic realization obscures all three distinctions: equal scores can
+conceal failures on different instances, and high agreement can arise without any competence at all.
+Behavioral tests and consistency evaluations therefore complement conventional task-level scores
+\citep{ribeiro2020checklist, elazar2021pararel}.
+
+Turkish offers an unusually well-controlled setting for making these distinctions measurable. It expresses
+grammatical relations through productive suffixation and morphophonological alternations, and permits
+constituent-order choices whose discourse effects a literal translation does not capture; computational
+descriptions of Turkish morphology formalize the interaction between morphotactics and phonological
+realization \citep{oflazer1994turkish}. These properties supply a family of \emph{answer-preserving}
+transformations (premise reordering, converse constructions, constituent-order alternatives, and case or
+possessive variants) that can be applied to the same underlying problem. We treat Turkish as a source
+of controlled variation, not as a language presumed intrinsically harder for logical reasoning.
+
+Existing resources do not answer how equivalent Turkish formulations affect transitive ordering inference.
+General logical reasoning benchmarks \citep{yu2020reclor, liu2020logiqa, han2024folio} vary surface form
+and content together; multilingual reasoning evaluations \citep{shi2023mgsm} compare independently sampled
+items across languages; Turkish morphological-competence and minimal-pair benchmarks
+\citep{ismayilzada2025morphology, basar2025turblimp, basar2026morphologyaware} intentionally manipulate
+acceptability rather than holding the answer fixed; and paraphrase-consistency and metamorphic evaluations
+\citep{elazar2021pararel, segura2016metamorphic} motivate, but do not provide, a matched bilingual ordering
+design with exact answers. Competence-Based Evaluation (CBE) treats correctness across presentations of a
+parameterized problem family as a behavioral requirement \citep{jiang2026cbe}; we adopt this framing and
+extend it to Turkish--English matching, morphosyntactic interventions, lexical measurements, and
+query-distance controls.
+
+Turkish-CBE renders each latent strict total order as matched Turkish and English prompts and as controlled
+Turkish presentation transformations, with exact symbolic answers, explicit entity-count and query-distance
+factors, and split-level separation of latent orders. On top of this design, a correctness-aware analysis
+decomposes paired outcomes on jointly valid support into robust correctness ($R$), shared-wrong agreement
+($D$), and presentation dependence ($U$), reported together with raw invariance, a chance-corrected
+agreement coefficient, valid-pair coverage, and strict all-planned robustness
+(Section~\ref{sec:statistics}). These quantities are complementary: invariance alone cannot separate
+correct consistency from stable error, and accuracy alone cannot reveal presentation dependence.
+
+The framework is exercised by completed exploratory experiments. A registered pilot evaluates
+Qwen2.5-0.5B-Instruct and \texttt{gpt-4o-2024-08-06} on matched prompts (Section~\ref{sec:pilot}); a
+supplemental quantized local sweep evaluates four Qwen2.5 scales (0.5B--14B) on 16,618 matched prompts each
+across all nine relation families (Section~\ref{sec:p1-local}); and a two-reviewer Turkish linguistic
+review of 360 sampled stimuli was completed after these runs (Section~\ref{sec:review}), certifying
+semantic equivalence unanimously, excluding one construction on grammaticality, and documenting contested
+naturalness.
+
+This article makes three principal contributions:
+\begin{enumerate}[leftmargin=1.6em]
+  \item \textbf{A controlled bilingual reasoning benchmark.} A deterministic, reproducible framework that
+  holds the latent problem, gold answer, names, and query geometry fixed while varying language and Turkish
+  presentation, supporting more controlled comparisons than independently sampled multilingual test sets.
+  The design does not claim to eliminate every linguistic or tokenization confounder; it makes the remaining
+  ones explicit and measurable.
+  \item \textbf{Correctness-aware presentation robustness.} A denominator-aware paired decomposition that
+  separates correctness from response stability. Its components are related to existing agreement and
+  paired-outcome methods rather than constituting a new statistical theory; their joint presentation is what
+  carries the evaluation content. The constant-response behavior of the smaller evaluated models provides a
+  concrete empirical demonstration that high response invariance does not indicate reasoning competence.
+  \item \textbf{An empirical characterization of linguistic presentation sensitivity.} Within the evaluated
+  models, datasets, and settings: model-scale differences in discriminative accuracy, English--Turkish
+  performance differences, strong sensitivity to the P3 constituent-order presentation, complexity-dependent
+  degradation, naming-condition effects, and the distinction between correct consistency and
+  constant-response invariance. These are findings about the evaluated systems, not generalizations to all
+  large language models.
+\end{enumerate}
+
+Turkish-CBE addresses five research questions. RQ1 concerns the paired Turkish--English accuracy
+difference; RQ2 sensitivity to answer-preserving Turkish presentations; RQ3 the separation of entity count
+from query distance and query type; RQ4 associations among relation vocabulary, corpus frequency,
+tokenization, and predicted-answer bias; RQ5 whether reasoning prompting or optional adaptation improves
+correct consistency as well as accuracy. The completed exploratory evidence bears on RQ1--RQ3 (and supplies
+RQ4 diagnostics), while confirmatory answers to all five---and any RQ5 adaptation effect---are reserved for
+the preregistered frozen-test design (Section~\ref{sec:future}).

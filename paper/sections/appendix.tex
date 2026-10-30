@@ -146,14 +146,12 @@ approved pilot; neither gate is bypassable from the command line.
 \subsection{Reproducing the supplemental quantized local evaluation}
 \label{app:p1-repro}
 
-\begin{sloppypar}
 The supplemental arm of Section~\ref{sec:p1-local} runs against a local Ollama server with the pinned
-Q4\_K\_M models; weight digests are recorded in every run header and checked against
-\texttt{results/p1/}\allowbreak\texttt{expected\_digests.json}. The runner reuses the audited message constructor, which
+Q4\_K\_M models (weight digests are recorded in every run header and checked against
+\texttt{results/p1/expected\_digests.json}). The runner reuses the audited message constructor, which
 re-verifies each frozen prompt's SHA-256 at run time, and the registered strict parser; results append to
 one JSONL per model, and a re-invocation skips completed prompts exactly, so interrupted runs resume
 without duplication.
-\end{sloppypar}
 
 \begin{small}
 \begin{verbatim}
@@ -181,17 +179,15 @@ python3 paper/figures/manuscript/generate_p1_figures.py
 \end{verbatim}
 \end{small}
 
-\begin{sloppypar}
 The executed arms used Ollama digests \texttt{a8b0c515\ldots} (0.5B), \texttt{357c53fb\ldots} (3B),
 \texttt{845dbda0\ldots} (7B), and \texttt{7cdf5a01\ldots} (14B); generation options (temperature 0,
 \texttt{top\_k} 1, seed 42, \texttt{num\_ctx} 4096, \texttt{num\_predict} 32) and the
 \texttt{/api/chat} endpoint are echoed on every record. The 0.5B arm executed on an Apple~M1 (16\,GB);
 the larger arms executed on a rented A100 from the byte-identical bundle
 (\texttt{colab/p1\_colab\_bundle.zip}), with manifest and bundle SHA-256 values asserted before any call.
-The statistical outputs in \texttt{results/p1/}\allowbreak\texttt{analysis/}, the integrity report, and the
-analysis summary \texttt{reports/}\allowbreak\texttt{p1\_statistical\_analysis.md} are retained; this arm
-is supplemental and quantized, and its records never enter the registered-provider analysis tables.
-\end{sloppypar}
+The statistical outputs (\texttt{results/p1/analysis/}), the integrity report, and the analysis summary
+(\texttt{reports/p1\_statistical\_analysis.md}) are retained; this arm is supplemental and quantized, and
+its records never enter the registered-provider analysis tables.
 
 \subsection{Rebuilding the manuscript}
 

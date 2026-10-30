@@ -1,0 +1,99 @@
+\section{Experimental Design and Reproducibility}
+
+\subsection{Research questions and registered contrasts}
+
+\begin{table}[t]
+  \centering
+  \caption{Research questions and the measurements needed to answer them. Exploratory estimates of the
+  RQ1--RQ3 readouts (and RQ4 diagnostics) exist from the completed pilot and supplemental evaluations
+  (Sections~\ref{sec:pilot}--\ref{sec:review}); confirmatory frozen-test estimates and the RQ5 adapter
+  contrast remain pending.}
+  \label{tab:rqs}
+  \small
+  \begin{tabular}{@{}lp{0.42\linewidth}p{0.40\linewidth}@{}}
+    \toprule
+    RQ & Matched contrast & Required readout \\
+    \midrule
+    RQ1 & English vs.\ Turkish at fixed latent query, names, and presentation &
+      Paired accuracy difference, invalid rates, coverage. \\
+    RQ2 & Turkish canonical vs.\ equivalent/P1--P5 &
+      $R$, $D$, $U$, $I$, $\kappa$, strict $R$, support. \\
+    RQ3 & Size and distance within each query type &
+      Separate $n$ and $d$ profiles; endpoint/internal contrast. \\
+    RQ4 & Relation terms and directions on identical instances &
+      Frequency/token features, predicted YES rate, accuracy and invariance jointly. \\
+    RQ5 & Direct vs.\ reasoning; base vs.\ trained adapter &
+      Matched effects, common support, usage and compute budgets. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Table~\ref{tab:rqs} connects each research question to a planned estimand. Four-cell balancing crosses
+query direction and gold answer. Frozen test strata contain 200 source orders per size and 50 examples per
+direction--gold cell; smaller pilot/development/training strata use approximately balanced 12/13 cells where
+50 cannot be split equally. Derived presentations retain those source labels rather than creating additional
+independent cases.
+
+The recorded split generation seeds are 401 (training), 402 (development), 403 (pilot), and 404 (test),
+with presentation seed 431. Seed derivation remains versioned and namespaced. The experiment matrix
+separates English canonical/equivalent, Turkish canonical/equivalent, cross-language canonical,
+cross-language equivalent, Turkish ablations, and endpoint-to-interior contrasts. The last changes the
+queried proposition and may change the gold answer; it is a query-complexity comparison, not an
+answer-preserving presentation pair. We therefore do not compute presentation invariance by blindly pairing
+endpoint and internal answers as if they answered the same question.
+
+\subsection{Prompts, parsers, and generation budgets}
+
+The direct Turkish instruction asks the model to use the supplied premises and return only \texttt{EVET} or
+\texttt{HAYIR}; the English control requests \texttt{YES} or \texttt{NO}. A strict language-specific parser
+accepts only the specified form, records wrong-language outputs separately, and rejects contradictory or
+extra answers. It does not search arbitrary response text for a convenient label. Reasoning conditions
+instead require an unambiguous final-answer marker, with correctness determined by that answer rather than
+by the explanation.
+
+A run must record immutable model and tokenizer identities, provider/serving revision, sampling parameters,
+seed where supported, system/user prompts, context and output budgets, reasoning setting, token usage,
+truncation, and cost status. Model unavailability cannot silently select a replacement. Planned tokens are
+not billed usage, and isolated-string token counts are not chat-template counts. Context failures, missing
+completions, and invalid responses stay in planned-sample denominators.
+
+Dry-runs estimate call counts before a small real pilot. Full evaluation requires an approved pilot; large
+evaluations, including pilots or training evaluation exceeding 2,000 planned generation calls, also require
+dataset- and scope-bound human linguistic review. Checkpointing and append-only raw records support
+resumption without overwriting model evidence. An identical-prompt repeat control should accompany
+stochastic or provider-nondeterministic settings, so cross-presentation disagreement is not automatically
+attributed to linguistic variation. This is a prospective control, not a reported experiment. A local
+journal establishes recorded lineage, not independent provider attestation. Two registered configurations
+(Qwen2.5-0.5B-Instruct and \texttt{gpt-4o-2024-08-06}) were enabled by explicit user selection and executed
+under this protocol (Section~\ref{sec:pilot}); the supplemental quantized sweep reuses the frozen prompts,
+message construction, and strict parser outside the registered provider set and is labeled accordingly
+(Section~\ref{sec:p1-local}). The execution-gate receipts for runs above the declared call threshold have
+not been issued, so no run in this article carries confirmatory authorization.
+
+\subsection{Reasoning and optional training interventions}
+
+Direct answering, open stepwise prompting, structured normalization/direction/transitivity prompting, and
+provider reasoning-effort controls are distinct arms. Their latent queries, gold labels, and sampling
+conditions should be held constant where possible. Output budgets must be sufficient and recorded; changes
+in budget can otherwise confound interpretation. CoT and sampled self-consistency \citep{wei2022cot,
+wang2023selfconsistency} motivate interventions but are not the same as invariance across equivalent
+presentations. Final-answer improvements do not establish explanation faithfulness
+\citep{turpin2023unfaithful}.
+
+Optional training compares a base model, SFT-LoRA, paired-presentation SFT, SFT with a consistency term,
+correctness-only GRPO, and correctness-plus-consistency GRPO. LoRA supplies a parameter-efficient adaptation
+mechanism \citep{hu2021lora}; GRPO is a group-relative policy optimization method introduced in mathematical
+reasoning \citep{shao2024deepseekmath}. We do not claim to reproduce their original numerical results. The
+proposed reward form is $r = \text{correctness} + 0.5\,\text{agreement bonus}$, with correctness monitored
+independently. Under binary rewards, within-group advantage normalization can make an additive agreement
+component ineffective; diagnostics of reward and normalized advantage are therefore necessary.
+
+Training uses $n \le 128$, with larger-size and held-out-vocabulary evaluation kept separate. Latent
+instances must be disjoint across training and test. English context words such as \emph{higher/lower} can
+overlap even when relation terms are held out, so predicate novelty is not full-context novelty. Fair
+comparison records example counts, actual training tokens, GPU time, steps, and trainable/update budgets;
+equal steps do not equalize compute. The local Apple M1/16-GiB preparation machine has no CUDA device; the
+training backend was validated on rented CUDA hardware by executed smoke-scale runs of all five arms under
+the declared dependency pins (Section~\ref{sec:pilot}). These runs establish pipeline feasibility and
+accounting only: no adapter has been performance-evaluated, and no adaptation improvement of any direction
+is claimed in this article.

@@ -1,0 +1,67 @@
+\section{Related Work}
+
+\subsection{Logical reasoning benchmarks and controlled generation}
+
+Natural-language reasoning benchmarks differ in their source material and the inferential structures they
+expose. ReClor and LogiQA evaluate reasoning-oriented reading comprehension \citep{yu2020reclor,
+liu2020logiqa}. FOLIO connects natural-language arguments to first-order logical representations
+\citep{han2024folio}. Their task diversity is valuable, but a change in the language or surface form of an
+item need not preserve all other evaluation conditions. Turkish-CBE instead fixes a narrow ordering family
+so that the latent question and its answer can be held constant across presentations.
+
+Generated benchmarks provide complementary structural control. CLUTRR tests relational reasoning from text
+\citep{sinha2019clutrr}; RuleTaker studies reasoning over natural-language rule bases
+\citep{clark2020ruletaker}; and ProofWriter adds generated implications, proofs, and abductive statements
+\citep{tafjord2021proofwriter}. PrOntoQA supports formal analysis of reasoning chains
+\citep{saparov2023prontoqa}. These precedents show why explicit structure and an oracle are useful. Our
+contribution is not the invention of generated reasoning data; it is their use within a matched Turkish
+presentation design, with input size and latent proof distance separately recorded.
+
+\subsection{Robustness, metamorphic relations, and consistency}
+
+Metamorphic testing specifies relations between outputs under controlled input transformations
+\citep{segura2016metamorphic}. CheckList applies behavioral test design to language technologies
+\citep{ribeiro2020checklist}. ParaRel studies consistency across paraphrased factual queries
+\citep{elazar2021pararel}; factual cloze consistency is distinct from deductive ordering, but it motivates
+separating correctness from stability. CBE combines a scalable latent family with an explicit
+answer-preservation requirement \citep{jiang2026cbe}. We retain that requirement and add Turkish-specific
+interventions and missing-response accounting.
+
+Controlled perturbations in arithmetic also motivate careful interpretation. GSM-Symbolic evaluates
+variation in mathematically structured problems \citep{mirzadeh2025gsm}. Its task differs from ordering, so
+neither its numerical findings nor a particular mechanistic explanation is imported here. A presentation
+effect can reflect parsing, retrieval, lexical priors, or inference; behavioral inconsistency alone does not
+distinguish those causes.
+
+\subsection{Multilingual reasoning and Turkish linguistic evaluation}
+
+MGSM investigates multilingual chain-of-thought arithmetic reasoning \citep{shi2023mgsm}. Turkish is not
+one of its evaluated languages, and arithmetic success cannot validate Turkish ordering templates. A
+multilingual ordering benchmark must therefore establish its own linguistic equivalence and matched
+sampling.
+
+Turkish morphology has long motivated explicit computational modeling \citep{oflazer1994turkish}.
+Morphological compositionality experiments expose limitations in combining morphemes productively
+\citep{ismayilzada2025morphology}. TurBLiMP evaluates Turkish minimal-pair acceptability
+\citep{basar2025turblimp}, whereas morphology-aware syntax evaluation examines how surface factors can bias
+judgments \citep{basar2026morphologyaware}. Those tasks are complementary to ours: minimal-pair
+grammaticality contrasts often intentionally change acceptability, while Turkish-CBE requires grammatical
+alternatives that preserve truth and the gold answer. Native-speaker adjudication remains necessary despite
+deterministic rendering.
+
+\subsection{Tokenization, frequency proxies, and reasoning interventions}
+
+Tokenizer quality and language coverage can affect multilingual model behavior \citep{rust2021tokenizer}.
+Token-length inequalities also matter for access costs and processing budgets \citep{ahia2023languages,
+petrov2023tokenizers}. These observations justify measuring tokenization rather than assuming equal cost
+for matched text. They do not establish a causal tokenization explanation for a logical error. Corpus
+frequency is likewise a proxy with explicit genre, annotation, and segmentation limits; our independent
+resource is the locked BOUN treebank release \citep{turk2022boun}.
+
+Chain-of-thought prompting and self-consistency are distinct interventions \citep{wei2022cot,
+wang2023selfconsistency}. Self-consistency aggregates sampled responses to one input; presentation
+invariance compares different inputs that preserve the same answer. Moreover, generated explanations need
+not faithfully report the causes of an answer \citep{turpin2023unfaithful}. Parameter-efficient adaptation
+with LoRA \citep{hu2021lora} and group-relative policy optimization \citep{shao2024deepseekmath} motivate
+optional training arms, but their success elsewhere provides no evidence that our unrun adapters improve
+Turkish reasoning.

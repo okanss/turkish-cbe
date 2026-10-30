@@ -1,0 +1,187 @@
+\section{Methodology}
+
+\subsection{Latent structure, oracle, and query geometry}
+
+Let a latent instance be a strict total order
+\begin{equation}
+  z = \bigl(e_{\sigma(1)} \prec e_{\sigma(2)} \prec \cdots \prec e_{\sigma(n)}\bigr),
+  \qquad |E| = n.
+  \label{eq:latent}
+\end{equation}
+The frozen size grid is $n \in \{4, 8, 16, 32, 64, 128, 256, 512, 1024\}$. The generator draws a
+permutation of unique entities and emits the $n-1$ adjacent comparisons. A language-independent rank map
+$r_z : E \to \{1, \ldots, n\}$ defines the exact answer to a forward query:
+\begin{equation}
+  y^{*}(z, a, b, \prec) = \mathbf{1}\{r_z(a) < r_z(b)\}.
+  \label{eq:oracle}
+\end{equation}
+The inverse relation reverses the inequality. A separate graph check validates the chain and its entailed
+comparisons. Stable, versioned seed derivation separates naming, permutation, premise order, and query
+selection, so introducing a new presentation condition does not alter previously defined latent instances.
+
+Endpoint queries compare the first and last positions. Internal queries sample two positions strictly
+inside the chain. Distance-controlled queries fix
+\begin{equation}
+  d = |r_z(a) - r_z(b)|,
+  \label{eq:distance}
+\end{equation}
+with both positions internal. Thus their feasible distances satisfy $1 \le d \le n-3$; the retained
+power-of-two grid is intersected with that range. This is narrower than merely requiring $d < n$. At
+$n = 4$, an internal pair necessarily has $d = 1$, so internal and distance-controlled conditions can share
+geometry. Such repetitions are not independent evidence.
+
+A longer endpoint chain does not prove deeper inference. The source and sink can be identified by their
+incident-edge signatures under the chain assumptions, avoiding a full transitive derivation. Entity count
+measures input and presentation load; $d$ measures latent graph distance, not observed model computation.
+We therefore retain endpoint and internal/distance strata and do not treat their pooled score as an
+inference-depth curve.
+
+\begin{table}[t]
+  \centering
+  \caption{Turkish presentation factors. P0 denotes the canonical form. The general matched equivalent
+  condition is retained separately from isolated ablations.}
+  \label{tab:presentations}
+  \small
+  \begin{tabular}{@{}llp{0.42\linewidth}@{}}
+    \toprule
+    Factor & Operation & Interpretation control \\
+    \midrule
+    P0 & Canonical grammatical realization & Baseline; identical latent query. \\
+    P1 & Reorder premises and names list & Preserve words and predicates. \\
+    P2 & Swap arguments and use inverse relation & Preserve the asserted comparison. \\
+    P3 & Alternative constituent construction & Truth preservation does not imply identical discourse
+         preference. \\
+    P4 & Valid case/possessive morphology alternatives & Label additional syntax/lexical changes
+         explicitly. \\
+    P5 & Combine several operations & Compound perturbation; no pure morphology attribution. \\
+    P6 & Optional controlled negation & Excluded from the frozen core; requires strict-order proof. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Language realization and equivalent presentations}
+
+A renderer $\pi_{\ell,p,v,c}$ maps a latent query to language $\ell$, presentation $p$, relation vocabulary
+$v$, and name control $c$. Its formal contract is
+\begin{equation}
+  \mathcal{N}\bigl(\pi_{\ell,p,v,c}(z)\bigr) = \mathcal{N}(z),
+  \qquad
+  y^{*}\bigl(\pi_{\ell,p,v,c}(z)\bigr) = y^{*}(z),
+  \label{eq:contract}
+\end{equation}
+where $\mathcal{N}$ is the closed-grammar logical normal form. Converse realization swaps arguments and
+uses the inverse predicate; for example, $a \prec b$ is realized as either a forward statement about $a$ or
+an inverse statement about $b$. Premise order and names-list order are independent surface factors.
+
+The inventory contains nine relations from spatial, temporal, comparative, and ranking families. Spatial
+relations have explicitly linear positional interpretations. Turkish realization selects
+genitive/possessive or ablative constructions as appropriate, handles proper-name apostrophes, and applies
+vowel and consonant harmony. The reference to Turkish morphological theory \citep{oflazer1994turkish}
+motivates these constraints; it does not certify our implementation. Table~\ref{tab:presentations}
+separates operational transformations from linguistic claims.
+
+\subsection{Semantic validation and human adjudication}
+
+Automatic validation checks distinct entities, chain consistency, premise truth, query distance,
+normal-form equivalence, and oracle agreement. Rendering and parsing are partly based on shared linguistic
+code, creating a common-mode failure risk. Passing a round trip establishes a contract within the
+implemented grammar; it is not an independent proof of naturalness or unrestricted Turkish equivalence.
+
+Two independent Turkish-proficient reviewers must judge grammaticality, naturalness, semantic equivalence,
+and morphology, with disagreements resolved before an approved review record is issued. The operational
+large-run gate requires at least 100 distinct reviewed Turkish prompts, at least 20 in each selected
+relation--presentation--name template cell, and coverage of every requested size and query type. This is
+sampled review, not exhaustive review of every cross-cell. Existing automatic checks and an unfilled review
+sheet do not constitute human approval. A review of this form was executed for the evaluated prompt
+population; its instrument, predeclared inclusion policy, and outcomes are reported in
+Section~\ref{sec:review}. Work on Turkish minimal pairs reinforces the need to separate
+grammatical evaluation from logical labels \citep{basar2025turblimp, basar2026morphologyaware}.
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[
+      font=\sffamily,
+      stage/.style={
+        draw=stageborder, fill=stageblue, rounded corners=2.5pt, line width=0.7pt,
+        minimum height=2.5cm, text width=3.3cm, align=center, inner sep=4pt},
+      stagenum/.style={
+        fill=stageborder, text=white, font=\sffamily\bfseries\footnotesize,
+        circle, inner sep=1.6pt, minimum size=11pt},
+      flow/.style={-{Stealth[length=2.4mm]}, line width=0.9pt, draw=stageborder},
+      lbl/.style={font=\sffamily\bfseries\footnotesize, align=center},
+      body/.style={font=\sffamily\scriptsize, align=center, text=mutedink},
+    ]
+    % Stage cards
+    \node[stage] (s1) at (0,0)
+      {\textbf{\footnotesize LATENT}\\ \textbf{\footnotesize PROBLEM}\\[3pt]
+       {\scriptsize\color{mutedink} Strict total order\\ Adjacent premises\\ Target and distance}};
+    \node[stage, right=0.45cm of s1] (s2)
+      {\textbf{\footnotesize MATCHED}\\ \textbf{\footnotesize SURFACES}\\[3pt]
+       {\scriptsize\color{mutedink} English / Turkish\\ Canonical / equivalent\\ Shared gold answer}};
+    \node[stage, right=0.45cm of s2] (s3)
+      {\textbf{\footnotesize ACCEPTANCE}\\ \textbf{\footnotesize GATES}\\[3pt]
+       {\scriptsize\color{mutedink} Exact oracle\\ Normal-form checks\\ Human language review}};
+    \node[stage, right=0.45cm of s3] (s4)
+      {\textbf{\footnotesize PAIRED}\\ \textbf{\footnotesize EVALUATION}\\[3pt]
+       {\scriptsize\color{mutedink} Fixed model settings\\ Strict answer parser\\ Coverage-aware metrics}};
+    \node[stagenum] at ($(s1.north west)+(0.08,-0.08)$) {1};
+    \node[stagenum] at ($(s2.north west)+(0.08,-0.08)$) {2};
+    \node[stagenum] at ($(s3.north west)+(0.08,-0.08)$) {3};
+    \node[stagenum] at ($(s4.north west)+(0.08,-0.08)$) {4};
+    \draw[flow] (s1) -- (s2);
+    \draw[flow] (s2) -- (s3);
+    \draw[flow] (s3) -- (s4);
+
+    % Example panel
+    \node[draw=mutedink!45, fill=exgray, rounded corners=2.5pt, line width=0.5pt,
+          text width=14.55cm, inner sep=7pt, below=0.5cm of $(s2.south)!0.5!(s3.south)$, anchor=north]
+      (ex) {
+        {\footnotesize\bfseries Illustrative equivalence; no model answer is shown}\\[3pt]
+        {\scriptsize\color{headingblue}
+          Latent: $A \prec B \prec C$ \quad Query: $A \prec C$? \quad Oracle: YES / EVET}\\[3pt]
+        {\scriptsize
+          \begin{tabular}{@{}l@{\hspace{1.2em}}l@{\hspace{2.2em}}l@{}}
+            \textbf{EN} & A is in front of B. & B is in front of C. \\
+            \textbf{TR} & A, B'nin önündedir. & B, C'nin önündedir. \\
+          \end{tabular}}
+      };
+    \draw[flow] (ex.south) -- ++(0,-0.4);
+
+    % Metrics band
+    \node[draw=bandborder, fill=bandgreen, rounded corners=2.5pt, line width=0.7pt,
+          text width=14.55cm, inner sep=7pt, below=0.42cm of ex, anchor=north] (band) {
+        \centering
+        {\footnotesize\bfseries On jointly valid pairs: $R + D + U = 1$}\\[2.5pt]
+        {\scriptsize\color{mutedink}
+          Robust correctness $R$ \;\textbullet\; Shared wrong $D$ \;\textbullet\;
+          Presentation dependence $U$}\\[2.5pt]
+        {\scriptsize\color{mutedink}
+          Report invalid responses, valid-pair coverage, and all-pair strict correctness separately.}
+      };
+  \end{tikzpicture}
+  \caption{Turkish-CBE architecture and an illustrative bilingual realization. The diagram describes the
+  evaluation design, not observed model accuracy.}
+  \label{fig:architecture}
+\end{figure}
+
+\subsection{Bilingual matching, names, and split integrity}
+
+Turkish and English records share the latent-order identifier, query target, query direction, gold label,
+and presentation plan. The \texttt{native\_shared} control uses the same native Unicode spelling in both
+languages. \texttt{en\_transliterated} changes only the English labels, retaining native Turkish spelling
+and morphology. \texttt{symbolic\_shared} assigns identical symbolic labels in both languages.
+Consequently, the transliterated arm intentionally changes naming together with language; it is a
+naming-sensitivity control, not a pure language contrast. The shared-name arms support the cleaner matched
+comparison. They do not remove all differences in tokenizer vocabulary, instructions, or response labels.
+All derivatives of a latent order are assigned to one split before rendering; changing the vocabulary cannot
+move the same instance from training into test.
+
+The upstream generator supports several entity inventories, but the frozen paired bank analyzed here uses
+the Turkish-name source inventory before alias expansion; a fully crossed synthetic-name experiment is not
+established by these counts. The unit of independence is the source order, not a prompt record or
+comparison cell. The total-order family is structurally isomorphic under renaming: exact train/test
+instance separation is not separation of abstract reasoning algorithms or a guarantee against external
+pre-training contamination. The current frozen grid crosses three name controls, nine relations, and nine
+language/presentation conditions: two English conditions and seven Turkish conditions (canonical, general
+equivalent, and P1--P5). This produces $3 \times 9 \times 9 = 243$ prompt identities for each source query.
+Optional negation is not silently included in that expansion.

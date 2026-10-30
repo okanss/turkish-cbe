@@ -1,59 +1,51 @@
-\section{Limitations and Future Work}
-\label{sec:limitations}
+\section{Limitations}
 
-\subsection{Limitations of the present study}
+\paragraph{Empirical availability.}
+Model evidence is limited to the two exploratory pilot runs of Section~\ref{sec:pilot} (pilot split, one
+relation family, one name control, $n \le 32$) and the supplemental quantized local sweep of
+Section~\ref{sec:p1-local} (pilot split, nine relation families, $n \le 128$, Q4\_K\_M weights that are
+not precision-comparable to registered snapshots); the sampled-stimulus review of
+Section~\ref{sec:review} backs grammaticality and meaning preservation on this population, but it is
+sampled review with contested naturalness, not exhaustive certification. No
+frozen-test inference or adapter evaluation outcome is available, and the only additional model family is
+quantized and supplemental; the executed training runs are smoke-scale backend validation, not adaptation
+evidence. Dataset counts
+and corpus/tokenizer measurements are real, but neither they nor the pilot support confirmatory claims
+about language gaps or intervention efficacy. The draft is not a completed empirical evaluation or an
+externally preregistered study.
 
-\paragraph{Exploratory scope.}
-All model evidence is exploratory and comes from the pilot split: the two registered pilot runs
-(one relation family, one name control, $n \le 32$) and the supplemental sweep (nine relation families,
-$n \le 128$) with quantized Q4\_K\_M weights that are not precision-comparable to registered fp/bf16
-snapshots. The sweep covers a single model lineage (Qwen2.5 instruct), so model-family diversity is
-limited; GPT-4o adds one proprietary configuration on the narrower pilot cohort. No confirmatory
-frozen-test estimate exists, and no adaptation improvement has been evaluated---the executed training runs
-are smoke-scale backend validation only.
+\paragraph{Linguistic coverage.}
+The renderer covers a closed grammar and a finite relation inventory. Shared generation/parsing code can
+conceal a common mistake. The completed human review (Section~\ref{sec:review}) certifies equivalence
+unanimously but is sampled, and its naturalness dimension shows low inter-reviewer agreement; it is not an
+exhaustive naturalness proof. Turkish morphology and word
+order are richer than the implemented templates, and P4/P5 do not identify a pure morphology manipulation.
+Minimal-pair results in prior literature cannot validate our stimuli automatically.
 
-\paragraph{Linguistic coverage and validation.}
-The renderer covers a closed grammar and a finite relation and presentation inventory; Turkish morphology
-and word order are richer than the implemented templates, and P4/P5 do not identify a pure morphology
-manipulation. Shared generation/parsing code can conceal a common-mode mistake. The completed human review
-(Section~\ref{sec:review}) certifies semantic equivalence unanimously and grammaticality outside one
-excluded construction, but it is sampled rather than exhaustive, and its naturalness dimension shows low
-inter-reviewer agreement; it is not a proof that every transformation is natural in every discourse
-context. Minimal-pair results in prior literature cannot validate our stimuli automatically.
-
-\paragraph{Task and dependence structure.}
+\paragraph{Task and sample scope.}
 Strict total orders exclude partial orders, contradictory premises, ties, and open-world uncertainty.
-Renamed orders are structurally isomorphic. Multiple queries, names, relations, and presentations share
-each latent source, so prompt counts overstate independent sample sizes by orders of magnitude; all
-inference in this article clusters on latent orders, and exact split separation does not establish absence
-of pretraining contamination.
+Renamed orders are structurally isomorphic. Multiple queries, names, relations, and presentations share each
+latent source; millions of records do not supply millions of independent samples. Exact latent split
+separation does not establish absence of model pretraining contamination.
 
 \paragraph{Frequency and tokenization proxies.}
-BOUN has finite genre and sense coverage; surface $n$-gram and lemma opportunities differ; exact canonical
-zeros need not reflect general usage; and lemma counts are not relation-sense counts. Tokenizer
-measurements cover six registered configurations, with shared-tokenizer configurations not independent.
-Isolated-string measurements exclude chat overhead and billed usage. With one relation family in the pilot
-join, no lexical association is identified.
+BOUN has finite genre/sense coverage. Surface $n$-gram and lemma opportunities differ, exact canonical zeros
+need not reflect general language usage, and lemma counts are not relation-sense counts. Tokenizer
+measurements cover only the six registered configurations, and configurations sharing a tokenizer are not
+independent samples. Isolated-string measurements exclude chat overhead and cannot establish input
+truncation or billed usage. Correlations with model performance cannot be estimated without actual
+predictions.
 
 \paragraph{Inference and missingness.}
 Context overflow, wrong-language answers, truncation, and provider nondeterminism may be systematically
-associated with difficult items; conditional CBE statistics therefore always carry coverage and
-all-planned counterparts. Cluster-bootstrap intervals depend on sufficient independent latent orders, and
-the declared Holm families do not provide study-wide simultaneous error control. Where pooled pairs share
-latent clusters, ordinary McNemar inference is reported as undefined and replaced by exploratory
-cluster-bootstrap contrasts.
+associated with difficult items. Conditional CBE statistics require coverage and all-planned counterparts.
+Cluster bootstrap intervals depend on sufficient independent latent orders; Wilson intervals alone do not
+account for repeated derived rows. The declared Holm families do not provide study-wide simultaneous error
+control.
 
-\subsection{Future work}
-\label{sec:future}
-
-The confirmatory agenda is specified and frozen but unexecuted. It comprises: (1) the preregistered
-frozen-test evaluation under the declared primary families (test split, sizes up to $n = 1024$);
-(2) the formal execution-gate approvals---dataset-bound two-reviewer receipts and pilot approval---that
-authorize runs above the declared call threshold, which are future methodological procedures rather than
-requirements of the present exploratory study; (3) additional model-family comparisons beyond Qwen2.5,
-including full-precision registered snapshots; (4) the matched base-versus-adapter evaluation of the five
-already-trained arms under the frozen 10,224-call-per-arm design; (5) reasoning-prompting interventions
-under the declared budget and faithfulness caveats; (6) expanded linguistic and relation-family coverage,
-including naturalness-controlled constituent-order stimuli that could close the residual P3 ambiguity; and
-(7) multi-relation lexical-familiarity and tokenization analyses, which become identifiable once the
-frozen design supplies cross-vocabulary variation.
+\paragraph{Training feasibility and transfer.}
+The training backend and its declared dependency pins are now validated by an executed smoke-scale run of
+all five arms on rented CUDA hardware (Section~\ref{sec:pilot}); the local M1/16-GiB environment remains
+unsuitable for training. No adapter has been evaluated, so no adaptation effect of any direction is
+established. Equal steps do not equalize examples, tokens, GPU time, or update budgets. Held-out relation
+terms can share context vocabulary, limiting lexical-transfer interpretations.

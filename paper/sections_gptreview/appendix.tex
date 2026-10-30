@@ -1,0 +1,203 @@
+\section{Elementary Identities and Chance References}
+\label{app:identities}
+
+\begin{proposition}
+For a binary task with a common gold answer and two jointly valid answers, the three outcome masses
+partition the sample, and $A_{\mathrm{valid}} = R + U/2$, $I = R + D$.
+\end{proposition}
+
+\begin{proof}
+Each pair is both correct, both wrong, or exactly one correct, so $R + D + U = 1$. The two-presentation
+correctness count is two for a both-correct pair, zero for a both-wrong pair, and one for a discordant pair.
+Dividing by two yields $A_{\mathrm{valid}} = R + U/2$. In a binary task, both-wrong answers are the same
+wrong label; agreement is therefore $R + D$. The argument requires the same valid-pair support and the same
+gold proposition.
+\end{proof}
+
+\begin{proposition}
+For $N > 0$ and $M > 0$, the strict robustness identity is $R_{\mathrm{strict}} = vR$, and the
+accuracy-constrained bounds are $\max(0,\, 2A_{\mathrm{valid}} - 1) \le R \le A_{\mathrm{valid}}$.
+\end{proposition}
+
+\begin{proof}
+Both robustness numerators count the same both-correct valid pairs; their denominators are $M$ and $N$.
+Multiplying by $M/N$ gives the first identity. Since $U = 2(A_{\mathrm{valid}} - R) \ge 0$,
+$R \le A_{\mathrm{valid}}$. Since $D = 1 - R - U = 1 - 2A_{\mathrm{valid}} + R \ge 0$,
+$R \ge 2A_{\mathrm{valid}} - 1$; probabilities are also nonnegative.
+\end{proof}
+
+\begin{proposition}
+Let $p_0, p_1$ be the two YES marginals on jointly valid pairs and $q = (p_0 + p_1)/2$. The CBE pooled
+reference and Cohen's separate-marginal reference satisfy
+\begin{equation}
+  I_{e,\mathrm{CBE}} - I_{e,\mathrm{Cohen}} = \frac{(p_0 - p_1)^2}{2},
+  \label{eq:cohen}
+\end{equation}
+where $I_{e,\mathrm{Cohen}} = p_0 p_1 + (1 - p_0)(1 - p_1)$.
+\end{proposition}
+
+\begin{proof}
+Expanding the pooled expression gives $1 - p_0 - p_1 + (p_0 + p_1)^2/2$. Subtracting
+$1 - p_0 - p_1 + 2 p_0 p_1$ yields the stated square. Thus the references agree when the marginals agree;
+otherwise they are distinct. For fixed observed agreement below one, increasing the chance reference
+decreases the coefficient wherever its denominator is positive. This is an algebraic property, not an
+empirical model result or a new estimate of reliability.
+\end{proof}
+
+\section{Illustrative Turkish Equivalence and Its Boundary}
+\label{app:equivalence}
+
+The following forms illustrate the closed-grammar contract; they are not model outputs:
+
+\begin{quote}
+\begin{tabular}{@{}ll@{}}
+  \textbf{TR forward:} & Ayşe, Bora'nın önündedir. \\
+  \textbf{TR converse:} & Bora, Ayşe'nin arkasındadır. \\
+  \textbf{EN forward:} & Ayşe is in front of Bora. \\
+  \textbf{EN converse:} & Bora is behind Ayşe. \\
+\end{tabular}
+\end{quote}
+
+The equivalence presupposes the specified linear interpretation and the same entities. Proper-name suffixes
+use the pronunciation and vowel/consonant environment of the supplied name; ASCII transliteration is a
+separate name control, not an alternative spelling silently substituted in a Turkish condition.
+
+For distinct $a, b$ in a strict total order, trichotomy gives $\lnot(a \prec b) \Leftrightarrow b \prec a$.
+This justifies a formal negation transformation only under those assumptions. It does not license
+unrestricted natural-language negation, ties, or partial-order interpretations. Optional P6 stimuli require
+their own grammar and human review and are excluded from the frozen core described in the main text.
+
+\section{Data, Figure, and Bibliography Provenance}
+\label{app:provenance}
+
+Every new quantitative figure reads the retained dataset-statistics CSVs, lexical-publication CSVs, or
+normalized pilot-run records. The plot manifest records source SHA-256 hashes, deterministic derived
+values, and generated asset hashes. Surface count zero is retained as zero, and undefined
+logarithms/ratios remain undefined. The retained plain-text exports are not reclassified as
+provider-billed usage. Figure~\ref{fig:architecture} is a conceptual diagram with an illustrative instance;
+Figures~\ref{fig:construction}--\ref{fig:tokens} show construction/preprocessing measurements only;
+Figure~\ref{fig:pilot} shows exploratory pilot model outcomes read from the append-only normalized records
+of the runs in Table~\ref{tab:pilotruns}.
+
+Three lexical measurement snapshots are retained. The baseline snapshot
+(\texttt{results/lexical/baseline}) predates the Llama tokenizer assets and records their 72 records as
+explicitly unavailable. The preprocessing snapshot (\texttt{results/lexical/with\_llama}), which the
+manuscript figures read, was produced after the license-gated \texttt{meta-llama} tokenizer files (and each
+configuration's public \texttt{config.json}) were vendored into the local asset store at the registered
+immutable revisions, with every file verified against its upstream Git object hash before any offline load;
+all 144 previously measured term counts are unchanged between the snapshots, and no model weights were
+added. The asset-verification policy was widened accordingly (tokenization measurement version 0.7.0 $\to$
+0.8.0): a bundle must contain the fast-tokenizer pair and a license file, while the split BPE vocabulary
+files remain verified where a repository ships them. The joined snapshot
+(\texttt{results/lexical/pilot\_joined}) additionally loads the two completed pilot runs and holds the
+answer-share, lexical-profile, association, and controlled-regression tables of
+Section~\ref{sec:pilot}, including every cell recorded as unidentified rather than fitted.
+
+The companion bibliography records primary publication URLs/DOIs checked on 26 October 2026. Related-work
+claims are bounded to the corresponding task and language scope. In particular, MGSM is not a Turkish
+benchmark, ParaRel is not a logical-ordering benchmark, and grammatical minimal-pair evaluations are not
+answer-preserving inference pairs. The complete original CSV and compact table exports remain available with
+their native stratum identifiers; the paper uses selected summaries for readability rather than treating all
+dependent rows as new evidence.
+
+\subsection{Reproducing the pilot runs}
+\label{app:pilot-repro}
+
+The pilot runs of Section~\ref{sec:pilot} execute from the project root with the pinned environment
+(notably \texttt{tiktoken==0.12.0} from the vendored wheel, which the grid layer verifies; a mismatched
+version refuses to plan or execute). Plans are write-once JSON artifacts: the executor re-derives the plan
+from the registry and environment at run time and compares byte-for-byte, so any registry or environment
+change invalidates a stored plan rather than silently altering the cohort. Run identifiers are permanent;
+a failed run id is retained as provenance and a fresh id is used for the retry.
+
+\begin{small}
+\begin{verbatim}
+# Derive an immutable plan (dry run), then execute it under a new run id.
+PYTHONPATH=src python -m inference pilot --model <model-id> \
+    --dry-run --output logs/<plan>.json
+PYTHONPATH=src python -m inference pilot --plan logs/<plan>.json \
+    --execute --run-id <run-id>
+
+# An ambiguous transport error halts the run; resuming requires an
+# explicit logged resolution acknowledging duplicate risk.
+PYTHONPATH=src python -m inference resolve --run-id <run-id> \
+    --plan logs/<plan>.json --task-id <task-id> \
+    --decision retry --reason "<reason>" --acknowledge-duplicate-risk
+
+# Paired analysis, tables, and figures for a completed run.
+PYTHONPATH=src python -m analysis --root . --run <run-id> \
+    --output results/analysis/<run-id> --figures
+\end{verbatim}
+\end{small}
+
+The executed runs used the registered configurations \texttt{qwen25-05b-hf} (pinned immutable revision,
+local \texttt{transformers}, CPU/float32, greedy) and \texttt{openai-gpt4o-snapshot}
+(\texttt{gpt-4o-2024-08-06}, temperature zero), enabled by explicit user selection in
+\texttt{configs/models.yaml}; the registry never enables a model automatically. The API arm requires
+\texttt{OPENAI\_API\_KEY} in the environment, and on macOS python.org builds, \texttt{SSL\_CERT\_FILE}
+pointed at a certificate bundle. Raw request/response records, normalized records, checkpoint stores,
+resolutions, and the derived analysis tables for both runs are retained under \texttt{results/} and
+\texttt{logs/} under the run ids \texttt{pilot-qwen05b-main-001} and \texttt{pilot-gpt4o-main-003}
+(failed attempts \texttt{pilot-gpt4o-main-001}/\texttt{-002} are retained as provenance); the summary
+report is \texttt{reports/pilot/PILOT\_RESULTS.md}. Runs above the declared call threshold additionally require the
+dataset-bound two-reviewer Turkish linguistic review receipt, and frozen-test execution requires an
+approved pilot; neither gate is bypassable from the command line.
+
+\subsection{Reproducing the supplemental quantized local evaluation}
+\label{app:p1-repro}
+
+\begin{sloppypar}
+The supplemental arm of Section~\ref{sec:p1-local} runs against a local Ollama server with the pinned
+Q4\_K\_M models; weight digests are recorded in every run header and checked against
+\texttt{results/p1/}\allowbreak\texttt{expected\_digests.json}. The runner reuses the audited message constructor, which
+re-verifies each frozen prompt's SHA-256 at run time, and the registered strict parser; results append to
+one JSONL per model, and a re-invocation skips completed prompts exactly, so interrupted runs resume
+without duplication.
+\end{sloppypar}
+
+\begin{small}
+\begin{verbatim}
+# Build (write-once) and semantically validate the expanded manifest.
+PYTHONPATH=src python3 -m evaluation.build_p1_manifest
+PYTHONPATH=src python3 -m evaluation.semantic_validator \
+    --manifest data/manifests/p1_expanded_manifest.jsonl
+
+# Execute one arm (resumable; pause by creating the flag file).
+PYTHONPATH=src python3 -m inference.ollama_runner \
+    --manifest data/manifests/p1_expanded_manifest.jsonl \
+    --model qwen2.5:14b --output results/p1/qwen2-5-14b.jsonl \
+    --pause-file results/p1/PAUSE
+
+# Integrity verification, audited-primitive statistics, and the figure.
+PYTHONPATH=src python3 -m evaluation.p1_integrity_report \
+    --manifest data/manifests/p1_expanded_manifest.jsonl \
+    --results results/p1/qwen2-5-*b.jsonl \
+    --expected-digests results/p1/expected_digests.json \
+    --output reports/inference_integrity_report.md
+PYTHONPATH=src python3 -m analysis.p1_statistics \
+    --manifest data/manifests/p1_expanded_manifest.jsonl \
+    --results results/p1/qwen2-5-*b.jsonl --output results/p1/analysis
+python3 paper/figures/manuscript/generate_p1_figures.py
+\end{verbatim}
+\end{small}
+
+\begin{sloppypar}
+The executed arms used Ollama digests \texttt{a8b0c515\ldots} (0.5B), \texttt{357c53fb\ldots} (3B),
+\texttt{845dbda0\ldots} (7B), and \texttt{7cdf5a01\ldots} (14B); generation options (temperature 0,
+\texttt{top\_k} 1, seed 42, \texttt{num\_ctx} 4096, \texttt{num\_predict} 32) and the
+\texttt{/api/chat} endpoint are echoed on every record. The 0.5B arm executed on an Apple~M1 (16\,GB);
+the larger arms executed on a rented A100 from the byte-identical bundle
+(\texttt{colab/p1\_colab\_bundle.zip}), with manifest and bundle SHA-256 values asserted before any call.
+The statistical outputs in \texttt{results/p1/}\allowbreak\texttt{analysis/}, the integrity report, and the
+analysis summary \texttt{reports/}\allowbreak\texttt{p1\_statistical\_analysis.md} are retained; this arm
+is supplemental and quantized, and its records never enter the registered-provider analysis tables.
+\end{sloppypar}
+
+\subsection{Rebuilding the manuscript}
+
+The entry point is \texttt{paper/main.tex}; chapter-like units are plain \texttt{.tex} files under
+\texttt{paper/sections/}. Compilation uses XeLaTeX and BibTeX with a Unicode-capable font and requires no
+model API, model weights, or experiment execution. Quantitative figures regenerate from the retained CSVs
+with \texttt{paper/figures/manuscript/generate\_figures.py}, which also writes the plot manifest. The prior
+Markdown snapshot and its existing exported values are preserved for provenance; this LaTeX manuscript is
+the new reading and editing entry point.

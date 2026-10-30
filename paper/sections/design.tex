@@ -4,10 +4,8 @@
 
 \begin{table}[t]
   \centering
-  \caption{Research questions and the measurements needed to answer them. Exploratory estimates of the
-  RQ1--RQ3 readouts (and RQ4 diagnostics) exist from the completed pilot and supplemental evaluations
-  (Sections~\ref{sec:pilot}--\ref{sec:review}); confirmatory frozen-test estimates and the RQ5 adapter
-  contrast remain pending.}
+  \caption{Research questions and the measurements needed to answer them. All model-outcome estimands are
+  pending.}
   \label{tab:rqs}
   \small
   \begin{tabular}{@{}lp{0.42\linewidth}p{0.40\linewidth}@{}}
@@ -63,12 +61,8 @@ dataset- and scope-bound human linguistic review. Checkpointing and append-only 
 resumption without overwriting model evidence. An identical-prompt repeat control should accompany
 stochastic or provider-nondeterministic settings, so cross-presentation disagreement is not automatically
 attributed to linguistic variation. This is a prospective control, not a reported experiment. A local
-journal establishes recorded lineage, not independent provider attestation. Two registered configurations
-(Qwen2.5-0.5B-Instruct and \texttt{gpt-4o-2024-08-06}) were enabled by explicit user selection and executed
-under this protocol (Section~\ref{sec:pilot}); the supplemental quantized sweep reuses the frozen prompts,
-message construction, and strict parser outside the registered provider set and is labeled accordingly
-(Section~\ref{sec:p1-local}). The execution-gate receipts for runs above the declared call threshold have
-not been issued, so no run in this article carries confirmatory authorization.
+journal establishes recorded lineage, not independent provider attestation. Current model registries remain
+disabled and no real model run is reported.
 
 \subsection{Reasoning and optional training interventions}
 
@@ -92,8 +86,6 @@ Training uses $n \le 128$, with larger-size and held-out-vocabulary evaluation k
 instances must be disjoint across training and test. English context words such as \emph{higher/lower} can
 overlap even when relation terms are held out, so predicate novelty is not full-context novelty. Fair
 comparison records example counts, actual training tokens, GPU time, steps, and trainable/update budgets;
-equal steps do not equalize compute. The local Apple M1/16-GiB preparation machine has no CUDA device; the
-training backend was validated on rented CUDA hardware by executed smoke-scale runs of all five arms under
-the declared dependency pins (Section~\ref{sec:pilot}). These runs establish pipeline feasibility and
-accounting only: no adapter has been performance-evaluated, and no adaptation improvement of any direction
-is claimed in this article.
+equal steps do not equalize compute. The local Apple M1/16-GiB preparation machine has no CUDA device. No
+adapter training, CUDA smoke run, or optional Torch numerical/gradient validation is claimed in this
+article.

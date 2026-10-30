@@ -1,28 +1,18 @@
 \section{Conclusion}
 
-Turkish-CBE contributes, first, a controlled bilingual reasoning benchmark: a deterministic generator whose
-latent total orders, exact answers, matched Turkish--English realizations, controlled presentation
-transformations, and split-separated instances allow the same question to be asked across languages and
-grammatical forms. Second, it contributes a correctness-aware robustness evaluation: the denominator-aware
-decomposition of paired outcomes into robust correctness, shared error, and presentation dependence,
-reported with coverage and a chance-corrected agreement reference. The two are designed together because
-neither accuracy nor invariance alone characterizes reasoning reliability---a point the evaluated models
-demonstrate concretely, with small models achieving perfect cross-presentation agreement by answering
-constantly and contributing no evidence of competence.
+Turkish-CBE provides a controlled framework for studying the relationship between logical correctness and
+presentation stability in Turkish and English. Its contribution is the explicit connection between latent
+ordering, Turkish linguistic realization, query geometry, name controls, and denominator-aware paired
+analysis. The constructed collection contains 3,000 independent source-order identities before query and
+presentation expansion; those identities, rather than derived prompt counts, define the clustering
+structure.
 
-Third, the completed exploratory evaluation characterizes linguistic presentation sensitivity in real
-systems. Across the evaluated Qwen2.5 scales, discrimination emerges in English before Turkish, and the
-strongest model remains the most presentation-sensitive in absolute terms: a truth-preserving Turkish
-constituent-order alternative costs it 38.1 points of query-matched paired accuracy, an effect that
-persists at 40.8 points after excluding the one construction the completed two-reviewer linguistic review
-rejected on grammaticality. Accuracy also decays with entity count to chance at the largest evaluated
-sizes, and symbolic entity labels impose a measurable cost once competence exists. For multilingual
-evaluation practice, these findings indicate that benchmarks should report matched correctness and
-presentation stability jointly, with declared denominators, rather than accuracy on a single realization.
-
-All model results are exploratory---pilot split, one quantized model family in the sweep, naturalness
-contested in the human review---and the preregistered frozen-test evaluation, additional model families,
-and the matched adapter contrast remain future work (Section~\ref{sec:future}). The scientific takeaway
-stands independently of those extensions: reasoning reliability cannot be adequately characterized by
-accuracy on a single linguistic presentation; it also requires measuring whether correct conclusions remain
-stable across meaning-preserving alternatives.
+The available construction and preprocessing results demonstrate the need to distinguish measured surface
+zeros from lemma familiarity, verified tokenizer assets from silently substituted ones, and raw agreement
+from correct consistency. The executed pilot evaluation shows these distinctions operating on real models: perfect raw
+invariance produced by a constant responder, and a frontier model whose correct consistency collapses under
+a single answer-preserving Turkish construction while its marginal English scores remain respectable. These
+pilot observations are exploratory. Genuine frozen-test evaluation after human stimulus review remains
+necessary to answer RQ1--RQ5 confirmatorily. Future reports should preserve the present definitions, expose
+uncertainty and missingness, and interpret improvements as evidence about the tested coverage rather than
+proof of competence over an entire problem family.
