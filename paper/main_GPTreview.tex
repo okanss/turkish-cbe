@@ -95,9 +95,10 @@ quantized sweep). Sub-7B models are near-constant responders whose perfect invar
 competence; discrimination emerges in English before Turkish; and a truth-preserving Turkish
 constituent-order alternative (P3) reduces query-matched accuracy in the 14B model by 38.1 percentage
 points (paired difference $-0.381$; 95\% cluster-bootstrap CI $[-0.418, -0.344]$), echoing GPT-4o's pilot
-collapse to 36.9\%. A completed two-reviewer linguistic review of 360 sampled stimuli finds unanimous
-semantic equivalence, excludes one construction on grammaticality---after which the P3 reduction persists
-at 40.8 percentage points---and records contested naturalness. Reasoning reliability should therefore be evaluated jointly over accuracy and
+collapse to 36.9\%. A completed two-reviewer linguistic assessment of 360 sampled stimuli found unanimous
+semantic-equivalence judgments within the reviewed sample, identified one construction excluded on
+grammaticality grounds---after which the P3 reduction persists at 40.8 percentage points---and documented
+disagreement regarding naturalness. Reasoning reliability should therefore be evaluated jointly over accuracy and
 meaning-preserving presentation robustness; confirmatory frozen-test evaluation remains future work.
 \end{abstract}
 
@@ -128,12 +129,16 @@ The complete framework --- the frozen grid construction, renderers, audited anal
 statistics modules, execution plans, run records of every executed evaluation (including failed
 attempts retained as provenance), review instruments with both reviewers' completed annotations,
 and the scripts that regenerate every table and figure in this manuscript --- is maintained in a
-version-controlled repository (\url{https://github.com/okanss/turkish-cbe}) that will be made publicly
-accessible upon publication.
-%% TODO(submission): mint an archival DOI (e.g., Zenodo) and add it here, and flip the
-%% repository to public, before or at acceptance.
+version-controlled repository (\url{https://github.com/okanss/turkish-cbe}). The repository is
+currently private; access for editors and reviewers during peer review will be arranged at
+submission, and the repository will be made publicly accessible upon publication. The repository
+tracks the source code together with the retained experimental outputs (raw and normalized run
+records, evaluation manifests, analysis tables, and review artifacts); bulk regenerable grid
+materializations and license-gated tokenizer assets are excluded, with deterministic, hash-verified
+rebuild and acquisition instructions in its documentation.
+%% TODO(submission): arrange reviewer access (or flip the repository public) and optionally mint an
+%% archival DOI (e.g., Zenodo) at submission/acceptance.
 The frozen dataset manifest and all result files are hash-bound as described in Appendix~C.
-License-gated tokenizer assets are not redistributed; the repository documents how to obtain them.
 
 \section*{Funding}
 This research received no external funding.
