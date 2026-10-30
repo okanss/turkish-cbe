@@ -249,7 +249,12 @@ English--Turkish profile is the degenerate signature in pure form ($R = 0.017$, 
 every matched pair exactly one language is ``correct'' because the two constant answers disagree).
 Discrimination emerges at 7B in English only (71.4\% vs.\ 53.4\%; paired gap $-0.176$, cluster-bootstrap
 95\% CI $[-0.241, -0.106]$) and reaches both languages at 14B (76.4\% vs.\ 66.1\%; paired gap $-0.075$,
-CI $[-0.126, -0.020]$). Because pooled pairs share latent orders, conventional row-level McNemar inference
+CI $[-0.126, -0.020]$). These two readouts are different estimands: the marginal accuracies pool every
+presentation condition and name control within each language (4,934 English and 11,684 Turkish planned
+prompts, so the Turkish pool carries the transformed presentations), whereas the paired gap is the mean
+Turkish-minus-English difference on the query-matched canonical, native-name pairs (2,242 jointly valid
+pairs at 14B, on which English is at 78.2\% and Turkish at 70.7\%). The paired estimate is therefore not
+obtained by subtracting the displayed marginal percentages. Because pooled pairs share latent orders, conventional row-level McNemar inference
 is not appropriate for these dependent observations; uncertainty for all language and presentation
 contrasts is therefore estimated by latent-order cluster bootstrapping, and the intervals are labeled
 exploratory.
@@ -298,9 +303,12 @@ contrast: the 14B query-matched deficit survives unchanged or deepens ($-0.381$ 
 versus $-0.408$, cluster-bootstrap 95\% CI $[-0.446, -0.370]$, with \emph{temporal\_completion} removed;
 the 7B contrast is unchanged at $-0.080$). The P3 collapse is thus measured on stimuli that two
 independent reviewers unanimously certify as meaning-preserving and (outside one excluded construction)
-grammatical, while their discourse naturalness remains contested --- the honest residual reading is that
-models fail on grammatical, truth-preserving but discourse-atypical constituent orders, a regime in which
-a competent human reader does not lose the ability to evaluate the stated facts. Review artifacts,
+grammatical, while their discourse naturalness remains contested. The linguistic review thus supports the
+semantic equivalence and grammatical acceptability of the retained sampled constructions while documenting
+differences in perceived naturalness, and the persistence of the P3 reduction after the exclusion
+indicates that the observed model sensitivity is not solely attributable to the excluded construction. The
+review measured linguistic judgments, not human task accuracy on these prompts; no claim about human
+reasoning performance under P3 is made. Review artifacts,
 per-item decisions, and agreement statistics are released with the framework
 (\texttt{validation/review\_results/}); the separate execution-gate receipts for runs above the declared
 call threshold were not issued, so no evaluation in this manuscript claims confirmatory status.
