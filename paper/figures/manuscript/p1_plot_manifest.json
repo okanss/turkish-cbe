@@ -14,7 +14,8 @@
     }
   },
   "assets": {
-    "fig6_p1_quantized_scaling.pdf": "a89ed14b1f81a6dcef90419af72246b7ae66ff21065401b99d000d0870a428ff"
+    "fig6_p1_quantized_scaling.pdf": "0df2243019837b5c2abd27d9b463ebe03ff1ea21d68604220b89ef2c1c603d45",
+    "fig6_p1_quantized_scaling_annotated.pdf": "8c925676f8a867a8ef8eb0968c013a4b28c807a8ff2ef575e55171214f03ffb7"
   },
   "note": "P1 supplemental quantized local evaluation (Ollama Q4_K_M); exploratory pending the two-reviewer linguistic review; never pooled with registered-provider results."
 }

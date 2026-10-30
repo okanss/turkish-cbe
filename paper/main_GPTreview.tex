@@ -73,7 +73,7 @@ Okan Bursa\textsuperscript{*}\\
 \small \texttt{okan.bursa@bakircay.edu.tr}\\
 \small \textsuperscript{*}Corresponding author}
 
-\date{\small Research manuscript draft (GPTreview revision) \; \textbullet \; 30 October 2026}
+\date{\small 30 October 2026}
 
 \begin{document}
 \maketitle
@@ -93,11 +93,11 @@ distinguishing correct consistency from constant-response invariance. We report 
 of GPT-4o and the Qwen2.5 instruct family (0.5B--14B; 16,618 matched prompts per model in a supplemental
 quantized sweep). Sub-7B models are near-constant responders whose perfect invariance carries no
 competence; discrimination emerges in English before Turkish; and a truth-preserving Turkish
-constituent-order alternative (P3) costs the 14B model 38.1 points of query-matched paired accuracy
-(cluster-bootstrap 95\% CI [34.4, 41.8]), echoing GPT-4o's pilot collapse to 36.9\%. A completed
-two-reviewer linguistic review of 360 sampled stimuli finds unanimous semantic equivalence, excludes one
-construction on grammaticality---after which the P3 effect persists at 40.8 points---and records
-contested naturalness. Reasoning reliability should therefore be evaluated jointly over accuracy and
+constituent-order alternative (P3) reduces query-matched accuracy in the 14B model by 38.1 percentage
+points (paired difference $-0.381$; 95\% cluster-bootstrap CI $[-0.418, -0.344]$), echoing GPT-4o's pilot
+collapse to 36.9\%. A completed two-reviewer linguistic review of 360 sampled stimuli finds unanimous
+semantic equivalence, excludes one construction on grammaticality---after which the P3 reduction persists
+at 40.8 percentage points---and records contested naturalness. Reasoning reliability should therefore be evaluated jointly over accuracy and
 meaning-preserving presentation robustness; confirmatory frozen-test evaluation remains future work.
 \end{abstract}
 
@@ -127,8 +127,9 @@ M.O.\ and O.B. All authors have read and agreed to the published version of the 
 The complete framework --- the frozen grid construction, renderers, audited analysis and
 statistics modules, execution plans, run records of every executed evaluation (including failed
 attempts retained as provenance), review instruments with both reviewers' completed annotations,
-and the scripts that regenerate every table and figure in this manuscript --- is available at
-\url{https://github.com/okanss/turkish-cbe} (public upon publication).
+and the scripts that regenerate every table and figure in this manuscript --- is maintained in a
+version-controlled repository (\url{https://github.com/okanss/turkish-cbe}) that will be made publicly
+accessible upon publication.
 %% TODO(submission): mint an archival DOI (e.g., Zenodo) and add it here, and flip the
 %% repository to public, before or at acceptance.
 The frozen dataset manifest and all result files are hash-bound as described in Appendix~C.

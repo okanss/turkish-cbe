@@ -38,7 +38,10 @@ contains the same 168 planned queries; prompts are byte-identical across models.
   \end{tabular}
 \end{table}
 
-Execution followed the audited protocol without exception: write-once plans re-derived and byte-compared
+The registered pilot runs followed the recorded inference, provenance, and recovery procedures in full
+(the supplemental quantized evaluation of Section~\ref{sec:p1-local} is a separately labeled exploratory
+experiment that reuses the frozen prompts and parser without claiming completion of the prospective
+confirmatory execution gates): write-once plans re-derived and byte-compared
 at execution time, append-only raw request/response records with full lineage, and checkpointed resumption.
 One transient transport error occurred in the API run; following the ambiguity policy, the run halted and
 resumed only after an explicit, logged retry resolution acknowledging duplicate risk. Two earlier API run
@@ -121,8 +124,10 @@ against balanced gold labels, i.e.\ Turkish errors skew toward \emph{EVET}.
 Table~\ref{tab:pilotprofiles} gives the pooled paired decomposition. The P3 contrast is qualitatively
 different from every other Turkish perturbation: robust correctness falls to $\widehat{R} = 0.298$,
 presentation dependence rises to $\widehat{U} = 0.452$, and the pooled chance-corrected agreement is
-approximately zero ($\kappa_{\mathrm{CBE}} = -0.027$) --- the model's answers under the canonical and P3
-realizations of the same latent query are statistically unrelated. The cross-language rows show the second
+approximately zero ($\kappa_{\mathrm{CBE}} = -0.027$): the canonical and P3 responses exhibit little
+agreement beyond the specified pooled-marginal reference, despite being generated from identical latent
+reasoning problems. Consistent with Section~\ref{sec:statistics}, this does not establish stochastic
+independence or identify an internal mechanism. The cross-language rows show the second
 mechanism the decomposition separates: moving from English to Turkish converts correct answers into
 presentation-dependent ones ($U$ up to 0.351) rather than into shared errors ($D$ stable at 0.173).
 
@@ -222,32 +227,38 @@ execution-gate receipt was issued, and the arm remains exploratory (quantized we
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=\linewidth]{figures/manuscript/fig6_p1_quantized_scaling.pdf}
+  \includegraphics[width=\linewidth]{figures/manuscript/fig6_p1_quantized_scaling_annotated.pdf}
   \caption{Supplemental quantized local evaluation of the Qwen2.5 instruct family (Q4\_K\_M; all-planned
   accuracy over 16{,}618 prompts per model; dotted lines: 50\% balanced baseline and zero effect).
-  (a) Accuracy by model scale and language with Wilson bands. (b) Query-matched paired accuracy change of
-  each Turkish presentation against the Turkish canonical form, with latent-cluster bootstrap 95\%
-  intervals; pooled single-condition accuracies are compositionally confounded and are not shown.
+  (a) Accuracy by model scale and language with Wilson bands. (b) Query-matched paired accuracy
+  difference of each Turkish presentation minus the Turkish canonical form (negative = reduction), with
+  latent-cluster bootstrap 95\% intervals and the dotted zero-effect reference; the annotated point is the
+  14B P3 effect ($\Delta_{\mathrm{P3-P0}} = -0.381$, 95\% CI $[-0.418, -0.344]$). Pooled single-condition
+  accuracies are compositionally confounded and are not shown.
   (c) Accuracy by entity count for the 14B model. Pilot split, quantized supplemental arm, stimulus
   review in Section~\ref{sec:review}; not confirmatory answers to RQ1--RQ3.}
   \label{fig:p1scaling}
 \end{figure}
 
-The sweep reproduces both pilot regimes and locates the transition between them
-(Figure~\ref{fig:p1scaling}a). The 0.5B and 3B models are near-constant responders --- 0.5B answers
+The sweep reproduces both pilot regimes, and the evaluated scales suggest a transition from predominantly
+response-biased behavior in the smaller models toward more discriminative performance at 7B and 14B
+(Figure~\ref{fig:p1scaling}a); with four evaluated sizes of one quantized family, no precise or universal
+scaling threshold is identified. The 0.5B and 3B models are near-constant responders --- 0.5B answers
 \emph{hay\i{}r} on 95.8\% of Turkish and \emph{yes} on 99.8\% of English calls, and its paired
 English--Turkish profile is the degenerate signature in pure form ($R = 0.017$, $U = 0.970$: on almost
 every matched pair exactly one language is ``correct'' because the two constant answers disagree).
 Discrimination emerges at 7B in English only (71.4\% vs.\ 53.4\%; paired gap $-0.176$, cluster-bootstrap
 95\% CI $[-0.241, -0.106]$) and reaches both languages at 14B (76.4\% vs.\ 66.1\%; paired gap $-0.075$,
-CI $[-0.126, -0.020]$). Because pooled pairs share latent orders, ordinary McNemar inference is undefined
-for these contrasts; all language and presentation intervals are latent-cluster bootstrap contrasts and
-are labeled exploratory.
+CI $[-0.126, -0.020]$). Because pooled pairs share latent orders, conventional row-level McNemar inference
+is not appropriate for these dependent observations; uncertainty for all language and presentation
+contrasts is therefore estimated by latent-order cluster bootstrapping, and the intervals are labeled
+exploratory.
 
 Two pilot findings replicate in open weights and sharpen with scale. First, the P3 presentation cliff:
-query-matched P3 costs the 14B model $38.1$ points of paired accuracy against the Turkish canonical form
-(CI $[-0.418, -0.344]$; 554 vs.\ 40 discordant pairs), dropping P3 accuracy to 43.1\% --- below the
-balanced baseline --- while the same contrast at 7B is already credible at $-7.9$ points and absent in the
+on query-matched pairs the P3-minus-canonical accuracy difference for the 14B model is
+$\widehat{\Delta}_{\mathrm{P3-P0}} = -0.381$ (95\% cluster-bootstrap CI $[-0.418, -0.344]$; 554 vs.\ 40
+discordant pairs), a reduction of 38.1 percentage points that drops P3 accuracy to 43.1\% --- below the
+balanced baseline --- while the same contrast at 7B is already credible at $-0.079$ and absent in the
 constant responders (Figure~\ref{fig:p1scaling}b). Per-stratum agreement decays with complexity
 ($\kappa_{\mathrm{CBE}}$ for canonical-versus-equivalent at 14B: $0.57$ at $n{=}4$ to $0.12$ at
 $n{=}128$), and for canonical-versus-P3 it turns negative at $n{=}16$ and $n{=}32$: systematic answer

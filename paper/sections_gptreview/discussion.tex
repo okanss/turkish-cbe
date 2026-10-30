@@ -8,7 +8,8 @@ subsections below synthesize what they establish and where their interpretive bo
   \centering
   \caption{Consolidated exploratory findings. ``Sweep'' denotes the supplemental quantized Qwen2.5
   evaluation (16,618 matched prompts per model, pilot split, all nine relation families); paired effects
-  are query-matched with latent-cluster bootstrap 95\% intervals. pp = percentage points.}
+  are query-matched signed differences (condition minus canonical, or Turkish minus English) with
+  latent-cluster bootstrap 95\% intervals; negative values are reductions. pp = percentage points.}
   \label{tab:findings}
   \small
   \setlength{\tabcolsep}{4.5pt}
@@ -58,15 +59,15 @@ properties; explanation text adds an observation channel, not access to the mode
 
 \subsection{Turkish constituent-order sensitivity}
 
-The P3 result is the sharpest finding. On query-matched pairs, the alternative constituent construction
-costs the 14B model 38.1 points of paired accuracy (95\% CI $[-41.8, -34.4]$\,pp; 554 vs.\ 40 discordant
-pairs), taking Turkish P3 accuracy below the balanced baseline, with a credible $-7.9$\,pp precursor already
-at 7B and no effect in the constant responders; the registered pilot found the same collapse in GPT-4o
-(36.9\% under P3). The completed review (Section~\ref{sec:review}) bounds its interpretation from both
+The P3 result is the sharpest finding. On query-matched pairs, the P3-minus-canonical accuracy difference
+for the 14B model is $-0.381$ (95\% CI $[-0.418, -0.344]$; 554 vs.\ 40 discordant pairs) --- a reduction of
+38.1 percentage points that takes Turkish P3 accuracy below the balanced baseline --- with a credible
+$-0.079$ precursor already at 7B and no effect in the constant responders; the registered pilot found the
+same collapse in GPT-4o (36.9\% under P3). The completed review (Section~\ref{sec:review}) bounds its interpretation from both
 sides. On one side, both reviewers unanimously judged the sampled transformations meaning-preserving, and
 the one construction that failed grammaticality for one reviewer (\emph{temporal\_completion} under P3) is
-removed by a sensitivity reanalysis in which the effect persists and deepens ($-40.8$\,pp,
-$[-44.6, -37.0]$). A pure stimulus-grammaticality artifact is therefore ruled out for the retained
+removed by a sensitivity reanalysis in which the effect persists and deepens ($-0.408$, 95\% CI
+$[-0.446, -0.370]$). A pure stimulus-grammaticality artifact is therefore ruled out for the retained
 constructions. On the other side, the reviewers' naturalness judgments genuinely differ (P3 medians 4
 vs.\ 2), so the transformations cannot be claimed uniformly natural in every discourse context; this
 documented linguistic variation qualifies, but does not invalidate, the finding. The supported conclusion

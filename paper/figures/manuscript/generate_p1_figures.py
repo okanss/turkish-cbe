@@ -96,7 +96,7 @@ def _interval(rows, model, axis, language, value) -> tuple[float, float]:
     raise KeyError((model, axis, language, value))
 
 
-def fig6_p1_quantized_scaling() -> Path:
+def fig6_p1_quantized_scaling(annotate_p3: bool = False) -> Path:
     rows = load_accuracy()
 
     fig, axes = plt.subplots(
@@ -148,6 +148,16 @@ def fig6_p1_quantized_scaling() -> Path:
                     linewidth=0, elinewidth=1.0, capsize=1.6,
                     label=MODEL_LABELS[model])
     ax.axhline(0.0, color=MUTED, linewidth=0.7, linestyle=":")
+    if annotate_p3:
+        # Annotate the 14B P3 effect with its measured value (read from the
+        # retained analysis table, never hard-coded).
+        row = tests[("qwen2.5:14b", "F2_tr_canonical_vs_P3")]
+        delta = float(row["delta_accuracy"])
+        x_p3 = F2_COMPARISONS.index("F2_tr_canonical_vs_P3") + offsets["qwen2.5:14b"]
+        ax.annotate(
+            f"$\\Delta_{{\\mathrm{{P3-P0}}}} = {delta:.3f}$",
+            (x_p3, delta), textcoords="offset points", xytext=(8, -2),
+            ha="left", va="center", fontsize=6.6, color=MODEL_COLORS["qwen2.5:14b"])
     ax.set_xticks(list(xc))
     ax.set_xticklabels(F2_LABELS, fontsize=7.2)
     ax.set_ylim(-0.46, 0.12)
@@ -182,14 +192,16 @@ def fig6_p1_quantized_scaling() -> Path:
             ax.spines[spine].set_visible(False)
 
     fig.tight_layout(w_pad=1.6)
-    out = OUT / "fig6_p1_quantized_scaling.pdf"
+    name = ("fig6_p1_quantized_scaling_annotated.pdf" if annotate_p3
+            else "fig6_p1_quantized_scaling.pdf")
+    out = OUT / name
     fig.savefig(out, bbox_inches="tight")
     plt.close(fig)
     return out
 
 
 def main() -> None:
-    assets = [fig6_p1_quantized_scaling()]
+    assets = [fig6_p1_quantized_scaling(), fig6_p1_quantized_scaling(annotate_p3=True)]
     manifest = {
         "sources": {name: {"path": str(path.relative_to(ROOT)), "sha256": sha256(path)}
                     for name, path in SOURCES.items()},
