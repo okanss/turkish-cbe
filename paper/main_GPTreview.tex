@@ -1,0 +1,149 @@
+% Turkish-CBE manuscript — entry point (see Appendix C.2, "Rebuilding the manuscript").
+% Compile: latexmk -xelatex main.tex   (XeLaTeX + BibTeX; no model API,
+% model weights, or experiment execution is required).
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=2.6cm,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{texgyretermes}[
+  Extension=.otf,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  ItalicFont=*-italic,
+  BoldItalicFont=*-bolditalic]
+\setmathfont{texgyretermes-math.otf}
+\setmonofont[Scale=0.88]{DejaVuSansMono}[
+  Extension=.ttf,
+  UprightFont=*,
+  BoldFont=*-Bold]
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,calc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,allcolors=linkblue,unicode]{hyperref}
+
+\definecolor{linkblue}{HTML}{1F5C99}
+\definecolor{headingblue}{HTML}{234E70}
+\definecolor{stageblue}{HTML}{EAF1FB}
+\definecolor{stageborder}{HTML}{2A78D6}
+\definecolor{bandgreen}{HTML}{EAF6EF}
+\definecolor{bandborder}{HTML}{1BAF7A}
+\definecolor{exgray}{HTML}{F7F7F5}
+\definecolor{mutedink}{HTML}{555555}
+
+\usepackage{sectsty}
+\allsectionsfont{\color{headingblue}}
+
+\captionsetup{font=small,labelfont=bf}
+
+\newtheorem{proposition}{Proposition}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Turkish-CBE}
+\fancyhead[R]{\small Reasoning accuracy and morphosyntactic robustness}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\newcommand{\inval}{\ensuremath{\bot}}
+
+\title{\textbf{Turkish-CBE: Evaluating Logical Reasoning Accuracy\\
+and Morphosyntactic Robustness in Large Language Models}\\[1.2ex]
+\large A Controlled Turkish--English Benchmark with Correctness-Aware\\
+\large Robustness Evaluation}
+
+\author{Müge Oluçoğlu\\
+\small İzmir Bakırçay University\\
+\small ORCID: 0000-0002-0137-5854\\
+\small \texttt{muge.olucoglu@bakircay.edu.tr}
+\and
+Okan Bursa\textsuperscript{*}\\
+\small İzmir Bakırçay University\\
+\small ORCID: 0000-0002-5958-0279\\
+\small \texttt{okan.bursa@bakircay.edu.tr}\\
+\small \textsuperscript{*}Corresponding author}
+
+\date{\small Research manuscript draft (GPTreview revision) \; \textbullet \; 30 October 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+\noindent
+Accuracy on a single language and a single formulation is an incomplete account of logical reasoning
+reliability: a model may answer correctly only under one grammatical realization of a problem, or may
+appear stable merely by repeating a biased answer. We present Turkish-CBE, a deterministic, reproducible
+benchmark that renders the same latent ordering problem as matched Turkish and English prompts and as
+answer-preserving Turkish presentation transformations (constituent order, converse constructions,
+case/possessive alternatives), with exact symbolic answers, controlled entity counts and query distances,
+and split-level separation of latent orders. A correctness-aware evaluation decomposes paired outcomes
+into robust correctness, shared error, and presentation dependence on declared denominators,
+distinguishing correct consistency from constant-response invariance. We report an exploratory evaluation
+of GPT-4o and the Qwen2.5 instruct family (0.5B--14B; 16,618 matched prompts per model in a supplemental
+quantized sweep). Sub-7B models are near-constant responders whose perfect invariance carries no
+competence; discrimination emerges in English before Turkish; and a truth-preserving Turkish
+constituent-order alternative (P3) costs the 14B model 38.1 points of query-matched paired accuracy
+(cluster-bootstrap 95\% CI [34.4, 41.8]), echoing GPT-4o's pilot collapse to 36.9\%. A completed
+two-reviewer linguistic review of 360 sampled stimuli finds unanimous semantic equivalence, excludes one
+construction on grammaticality---after which the P3 effect persists at 40.8 points---and records
+contested naturalness. Reasoning reliability should therefore be evaluated jointly over accuracy and
+meaning-preserving presentation robustness; confirmatory frozen-test evaluation remains future work.
+\end{abstract}
+
+\vspace{0.6ex}
+\noindent\textbf{Keywords:} large language models; logical reasoning evaluation; Turkish;
+morphosyntax; cross-lingual evaluation; robustness; paired evaluation design; reproducibility;
+benchmark construction; chance-corrected agreement
+
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/methodology}
+\input{sections/statistics}
+\input{sections/design}
+\input{sections/results}
+\input{sections/pilot_results}
+\input{sections/discussion}
+\input{sections/limitations}
+\input{sections/conclusion}
+
+\section*{Author Contributions}
+%% TODO(submission): confirm the contribution split with both authors (CRediT taxonomy).
+Conceptualization, methodology, software, validation, formal analysis, data curation, and
+writing --- original draft: both authors. Supervision and writing --- review and editing:
+M.O.\ and O.B. All authors have read and agreed to the published version of the manuscript.
+
+\section*{Data and Code Availability}
+The complete framework --- the frozen grid construction, renderers, audited analysis and
+statistics modules, execution plans, run records of every executed evaluation (including failed
+attempts retained as provenance), review instruments with both reviewers' completed annotations,
+and the scripts that regenerate every table and figure in this manuscript --- is available at
+\url{https://github.com/okanss/turkish-cbe} (public upon publication).
+%% TODO(submission): mint an archival DOI (e.g., Zenodo) and add it here, and flip the
+%% repository to public, before or at acceptance.
+The frozen dataset manifest and all result files are hash-bound as described in Appendix~C.
+License-gated tokenizer assets are not redistributed; the repository documents how to obtain them.
+
+\section*{Funding}
+This research received no external funding.
+
+\section*{Conflicts of Interest}
+The authors declare no conflict of interest.
+
+\bibliographystyle{abbrvnat}
+\bibliography{main}
+
+\appendix
+\input{sections/appendix}
+
+\end{document}
