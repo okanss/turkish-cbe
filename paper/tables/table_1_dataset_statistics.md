@@ -1,0 +1,39 @@
+Verified evidence; NA means unavailable or undefined.
+
+Stratum IDs resolve to publication_row_id in the companion CSV, which contains full conditions, model revisions, and native statistics. NA means unavailable; no significance is inferred.
+
+| Stratum | Split | n | Orders | Queries | Prompts | Comparison cells | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| t1-r00001 | development | 4 | 50 | 150 | 36450 | 47250 | dataset_statistics |
+| t1-r00002 | development | 8 | 50 | 250 | 60750 | 82350 | dataset_statistics |
+| t1-r00003 | development | 16 | 50 | 300 | 72900 | 99900 | dataset_statistics |
+| t1-r00004 | development | 32 | 50 | 350 | 85050 | 117450 | dataset_statistics |
+| t1-r00005 | development | 64 | 50 | 400 | 97200 | 135000 | dataset_statistics |
+| t1-r00006 | development | 128 | 50 | 450 | 109350 | 152550 | dataset_statistics |
+| t1-r00007 | development | 256 | 50 | 500 | 121500 | 170100 | dataset_statistics |
+| t1-r00008 | development | 512 | 50 | 550 | 133650 | 187650 | dataset_statistics |
+| t1-r00009 | development | 1024 | 50 | 600 | 145800 | 205200 | dataset_statistics |
+| t1-r00010 | pilot | 4 | 50 | 150 | 36450 | 47250 | dataset_statistics |
+| t1-r00011 | pilot | 8 | 50 | 250 | 60750 | 82350 | dataset_statistics |
+| t1-r00012 | pilot | 16 | 50 | 300 | 72900 | 99900 | dataset_statistics |
+| t1-r00013 | pilot | 32 | 50 | 350 | 85050 | 117450 | dataset_statistics |
+| t1-r00014 | pilot | 64 | 50 | 400 | 97200 | 135000 | dataset_statistics |
+| t1-r00015 | pilot | 128 | 50 | 450 | 109350 | 152550 | dataset_statistics |
+| t1-r00016 | test | 4 | 200 | 600 | 145800 | 189000 | dataset_statistics |
+| t1-r00017 | test | 8 | 200 | 1000 | 243000 | 329400 | dataset_statistics |
+| t1-r00018 | test | 16 | 200 | 1200 | 291600 | 399600 | dataset_statistics |
+| t1-r00019 | test | 32 | 200 | 1400 | 340200 | 469800 | dataset_statistics |
+| t1-r00020 | test | 64 | 200 | 1600 | 388800 | 540000 | dataset_statistics |
+| t1-r00021 | test | 128 | 200 | 1800 | 437400 | 610200 | dataset_statistics |
+| t1-r00022 | test | 256 | 200 | 2000 | 486000 | 680400 | dataset_statistics |
+| t1-r00023 | test | 512 | 200 | 2200 | 534600 | 750600 | dataset_statistics |
+| t1-r00024 | test | 1024 | 200 | 2400 | 583200 | 820800 | dataset_statistics |
+| t1-r00025 | training | 4 | 50 | 150 | 36450 | 47250 | dataset_statistics |
+| t1-r00026 | training | 8 | 50 | 250 | 60750 | 82350 | dataset_statistics |
+| t1-r00027 | training | 16 | 50 | 300 | 72900 | 99900 | dataset_statistics |
+| t1-r00028 | training | 32 | 50 | 350 | 85050 | 117450 | dataset_statistics |
+| t1-r00029 | training | 64 | 50 | 400 | 97200 | 135000 | dataset_statistics |
+| t1-r00030 | training | 128 | 50 | 450 | 109350 | 152550 | dataset_statistics |
+| t1-r00031 | training | 256 | 50 | 500 | 121500 | 170100 | dataset_statistics |
+| t1-r00032 | training | 512 | 50 | 550 | 133650 | 187650 | dataset_statistics |
+| t1-r00033 | training | 1024 | 50 | 600 | 145800 | 205200 | dataset_statistics |

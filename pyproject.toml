@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools==84.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turkish-cbe"
+version = "0.11.0"
+description = "Reproducible Turkish and English logical reasoning evaluation"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = []
+
+[project.optional-dependencies]
+tokenizers = ["tiktoken==0.12.0", "regex==2026.9.29"]
+inference = ["PyYAML==6.0.3"]
+transformers = ["transformers>=4.45,<6", "torch>=2.6,<3"]
+analysis = ["matplotlib==3.10.7", "PyYAML==6.0.3", "tiktoken==0.12.0", "regex==2026.9.29"]
+lexical = ["transformers==4.57.1", "tokenizers==0.22.2", "Jinja2==3.1.6", "numpy==2.5.4", "PyYAML==6.0.3", "tiktoken==0.12.0", "regex==2026.9.29"]
+training = ["torch==2.9.0", "transformers==4.57.1", "peft==0.17.1", "accelerate==1.11.0"]
+
+[project.scripts]
+turkish-cbe = "turkish_cbe.__main__:main"
+turkish-cbe-generate = "data_generation.__main__:main"
+turkish-cbe-render-review = "renderers.review:main"
+turkish-cbe-build-dataset = "experiments.dataset_builder:main"
+turkish-cbe-complete-grid = "complete_grid.dataset_builder:main"
+turkish-cbe-evaluate = "inference.cli:main"
+turkish-cbe-analyse = "analysis.__main__:main"
+turkish-cbe-lexical = "analysis.lexical_bias.__main__:main"
+turkish-cbe-reasoning = "reasoning.__main__:main"
+turkish-cbe-train = "training.__main__:main"
+turkish-cbe-paper = "publication.__main__:main"
+turkish-cbe-audit = "research_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src", "reports"]
+namespaces = false
+
+[tool.setuptools]
+include-package-data = false

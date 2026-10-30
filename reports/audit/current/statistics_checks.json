@@ -1,0 +1,15 @@
+{
+  "artifact_type": "independent_statistics_paper_checks",
+  "bootstrap_repeats": 2000,
+  "dependent_mcnemar_rejected": true,
+  "exact_mcnemar_cases": 960,
+  "exhaustive_metric_cases": 1458,
+  "holm_missing_slots_preserved": true,
+  "model_calls": 0,
+  "paper_tables_reconstructed": 7,
+  "published_output_hashes_verified": 44,
+  "real_model_results": false,
+  "scope": "Arithmetic probes are synthetic contracts. Dataset construction counts are real. No model-performance statistics are generated.",
+  "synthetic_oracles_only": true,
+  "training_steps": 0
+}

@@ -1,0 +1,679 @@
+{
+ "seed": 20261028,
+ "builder_version": "p1-0.1.0",
+ "strata": [
+  {
+   "component": "nine_way",
+   "relation": "comparison_height",
+   "n": 4,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_height",
+   "n": 8,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_height",
+   "n": 16,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_height",
+   "n": 32,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_height",
+   "n": 64,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_height",
+   "n": 128,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_speed",
+   "n": 4,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_speed",
+   "n": 8,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_speed",
+   "n": 16,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_speed",
+   "n": 32,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_speed",
+   "n": 64,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_speed",
+   "n": 128,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_weight",
+   "n": 4,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_weight",
+   "n": 8,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_weight",
+   "n": 16,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_weight",
+   "n": 32,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_weight",
+   "n": 64,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "comparison_weight",
+   "n": 128,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "ranking",
+   "n": 4,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "ranking",
+   "n": 8,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "ranking",
+   "n": 16,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "ranking",
+   "n": 32,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "ranking",
+   "n": 64,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "ranking",
+   "n": 128,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_above",
+   "n": 4,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_above",
+   "n": 8,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_above",
+   "n": 16,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_above",
+   "n": 32,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_above",
+   "n": 64,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_above",
+   "n": 128,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_front",
+   "n": 4,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_front",
+   "n": 8,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_front",
+   "n": 16,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_front",
+   "n": 32,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_front",
+   "n": 64,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_front",
+   "n": 128,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_right",
+   "n": 4,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_right",
+   "n": 8,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_right",
+   "n": 16,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_right",
+   "n": 32,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_right",
+   "n": 64,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "spatial_right",
+   "n": 128,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_arrival",
+   "n": 4,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_arrival",
+   "n": 8,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_arrival",
+   "n": 16,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_arrival",
+   "n": 32,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_arrival",
+   "n": 64,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_arrival",
+   "n": 128,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_completion",
+   "n": 4,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_completion",
+   "n": 8,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_completion",
+   "n": 16,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_completion",
+   "n": 32,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_completion",
+   "n": 64,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "nine_way",
+   "relation": "temporal_completion",
+   "n": 128,
+   "pool": 50,
+   "sampled": 25,
+   "probability": 0.5
+  },
+  {
+   "component": "geometry_internal",
+   "pool": 300,
+   "sampled": 300,
+   "probability": 1.0
+  },
+  {
+   "component": "geometry_distance",
+   "n": 4,
+   "distance": 1,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 8,
+   "distance": 1,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 8,
+   "distance": 2,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 8,
+   "distance": 4,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 16,
+   "distance": 1,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 16,
+   "distance": 2,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 16,
+   "distance": 4,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 16,
+   "distance": 8,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 32,
+   "distance": 1,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 32,
+   "distance": 2,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 32,
+   "distance": 4,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 32,
+   "distance": 8,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 32,
+   "distance": 16,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 64,
+   "distance": 1,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 64,
+   "distance": 2,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 64,
+   "distance": 4,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 64,
+   "distance": 8,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 64,
+   "distance": 16,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 64,
+   "distance": 32,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 128,
+   "distance": 1,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 128,
+   "distance": 2,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 128,
+   "distance": 4,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 128,
+   "distance": 8,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 128,
+   "distance": 16,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 128,
+   "distance": 32,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "geometry_distance",
+   "n": 128,
+   "distance": 64,
+   "pool": 50,
+   "sampled": 17,
+   "probability": 0.34
+  },
+  {
+   "component": "naming",
+   "pool": 300,
+   "sampled": 300,
+   "probability": 1.0
+  }
+ ],
+ "components": {
+  "nine_way": {
+   "groups": 1350,
+   "calls": 12150
+  },
+  "geometry": {
+   "internal_groups": 300,
+   "distance_groups": 442,
+   "calls": 2968
+  },
+  "naming": {
+   "groups": 300,
+   "calls": 1800
+  }
+ },
+ "total_prompts": 16618,
+ "gold_balance": {
+  "true": 8598,
+  "false": 8020
+ },
+ "manifest_sha256": "34f76f726e75f954e8326a491953ad5486b3cec51be3ad95a3aeb5debdd1242e"
+}

@@ -1,0 +1,14 @@
+{
+  "issue_id": "EXEC-01",
+  "severity": "Major",
+  "status": "reproduced_before_fix",
+  "planned_calls": 511200,
+  "linguistic_review_supplied": false,
+  "gpu_gate_mocked_to_isolate_review_check": true,
+  "load_runtime_reached": true,
+  "execution_gate_reached": true,
+  "output_created": false,
+  "real_model_calls": 0,
+  "model_downloads": 0,
+  "training_steps": 0
+}

@@ -1,0 +1,48 @@
+{
+  "package": "training_eval",
+  "rows": 485,
+  "cells": {
+    "comparison_height / P1 / symbolic_shared": 21,
+    "comparison_height / P2 / symbolic_shared": 21,
+    "comparison_height / canonical / symbolic_shared": 21,
+    "comparison_height / equivalent / symbolic_shared": 21,
+    "comparison_speed / P1 / symbolic_shared": 21,
+    "comparison_speed / P2 / symbolic_shared": 20,
+    "comparison_speed / canonical / symbolic_shared": 20,
+    "comparison_speed / equivalent / symbolic_shared": 20,
+    "comparison_weight / P1 / symbolic_shared": 20,
+    "comparison_weight / P2 / symbolic_shared": 20,
+    "comparison_weight / canonical / symbolic_shared": 20,
+    "comparison_weight / equivalent / symbolic_shared": 20,
+    "spatial_above / P1 / symbolic_shared": 20,
+    "spatial_above / P2 / symbolic_shared": 20,
+    "spatial_above / canonical / symbolic_shared": 20,
+    "spatial_above / equivalent / symbolic_shared": 20,
+    "spatial_front / P1 / symbolic_shared": 20,
+    "spatial_front / P2 / symbolic_shared": 20,
+    "spatial_front / canonical / symbolic_shared": 20,
+    "spatial_front / equivalent / symbolic_shared": 20,
+    "spatial_right / P1 / symbolic_shared": 20,
+    "spatial_right / P2 / symbolic_shared": 20,
+    "spatial_right / canonical / symbolic_shared": 20,
+    "spatial_right / equivalent / symbolic_shared": 20
+  },
+  "sizes": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "query_types": [
+    "distance_controlled",
+    "endpoint",
+    "internal"
+  ],
+  "csv_sha256": "734f73c2ed2125307f2f69f6a0cd9ad9b9bbe8d6b1a2ec3a64c14f8becd8d991",
+  "grid_manifest_sha256": "08e45961a12a1e3a1731fdc29538c6883e41edaf8d6521224507d910e1c59c8f"
+}

@@ -1,0 +1,609 @@
+prompt_id,presentation_condition,relation_id,n,original_sentence,naturalness
+prompt-9222c7947fabbd0b32b607530c2bac986c90b7a8f1c65bd730ec5b8f9bb2945e,canonical,comparison_speed,4,"Kişilerin aynı koşullarda ölçülen sabit hızları karşılaştırılır. Hızlı daha yüksek hız, yavaş daha düşük hız demektir. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Ceren Taş, Can Özdemir, Selim Öztürk, Kerem Kılıç.
+Öncüller:
+- Can Özdemir, Ceren Taş'tan daha hızlıdır.
+- Kerem Kılıç, Selim Öztürk'ten daha hızlıdır.
+- Ceren Taş, Kerem Kılıç'tan daha hızlıdır.
+Soru: Selim Öztürk, Can Özdemir'den daha yavaş mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-f5f7cdb53cbe3a09166f8f8029b43210fbd7c613bf62ebb6c80afc38dc2a97e8,canonical,comparison_speed,8,"Kişilerin aynı koşullarda ölçülen sabit hızları karşılaştırılır. Hızlı daha yüksek hız, yavaş daha düşük hız demektir. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Gülay Kaya, Ömer Aksoy, Burak Demir, Fatma Erdoğan, Pınar Yılmaz, Uğur Korkmaz, Fatma Kara, Fatma Acar.
+Öncüller:
+- Uğur Korkmaz, Burak Demir'den daha hızlıdır.
+- Burak Demir, Ömer Aksoy'dan daha hızlıdır.
+- Pınar Yılmaz, Fatma Kara'dan daha hızlıdır.
+- Gülay Kaya, Uğur Korkmaz'dan daha hızlıdır.
+- Fatma Erdoğan, Gülay Kaya'dan daha hızlıdır.
+- Ömer Aksoy, Pınar Yılmaz'dan daha hızlıdır.
+- Fatma Acar, Fatma Erdoğan'dan daha hızlıdır.
+Soru: Fatma Kara, Fatma Acar'dan daha yavaş mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-13830fe8b68e439b341b41b59a6c4a18dd35ee7a6cd6637b9aad85a2b9f5b66a,canonical,comparison_speed,16,"Kişilerin aynı koşullarda ölçülen sabit hızları karşılaştırılır. Hızlı daha yüksek hız, yavaş daha düşük hız demektir. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Gül Güneş, Ceren Can, Gamze Yıldırım, İsmail Öztürk, Ömer Şahin, Ayşe Öztürk, Mehmet Kurt, Elif Yıldız, Zeynep Özdemir, Yusuf Acar, Yasemin Kılıç, Ece Can, Pınar Taş, Yusuf Çakır, Ali Koç, Yusuf Kılıç.
+Öncüller:
+- Yasemin Kılıç, Ece Can'dan daha hızlıdır.
+- Ece Can, Gamze Yıldırım'dan daha hızlıdır.
+- Yusuf Acar, Ömer Şahin'den daha hızlıdır.
+- Mehmet Kurt, Zeynep Özdemir'den daha hızlıdır.
+- Pınar Taş, Yusuf Acar'dan daha hızlıdır.
+- Ali Koç, Yusuf Kılıç'tan daha hızlıdır.
+- Ayşe Öztürk, Yasemin Kılıç'tan daha hızlıdır.
+- İsmail Öztürk, Ayşe Öztürk'ten daha hızlıdır.
+- Yusuf Çakır, İsmail Öztürk'ten daha hızlıdır.
+- Ömer Şahin, Yusuf Çakır'dan daha hızlıdır.
+- Yusuf Kılıç, Pınar Taş'tan daha hızlıdır.
+- Gül Güneş, Ali Koç'tan daha hızlıdır.
+- Ceren Can, Gül Güneş'ten daha hızlıdır.
+- Gamze Yıldırım, Elif Yıldız'dan daha hızlıdır.
+- Elif Yıldız, Mehmet Kurt'tan daha hızlıdır.
+Soru: Ceren Can, Zeynep Özdemir'den daha yavaş mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-22d00440936aba0210e589a9ae09676d694b60345361cd88e3b7e4450728b41b,canonical,comparison_speed,32,"Kişilerin aynı koşullarda ölçülen sabit hızları karşılaştırılır. Hızlı daha yüksek hız, yavaş daha düşük hız demektir. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Hatice Çakır, Ömer Demir, Ayşe Aslan, İsmail Acar, Yasemin Çakır, Hasan Özdemir, Selin Yavuz, Eren Kurt, Meryem Güneş, Gamze Aydın, Selim Koç, Ece Yılmaz, Ahmet Bozkurt, Mehmet Öztürk, Uğur Özdemir, Can Aslan, Büşra Doğan, Cem Yılmaz, Deniz Özkan, Volkan Kurt, Cem Öztürk, Hasan Can, Zeynep Çakır, Aylin Çelik, Aslı Aslan, Selin Kara, Aslı Kurt, Aylin Yıldız, Derya Yılmaz, İrem Korkmaz, Yasemin Can, Ahmet Güneş.
+Öncüller:
+- Hatice Çakır, Selin Yavuz'dan daha hızlıdır.
+- Aylin Yıldız, Zeynep Çakır'dan daha hızlıdır.
+- Zeynep Çakır, İrem Korkmaz'dan daha hızlıdır.
+- Meryem Güneş, Yasemin Çakır'dan daha hızlıdır.
+- Gamze Aydın, Selim Koç'tan daha hızlıdır.
+- Cem Yılmaz, Aylin Çelik'ten daha hızlıdır.
+- İsmail Acar, Eren Kurt'tan daha hızlıdır.
+- Uğur Özdemir, Hatice Çakır'dan daha hızlıdır.
+- Deniz Özkan, Büşra Doğan'dan daha hızlıdır.
+- Selim Koç, Hasan Özdemir'den daha hızlıdır.
+- Aslı Kurt, Volkan Kurt'tan daha hızlıdır.
+- Yasemin Can, Ayşe Aslan'dan daha hızlıdır.
+- Eren Kurt, Meryem Güneş'ten daha hızlıdır.
+- Aslı Aslan, Hasan Can'dan daha hızlıdır.
+- Hasan Can, Ece Yılmaz'dan daha hızlıdır.
+- Ayşe Aslan, Aylin Yıldız'dan daha hızlıdır.
+- Derya Yılmaz, Mehmet Öztürk'ten daha hızlıdır.
+- Ömer Demir, Gamze Aydın'dan daha hızlıdır.
+- Yasemin Çakır, Yasemin Can'dan daha hızlıdır.
+- İrem Korkmaz, Aslı Kurt'tan daha hızlıdır.
+- Selin Kara, Ahmet Güneş'ten daha hızlıdır.
+- Ahmet Bozkurt, Uğur Özdemir'den daha hızlıdır.
+- Selin Yavuz, İsmail Acar'dan daha hızlıdır.
+- Volkan Kurt, Ömer Demir'den daha hızlıdır.
+- Mehmet Öztürk, Selin Kara'dan daha hızlıdır.
+- Aylin Çelik, Derya Yılmaz'dan daha hızlıdır.
+- Cem Öztürk, Aslı Aslan'dan daha hızlıdır.
+- Hasan Özdemir, Cem Öztürk'ten daha hızlıdır.
+- Ahmet Güneş, Deniz Özkan'dan daha hızlıdır.
+- Büşra Doğan, Ahmet Bozkurt'tan daha hızlıdır.
+- Ece Yılmaz, Can Aslan'dan daha hızlıdır.
+Soru: Can Aslan, Cem Yılmaz'dan daha hızlı mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-4c99352fcc9425525e904891046c7edd24e430fe14d67899e71daa4c4f903fdc,canonical,comparison_weight,4,"Kişilerin aynı birimle ölçülen ağırlıkları karşılaştırılır. Ağır daha fazla ağırlık, hafif daha az ağırlık demektir. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Özlem Kılıç, Cem Kurt, Burak Yıldız, Cem Kılıç.
+Öncüller:
+- Cem Kılıç, Burak Yıldız'dan daha ağırdır.
+- Cem Kurt, Cem Kılıç'tan daha ağırdır.
+- Özlem Kılıç, Cem Kurt'tan daha ağırdır.
+Soru: Özlem Kılıç, Burak Yıldız'dan daha ağır mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-8abdeebbd5561379da88e534c690e0695c5c562d5db649dc8eef68dd7dfe9f51,canonical,comparison_weight,8,"Kişilerin aynı birimle ölçülen ağırlıkları karşılaştırılır. Ağır daha fazla ağırlık, hafif daha az ağırlık demektir. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Ayşe Öztürk, Özlem Yıldırım, Burak Kılıç, Hüseyin Çakır, Pınar Arslan, İsmail Güneş, Emre Can, Aslı Çelik.
+Öncüller:
+- Özlem Yıldırım, Aslı Çelik'ten daha ağırdır.
+- Hüseyin Çakır, Emre Can'dan daha ağırdır.
+- Pınar Arslan, Burak Kılıç'tan daha ağırdır.
+- Aslı Çelik, Ayşe Öztürk'ten daha ağırdır.
+- Emre Can, İsmail Güneş'ten daha ağırdır.
+- İsmail Güneş, Özlem Yıldırım'dan daha ağırdır.
+- Burak Kılıç, Hüseyin Çakır'dan daha ağırdır.
+Soru: Pınar Arslan, Ayşe Öztürk'ten daha hafif midir?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-f09098ce9adcf2400454cf1f8ab35c8770226ba80f95d2715a553b03c1c382d4,canonical,comparison_weight,16,"Kişilerin aynı birimle ölçülen ağırlıkları karşılaştırılır. Ağır daha fazla ağırlık, hafif daha az ağırlık demektir. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Ayşe Can, İbrahim Koç, Esra Çakır, Ahmet Yıldız, Emre Kaya, Mustafa Özkan, Yusuf Özdemir, Aylin Can, İbrahim Güneş, Elif Koç, Mustafa Acar, Hasan Aksoy, Gülay Demir, Selim Şahin, Pınar Özcan, Emre Çelik.
+Öncüller:
+- Emre Kaya, Mustafa Acar'dan daha ağırdır.
+- Aylin Can, Gülay Demir'den daha ağırdır.
+- Mustafa Özkan, Selim Şahin'den daha ağırdır.
+- Ahmet Yıldız, Emre Kaya'dan daha ağırdır.
+- Emre Çelik, Ayşe Can'dan daha ağırdır.
+- Gülay Demir, İbrahim Güneş'ten daha ağırdır.
+- Esra Çakır, Pınar Özcan'dan daha ağırdır.
+- Hasan Aksoy, Ahmet Yıldız'dan daha ağırdır.
+- İbrahim Koç, Mustafa Özkan'dan daha ağırdır.
+- Mustafa Acar, Esra Çakır'dan daha ağırdır.
+- Yusuf Özdemir, Aylin Can'dan daha ağırdır.
+- Selim Şahin, Elif Koç'tan daha ağırdır.
+- İbrahim Güneş, Emre Çelik'ten daha ağırdır.
+- Elif Koç, Hasan Aksoy'dan daha ağırdır.
+- Ayşe Can, İbrahim Koç'tan daha ağırdır.
+Soru: Yusuf Özdemir, Pınar Özcan'dan daha hafif midir?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-90ecfc5cecdad3be70691e65e408149738a98dfe8036bfb93307ab3782b48003,canonical,comparison_weight,32,"Kişilerin aynı birimle ölçülen ağırlıkları karşılaştırılır. Ağır daha fazla ağırlık, hafif daha az ağırlık demektir. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Aslı Bozkurt, Emine Çakır, Pınar Demir, İbrahim Yavuz, Gül Aydın, Zeynep Yılmaz, Can Can, Seda Yılmaz, Gülay Şahin, Zeynep Çakır, Murat Can, Can Kurt, Zeynep Yıldız, Ahmet Özkan, Elif Yıldırım, İrem Arslan, Mustafa Özcan, Aylin Çetin, Can Doğan, İbrahim Yıldız, Gizem Özdemir, Aslı Yavuz, Emine Şahin, Kerem Yılmaz, Emine Korkmaz, Deniz Taş, Murat Aydın, Serkan Yıldırım, Osman Çetin, Yusuf Demir, Meryem Kılıç, Ayşe Yılmaz.
+Öncüller:
+- Zeynep Yılmaz, Gizem Özdemir'den daha ağırdır.
+- Deniz Taş, Elif Yıldırım'dan daha ağırdır.
+- Emine Çakır, Kerem Yılmaz'dan daha ağırdır.
+- Emine Korkmaz, Meryem Kılıç'tan daha ağırdır.
+- Seda Yılmaz, Can Can'dan daha ağırdır.
+- Osman Çetin, İbrahim Yıldız'dan daha ağırdır.
+- Ayşe Yılmaz, Ahmet Özkan'dan daha ağırdır.
+- Mustafa Özcan, Serkan Yıldırım'dan daha ağırdır.
+- Murat Can, Gülay Şahin'den daha ağırdır.
+- Serkan Yıldırım, Seda Yılmaz'dan daha ağırdır.
+- Emine Şahin, Murat Can'dan daha ağırdır.
+- İbrahim Yıldız, Deniz Taş'tan daha ağırdır.
+- Aylin Çetin, Aslı Bozkurt'tan daha ağırdır.
+- Can Kurt, İrem Arslan'dan daha ağırdır.
+- Aslı Yavuz, Pınar Demir'den daha ağırdır.
+- Can Can, Zeynep Yılmaz'dan daha ağırdır.
+- Pınar Demir, Emine Şahin'den daha ağırdır.
+- Gülay Şahin, Emine Korkmaz'dan daha ağırdır.
+- Kerem Yılmaz, Osman Çetin'den daha ağırdır.
+- Meryem Kılıç, Aylin Çetin'den daha ağırdır.
+- Yusuf Demir, Can Kurt'tan daha ağırdır.
+- Zeynep Yıldız, Emine Çakır'dan daha ağırdır.
+- Gizem Özdemir, Zeynep Yıldız'dan daha ağırdır.
+- Can Doğan, İbrahim Yavuz'dan daha ağırdır.
+- Elif Yıldırım, Yusuf Demir'den daha ağırdır.
+- Zeynep Çakır, Aslı Yavuz'dan daha ağırdır.
+- Gül Aydın, Ayşe Yılmaz'dan daha ağırdır.
+- Murat Aydın, Can Doğan'dan daha ağırdır.
+- İbrahim Yavuz, Mustafa Özcan'dan daha ağırdır.
+- Aslı Bozkurt, Gül Aydın'dan daha ağırdır.
+- Ahmet Özkan, Murat Aydın'dan daha ağırdır.
+Soru: Zeynep Çakır, İrem Arslan'dan daha ağır mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-8334da3bfbc7fdcb3dc11976ee0f71d550a96f4fe67f427a2573cd578c0c1827,canonical,ranking,4,"Kişiler tek bir başarı sıralamasındadır. Üst sıra daha iyi, alt sıra daha kötü sıradır; paylaşılan bir sıra yoktur. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Ece Koç, Meryem Özdemir, Seda Özcan, Cem Kaya.
+Öncüller:
+- Seda Özcan, Ece Koç'tan daha üst sıradadır.
+- Ece Koç, Cem Kaya'dan daha üst sıradadır.
+- Meryem Özdemir, Seda Özcan'dan daha üst sıradadır.
+Soru: Cem Kaya, Meryem Özdemir'den daha üst sırada mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-24496b4bf06501dd37ea206525c47e9130ce1fd22eaedd7f1f1dd33e36991121,canonical,ranking,8,"Kişiler tek bir başarı sıralamasındadır. Üst sıra daha iyi, alt sıra daha kötü sıradır; paylaşılan bir sıra yoktur. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Yusuf Kurt, Gamze Özcan, Fatma Yılmaz, Aylin Çelik, Gül Aydın, Emre Özkan, Gizem Kaya, Meryem Polat.
+Öncüller:
+- Gül Aydın, Gizem Kaya'dan daha üst sıradadır.
+- Fatma Yılmaz, Meryem Polat'tan daha üst sıradadır.
+- Yusuf Kurt, Emre Özkan'dan daha üst sıradadır.
+- Emre Özkan, Fatma Yılmaz'dan daha üst sıradadır.
+- Gamze Özcan, Yusuf Kurt'tan daha üst sıradadır.
+- Meryem Polat, Gül Aydın'dan daha üst sıradadır.
+- Gizem Kaya, Aylin Çelik'ten daha üst sıradadır.
+Soru: Aylin Çelik, Gamze Özcan'dan daha üst sırada mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-5237a89907560669defa3ba253b99b105c8ba3345ef7a2bba130d24ef30c3e6d,canonical,ranking,16,"Kişiler tek bir başarı sıralamasındadır. Üst sıra daha iyi, alt sıra daha kötü sıradır; paylaşılan bir sıra yoktur. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Özlem Kaya, Ceren Özkan, Seda Yıldız, Ceren Korkmaz, Uğur Yıldırım, Burak Özcan, Meryem Koç, Hasan Kara, Ece Bozkurt, Cem Kara, Murat Şimşek, Meryem Doğan, İrem Yıldırım, İbrahim Erdoğan, Emre Kaya, Emine Bozkurt.
+Öncüller:
+- İrem Yıldırım, Ceren Özkan'dan daha üst sıradadır.
+- Ece Bozkurt, Meryem Doğan'dan daha üst sıradadır.
+- Emine Bozkurt, Hasan Kara'dan daha üst sıradadır.
+- Özlem Kaya, Emre Kaya'dan daha üst sıradadır.
+- Burak Özcan, İrem Yıldırım'dan daha üst sıradadır.
+- İbrahim Erdoğan, Seda Yıldız'dan daha üst sıradadır.
+- Hasan Kara, İbrahim Erdoğan'dan daha üst sıradadır.
+- Murat Şimşek, Burak Özcan'dan daha üst sıradadır.
+- Emre Kaya, Emine Bozkurt'tan daha üst sıradadır.
+- Uğur Yıldırım, Cem Kara'dan daha üst sıradadır.
+- Ceren Özkan, Özlem Kaya'dan daha üst sıradadır.
+- Meryem Koç, Uğur Yıldırım'dan daha üst sıradadır.
+- Cem Kara, Ece Bozkurt'tan daha üst sıradadır.
+- Ceren Korkmaz, Meryem Koç'tan daha üst sıradadır.
+- Meryem Doğan, Murat Şimşek'ten daha üst sıradadır.
+Soru: Seda Yıldız, Ceren Korkmaz'dan daha üst sırada mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-31b0345a70a814f2b84cac1fdd72de9545569b64ba9e64b5b2ad3b04d25858ef,canonical,ranking,32,"Kişiler tek bir başarı sıralamasındadır. Üst sıra daha iyi, alt sıra daha kötü sıradır; paylaşılan bir sıra yoktur. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Büşra Kılıç, Yusuf Yıldırım, Yusuf Koç, İrem Yavuz, Emre Çetin, Elif Polat, Yasemin Şimşek, Selim Acar, Gizem Yıldırım, Eren Özcan, Deniz Özdemir, Ece Çetin, Ece Kurt, Ceren Erdoğan, Ceren Polat, Serkan Çelik, Seda Bozkurt, Seda Doğan, Büşra Kaya, Selin Aksoy, Murat Acar, Emre Özdemir, Volkan Polat, Ayşe Aslan, Ayşe Çakır, Pınar Güneş, Yusuf Güneş, Volkan Kurt, Gamze Kılıç, Hatice Korkmaz, Derya Çakır, Osman Can.
+Öncüller:
+- Selin Aksoy, Volkan Kurt'tan daha üst sıradadır.
+- Volkan Kurt, Seda Bozkurt'tan daha üst sıradadır.
+- Yusuf Koç, Deniz Özdemir'den daha üst sıradadır.
+- Seda Bozkurt, Ceren Polat'tan daha üst sıradadır.
+- Ayşe Çakır, Emre Özdemir'den daha üst sıradadır.
+- Gizem Yıldırım, Murat Acar'dan daha üst sıradadır.
+- Seda Doğan, Derya Çakır'dan daha üst sıradadır.
+- Derya Çakır, Osman Can'dan daha üst sıradadır.
+- Emre Özdemir, Pınar Güneş'ten daha üst sıradadır.
+- Hatice Korkmaz, Selin Aksoy'dan daha üst sıradadır.
+- Ceren Polat, Emre Çetin'den daha üst sıradadır.
+- Ceren Erdoğan, Ayşe Çakır'dan daha üst sıradadır.
+- Selim Acar, Volkan Polat'tan daha üst sıradadır.
+- Ayşe Aslan, Ceren Erdoğan'dan daha üst sıradadır.
+- Ece Kurt, Hatice Korkmaz'dan daha üst sıradadır.
+- Yasemin Şimşek, Ece Çetin'den daha üst sıradadır.
+- Yusuf Güneş, Seda Doğan'dan daha üst sıradadır.
+- Serkan Çelik, Gamze Kılıç'tan daha üst sıradadır.
+- Volkan Polat, İrem Yavuz'dan daha üst sıradadır.
+- Osman Can, Yasemin Şimşek'ten daha üst sıradadır.
+- Büşra Kılıç, Büşra Kaya'dan daha üst sıradadır.
+- Elif Polat, Gizem Yıldırım'dan daha üst sıradadır.
+- Ece Çetin, Elif Polat'tan daha üst sıradadır.
+- Pınar Güneş, Serkan Çelik'ten daha üst sıradadır.
+- Emre Çetin, Yusuf Güneş'ten daha üst sıradadır.
+- Büşra Kaya, Selim Acar'dan daha üst sıradadır.
+- Eren Özcan, Yusuf Yıldırım'dan daha üst sıradadır.
+- İrem Yavuz, Yusuf Koç'tan daha üst sıradadır.
+- Yusuf Yıldırım, Ayşe Aslan'dan daha üst sıradadır.
+- Murat Acar, Büşra Kılıç'tan daha üst sıradadır.
+- Gamze Kılıç, Ece Kurt'tan daha üst sıradadır.
+Soru: Eren Özcan, Deniz Özdemir'den daha üst sırada mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-b5fe99fe7a337550bd745679b20f05cfbbf6dd247d804094146acc230564a766,canonical,spatial_above,4,"Kişilerin konumları tek bir düşey eksen üzerinde karşılaştırılır. Üstünde yalnız daha yukarıda, altında yalnız daha aşağıda demektir; fiziksel temas veya bir nesnenin üzerinde durma anlamı taşımaz. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Ali Polat, Uğur Yıldız, Fatma Özdemir, Pınar Yıldırım.
+Öncüller:
+- Pınar Yıldırım, Ali Polat'ın üstündedir.
+- Uğur Yıldız, Fatma Özdemir'in üstündedir.
+- Fatma Özdemir, Pınar Yıldırım'ın üstündedir.
+Soru: Ali Polat, Uğur Yıldız'ın üstünde midir?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-a6259241e7cda627ebaed284afbb0e0b227b37668b5a1a581e240850633863a6,canonical,spatial_above,8,"Kişilerin konumları tek bir düşey eksen üzerinde karşılaştırılır. Üstünde yalnız daha yukarıda, altında yalnız daha aşağıda demektir; fiziksel temas veya bir nesnenin üzerinde durma anlamı taşımaz. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Emine Kurt, Gamze Erdoğan, Eren Doğan, Emine Aydın, İsmail Aslan, Büşra Aslan, Kerem Özcan, Volkan Arslan.
+Öncüller:
+- Volkan Arslan, Emine Kurt'un üstündedir.
+- Emine Aydın, Gamze Erdoğan'ın üstündedir.
+- Gamze Erdoğan, Kerem Özcan'ın üstündedir.
+- Büşra Aslan, İsmail Aslan'ın üstündedir.
+- Eren Doğan, Volkan Arslan'ın üstündedir.
+- Kerem Özcan, Eren Doğan'ın üstündedir.
+- İsmail Aslan, Emine Aydın'ın üstündedir.
+Soru: Büşra Aslan, Emine Kurt'un üstünde midir?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-702075e1f8abcc4bf95af9ca4313f8db5d666997add5256ed017ba8fd577c1e4,canonical,spatial_above,16,"Kişilerin konumları tek bir düşey eksen üzerinde karşılaştırılır. Üstünde yalnız daha yukarıda, altında yalnız daha aşağıda demektir; fiziksel temas veya bir nesnenin üzerinde durma anlamı taşımaz. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: İsmail Korkmaz, Gülay Doğan, Selin Özkan, Kerem Taş, Elif Acar, Seda Yılmaz, Aslı Kara, Gamze Aslan, Hüseyin Çakır, Hüseyin Özdemir, Hüseyin Şahin, Büşra Çetin, Eren Güneş, Gamze Aydın, Büşra Özdemir, Elif Aydın.
+Öncüller:
+- Seda Yılmaz, İsmail Korkmaz'ın üstündedir.
+- Aslı Kara, Gülay Doğan'ın üstündedir.
+- Gamze Aydın, Seda Yılmaz'ın üstündedir.
+- Hüseyin Çakır, Elif Aydın'ın üstündedir.
+- Eren Güneş, Gamze Aydın'ın üstündedir.
+- Gülay Doğan, Selin Özkan'ın üstündedir.
+- Selin Özkan, Elif Acar'ın üstündedir.
+- Hüseyin Şahin, Kerem Taş'ın üstündedir.
+- Elif Aydın, Gamze Aslan'ın üstündedir.
+- Büşra Özdemir, Hüseyin Özdemir'in üstündedir.
+- Elif Acar, Eren Güneş'in üstündedir.
+- Büşra Çetin, Aslı Kara'nın üstündedir.
+- Gamze Aslan, Büşra Özdemir'in üstündedir.
+- Kerem Taş, Büşra Çetin'in üstündedir.
+- İsmail Korkmaz, Hüseyin Çakır'ın üstündedir.
+Soru: Hüseyin Şahin, Hüseyin Özdemir'in üstünde midir?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-4a8267d9556bc4c4aff7b4c8f2b0fdedecf9771300f16078899820790c8dadec,canonical,spatial_above,32,"Kişilerin konumları tek bir düşey eksen üzerinde karşılaştırılır. Üstünde yalnız daha yukarıda, altında yalnız daha aşağıda demektir; fiziksel temas veya bir nesnenin üzerinde durma anlamı taşımaz. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Hatice Acar, Yasemin Çetin, Aylin Taş, Zeynep Arslan, Cem Korkmaz, Meryem Yılmaz, Serkan Yavuz, İbrahim Taş, Eren Yılmaz, İsmail Korkmaz, Deniz Arslan, Fatma Acar, Yasemin Yıldırım, Meryem Kara, Hasan Şimşek, Murat Aksoy, Pınar Yavuz, Gül Güneş, Can Polat, Özlem Aslan, Esra Acar, Büşra Özcan, Özlem Aksoy, Uğur Kara, Seda Can, Selin Yılmaz, Burak Kara, Meryem Can, Gül Öztürk, Emre Bozkurt, Emre Yıldırım, Volkan Kaya.
+Öncüller:
+- İbrahim Taş, Burak Kara'nın üstündedir.
+- Serkan Yavuz, Fatma Acar'ın üstündedir.
+- Gül Güneş, Emre Yıldırım'ın üstündedir.
+- Aylin Taş, Serkan Yavuz'un üstündedir.
+- Meryem Can, Yasemin Çetin'in üstündedir.
+- Emre Bozkurt, Hasan Şimşek'in üstündedir.
+- Emre Yıldırım, Cem Korkmaz'ın üstündedir.
+- Cem Korkmaz, Seda Can'ın üstündedir.
+- Pınar Yavuz, Özlem Aksoy'un üstündedir.
+- Burak Kara, Zeynep Arslan'ın üstündedir.
+- Hasan Şimşek, Volkan Kaya'nın üstündedir.
+- Zeynep Arslan, İsmail Korkmaz'ın üstündedir.
+- Eren Yılmaz, Meryem Can'ın üstündedir.
+- Yasemin Yıldırım, Uğur Kara'nın üstündedir.
+- Volkan Kaya, Büşra Özcan'ın üstündedir.
+- İsmail Korkmaz, Eren Yılmaz'ın üstündedir.
+- Uğur Kara, Can Polat'ın üstündedir.
+- Can Polat, Özlem Aslan'ın üstündedir.
+- Deniz Arslan, Selin Yılmaz'ın üstündedir.
+- Esra Acar, Murat Aksoy'un üstündedir.
+- Fatma Acar, Emre Bozkurt'un üstündedir.
+- Hatice Acar, Deniz Arslan'ın üstündedir.
+- Meryem Kara, Pınar Yavuz'un üstündedir.
+- Seda Can, Meryem Yılmaz'ın üstündedir.
+- Meryem Yılmaz, Aylin Taş'ın üstündedir.
+- Özlem Aslan, Gül Güneş'in üstündedir.
+- Gül Öztürk, Hatice Acar'ın üstündedir.
+- Özlem Aksoy, İbrahim Taş'ın üstündedir.
+- Selin Yılmaz, Esra Acar'ın üstündedir.
+- Yasemin Çetin, Yasemin Yıldırım'ın üstündedir.
+- Murat Aksoy, Meryem Kara'nın üstündedir.
+Soru: Gül Öztürk, Büşra Özcan'ın üstünde midir?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-871cf2d5d2e22a55c7956a342748fb733a2422a178508c68ecea6c8d7ad5c868,canonical,spatial_front,4,"Kişiler, yönü sabit tek bir doğrusal eksen üzerindedir. Ön ve arka bu ortak eksene göredir; kişilerin baktığı yöne göre değişmez. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Seda Özkan, Uğur Kurt, Yasemin Kılıç, Hüseyin Özcan.
+Öncüller:
+- Yasemin Kılıç, Seda Özkan'ın önündedir.
+- Seda Özkan, Hüseyin Özcan'ın önündedir.
+- Hüseyin Özcan, Uğur Kurt'un önündedir.
+Soru: Yasemin Kılıç, Uğur Kurt'un arkasında mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-29516751ed6bab9c6f193b09ac482465ccbb132d389704aeb370120d13eddec5,canonical,spatial_front,8,"Kişiler, yönü sabit tek bir doğrusal eksen üzerindedir. Ön ve arka bu ortak eksene göredir; kişilerin baktığı yöne göre değişmez. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Yusuf Kurt, Gamze Özcan, Fatma Yılmaz, Aylin Çelik, Gül Aydın, Emre Özkan, Gizem Kaya, Meryem Polat.
+Öncüller:
+- Gül Aydın, Gizem Kaya'nın önündedir.
+- Fatma Yılmaz, Meryem Polat'ın önündedir.
+- Yusuf Kurt, Emre Özkan'ın önündedir.
+- Emre Özkan, Fatma Yılmaz'ın önündedir.
+- Gamze Özcan, Yusuf Kurt'un önündedir.
+- Meryem Polat, Gül Aydın'ın önündedir.
+- Gizem Kaya, Aylin Çelik'in önündedir.
+Soru: Gizem Kaya, Emre Özkan'ın önünde midir?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-761de89b55738af3b45a9c5bf57f554b18b98f6b01bd129417575fea2b743dd4,canonical,spatial_front,16,"Kişiler, yönü sabit tek bir doğrusal eksen üzerindedir. Ön ve arka bu ortak eksene göredir; kişilerin baktığı yöne göre değişmez. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Burak Aksoy, Emre Çetin, Selim Özcan, Selim Doğan, Hasan Kurt, Burak Kaya, Osman Doğan, Selin Acar, Özlem Taş, Eren Yıldırım, Hatice Erdoğan, Ahmet Kurt, Elif Kaya, Ahmet Doğan, Ömer Kılıç, Büşra Şahin.
+Öncüller:
+- Özlem Taş, Burak Aksoy'un önündedir.
+- Ahmet Kurt, Selim Özcan'ın önündedir.
+- Selin Acar, Emre Çetin'in önündedir.
+- Burak Aksoy, Büşra Şahin'in önündedir.
+- Selim Özcan, Özlem Taş'ın önündedir.
+- Büşra Şahin, Eren Yıldırım'ın önündedir.
+- Hasan Kurt, Elif Kaya'nın önündedir.
+- Osman Doğan, Hasan Kurt'un önündedir.
+- Selim Doğan, Burak Kaya'nın önündedir.
+- Hatice Erdoğan, Ahmet Kurt'un önündedir.
+- Burak Kaya, Ömer Kılıç'ın önündedir.
+- Eren Yıldırım, Ahmet Doğan'ın önündedir.
+- Ömer Kılıç, Hatice Erdoğan'ın önündedir.
+- Elif Kaya, Selin Acar'ın önündedir.
+- Emre Çetin, Selim Doğan'ın önündedir.
+Soru: Ahmet Doğan, Osman Doğan'ın arkasında mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-f5fd6293fc385bf56581f4eeb0fb728716336354efb37b9e414e5b3baec9dc43,canonical,spatial_front,32,"Kişiler, yönü sabit tek bir doğrusal eksen üzerindedir. Ön ve arka bu ortak eksene göredir; kişilerin baktığı yöne göre değişmez. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Büşra Kılıç, İsmail Acar, Serkan Özcan, Selim Çelik, Hatice Kılıç, Kerem Yıldız, Mustafa Arslan, Can Şimşek, Gül Özkan, Onur Çakır, Esra Şahin, Hüseyin Güneş, Ayşe Yıldız, Ece Çakır, Mehmet Kara, Özlem Kaya, Mehmet Öztürk, Aslı Öztürk, Fatma Koç, Ceren Aslan, Ahmet Öztürk, Aslı Yıldız, Yusuf Korkmaz, Fatma Polat, İsmail Kara, Selim Özdemir, Burak Kara, Gamze Demir, Yasemin Demir, Onur Can, Osman Yıldırım, Osman Doğan.
+Öncüller:
+- Fatma Polat, Büşra Kılıç'ın önündedir.
+- Burak Kara, Mehmet Kara'nın önündedir.
+- Osman Doğan, Fatma Polat'ın önündedir.
+- Mustafa Arslan, Ahmet Öztürk'ün önündedir.
+- İsmail Kara, Gül Özkan'ın önündedir.
+- Özlem Kaya, Onur Çakır'ın önündedir.
+- Hatice Kılıç, Gamze Demir'in önündedir.
+- Aslı Yıldız, Selim Özdemir'in önündedir.
+- Kerem Yıldız, Yasemin Demir'in önündedir.
+- Ceren Aslan, Aslı Yıldız'ın önündedir.
+- Mehmet Öztürk, Osman Doğan'ın önündedir.
+- Yusuf Korkmaz, Burak Kara'nın önündedir.
+- Büşra Kılıç, Ayşe Yıldız'ın önündedir.
+- Selim Çelik, İsmail Kara'nın önündedir.
+- Aslı Öztürk, Mehmet Öztürk'ün önündedir.
+- Mehmet Kara, Özlem Kaya'nın önündedir.
+- Yasemin Demir, Ece Çakır'ın önündedir.
+- Gül Özkan, Ceren Aslan'ın önündedir.
+- Hüseyin Güneş, Serkan Özcan'ın önündedir.
+- Serkan Özcan, Aslı Öztürk'ün önündedir.
+- Gamze Demir, Selim Çelik'in önündedir.
+- Ahmet Öztürk, İsmail Acar'ın önündedir.
+- Osman Yıldırım, Yusuf Korkmaz'ın önündedir.
+- Fatma Koç, Hatice Kılıç'ın önündedir.
+- İsmail Acar, Osman Yıldırım'ın önündedir.
+- Ayşe Yıldız, Mustafa Arslan'ın önündedir.
+- Onur Can, Can Şimşek'in önündedir.
+- Selim Özdemir, Kerem Yıldız'ın önündedir.
+- Ece Çakır, Hüseyin Güneş'in önündedir.
+- Esra Şahin, Onur Can'ın önündedir.
+- Onur Çakır, Esra Şahin'in önündedir.
+Soru: Kerem Yıldız, Hatice Kılıç'ın arkasında mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-9832a259cb214fb8831a9e64093f1730b029962e6b806b0d74e7c459f51b3cff,canonical,spatial_right,4,"Kişiler tek bir yatay doğru üzerindedir. Sağ ve sol, bütün kişiler için aynı sabit gözlem yönüne göre tanımlanmıştır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: İsmail Özdemir, Onur Aksoy, Meryem Korkmaz, Seda Yıldırım.
+Öncüller:
+- İsmail Özdemir, Meryem Korkmaz'ın sağındadır.
+- Seda Yıldırım, Onur Aksoy'un sağındadır.
+- Onur Aksoy, İsmail Özdemir'in sağındadır.
+Soru: Seda Yıldırım, Meryem Korkmaz'ın solunda mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-bfa3ae7e17adb8de35edac7593301361395ca9622a0d2298cc8427773fb7d448,canonical,spatial_right,8,"Kişiler tek bir yatay doğru üzerindedir. Sağ ve sol, bütün kişiler için aynı sabit gözlem yönüne göre tanımlanmıştır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Mehmet Bozkurt, Ece Yavuz, Deniz Öztürk, Gülay Bozkurt, Özlem Kurt, Aylin Doğan, Selin Özkan, Büşra Bozkurt.
+Öncüller:
+- Mehmet Bozkurt, Aylin Doğan'ın sağındadır.
+- Selin Özkan, Özlem Kurt'un sağındadır.
+- Deniz Öztürk, Gülay Bozkurt'un sağındadır.
+- Özlem Kurt, Mehmet Bozkurt'un sağındadır.
+- Büşra Bozkurt, Deniz Öztürk'ün sağındadır.
+- Aylin Doğan, Büşra Bozkurt'un sağındadır.
+- Ece Yavuz, Selin Özkan'ın sağındadır.
+Soru: Gülay Bozkurt, Ece Yavuz'un sağında mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-1ad30564453ba29084d33710e220eae89487ed7ff6dc1a2c6ff5f5331d1692ec,canonical,spatial_right,16,"Kişiler tek bir yatay doğru üzerindedir. Sağ ve sol, bütün kişiler için aynı sabit gözlem yönüne göre tanımlanmıştır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Serkan Güneş, Ali Arslan, Yusuf Şimşek, Mehmet Şahin, Pınar Kılıç, Büşra Yılmaz, Selim Aksoy, Aslı Demir, Osman Özcan, Mehmet Güneş, Selin Yılmaz, Burak Yavuz, İbrahim Taş, Meryem Bozkurt, İrem Öztürk, Fatma Çetin.
+Öncüller:
+- Pınar Kılıç, İbrahim Taş'ın sağındadır.
+- Aslı Demir, Fatma Çetin'in sağındadır.
+- Osman Özcan, Serkan Güneş'in sağındadır.
+- Mehmet Güneş, Büşra Yılmaz'ın sağındadır.
+- Büşra Yılmaz, Selim Aksoy'un sağındadır.
+- İbrahim Taş, Meryem Bozkurt'un sağındadır.
+- Mehmet Şahin, Burak Yavuz'un sağındadır.
+- Selim Aksoy, Osman Özcan'ın sağındadır.
+- Selin Yılmaz, Mehmet Güneş'in sağındadır.
+- Burak Yavuz, Ali Arslan'ın sağındadır.
+- İrem Öztürk, Yusuf Şimşek'in sağındadır.
+- Ali Arslan, İrem Öztürk'ün sağındadır.
+- Serkan Güneş, Aslı Demir'in sağındadır.
+- Fatma Çetin, Mehmet Şahin'in sağındadır.
+- Meryem Bozkurt, Selin Yılmaz'ın sağındadır.
+Soru: Yusuf Şimşek, Pınar Kılıç'ın solunda mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-9a44cc1d50f265f26dac301a65837522d0473aa65c532aab78788991fed4166a,canonical,spatial_right,32,"Kişiler tek bir yatay doğru üzerindedir. Sağ ve sol, bütün kişiler için aynı sabit gözlem yönüne göre tanımlanmıştır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Eren Öztürk, Hüseyin Demir, Hüseyin Kurt, Pınar Özcan, Fatma Yıldız, Esra Bozkurt, Ceren Can, Aslı Yavuz, Selim Kılıç, Serkan Çelik, Aylin Çakır, Aslı Güneş, Eren Yılmaz, Gamze Polat, Yusuf Korkmaz, Kerem Özdemir, Hüseyin Kara, İbrahim Güneş, Hüseyin Acar, Ceren Kaya, Deniz Çelik, Volkan Özdemir, Aslı Aydın, Kerem Korkmaz, Mustafa Polat, İbrahim Can, Gül Kılıç, Yasemin Can, Büşra Yılmaz, Esra Öztürk, Fatma Şahin, Onur Erdoğan.
+Öncüller:
+- Esra Öztürk, Yasemin Can'ın sağındadır.
+- Onur Erdoğan, Esra Bozkurt'un sağındadır.
+- Gamze Polat, Serkan Çelik'in sağındadır.
+- Yasemin Can, Eren Öztürk'ün sağındadır.
+- Pınar Özcan, İbrahim Güneş'in sağındadır.
+- Eren Öztürk, Kerem Özdemir'in sağındadır.
+- Hüseyin Kurt, Aylin Çakır'ın sağındadır.
+- Serkan Çelik, Deniz Çelik'in sağındadır.
+- Fatma Şahin, Ceren Kaya'nın sağındadır.
+- Selim Kılıç, Fatma Şahin'in sağındadır.
+- Hüseyin Kara, Gül Kılıç'ın sağındadır.
+- Aylin Çakır, Fatma Yıldız'ın sağındadır.
+- Esra Bozkurt, Hüseyin Acar'ın sağındadır.
+- Gül Kılıç, Onur Erdoğan'ın sağındadır.
+- Hüseyin Demir, Selim Kılıç'ın sağındadır.
+- Aslı Yavuz, Mustafa Polat'ın sağındadır.
+- Ceren Can, Aslı Aydın'ın sağındadır.
+- Aslı Güneş, Ceren Can'ın sağındadır.
+- İbrahim Can, Aslı Güneş'in sağındadır.
+- İbrahim Güneş, Esra Öztürk'ün sağındadır.
+- Fatma Yıldız, Kerem Korkmaz'ın sağındadır.
+- Kerem Özdemir, Eren Yılmaz'ın sağındadır.
+- Ceren Kaya, Volkan Özdemir'in sağındadır.
+- Hüseyin Acar, Pınar Özcan'ın sağındadır.
+- Büşra Yılmaz, Hüseyin Kurt'un sağındadır.
+- Aslı Aydın, Hüseyin Kara'nın sağındadır.
+- Kerem Korkmaz, İbrahim Can'ın sağındadır.
+- Volkan Özdemir, Büşra Yılmaz'ın sağındadır.
+- Eren Yılmaz, Aslı Yavuz'un sağındadır.
+- Yusuf Korkmaz, Hüseyin Demir'in sağındadır.
+- Deniz Çelik, Yusuf Korkmaz'ın sağındadır.
+Soru: Gamze Polat, Mustafa Polat'ın sağında mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-b82fc903772df3a00f6f66e375af016653607e6c2dda5bdee6fe34d994f2cafb,canonical,temporal_arrival,4,"Bütün kişiler aynı etkinliğe tam bir kez gelmiştir. Yalnız geliş zamanları karşılaştırılır; her kişinin geliş zamanı farklıdır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Volkan Polat, Zeynep Erdoğan, Eren Yılmaz, Yusuf Kara.
+Öncüller:
+- Zeynep Erdoğan, Volkan Polat'tan önce gelmiştir.
+- Volkan Polat, Eren Yılmaz'dan önce gelmiştir.
+- Eren Yılmaz, Yusuf Kara'dan önce gelmiştir.
+Soru: Yusuf Kara, Zeynep Erdoğan'dan önce gelmiş midir?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-86617641fe9e337094784f04b18845d3706c7e304029b010d9047b72f246e0ec,canonical,temporal_arrival,8,"Bütün kişiler aynı etkinliğe tam bir kez gelmiştir. Yalnız geliş zamanları karşılaştırılır; her kişinin geliş zamanı farklıdır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Gülay Kaya, Ömer Aksoy, Burak Demir, Fatma Erdoğan, Pınar Yılmaz, Uğur Korkmaz, Fatma Kara, Fatma Acar.
+Öncüller:
+- Uğur Korkmaz, Burak Demir'den önce gelmiştir.
+- Burak Demir, Ömer Aksoy'dan önce gelmiştir.
+- Pınar Yılmaz, Fatma Kara'dan önce gelmiştir.
+- Gülay Kaya, Uğur Korkmaz'dan önce gelmiştir.
+- Fatma Erdoğan, Gülay Kaya'dan önce gelmiştir.
+- Ömer Aksoy, Pınar Yılmaz'dan önce gelmiştir.
+- Fatma Acar, Fatma Erdoğan'dan önce gelmiştir.
+Soru: Fatma Kara, Fatma Acar'dan sonra gelmiş midir?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-6ba8e924b5fbd0dfd482341873031a3211f743559e8e95a305faa1480992d0e9,canonical,temporal_arrival,16,"Bütün kişiler aynı etkinliğe tam bir kez gelmiştir. Yalnız geliş zamanları karşılaştırılır; her kişinin geliş zamanı farklıdır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Yusuf Kılıç, Hasan Demir, Mustafa Yıldırım, Seda Acar, Büşra Acar, Hüseyin Yıldız, Burak Demir, İsmail Doğan, Pınar Doğan, Hasan Özdemir, Deniz Yıldırım, Can Yıldırım, Ceren Doğan, Murat Özcan, Cem Korkmaz, Elif Erdoğan.
+Öncüller:
+- Pınar Doğan, Elif Erdoğan'dan önce gelmiştir.
+- Ceren Doğan, Hüseyin Yıldız'dan önce gelmiştir.
+- Büşra Acar, Cem Korkmaz'dan önce gelmiştir.
+- Yusuf Kılıç, Ceren Doğan'dan önce gelmiştir.
+- Seda Acar, Pınar Doğan'dan önce gelmiştir.
+- Mustafa Yıldırım, Burak Demir'den önce gelmiştir.
+- Cem Korkmaz, Mustafa Yıldırım'dan önce gelmiştir.
+- Burak Demir, Seda Acar'dan önce gelmiştir.
+- Hüseyin Yıldız, Deniz Yıldırım'dan önce gelmiştir.
+- Hasan Özdemir, Büşra Acar'dan önce gelmiştir.
+- Murat Özcan, Can Yıldırım'dan önce gelmiştir.
+- Elif Erdoğan, Yusuf Kılıç'tan önce gelmiştir.
+- Can Yıldırım, İsmail Doğan'dan önce gelmiştir.
+- Hasan Demir, Murat Özcan'dan önce gelmiştir.
+- İsmail Doğan, Hasan Özdemir'den önce gelmiştir.
+Soru: Hasan Demir, Deniz Yıldırım'dan sonra gelmiş midir?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-937c508d29b0c2e2ed60236a8558f58ab7b3262a03be50231463ce477630127d,canonical,temporal_arrival,32,"Bütün kişiler aynı etkinliğe tam bir kez gelmiştir. Yalnız geliş zamanları karşılaştırılır; her kişinin geliş zamanı farklıdır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Elif Güneş, İsmail Polat, Can Çetin, Kerem Aksoy, Hüseyin Çakır, Ayşe Korkmaz, Osman Özkan, Hatice Öztürk, Aslı Özcan, Zeynep Polat, İbrahim Korkmaz, Gül Çakır, İbrahim Güneş, Eren Bozkurt, Hüseyin Aksoy, Emre Yavuz, Hatice Arslan, Fatma Taş, Mustafa Polat, Hatice Çakır, Selin Arslan, Uğur Demir, Uğur Kurt, Zeynep Acar, Kerem Korkmaz, Ece Yıldırım, Gülay Çelik, Gizem Yavuz, Mehmet Kaya, Meryem Erdoğan, Gizem Şahin, Ceren Yıldız.
+Öncüller:
+- Ceren Yıldız, Selin Arslan'dan önce gelmiştir.
+- Gül Çakır, Hatice Arslan'dan önce gelmiştir.
+- Hatice Çakır, İbrahim Güneş'ten önce gelmiştir.
+- Mehmet Kaya, Gizem Yavuz'dan önce gelmiştir.
+- Kerem Korkmaz, İsmail Polat'tan önce gelmiştir.
+- Gizem Şahin, Fatma Taş'tan önce gelmiştir.
+- Hüseyin Çakır, Osman Özkan'dan önce gelmiştir.
+- Hüseyin Aksoy, Ece Yıldırım'dan önce gelmiştir.
+- Osman Özkan, Gül Çakır'dan önce gelmiştir.
+- Gizem Yavuz, Kerem Aksoy'dan önce gelmiştir.
+- Eren Bozkurt, Hatice Çakır'dan önce gelmiştir.
+- Meryem Erdoğan, Zeynep Polat'tan önce gelmiştir.
+- Aslı Özcan, Hüseyin Aksoy'dan önce gelmiştir.
+- Kerem Aksoy, İbrahim Korkmaz'dan önce gelmiştir.
+- Elif Güneş, Mustafa Polat'tan önce gelmiştir.
+- Uğur Kurt, Gülay Çelik'ten önce gelmiştir.
+- Fatma Taş, Eren Bozkurt'tan önce gelmiştir.
+- İbrahim Güneş, Ayşe Korkmaz'dan önce gelmiştir.
+- Zeynep Polat, Zeynep Acar'dan önce gelmiştir.
+- Hatice Arslan, Emre Yavuz'dan önce gelmiştir.
+- Can Çetin, Meryem Erdoğan'dan önce gelmiştir.
+- İbrahim Korkmaz, Aslı Özcan'dan önce gelmiştir.
+- Hatice Öztürk, Mehmet Kaya'dan önce gelmiştir.
+- Selin Arslan, Uğur Demir'den önce gelmiştir.
+- İsmail Polat, Uğur Kurt'tan önce gelmiştir.
+- Emre Yavuz, Can Çetin'den önce gelmiştir.
+- Zeynep Acar, Elif Güneş'ten önce gelmiştir.
+- Ayşe Korkmaz, Ceren Yıldız'dan önce gelmiştir.
+- Ece Yıldırım, Kerem Korkmaz'dan önce gelmiştir.
+- Gülay Çelik, Hüseyin Çakır'dan önce gelmiştir.
+- Mustafa Polat, Gizem Şahin'den önce gelmiştir.
+Soru: Uğur Demir, Hatice Öztürk'ten önce gelmiş midir?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-4bf60e5ac24285f2463871b330ffa5a9bd0e1069cdce9afbf704b2ec224d10e2,canonical,temporal_completion,4,"Varlık etiketleri birer görevin adıdır; kişi adı biçimindeki etiketler de görev adı olarak kullanılır. Bütün görevler tam bir kez tamamlanmıştır. Yalnız tamamlanma zamanları karşılaştırılır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Pınar Yavuz, Yusuf Çakır, Yusuf Yavuz, Cem Koç.
+Öncüller:
+- Yusuf Çakır adlı görev, Yusuf Yavuz adlı görevden önce tamamlanmıştır.
+- Yusuf Yavuz adlı görev, Pınar Yavuz adlı görevden önce tamamlanmıştır.
+- Pınar Yavuz adlı görev, Cem Koç adlı görevden önce tamamlanmıştır.
+Soru: Yusuf Çakır adlı görev, Cem Koç adlı görevden sonra tamamlanmış mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-6bafdde54a525f19df45cc22d991ef1ea053d1473e3101d86cb1d6ef7d039072,canonical,temporal_completion,8,"Varlık etiketleri birer görevin adıdır; kişi adı biçimindeki etiketler de görev adı olarak kullanılır. Bütün görevler tam bir kez tamamlanmıştır. Yalnız tamamlanma zamanları karşılaştırılır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Hasan Kurt, Fatma Öztürk, Büşra Korkmaz, Emine Aslan, Gamze Polat, Seda Çetin, Hatice Özdemir, Deniz Aydın.
+Öncüller:
+- Deniz Aydın adlı görev, Büşra Korkmaz adlı görevden önce tamamlanmıştır.
+- Seda Çetin adlı görev, Emine Aslan adlı görevden önce tamamlanmıştır.
+- Emine Aslan adlı görev, Fatma Öztürk adlı görevden önce tamamlanmıştır.
+- Büşra Korkmaz adlı görev, Gamze Polat adlı görevden önce tamamlanmıştır.
+- Hatice Özdemir adlı görev, Hasan Kurt adlı görevden önce tamamlanmıştır.
+- Fatma Öztürk adlı görev, Hatice Özdemir adlı görevden önce tamamlanmıştır.
+- Hasan Kurt adlı görev, Deniz Aydın adlı görevden önce tamamlanmıştır.
+Soru: Seda Çetin adlı görev, Gamze Polat adlı görevden önce tamamlanmış mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-067240b04dd6abe8ad1e551af1d7e660894961836a35ecb7af3356d2bc0a32b6,canonical,temporal_completion,16,"Varlık etiketleri birer görevin adıdır; kişi adı biçimindeki etiketler de görev adı olarak kullanılır. Bütün görevler tam bir kez tamamlanmıştır. Yalnız tamamlanma zamanları karşılaştırılır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Ece Arslan, İrem Yıldız, Hasan Kaya, Gül Arslan, Ali Doğan, Büşra Yavuz, Emre Arslan, Hatice Yavuz, Cem Aydın, Kerem Can, Pınar Can, Büşra Kurt, Eren Çakır, Gülay Yavuz, Ayşe Aydın, Özlem Yıldız.
+Öncüller:
+- Ece Arslan adlı görev, Hatice Yavuz adlı görevden önce tamamlanmıştır.
+- Emre Arslan adlı görev, Büşra Kurt adlı görevden önce tamamlanmıştır.
+- Eren Çakır adlı görev, İrem Yıldız adlı görevden önce tamamlanmıştır.
+- Kerem Can adlı görev, Emre Arslan adlı görevden önce tamamlanmıştır.
+- İrem Yıldız adlı görev, Özlem Yıldız adlı görevden önce tamamlanmıştır.
+- Hatice Yavuz adlı görev, Ali Doğan adlı görevden önce tamamlanmıştır.
+- Büşra Kurt adlı görev, Büşra Yavuz adlı görevden önce tamamlanmıştır.
+- Ayşe Aydın adlı görev, Ece Arslan adlı görevden önce tamamlanmıştır.
+- Pınar Can adlı görev, Gülay Yavuz adlı görevden önce tamamlanmıştır.
+- Gülay Yavuz adlı görev, Cem Aydın adlı görevden önce tamamlanmıştır.
+- Özlem Yıldız adlı görev, Gül Arslan adlı görevden önce tamamlanmıştır.
+- Büşra Yavuz adlı görev, Hasan Kaya adlı görevden önce tamamlanmıştır.
+- Ali Doğan adlı görev, Kerem Can adlı görevden önce tamamlanmıştır.
+- Gül Arslan adlı görev, Pınar Can adlı görevden önce tamamlanmıştır.
+- Hasan Kaya adlı görev, Eren Çakır adlı görevden önce tamamlanmıştır.
+Soru: Ayşe Aydın adlı görev, Cem Aydın adlı görevden önce tamamlanmış mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",
+prompt-5edfbf766ff4c9f916051dc0652aea459ae8342b9b46d71e6cc9b1883f8ea14c,canonical,temporal_completion,32,"Varlık etiketleri birer görevin adıdır; kişi adı biçimindeki etiketler de görev adı olarak kullanılır. Bütün görevler tam bir kez tamamlanmıştır. Yalnız tamamlanma zamanları karşılaştırılır. Bu problemde belirtilen ilişki katı bir tam sıralamadır: bütün değerler farklıdır, eşitlik ve karşılaştırılamazlık yoktur. Her öncül aynı sıralama eksenini kullanır.
+Varlıklar: Ali Yıldız, Can Çelik, Ali Özdemir, Derya Bozkurt, Aylin Demir, Deniz Güneş, Volkan Kaya, Seda Yılmaz, Yasemin Şimşek, Deniz Özcan, Mustafa Çakır, Yasemin Çetin, Ayşe Yıldız, Derya Çelik, Mustafa Özdemir, Zeynep Demir, Gamze Koç, Onur Erdoğan, Gizem Acar, İrem Koç, Ahmet Aksoy, Can Kara, Gizem Kaya, Ahmet Acar, Volkan Taş, Ali Kaya, İrem Şahin, Özlem Yıldırım, Selin Özdemir, Selin Kara, Onur Şahin, Osman Şahin.
+Öncüller:
+- Osman Şahin adlı görev, Özlem Yıldırım adlı görevden önce tamamlanmıştır.
+- Mustafa Çakır adlı görev, Deniz Özcan adlı görevden önce tamamlanmıştır.
+- Derya Bozkurt adlı görev, Ali Özdemir adlı görevden önce tamamlanmıştır.
+- Deniz Güneş adlı görev, Ahmet Acar adlı görevden önce tamamlanmıştır.
+- Aylin Demir adlı görev, Seda Yılmaz adlı görevden önce tamamlanmıştır.
+- Can Kara adlı görev, Derya Çelik adlı görevden önce tamamlanmıştır.
+- Onur Erdoğan adlı görev, Mustafa Çakır adlı görevden önce tamamlanmıştır.
+- Onur Şahin adlı görev, Volkan Taş adlı görevden önce tamamlanmıştır.
+- Zeynep Demir adlı görev, Volkan Kaya adlı görevden önce tamamlanmıştır.
+- İrem Şahin adlı görev, Ayşe Yıldız adlı görevden önce tamamlanmıştır.
+- Derya Çelik adlı görev, Gizem Acar adlı görevden önce tamamlanmıştır.
+- Gamze Koç adlı görev, Yasemin Şimşek adlı görevden önce tamamlanmıştır.
+- Ali Özdemir adlı görev, Gamze Koç adlı görevden önce tamamlanmıştır.
+- Selin Kara adlı görev, Gizem Kaya adlı görevden önce tamamlanmıştır.
+- Mustafa Özdemir adlı görev, Zeynep Demir adlı görevden önce tamamlanmıştır.
+- Özlem Yıldırım adlı görev, Ali Yıldız adlı görevden önce tamamlanmıştır.
+- Volkan Taş adlı görev, İrem Şahin adlı görevden önce tamamlanmıştır.
+- Gizem Acar adlı görev, Ali Kaya adlı görevden önce tamamlanmıştır.
+- Seda Yılmaz adlı görev, Yasemin Çetin adlı görevden önce tamamlanmıştır.
+- Ali Kaya adlı görev, Selin Kara adlı görevden önce tamamlanmıştır.
+- Volkan Kaya adlı görev, Osman Şahin adlı görevden önce tamamlanmıştır.
+- Gizem Kaya adlı görev, Onur Şahin adlı görevden önce tamamlanmıştır.
+- Yasemin Çetin adlı görev, Can Kara adlı görevden önce tamamlanmıştır.
+- Can Çelik adlı görev, Selin Özdemir adlı görevden önce tamamlanmıştır.
+- Selin Özdemir adlı görev, Mustafa Özdemir adlı görevden önce tamamlanmıştır.
+- Deniz Özcan adlı görev, Can Çelik adlı görevden önce tamamlanmıştır.
+- Ali Yıldız adlı görev, İrem Koç adlı görevden önce tamamlanmıştır.
+- Yasemin Şimşek adlı görev, Ahmet Aksoy adlı görevden önce tamamlanmıştır.
+- Ayşe Yıldız adlı görev, Derya Bozkurt adlı görevden önce tamamlanmıştır.
+- İrem Koç adlı görev, Aylin Demir adlı görevden önce tamamlanmıştır.
+- Ahmet Acar adlı görev, Onur Erdoğan adlı görevden önce tamamlanmıştır.
+Soru: Deniz Güneş adlı görev, Ahmet Aksoy adlı görevden önce tamamlanmış mıdır?
+Yanıtınızı yalnız YES veya NO olarak verin.",

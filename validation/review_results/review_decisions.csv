@@ -1,0 +1,361 @@
+prompt_id,presentation_condition,relation_id,n,r1_grammaticality,r2_grammaticality,r1_naturalness,r2_naturalness,r1_equivalence,r2_equivalence,r1_ambiguity,r2_ambiguity,confirmatory_eligible,r1_comment,r2_comment
+prompt-c62b1656977e8c3e245bd0fe936b50eecd56b9888f8b19c673eed066f366633e,P1,comparison_height,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-ba6e967e3fe0a2f29dc4e5e73c1bd6800a5020285b19470c5882d5f506bb18e8,P1,comparison_height,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-ec3041d869ec2fa55399d2636345af41e87f8a3df3c396292b68f36c6a705bbc,P1,comparison_height,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-f798e128eb8b11fa067b4fbfc3f656814ed0be4d9226f1305a3a60333f6a1d12,P1,comparison_height,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-d9133a745d69152df938c5e9dacdc954e62d96d1665372181d2183e93bcb58b2,P2,comparison_height,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-1c75e6e904d342e48a47daccc4b676c9e49c267e8cd1241b1e86f98efcb138a7,P2,comparison_height,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-d5f08934604483b489f0eb841bd7175dda9f03c7eef8dbbcc97515fbe4004cab,P2,comparison_height,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-e5d52712eadc6fce85eedde66e50a570df0895ff7de2b5b24320623dc607db19,P2,comparison_height,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-324c369594a935637c6a3220b3b2ddd85e8bea4d5d40dabf579ea463f9af38d1,P3,comparison_height,4,5,4,4,2,yes,yes,no,no,yes,Devrik olarak bir soru cümlesi çok tercih edilmez o nedenle doğal değildir. Tüm bu tür için geçerlidir.,Devrik cümle yapısı
+prompt-0a2805e87c665f084205037be113c3dc2479a4561b0512b9acca9c913f387cd8,P3,comparison_height,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-c2b846c28ab361e848f963d01cf9820498ff1890f9f46d88e4c4f53b0c7f20a0,P3,comparison_height,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-a36e7e6163d06c79999ffa5f574543be585471f1a774233ff72f4527444cae5c,P3,comparison_height,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-2ca4f816366d9274501c8cfe4ca113bc2029377e6c3e546db30134f5408afb5f,P3,comparison_height,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-6d6d32b72db0b968ed194f38351409ef21e8d604cfba5b3e6fc6ccce082a57fb,P3,comparison_height,128,5,4,5,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-0cd9b6594b781bb82d433500224bf47ba5bf607ed72a3af2fbca1beec3eec5aa,P3,comparison_height,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-8759309278e69d2177b6230190137e6fd5e23df3a6840d5cb0961c71e6c3c597,P3,comparison_height,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-8b6e171f20c1405e7a40742d31f303e08bbff0aef85760aa8334a493267591ff,P3,comparison_height,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-d3fb470e7082c37cc0723a955c8dbab9a3d80e074d4096bb1399003755c30daa,P3,comparison_height,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-567d4397c7e5078b82186386e2cadbd40939e4fc3753095f9737886db2dcdd4d,P3,comparison_height,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-ccf16ba7489a2e71d24d61c2d0110d7d552a6c2a8bacd641a0f377a31d42141c,P3,comparison_height,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-f7e968400a3716bcc84982ff95af1d244673c445df136cf53db7fd4dca87688b,P3,comparison_height,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-0a53c87c48203fdc8410f42f648ed5468b0f3aa223f9d3411b35265e9e84cb7a,P3,comparison_height,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-eb796ccd28f6c36b7bfdc22391d1c9a0ae399e088b36763362a7a7c5f19be938,P3,comparison_height,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-0479013c76153ebb0bcc9af75c80ab8342ac7468af8f37d78c83abfaf925b06f,P3,comparison_height,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-5af64ea65fc2a0fcfbf2d28f65096f3ac4d3b072add2b396100775cc288dc0bc,P4,comparison_height,4,5,5,5,4,yes,yes,no,no,yes,,
+prompt-62ad94cbfaecb6d45111f1a69e265fe9dd044aa1d6dfd09abfb7457d1b16c81a,P4,comparison_height,8,5,5,5,4,yes,yes,no,no,yes,,
+prompt-6596016716c8f739222ea18daee365e59b403914bca76e3c30e1117a9d1414a3,P4,comparison_height,16,5,5,5,4,yes,yes,no,no,yes,,
+prompt-6429b2e27405f571309a2462eede049daa46eef62afa83629af9e5a245fba0a6,P4,comparison_height,32,5,5,5,4,yes,yes,no,no,yes,,
+prompt-f00012f8b7dbef4f0216e31d1cfa874539e43ff9103882557b4bcf493616dec3,P5,comparison_height,4,5,5,5,4,yes,yes,no,no,yes,,
+prompt-da22c078b13cd7ce5425ac9c8758eb2ceaa230d20cc4fd58a6889c2fb8772660,P5,comparison_height,8,5,5,5,4,yes,yes,no,no,yes,,
+prompt-5578e1ad332f827146b3216c720d1f230975bbc1f7ab6428359d7f187e209dab,P5,comparison_height,16,5,5,5,4,yes,yes,no,no,yes,,
+prompt-4b735e84715c436e1cbfb5e568c0cac60d802d639fa5a9738e73e8fd7cde2a82,P5,comparison_height,32,5,5,5,4,yes,yes,no,no,yes,,
+prompt-b9f28c69597988b07c639d4605d1a36e092e0b476d525bc55b62516b9d34967c,canonical,comparison_height,4,5,5,5,5,N/a,n/a,no,no,yes,,
+prompt-1fbaa351f5cc35316aef20bd889fa1b232cd3c3ae6f89b0ea65bcc08ee32598c,canonical,comparison_height,8,5,5,5,5,N/a,n/a,no,no,yes,,
+prompt-b606dd5c3e1154cabc4c14f795a7abd4ca211d32d8d03db67dcc11c84d8253bb,canonical,comparison_height,16,5,5,5,5,N/a,n/a,no,no,yes,,
+prompt-4078de9fea7c7a2b385de09473ece8b3e355987389e9264bfcff2dfa6675cc31,canonical,comparison_height,32,5,5,5,5,N/a,n/a,no,no,yes,,
+prompt-0d53470426347ceb15ca4d5acf910c01642bfc7eba1874cc50578dee162d7445,equivalent,comparison_height,4,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-d11d248a90d81dea3a68030c8d92a4aaaf27cc9faaa263387f73109fae05eb0e,equivalent,comparison_height,8,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-04e30eb8c583481bf1015a50bfc486c7995996dd1128937b41832a0d1b9f2443,equivalent,comparison_height,16,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-4991c505ae1ef36f6ac0ea350233aa792f92233af38de4ecb86313dc3647d0dc,equivalent,comparison_height,32,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-9f8e30022dfcb079cc6ea858370619b89cfb0342fc2ddc565039fddb45f7e236,P1,comparison_speed,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-0c931657d3b64a25b5908e68319a1286d660d3e26ee4118d2531ee46359ff97b,P1,comparison_speed,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-af60ce317fd0efb5b985a81721dbc054f39d8a4a9da914db7c7405ebd7ae2f8e,P1,comparison_speed,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-976b4b59ccd0cdcd7350b415fd4a1bfe59ca656d4dc6a0643dce7aca6b3b8b34,P1,comparison_speed,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-8bc101f3795678709d29cec5f409e398e0ac383be3e77f2d0ed0d81f80825009,P2,comparison_speed,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-2179e3697b02960faff6db49d738aa7265a4301680b860605051bb0a37cf72f8,P2,comparison_speed,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-34e6a6fb4ac4ba239b7e4bf0e8c2c05afd520cbde6aaed5364ae3021711d2ab7,P2,comparison_speed,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-ff7f61adfd312b0d96c794885a7c0da7d6d71567ad2bab3ee3fe0cf25b3cc934,P2,comparison_speed,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-0f23bf9af66691f483c823e193cf29b879fa5ae49892ab9ecc7801cdde4751bd,P3,comparison_speed,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-f5f1b7327057d22512ff4c986b79feb7b505b63defbda399795be303135b2648,P3,comparison_speed,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-eec98340b41fffdf9a88794d469ce0d15b8d6bc9794219d841ab189a93af0e9a,P3,comparison_speed,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-7394727864b1841a220ec013546f98039c4626ac509d55218bd32acf6b316381,P3,comparison_speed,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-e273b5bd84347c68bfa6372f3240cd8e79e4fe24c74e505cdedc9809a1f9dc1e,P3,comparison_speed,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-5561aea92f7c8a54936cc2cbd4ddba668f8e8743092201b1e4b276e3c8406000,P3,comparison_speed,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-21e5ef6de916308cfebd934addd2333fa0206a8594188c73d8b11a9951217594,P3,comparison_speed,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-99e95dad71353b53142bdcc96bbb39e59579c1ccd5d88a09d53889f828e9eba1,P3,comparison_speed,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-33cd5f472a7e5ed01fabd4959525c4465767b4767b9cf24f16e37b37216e82c5,P3,comparison_speed,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-49b129403606cb542dcd3f83267c5ec1ff4f2cb93e7548014b96cf3a8b5a1dad,P3,comparison_speed,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-77a7b2cb3adeb4abbf5d97bfa84a99fda063f6063b3a8003994e0c6d9e33b80a,P3,comparison_speed,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-99a945ec07b7f6c5360e6ab728b1f302bd3a3a9b8216d820dddc0bab573b1c72,P3,comparison_speed,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-c3bd368840f7f331005e232012e6d8e2f0e15b52248cc9dc59e4df5eba5166a9,P3,comparison_speed,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-9127aedd4f59a592af98ca0c424c31b39e555543ed3ffc753f832b0ae5c21c35,P3,comparison_speed,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-51a19d5faefff744a092504f8f3f54649830888836b083cef7005058f86e69da,P3,comparison_speed,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-fe79be40be959d32784750c1fb84d05860a749ed815fd9756b5e130998f537b1,P3,comparison_speed,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-6a52e67252b220b8883d34d61be8ab57ae381d87b8ce55e9c71ef71d77910914,P4,comparison_speed,4,5,5,4,3,yes,yes,no,no,yes,,
+prompt-5939931d4002dfcd88883e82d0404c0d3db90c10b722714ef7900fa82bd7e801,P4,comparison_speed,8,5,5,4,3,yes,yes,no,no,yes,,
+prompt-6312b2da012060cba8166ea7a67f2b78f25cb47c421f7ddca48f6d7918f93201,P4,comparison_speed,16,5,5,4,3,yes,yes,no,no,yes,,
+prompt-42953d89c6ac4385c5c5931e7c35328d368c753984f2d67e4dcf869937d7d671,P4,comparison_speed,32,5,5,4,3,yes,yes,no,no,yes,,
+prompt-119a1a84b051a27d50db0754bd279fb9115dd86020dd3c8cc4651aa12bb55da9,P5,comparison_speed,4,5,5,4,3,yes,yes,no,no,yes,,
+prompt-6672a87a166df0e2ecb678afee71433ee45c9ac6f2000545134d4c354290c8af,P5,comparison_speed,8,5,5,4,3,yes,yes,no,no,yes,,
+prompt-8613e759b577ef055b3691656fbf21fee60588d9439edc18d14fddfc580fb8a0,P5,comparison_speed,16,5,5,4,3,yes,yes,no,no,yes,,
+prompt-f82bde8f5d563bb3d113b8c61345ec82f02ffaca0c0d2921e01a17f583171a0b,P5,comparison_speed,32,5,5,5,3,yes,yes,no,no,yes,,
+prompt-9222c7947fabbd0b32b607530c2bac986c90b7a8f1c65bd730ec5b8f9bb2945e,canonical,comparison_speed,4,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-f5f7cdb53cbe3a09166f8f8029b43210fbd7c613bf62ebb6c80afc38dc2a97e8,canonical,comparison_speed,8,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-13830fe8b68e439b341b41b59a6c4a18dd35ee7a6cd6637b9aad85a2b9f5b66a,canonical,comparison_speed,16,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-22d00440936aba0210e589a9ae09676d694b60345361cd88e3b7e4450728b41b,canonical,comparison_speed,32,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-a4bf6fbbad804a190bbe5a268941f960aa270fda89d9356288bad17b5f113e19,equivalent,comparison_speed,4,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-93b8b8479a5b7a818c0b517229ee1d59263829f460fe055be2363183c4f1fd13,equivalent,comparison_speed,8,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-8aa7e3e2b63ed6ac60ce40f634a5b80681aeda0971b66a0d82eb8f3dc96fa943,equivalent,comparison_speed,16,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-6649ea5ef157b49053bfecf23ef5b09c3d4c328f02c8cd386b6679c4a9b597b5,equivalent,comparison_speed,32,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-b386c3fb647cf3c933fe421c41dc28312227734cd359933182fed6b2c4257802,P1,comparison_weight,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-2b88d55a574ee2818ef6ea90d036a1e75bd6d53f6f0fef4b7434e4eb429795ee,P1,comparison_weight,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-08ab0c6bbd7aa6428574c7e4ec7a8ffb6c291a4da978079ea99850f669f40fed,P1,comparison_weight,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-e18a3bcb1859cb45d819e85030edf9dc78bf7701604b924bb4c726dede33bc2b,P1,comparison_weight,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-03a6efbddc88cd226e37384852bedb9f9945819d443fce7f181d6791b769f801,P2,comparison_weight,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-799d6eef44ced669d360e584364f9254aeea3b6bba7242a66f55972a3c6512e1,P2,comparison_weight,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-62aec6fe70bd48d4f8c4578f7d138d0fb05cede00f63abcb8512179e8898ec2b,P2,comparison_weight,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-a6060c557ceecdb77e06a53c37505c8095e79103a57a3e27438ce698f982450c,P2,comparison_weight,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-903194d09ddb2575d204f9e443d57b90a1b0583d2bffc80499deeda0aad1677e,P3,comparison_weight,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-4443a3caffef41733382944b37d170dfe12401665bc9e5da31edf2ab42148ef3,P3,comparison_weight,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-7551597fa2e9098297af55d9ca1d7fa6d84821d69969cf7c32622a69b54173d3,P3,comparison_weight,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-120c49cec5aa8d4cc05989e3296083ee2ec42589186fa522ffd3d3848b55ae23,P3,comparison_weight,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-2fcad5a6f4a0426060755789a9f2ffbd4f079a5e56d5fc9defdcb65fa2f2e7a3,P3,comparison_weight,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-5d27851d764d5f6127ca754e1f131c878f620193d03e4c7cf8ae8d70d816f160,P3,comparison_weight,128,5,4,5,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-9d4901ee2b57ae2ebc2ec77db15eda935224ae16e93da648c4f56e4365d190b6,P3,comparison_weight,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-f8af84931c75dba612ddc0eb4c2317b6c5e17efbfdec0fd7a23d1ae8819dcf1b,P3,comparison_weight,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-b88f863053ba73d5f01ce89826e528354876f242ea25a6e35401642852d392ff,P3,comparison_weight,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-99c19db8490eae1e454ac44890dba7992ecb29880ec967a38ee0e9965864a41e,P3,comparison_weight,32,5,4,5,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-fd230a8a9a0ee5b9d3ef16b9c937bc916aee71c85a354676142bc21a107a2317,P3,comparison_weight,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-af64fee129f820cc2aee3c521d9ceb9db1b01b55a2dc850626e9c3484ab6320e,P3,comparison_weight,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-f53a7d5543d2372540296addbea3bc03dfd12416f3f2685c2c5ca50d1076b60a,P3,comparison_weight,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-94ca920a39e0bcf4e96ad97706a35d8c72921ca779dbb7a164769ef5a00ed1bd,P3,comparison_weight,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-d4d5c34bd29ff118eedcb5917f7a8bc07c10e9e7dade7d16c4e54c36d1b8a396,P3,comparison_weight,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-95c689fc69d891d2ca9fabf5d907515e42272dc8d38f92601d6eccedbb6a063a,P3,comparison_weight,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-bea731cae6f576677ac48f1638c58ee50f119917165e65fc4bef9bec1e325cfe,P4,comparison_weight,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-fbf4fb9ffd20228f5d1338acf397dc117ed16ecaffd095e2cd58a58fe85240de,P4,comparison_weight,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-63fc437cc39f3a15b008bcc67c62fc2b772b53d9730e84ca50691710f89b9dea,P4,comparison_weight,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-74ecb7e9ad839fa7cf7ca55e411f2a372062cd888d6a35c584124fd4ea7fd347,P4,comparison_weight,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-bcc2e6d0e91cf890b65ae1d5c59bb21653811c6ceed766755a0428453832758c,P5,comparison_weight,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-20969477881018add138f8cedf8778820a61e60e2a85065f02bb1b57ec1fef45,P5,comparison_weight,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-006205c1668d363d4292743595f685fe5b66f1a61b6d98f8f503c1d9b09651c4,P5,comparison_weight,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-7d940ecd88f65c9c4871388841c8cf503e81e2d873639cb16bef7384e4621b0d,P5,comparison_weight,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-4c99352fcc9425525e904891046c7edd24e430fe14d67899e71daa4c4f903fdc,canonical,comparison_weight,4,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-8abdeebbd5561379da88e534c690e0695c5c562d5db649dc8eef68dd7dfe9f51,canonical,comparison_weight,8,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-f09098ce9adcf2400454cf1f8ab35c8770226ba80f95d2715a553b03c1c382d4,canonical,comparison_weight,16,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-90ecfc5cecdad3be70691e65e408149738a98dfe8036bfb93307ab3782b48003,canonical,comparison_weight,32,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-14c08ee5f707cda3eca41d89e865576927f1ae6a8966f318b428cd27880ecb25,equivalent,comparison_weight,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-3b5eda5a5178913ab3bace55bf8ae02c7bae3f34f000336d49630fbb82f3dc4e,equivalent,comparison_weight,8,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-c690fdea551bdaa92f417f8779d8fa9449aad5579dbcede00bccd3ca474cc6b6,equivalent,comparison_weight,16,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-223ec7b3b912d28029c3853fc02d382cc97ea96991e05532a7fcc1dd109c72b3,equivalent,comparison_weight,32,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-08083b0d8bd88022026c19ae4c285277a5af2572fdf79f49bd59eee5ad0af9a7,P1,ranking,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-ccc83f37fc83371a91129389ada24af40a5bd849efff1acfefc20d38e8b6969e,P1,ranking,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-3a5f9a13333519a8fdbef71495046df9ab281308271719e7c50da28da4d71cbd,P1,ranking,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-b07f4ca7546357efbf996c0ecc29387f2a4cca3579d6b15f35568f338be627d4,P1,ranking,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-281a1c3c6ac12fcbcfaef45d0f8352e43b52b20f16d8b76168aaa50dd21cbc50,P2,ranking,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-389b52518d5717a42c68f9703298d2989206a56bba06b2e98e3bf497733007b3,P2,ranking,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-c4d08b1000b8dc628d7bde02ace8b08a133507aa599c29fa4cfd19a567f7c4ea,P2,ranking,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-d485935b5803a310ee7935b9d9488d1e05d5cd32dd35d54d1d62f9ae1f49c16a,P2,ranking,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-86fdda2760799bd731217d0a7dd4515ca00e40e8745719e753ea62e55ff9fb3d,P3,ranking,4,5,5,4,5,yes,yes,no,no,yes,,
+prompt-4fa3107e5e7224efd7461c1b79c53b853cd23cc345e7ebfc155121a884ee65eb,P3,ranking,8,5,5,4,5,yes,yes,no,no,yes,,
+prompt-672773468d9d8e12428c031bbf3ea7d82ead0136b1c6ffe9b25ff9be6037c9af,P3,ranking,16,5,5,4,5,yes,yes,no,no,yes,,
+prompt-b51aa55e0e432a67dc7ec6237aaea42831d2e5e6868dbf4dd93fc9d11f90c827,P3,ranking,32,5,5,4,5,yes,yes,no,no,yes,,
+prompt-c53a596d8961387326f6f2eca3153fabe72df38d4e025e2b14272f5a2c21881b,P3,ranking,64,5,5,4,5,yes,yes,no,no,yes,,
+prompt-6367e0f5661d159cacdc3f2042b8f338159e8f25a63de5ece860b91ff58ef30a,P3,ranking,128,5,5,4,5,yes,yes,no,no,yes,,
+prompt-8cb2c358440dade0944159db0b1240b2ed9a0dae1a415ce4840a149a7519db6b,P3,ranking,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-6b1cafc7b0a1fdef133a663f4424df3e1ca508e9e9d16bcfd96bea1ba0a43188,P3,ranking,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-9701c725261eb3e744059bf82d6b48f9e534f200644b9d05c57599af88609618,P3,ranking,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-acd42a0446fcb0008a8aee0c0a72b7ff094107b2e4dae0c75456e47a3cf4943d,P3,ranking,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-786fc341fcba49b4397213401e49d04d1e275d2e4ced3dd0b08da363a9becae5,P3,ranking,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-42807544e267ef22deeeae64972e5f1cd49a3260b34dd8634ca0cb350b34d26e,P3,ranking,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-c8ddcbb32e172737009638f37254380dec034ed206c1ea9dc372a5f2845b37db,P3,ranking,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-a2ce72f089dfd9360e44794f40bf900cc4f37fd0745f6f7f0dc57fc12d1950d5,P3,ranking,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-4fca422d943a4df9e9d58ac80fc1252a3bf91450e0fa465199e1a737e30189ca,P3,ranking,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-449eac916a994cef442fe3e798de4e98e41c3a09a941dfc272d2dd17508e3219,P3,ranking,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-2c732226eaddea93ec0639a6a12219aebd08585f33eff9fd3374077caf7c435b,P4,ranking,4,5,5,3,4,yes,yes,no,no,yes,"Sıralamada üstte değil önde olunur. Ancak mesela bir liste varsa bu durumda üstte ve altta olarak belirtebiliriz insanların sıralamasını bu nedenle puanı tamamen kesmiyorum. Ancak insanlar arasındaki İnsan ve üstte altta ilişkisi doğal olarak ifade edilmez, insanlara arasındaki başarı sırasında önde ve arkada olur. Tüm bu aile için geçerlidir.",
+prompt-31e13a3f1a4e7fbcb0011ab5c416344f2965723839f47b5baad388e83653d582,P4,ranking,8,5,5,3,4,yes,yes,no,no,yes,,
+prompt-588357e4095ab3812b530a8c03ae32ecc2ed8088b45d5e63b62cbb9452d55303,P4,ranking,16,5,5,3,4,yes,yes,no,no,yes,,
+prompt-1f91017c3dd66625289747a1f074e83536dba08a633d1defc42451fa6e279cdc,P4,ranking,32,5,5,3,4,yes,yes,no,no,yes,,
+prompt-aeee218d79b3298721741d8576bfbd16ed7d056ebd7c31de70b29e9582ecb76a,P5,ranking,4,5,5,3,4,yes,yes,no,no,yes,,
+prompt-9ef4ab952921255fd95833fba411fa210b8a753773deb1a4011202705a472e28,P5,ranking,8,5,5,3,4,yes,yes,no,no,yes,,
+prompt-0e08acaa4f1e3570bb357206de57445799f54c73096beeac8cf49267864fd6a1,P5,ranking,16,5,5,3,4,yes,yes,no,no,yes,,
+prompt-c4a31c6433af3fde215496bb3b6f2e2effbd3df38e48c364903957af5add2d7d,P5,ranking,32,5,5,3,4,yes,yes,no,no,yes,,
+prompt-8334da3bfbc7fdcb3dc11976ee0f71d550a96f4fe67f427a2573cd578c0c1827,canonical,ranking,4,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-24496b4bf06501dd37ea206525c47e9130ce1fd22eaedd7f1f1dd33e36991121,canonical,ranking,8,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-5237a89907560669defa3ba253b99b105c8ba3345ef7a2bba130d24ef30c3e6d,canonical,ranking,16,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-31b0345a70a814f2b84cac1fdd72de9545569b64ba9e64b5b2ad3b04d25858ef,canonical,ranking,32,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-444201c7bcb44f95b3acc542c5e2345f7ca64c1d2fe1bafa5e1237633860bc74,equivalent,ranking,4,5,5,3,5,yes,yes,no,no,yes,,
+prompt-23016b8b241980d2890e05f53f9fb808c4e8fdc7c4264348a57cf9f6cebe6822,equivalent,ranking,8,5,5,3,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-8614b29d8587c35da0d081904b8bcb670ae371af22cfd2991fd22fb587691067,equivalent,ranking,16,5,5,3,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-5dde7681930dfc143c6d1263e97842c0a979d6b744f046a8beeab6b62a45e2f8,equivalent,ranking,32,5,5,3,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-cf86a6f1e017724d5fad509d52c6ccc036881154b6f910dc5612a6c0c8642b3c,P1,spatial_above,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-50a408ccba775df57605d1c3cbacf4a4f3cf0ce1a4a56561271a56e6df951c4e,P1,spatial_above,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-1e86eb223e868e55c7797799f887bc79d679fe9c553a241f75b9a67e17edf676,P1,spatial_above,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-cf8cbb3911d7a9c9240711e63d38436bab4217d6c45710f27cef4cee8b612533,P1,spatial_above,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-a7544169078b6700727168bd7704e34df53a80d426fc8245c54e690ec057766f,P2,spatial_above,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-aa0917b3ae96c9cbdfb314abc6ac642c3350a119c6a7369ead61770f21c50c9f,P2,spatial_above,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-0cfec9b4b7d216d06d290b7eac6af0a29fb8f57e2c2d1293dbd3f99e2e7b3f9f,P2,spatial_above,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-3d3df46e29154b5118b85ba91c3cbc4f28636fc8d120e1f9afc7c824fe4fad3b,P2,spatial_above,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-3ea21f731e05df10bcd324281f2cff2f882e6fa00e8c4932f00ed9d8e728fabc,P3,spatial_above,4,5,4,5,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-5ebd82d8cb2afae4ae3023d43fc267885eb8dd312c7b4a0f1b0dda10c2481213,P3,spatial_above,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-b65ca0b6268ce7821708a710907e2a4c90bc22093c474ed568b9b5bf18592d51,P3,spatial_above,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-ff399746087835d0bd7e35b06e97f146cc6ccf193dda443f3d1326e9147b98ec,P3,spatial_above,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-e9b5b8394fb1dd3585f24ee5eeb9f62146decbee9b93ca6200006233bf291235,P3,spatial_above,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-17801476e9958fab26da23429691162500f8bcc3cc11b622ca0964c215cfec3e,P3,spatial_above,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-cae5d3f5ea5453c6359636486d39885874380b0148b408032a393f2e4e8cb80d,P3,spatial_above,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-9fa8b61984a310f0732d9f39b6c9b297ec4b1c7e6396ccde8ec57a17717ad023,P3,spatial_above,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-80c7c64ea35becdecbb37ce8726f08801774b645749c6bf69db566a9b931bb18,P3,spatial_above,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-e3356976c300d5965724a7bfc9278590d902d449bc3446c74a75254648c020f3,P3,spatial_above,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-7773eadb08aa064f46ab1b421c7437d61ed5e0f6782ee32b38bc9d8d7d0a8e70,P3,spatial_above,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-b07fd109a9ec27e3fe91be506ac7fe9de35018c9bbbb79fa50a1987f8ff69b30,P3,spatial_above,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-dd05424601cc2c9a564b82a24b3aa7f8a65dd7e32973f5756e5f670f0926496c,P3,spatial_above,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-4fafaa5a7f06555d614c2b87bfa4efcabbd21fa592ba921cccf528084dbb0124,P3,spatial_above,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-f867ef4b61e051499da822ff0ad91511f64257921ac351b42e283bf2ce851fc8,P3,spatial_above,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-45e717085fe9e3aa2e59ed476360580666e0ab0aa0c835baf88bcb474b6a03aa,P3,spatial_above,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-137a7ab1d107aabe51cc267d3379fcc269c5a2e7ec1ae3ae3417960d12577e90,P4,spatial_above,4,5,5,5,4,yes,yes,no,no,yes,,
+prompt-1034c71354919cd2101d7039e0ed53a6530061b0138c545d0346522409708d48,P4,spatial_above,8,5,5,5,4,yes,yes,no,no,yes,,
+prompt-baadeeb49bfad59c2b1534b692d108a649a891682f1ee7c090dd177233bb9b8d,P4,spatial_above,16,5,5,5,4,yes,yes,no,no,yes,,
+prompt-7ddc9ff0119d66efcc69f4d6d941bc7580020a8e4482bf746681816a5aa9a789,P4,spatial_above,32,5,5,5,4,yes,yes,no,no,yes,,
+prompt-efd424a57b2d485f120e517fa1c732c8e61ff54952fdc0173046cd7aa2e6bcae,P5,spatial_above,4,5,5,5,4,yes,yes,no,no,yes,,
+prompt-e3c8129347bd810f1198b26555b10613b12ceaed56e55be13a6bf061498baa29,P5,spatial_above,8,5,5,5,4,yes,yes,no,no,yes,,
+prompt-d846e9934d8efa6523eba50c0821935cbc680411d58af2b2b2c92826f1cfd267,P5,spatial_above,16,5,5,5,4,yes,yes,no,no,yes,,
+prompt-d1901d9f8e6ab384f648de5710a853f907bb9a021b91e16f8c424a7010d0533a,P5,spatial_above,32,5,5,5,4,yes,yes,no,no,yes,,
+prompt-b5fe99fe7a337550bd745679b20f05cfbbf6dd247d804094146acc230564a766,canonical,spatial_above,4,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-a6259241e7cda627ebaed284afbb0e0b227b37668b5a1a581e240850633863a6,canonical,spatial_above,8,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-702075e1f8abcc4bf95af9ca4313f8db5d666997add5256ed017ba8fd577c1e4,canonical,spatial_above,16,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-4a8267d9556bc4c4aff7b4c8f2b0fdedecf9771300f16078899820790c8dadec,canonical,spatial_above,32,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-01642cc28a91dbae5e1fdf34bbaa2466cacdbcdcbce227f058b30d90145152c8,equivalent,spatial_above,4,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-df159378f8fecdfa44b7383ee93a2c0ca2d5d37c6a7f7f36f3022bad13ac2796,equivalent,spatial_above,8,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-249c822fbc2efcbca74fb129fcf3738589aa4fb571084aa9f457418fc33bf306,equivalent,spatial_above,16,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-001474034f462793eb591b5cf9b94ab565cd3f8ecf525330699b2e0adc752574,equivalent,spatial_above,32,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-6ed460609e21e1270fe4247e1d1b0f14e7b499b9f8c3cbfbf3cac2ea9b647334,P1,spatial_front,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-993ccc57ac3af2b5253927e85e8f1cbf41513defdbd95f647d721256d8022719,P1,spatial_front,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-f0a01d219d5dbfb1676d711f4665b2a62ec56c15e0c8239e09aa7a4e5c5bbb74,P1,spatial_front,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-8ef93c1c72295c03384dfb554d6c57838b1dfa0c0c589c65039c296fb36a8975,P1,spatial_front,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-49781559226e2f9b29faa92c542a9a10f25f2400d69dfa8cb69174708ff0d25d,P2,spatial_front,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-fe218e9fc732dac00cbb4d6509eb2e478995d8fa8b07c367f81f381f97ca2e0f,P2,spatial_front,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-7f87f37fb6ed0cc082fded73ba78b7b94ec409a0f0dd85edc4bc199c031405e8,P2,spatial_front,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-3dda5933f8ff394f3bb48d3aafd07dd79e21c7f1289756e1bba939e0cb36680f,P2,spatial_front,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-8bc3dec323af9d80329fc6eb393ce78a8071139c45a3d5ae1aa204ecbee48a67,P3,spatial_front,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-fbfeb9fdc89eab41b0d775970bbc68d061e9ef9d6bc234b61113eabadcb43260,P3,spatial_front,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-d7c72f1b8302af4e49a74750f88b802d086c2d535db3896d8021809c6dcbe8d6,P3,spatial_front,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-966f2b85a9f2d91b94d2af7ed491a224dd6cda6195f4d2102d6dfa177379f134,P3,spatial_front,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-16da8677b933ee2f4076893a4c754ccbf33e47de7506b30d46b143bc82f1dca1,P3,spatial_front,64,5,4,5,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-aa6a1607340ad648983869c4f88d459d378f109f9f4c056d4c4820b914e440cb,P3,spatial_front,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-a4fecc4beed872938fca0ee8b33ebad8ae131b3e2bb55a26a4fec92312b2729d,P3,spatial_front,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-01d1bfcc2074683007cad2043e12c258eabbbd60b3b780e219e5aa26e673f9fa,P3,spatial_front,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-e4556d151eacc62de40f67d6fc8d71b424afe048d1cbdbb517dcc2b459f32b97,P3,spatial_front,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-4f90a246008c5597247bd6573d22622a49eb9441245231d584b42cbdbfb9099b,P3,spatial_front,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-ba992e7fa25b1a6aa133b9c4b4fe3ed87ff85a201fa88687509364a09246d375,P3,spatial_front,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-19f7c92331a399e15f3ab6352e1cbdbe33adfc2ad13280e9feb61c26d6c10e34,P3,spatial_front,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-5e1d9db0f5a266333b88d643816d65deddf6373e8721fd1bc72c850d37971b79,P3,spatial_front,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-3febf83154fd070fbc0e9da0decc03a2d345d7116c43c10167d246de6050f87b,P3,spatial_front,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-77c5c03950d8c7366062bb47fe9e7ceee8d4996058d68de62d05813d9fe9d77e,P3,spatial_front,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-cec8109f22907193220accaab02d6794db57fd467c95030af55115ccb7b85b96,P3,spatial_front,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-01f9b47d14d97f3d4f9e40186b2e8961cd03aed5b84c833da8e9f66bcc0ca8da,P4,spatial_front,4,5,5,5,4,yes,yes,no,no,yes,,
+prompt-851b3c1295e4e04f7f8dc877f5a486389a5f14209a321e58af6cdc2e83264d3e,P4,spatial_front,8,5,5,5,4,yes,yes,no,no,yes,,
+prompt-7be52915be47e6f379719f43093afad61d8edc9566f350d55a60c1cbb104c03a,P4,spatial_front,16,5,5,5,4,yes,yes,no,no,yes,,
+prompt-8d3a4cf488d4e300576f1f8f985c3fc83923fa158cd713a8462504662f456b89,P4,spatial_front,32,5,5,5,4,yes,yes,no,no,yes,,
+prompt-4106bfc7f52a19a5ab25caf520b5b568694bdc8aced2d6cfa88eb6d511e72f07,P5,spatial_front,4,5,5,5,4,yes,yes,no,no,yes,,
+prompt-4a9882813929761e32a80d4bb28e8d15e578542617f5619c7ed4f96fc365ab46,P5,spatial_front,8,5,5,5,4,yes,yes,no,no,yes,,
+prompt-9824b09a27d1fa80bae43477935e43db98e7f57cea0a4fbf8aa606691a53342c,P5,spatial_front,16,5,5,5,4,yes,yes,no,no,yes,,
+prompt-39becb51c0b26e4c214353d6aac763dca424716a3875973a9b4a062c78da4a8a,P5,spatial_front,32,5,5,5,4,yes,yes,no,no,yes,,
+prompt-871cf2d5d2e22a55c7956a342748fb733a2422a178508c68ecea6c8d7ad5c868,canonical,spatial_front,4,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-29516751ed6bab9c6f193b09ac482465ccbb132d389704aeb370120d13eddec5,canonical,spatial_front,8,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-761de89b55738af3b45a9c5bf57f554b18b98f6b01bd129417575fea2b743dd4,canonical,spatial_front,16,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-f5fd6293fc385bf56581f4eeb0fb728716336354efb37b9e414e5b3baec9dc43,canonical,spatial_front,32,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-243657acebaeb5d4342039772df80b60a8f9e948a6fcb918d1f4c09bb0831ede,equivalent,spatial_front,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-cee45566a838b6b0d1de0fe31f8d32fd6f08a9326c107e72b091434e0cde785d,equivalent,spatial_front,8,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-517fc79eee773828b3747446cbe19992b6c5a0490fb97df24b517039d2641152,equivalent,spatial_front,16,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-201371d78591b9e730bff688a23dafae0139f829349c0f0dcf34acb8570cd98a,equivalent,spatial_front,32,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-3dcac408734247399537bf5a22570fd465c7278f4d87b6dc706dc6121f9ceeb0,P1,spatial_right,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-164d52d154456e0ea349b26bf7478212e1fa7cceb3144814b81caec68cdcd537,P1,spatial_right,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-ab8d8a107e85eb979f5e845bcaa9f004231ee500e4d32a0c1cf632a75ab11637,P1,spatial_right,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-8635e764057df774787aee92412a8c88461e48dbc7e2d305812a6c32e6e130f1,P1,spatial_right,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-7b43b08fd615265278428f83cfb6d74017973a27f5f52dfd27695cf30eb390c7,P2,spatial_right,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-69a7b420bde8057d83cd270cd12cc8c0f3a1655e15a8dc57bdd2c5a25c9878b2,P2,spatial_right,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-7da2aa3de8c0b30d79b9f08a38edbc84e02582fde4442ece0e3c120b8dc01158,P2,spatial_right,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-c26a3f0570898e0f5e5e6a5a7c3a10467acda2c13f9672bbefc0fb320eb88e76,P2,spatial_right,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-0fe033252d1425f5e65a2c29eb1360c55134b4cf3db85dae840ce92ad8f96ff5,P3,spatial_right,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-11ec261d36db724efa21e32767cc33de6394da63953197624a02f7d328390f91,P3,spatial_right,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-18880567787463a27463dbed697318d368181ccc265385582a43527eb048fb25,P3,spatial_right,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-524a132c4d7388b8b46f4147bbf7715f2f27211ad146f0f37cf62e62431a3818,P3,spatial_right,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-d0a4360c6bc8ca08aa4a1931ab1ccdf1a149f7adef0611519e5eedb7f631a829,P3,spatial_right,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-12070f9b220f2df00b82e14ed4cecdf1b0103d9b176c2e756b94a8182cd7b44f,P3,spatial_right,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-3cd073a50791fc2c1ab03b7fe30c776b473de519ae4d3cf5b6c5971d9607f726,P3,spatial_right,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-d6ea320066672714e0315cd7813d8b9a9b9aac8ff17c70a4c586679784b1e5a4,P3,spatial_right,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-54b6e28957cb44228c1796cf5eff5c8890a91a2cf438e0b394fd4e359abf7e8f,P3,spatial_right,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-4ccd302b459b850b4ee246611eb6db26aa4e16e425f5bc22ddd5b4b0e7e03ea4,P3,spatial_right,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-7174eb252446f226f8b5fd995b5a8ef37f2958fd8da5c88fb43771441796d664,P3,spatial_right,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-d0ed52e83e851340b3640a7644a5a243d22ba8721232771534f96ce43ad43ebb,P3,spatial_right,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-d98c6c6985456d6d65827611e778e4b35de782ab5cb1856f39956a2453ca9841,P3,spatial_right,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-162bbcc990959da08958d73dac22175c829c90fac9ff1a099f86b105d088f544,P3,spatial_right,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-778564943f99bfb97c219042e4d5b60b02488972da9302f69ba6fcb6cc11add8,P3,spatial_right,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-ba993ea685c324a2b4e4c6cfb5ab03fa29c42edadb79de40491aaeb1340aa33d,P3,spatial_right,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-977daf43d40897ce45ddb2899915bd3386f6b3c49bb85931a547e709e20a7293,P4,spatial_right,4,5,5,5,4,yes,yes,no,no,yes,Konumu ifadesi bir kesinlik belirtilmesi istendiğinde kullanılır. Burada sağ ve sol ifadesinin içerisinde konum kullanımı doğal bir ifade değildir ancak kullanılabilir. Bu nedenle puan kırmadım. Bu durum sağındadır/solundadır kullanımının konum ifadesi ile tüm kullanımlarında geçerlidir.,
+prompt-cda9d39e0c15dbcde38f3e7850813d01325121118aff39d4db7c3351335c54b5,P4,spatial_right,8,5,5,5,4,yes,yes,no,no,yes,,
+prompt-d869927f86cd9dc90cb54d2ee1d6d25b07996406f31f4c7ae4bfdea1045d6385,P4,spatial_right,16,5,5,5,4,yes,yes,no,no,yes,,
+prompt-6e4cf3b17714a408eed5fed1c9216fc1255844670560ea197e034b69e6df48e9,P4,spatial_right,32,5,5,5,4,yes,yes,no,no,yes,,
+prompt-e7a30e425d08206a517703965faad374d7924b55eabea8f5fefb4ff0c738bec6,P5,spatial_right,4,5,5,5,4,yes,yes,no,no,yes,,
+prompt-a9490fb38830960476f9fbc5edf5eba238a7da7c42b879c4dfe8a5910dbf9fd6,P5,spatial_right,8,5,5,5,4,yes,yes,no,no,yes,,
+prompt-cb6f9e19240c461e6f5328425d4eda8160bd7c5a50fba3e63de93c93c3b97a55,P5,spatial_right,16,5,5,5,4,yes,yes,no,no,yes,,
+prompt-b2bded2f4e7ad0067923178e649329c5e630f23ca5e67f5c4c2c03f6dbe6d11a,P5,spatial_right,32,5,5,5,4,yes,yes,no,no,yes,,
+prompt-9832a259cb214fb8831a9e64093f1730b029962e6b806b0d74e7c459f51b3cff,canonical,spatial_right,4,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-bfa3ae7e17adb8de35edac7593301361395ca9622a0d2298cc8427773fb7d448,canonical,spatial_right,8,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-1ad30564453ba29084d33710e220eae89487ed7ff6dc1a2c6ff5f5331d1692ec,canonical,spatial_right,16,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-9a44cc1d50f265f26dac301a65837522d0473aa65c532aab78788991fed4166a,canonical,spatial_right,32,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-dc05b9d7cd473238dfdadebca1401ddd326f3f9307aa713f961748a7dd6b93e6,equivalent,spatial_right,4,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-3b5ff05d051b792046c058211efa10570888667b7b0799fa258133c82b0e830a,equivalent,spatial_right,8,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-765a9b109566405202a59639dbee1090af29dfebcdb2cd340cd4069d67646ba3,equivalent,spatial_right,16,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-9a37fb6cc2f471fc017c7312165978878fdb2b17c554ddfd1620c3313b3f3547,equivalent,spatial_right,32,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-c1f8819261efdc157e5cc40da511a880a1e74ac6fb3932101f060d0e38a5170b,P1,temporal_arrival,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-e5ea500bb8b71ae5c0fde463589123ec65c6d34c2e5be43e708f5f5c5d03fbef,P1,temporal_arrival,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-f7214ba273a72e9d9c1225181a1e34eb95c47ba7d8499069ab334cf6c7f5dcf3,P1,temporal_arrival,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-5ecc375c5a9af6113f5d0d3353b146e37100c07b31e1c3a997b1cb1ec765ee7a,P1,temporal_arrival,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-3f323867ad629ed9c3dd4ab9b41faeded63f6989dec60ad5c92bb3e84e337de7,P2,temporal_arrival,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-4694de7e7209a83899095b2be95e563cc4246c3d948d44c598db58cf5737aef6,P2,temporal_arrival,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-ff4e7062c7d1d4b67c030ed35f5728be4cfc29fc176293ebd9374ad4d9318655,P2,temporal_arrival,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-ae3adca4a39547d3bfd0e88a2301273b4ee7566ee5de47a9b7d5d3972914b5d6,P2,temporal_arrival,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-7446c176f6708768b90319258ae44e3a4ad4078fbe403bfe5cb913c20b399a3a,P3,temporal_arrival,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-35c1a4a30f48b6eb522a7fa68c6ede45e237b38e0e825063da54db7135757c61,P3,temporal_arrival,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-ee4ad36062bc23da193179a5a1fa70cccbfc60cf27f36d78af87d821df4c3948,P3,temporal_arrival,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-a02ba9139e11067adc22d5ea7e00160056ee49b9fd8e9e1e7a4497d7ce54e8e6,P3,temporal_arrival,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-2cd0a2416972f4cc629773694787b94b67e6947add29b0c25a83a1ad5b1c2207,P3,temporal_arrival,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-d68d1ebee937baba3abe2a85512058bf8ac7ae9cf43fecf380a4eede4a78a2b0,P3,temporal_arrival,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-7d2582c89d953fc7cd280bf4cf77c3b3654c0010698611feed98c855e803df8d,P3,temporal_arrival,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-15701c1facebda10c540f16a1e6d3ba928043c5bea57942d42ef18dfb143ea0c,P3,temporal_arrival,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-9ad63683ef7565eff7c638787a46afb10d6b604c8ca3a48d559d4287c61d8960,P3,temporal_arrival,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-48215dd264e3ed53063ad57c27e5d5b23053c4a9b92df5d89f3dc269023e3026,P3,temporal_arrival,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-735288274e1a93a9e725ea2a54ac044ce6520638b8947c6b595e23918af574c5,P3,temporal_arrival,64,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-61283f57b86a6831958f8c227f2136d5389defda5b1a4d0baa8c8f0a5fb47df7,P3,temporal_arrival,128,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-e49c31f0435ff55803c299b2dc28bf9c1bfbbda411424d6015c980ae66cf719c,P3,temporal_arrival,4,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-624a8e8000ce3fd1e9ebea3171e3f56514aac96a598bb5b0954104e92b81f9f0,P3,temporal_arrival,8,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-38e85ee7cd726a554586e6475f662bff2b5828f18a2d82dc440fec2960091db8,P3,temporal_arrival,16,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-90911ebec190debabad30c37b5afd2b10166182f99fd5dbf1654d6bbbb51e5d7,P3,temporal_arrival,32,5,4,4,2,yes,yes,no,no,yes,,Devrik cümle yapısı
+prompt-e88c38f7e21dfa76b179db5a55e0848df60f7b1d69b5ebe9132084d719ff9fb4,P4,temporal_arrival,4,5,5,5,4,yes,yes,no,no,yes,Daha erkendir yerine daha öncedir kullanılır ancak bu kullanım anlamsal olarak aynı doğallık olarak kişiseldir. Bu tüm bu kullanımlar için geçerlidir.,
+prompt-c9db81b776fd5a34782c4fb38feb1ec2e546964f3705b93aa178a94c84f56178,P4,temporal_arrival,8,5,5,5,4,yes,yes,no,no,yes,,
+prompt-645b87af4faa31dddb3a05a1e32203b08834a17340fb196bb234f60f4072fd40,P4,temporal_arrival,16,5,5,5,4,yes,yes,no,no,yes,,
+prompt-06566bf619f76ccd88800334e381b0d840649aa97fa2512f75ce13d6a90802d7,P4,temporal_arrival,32,5,5,5,4,yes,yes,no,no,yes,,
+prompt-5b050f9b708fedec41c7ec342fe479c9f1a835fe6d966a6f40c0b6fe8434aa47,P5,temporal_arrival,4,5,5,5,4,yes,yes,no,no,yes,Daha geçtir yerine daha sonradır kullanımı da kulanılır ancak kişiseldir bu nedenle puan kırmadım. Tüm örnekler için bu durum geçerli.,
+prompt-30d73f8c4d6befab27747acd39559828bb5476455822bae9b473509a569da72a,P5,temporal_arrival,8,5,5,5,4,yes,yes,no,no,yes,,
+prompt-d816233bb64ff4e80003f46a0fb662221531c914437e086ef3c8b87c842e5bd3,P5,temporal_arrival,16,5,5,5,4,yes,yes,no,no,yes,,
+prompt-25d37051f72ce6e7071bcbf7d6ba30791bdfef93d7e640e5d8774c9dca008f68,P5,temporal_arrival,32,5,5,5,4,yes,yes,no,no,yes,,
+prompt-b82fc903772df3a00f6f66e375af016653607e6c2dda5bdee6fe34d994f2cafb,canonical,temporal_arrival,4,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-86617641fe9e337094784f04b18845d3706c7e304029b010d9047b72f246e0ec,canonical,temporal_arrival,8,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-6ba8e924b5fbd0dfd482341873031a3211f743559e8e95a305faa1480992d0e9,canonical,temporal_arrival,16,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-937c508d29b0c2e2ed60236a8558f58ab7b3262a03be50231463ce477630127d,canonical,temporal_arrival,32,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-d2446570db1fe6cf9c45e8c81a93337c54e3c4dd03eeb2e0e9f8f39fbb0fc397,equivalent,temporal_arrival,4,5,5,5,5,yes,yes,no,no,yes,,
+prompt-1a08c7d4048437d930ecf8c6c3a3b468a920c60c2d6ace4761a708688d5828db,equivalent,temporal_arrival,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-c1bdbd0e0481847f72e6319e8682e942344f391a946da6d1cea68a0a63299cde,equivalent,temporal_arrival,16,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-f3ab98a2ee4d8cea0f4f8d9af014fbdee04a773fdea40ba062c2b607a16c09ec,equivalent,temporal_arrival,32,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-534fa505cd74894c0f7c5ecdd844afa34980f839da6dbde0c1c1d42b758bfa1e,P1,temporal_completion,4,5,5,5,5,yes,yes,no,no,yes,Varlık etiketleri olarak özel kişi isimleri görevlere tanımlanması karmaşıklık yaratıyor. Evet tanımlanabilir ancak yine de kullanımı önerilmez. Tüm örnekler için geçerli.,
+prompt-ba69c3145f03e5b742b33e627cb93ba6e6832b7c06ee32cf7abe2cf7f8d2c967,P1,temporal_completion,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-7137c0bb0113a036c84358091f024dc3c54be0e5fc6643db03f57857f5f7a162,P1,temporal_completion,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-f4fce67627e5577218d05b038e41341cffc4d6d1f89eda958fccb7ad1c131e76,P1,temporal_completion,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-4b0887175ed27d0375be84d150a9b0cf4f9f770447c500198feb5ed2377f9d55,P2,temporal_completion,4,5,5,3,5,yes,yes,no,no,yes,,
+prompt-d12ec49986eae06142f045f2108b81f592afee448d8fadaaeece15a72cf09582,P2,temporal_completion,8,5,5,5,5,yes,yes,no,no,yes,,
+prompt-0122545d0d51d3b0601ce33c351afa0647302338905654707a27b1ecc1e9e28a,P2,temporal_completion,16,5,5,5,5,yes,yes,no,no,yes,,
+prompt-4cd44b4ed1cac154f838b5a1fea2b519d7e7879bb80dc2b83087f03c57ef790a,P2,temporal_completion,32,5,5,5,5,yes,yes,no,no,yes,,
+prompt-1c5c0c07718fb6c9bf506fbc0c24f2ac2b092aaf6f458c21a6e9ee6ea96227e9,P3,temporal_completion,4,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-ece12b84750a02e82195fe9c3271a180fd68934cb1f15094b4e4fe639e80c24a,P3,temporal_completion,8,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-c497fde7308d39d4bdae7fa00b9b676c50ca886e43d653a0207253731de75b18,P3,temporal_completion,16,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-b10ea8bab8575d9894f45d4fe7a0f83baccabfdca2373bf8298a5bbf8d11aa80,P3,temporal_completion,32,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-69fb31750a00df5659e7a21b8dd04dd463ce3485bd619fefde9eddd8b4fbd375,P3,temporal_completion,64,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-88944e2eac8386c1ba6e235368ed8281be8ffae3d2e3a169a67b7daab2743d8e,P3,temporal_completion,128,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-02199b0b85adee700f4e5d1ba09a1e3327d42aa2549bb71e70f93ed2053c685e,P3,temporal_completion,4,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-a9dfee49c8a1bde890a979e2fa46c258cc778481a84984860098cc2d4425c337,P3,temporal_completion,8,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-5891573ab67e47b8cef770af6381180f2097b2cb90af1646401fb46a9674a65e,P3,temporal_completion,16,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-5d23c759e2492af3578cbf8aa3648f04f75fb63e3ac629ed2d0a2b5d008e19d5,P3,temporal_completion,32,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-bd196c4d853ab8780d50f5f105aba06ef73b93426b3611bafc8a4a5b04096c3c,P3,temporal_completion,64,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-ac62c13809d8e01a4c9533c13499c946159a1d2b83f10da59b6787ff160f0317,P3,temporal_completion,128,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-89be9e3d09a343f3415e5242e05a7d0f078b325e39af5a5bfb1b8df630155a34,P3,temporal_completion,4,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-5a4f5b38c1b1cafc3d5bc63fb0fdc20577eceb6543bbbe0c1fe272feeaa8ebec,P3,temporal_completion,8,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-d4fbdd2a386e6913ffbaf30910d736b886563a92d5afecfbccebeca91c034eb9,P3,temporal_completion,16,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-f8cc141a55086b1b4b93cfd05d632b79d26cc509adf5afa10752ecf1bb44a7f9,P3,temporal_completion,32,5,2,4,1,yes,yes,no,no,no,,Devrik cümle yapısı
+prompt-c1037e32aaebd9a3bbba7be303cbccf6a3c6a3de5d4a7cf3d5d14ebd8d4b7646,P4,temporal_completion,4,5,5,5,3,yes,yes,no,no,yes,,
+prompt-1e0b29893a6f39587f3efafe62c3ec0725cd6def25b07ced6d6aae363a30c7ac,P4,temporal_completion,8,5,5,5,3,yes,yes,no,no,yes,,
+prompt-fc64837291d497d2fa3052ea9365db4baa7d20d9646910fea63925f193194481,P4,temporal_completion,16,5,5,5,3,yes,yes,no,no,yes,,
+prompt-fb2cae596bdd1816cdc22b6886e03ea4d33a655009a5d78daef6f95e172dbfe3,P4,temporal_completion,32,5,5,5,3,yes,yes,no,no,yes,,
+prompt-a55f31a35cfc071a2a0daec7cce886678bee6b6df85dec956323769a098ecbed,P5,temporal_completion,4,5,5,5,3,yes,yes,no,no,yes,,
+prompt-ea2f9263112119e3625798a217559d969a762054911763ae02fe566592037575,P5,temporal_completion,8,5,5,5,3,yes,yes,no,no,yes,,
+prompt-ba2e6cc46be11dab3a8a60f78a47edd9329123d5f9213e6df18492035ec6c2a5,P5,temporal_completion,16,5,5,5,3,yes,yes,no,no,yes,,
+prompt-fb17c458e9e429130e2724b4ebff9876828b540f90066d5e8392470787b39e9b,P5,temporal_completion,32,5,5,5,3,yes,yes,no,no,yes,,
+prompt-4bf60e5ac24285f2463871b330ffa5a9bd0e1069cdce9afbf704b2ec224d10e2,canonical,temporal_completion,4,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-6bafdde54a525f19df45cc22d991ef1ea053d1473e3101d86cb1d6ef7d039072,canonical,temporal_completion,8,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-067240b04dd6abe8ad1e551af1d7e660894961836a35ecb7af3356d2bc0a32b6,canonical,temporal_completion,16,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-5edfbf766ff4c9f916051dc0652aea459ae8342b9b46d71e6cc9b1883f8ea14c,canonical,temporal_completion,32,5,5,5,5,yes,n/a,no,no,yes,,
+prompt-48e05a0027d64d4d266ef895758579c983b016a336273ee8ccc86438472e05be,equivalent,temporal_completion,4,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-1b2d402041b5fd420a08cbbbfccc97758dd93c36c8238eaf9e6855802b3d34cb,equivalent,temporal_completion,8,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-e9a0902e128a00666b4194cdee62ac86f6c02e6dce38c72421478b9cd9d8d363,equivalent,temporal_completion,16,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış
+prompt-87645e094242fee95d8eddb372e332fcdf47b506c5ee6f57b0409e14640acea9,equivalent,temporal_completion,32,5,5,5,4,yes,yes,no,no,yes,,Zıt anlamlıları brilikte kullanmış

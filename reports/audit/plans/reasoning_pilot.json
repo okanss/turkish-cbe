@@ -1,0 +1,606 @@
+{
+  "actual_generation_calls": 0,
+  "arm_budgets": [
+    {
+      "actual_new_message_token_count": null,
+      "arm_id": "qwen25-05b-hf--direct",
+      "auxiliary_http_count_assumption": "local tokenizer; no token-count HTTP request",
+      "auxiliary_token_count_requests": 0,
+      "chat_count_exact": false,
+      "cost": {
+        "amount": null,
+        "currency": null,
+        "pricing_as_of": null,
+        "pricing_source": null,
+        "status": "unknown"
+      },
+      "count_input_tokens_method_invocations_per_generation": 1,
+      "effort": null,
+      "estimated_input_tokens": 11266,
+      "generation_calls": 48,
+      "instruction_bytes_used_as_proxy_tokens": 0,
+      "instruction_overhead_utf8_bytes": {
+        "en": 0,
+        "tr": 0
+      },
+      "maximum_auxiliary_token_count_requests": 0,
+      "maximum_generated_tokens": 98304,
+      "maximum_generation_attempts": 144,
+      "maximum_preflight_http_requests_per_arm_invocation": 0,
+      "model_id": "qwen25-05b-hf",
+      "nominal_preflight_http_requests_per_arm_invocation": 0,
+      "potential_context_overflow": false,
+      "preflight_budget_scope": "one invocation only; unused/completed arms make no request; repeated resumes are not bounded globally",
+      "source_prompt_counts_by_language": {
+        "en": 24,
+        "tr": 24
+      },
+      "strategy": "direct",
+      "token_estimate_method": "frozen_old_prompt_o200k_base_plus_64_chat_heuristic_plus_exact_added_instruction_bytes_as_token_proxy"
+    },
+    {
+      "actual_new_message_token_count": null,
+      "arm_id": "qwen25-05b-hf--zero_shot_reasoning",
+      "auxiliary_http_count_assumption": "local tokenizer; no token-count HTTP request",
+      "auxiliary_token_count_requests": 0,
+      "chat_count_exact": false,
+      "cost": {
+        "amount": null,
+        "currency": null,
+        "pricing_as_of": null,
+        "pricing_source": null,
+        "status": "unknown"
+      },
+      "count_input_tokens_method_invocations_per_generation": 1,
+      "effort": null,
+      "estimated_input_tokens": 22258,
+      "generation_calls": 48,
+      "instruction_bytes_used_as_proxy_tokens": 10992,
+      "instruction_overhead_utf8_bytes": {
+        "en": 232,
+        "tr": 226
+      },
+      "maximum_auxiliary_token_count_requests": 0,
+      "maximum_generated_tokens": 98304,
+      "maximum_generation_attempts": 144,
+      "maximum_preflight_http_requests_per_arm_invocation": 0,
+      "model_id": "qwen25-05b-hf",
+      "nominal_preflight_http_requests_per_arm_invocation": 0,
+      "potential_context_overflow": false,
+      "preflight_budget_scope": "one invocation only; unused/completed arms make no request; repeated resumes are not bounded globally",
+      "source_prompt_counts_by_language": {
+        "en": 24,
+        "tr": 24
+      },
+      "strategy": "zero_shot_reasoning",
+      "token_estimate_method": "frozen_old_prompt_o200k_base_plus_64_chat_heuristic_plus_exact_added_instruction_bytes_as_token_proxy"
+    },
+    {
+      "actual_new_message_token_count": null,
+      "arm_id": "qwen25-05b-hf--structured_reasoning",
+      "auxiliary_http_count_assumption": "local tokenizer; no token-count HTTP request",
+      "auxiliary_token_count_requests": 0,
+      "chat_count_exact": false,
+      "cost": {
+        "amount": null,
+        "currency": null,
+        "pricing_as_of": null,
+        "pricing_source": null,
+        "status": "unknown"
+      },
+      "count_input_tokens_method_invocations_per_generation": 1,
+      "effort": null,
+      "estimated_input_tokens": 29002,
+      "generation_calls": 48,
+      "instruction_bytes_used_as_proxy_tokens": 17736,
+      "instruction_overhead_utf8_bytes": {
+        "en": 389,
+        "tr": 350
+      },
+      "maximum_auxiliary_token_count_requests": 0,
+      "maximum_generated_tokens": 98304,
+      "maximum_generation_attempts": 144,
+      "maximum_preflight_http_requests_per_arm_invocation": 0,
+      "model_id": "qwen25-05b-hf",
+      "nominal_preflight_http_requests_per_arm_invocation": 0,
+      "potential_context_overflow": false,
+      "preflight_budget_scope": "one invocation only; unused/completed arms make no request; repeated resumes are not bounded globally",
+      "source_prompt_counts_by_language": {
+        "en": 24,
+        "tr": 24
+      },
+      "strategy": "structured_reasoning",
+      "token_estimate_method": "frozen_old_prompt_o200k_base_plus_64_chat_heuristic_plus_exact_added_instruction_bytes_as_token_proxy"
+    }
+  ],
+  "arms": [
+    {
+      "arm_id": "qwen25-05b-hf--direct",
+      "capability": null,
+      "effective_model": {
+        "enabled": false,
+        "family": "qwen2.5",
+        "id": "qwen25-05b-hf",
+        "limits": {
+          "context_tokens": 32768,
+          "max_output_tokens": 8192
+        },
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "parameters_billion": 0.49,
+        "pricing": {
+          "as_of": null,
+          "cached_input_per_million": null,
+          "currency": null,
+          "input_per_million": null,
+          "output_per_million": null,
+          "source": null
+        },
+        "provider": "transformers",
+        "reasoning": {
+          "effort": null,
+          "enable_thinking": null,
+          "mode": "provider_default"
+        },
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "sampling": {
+          "max_output_tokens": 2048,
+          "temperature": 0,
+          "top_p": 1
+        },
+        "seed": 11,
+        "serving": {
+          "api_key_env": null,
+          "base_url": null,
+          "chat_template_date": "2026-10-24",
+          "device": "cpu",
+          "dtype": "float32",
+          "local_files_only": true,
+          "server_revision": null,
+          "timeout_seconds": 120,
+          "trust_remote_code": false
+        },
+        "tokenizer": {
+          "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+          "encoding": null,
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        }
+      },
+      "effort": null,
+      "model_id": "qwen25-05b-hf",
+      "parser_version": "strict-answer-v1",
+      "prompt_version": "zero-shot-v1",
+      "strategy": "direct"
+    },
+    {
+      "arm_id": "qwen25-05b-hf--zero_shot_reasoning",
+      "capability": null,
+      "effective_model": {
+        "enabled": false,
+        "family": "qwen2.5",
+        "id": "qwen25-05b-hf",
+        "limits": {
+          "context_tokens": 32768,
+          "max_output_tokens": 8192
+        },
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "parameters_billion": 0.49,
+        "pricing": {
+          "as_of": null,
+          "cached_input_per_million": null,
+          "currency": null,
+          "input_per_million": null,
+          "output_per_million": null,
+          "source": null
+        },
+        "provider": "transformers",
+        "reasoning": {
+          "effort": null,
+          "enable_thinking": null,
+          "mode": "provider_default"
+        },
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "sampling": {
+          "max_output_tokens": 2048,
+          "temperature": 0,
+          "top_p": 1
+        },
+        "seed": 11,
+        "serving": {
+          "api_key_env": null,
+          "base_url": null,
+          "chat_template_date": "2026-10-24",
+          "device": "cpu",
+          "dtype": "float32",
+          "local_files_only": true,
+          "server_revision": null,
+          "timeout_seconds": 120,
+          "trust_remote_code": false
+        },
+        "tokenizer": {
+          "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+          "encoding": null,
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        }
+      },
+      "effort": null,
+      "model_id": "qwen25-05b-hf",
+      "parser_version": "reasoning-final-answer-v1",
+      "prompt_version": "reasoning-zero-shot-v1",
+      "strategy": "zero_shot_reasoning"
+    },
+    {
+      "arm_id": "qwen25-05b-hf--structured_reasoning",
+      "capability": null,
+      "effective_model": {
+        "enabled": false,
+        "family": "qwen2.5",
+        "id": "qwen25-05b-hf",
+        "limits": {
+          "context_tokens": 32768,
+          "max_output_tokens": 8192
+        },
+        "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "parameters_billion": 0.49,
+        "pricing": {
+          "as_of": null,
+          "cached_input_per_million": null,
+          "currency": null,
+          "input_per_million": null,
+          "output_per_million": null,
+          "source": null
+        },
+        "provider": "transformers",
+        "reasoning": {
+          "effort": null,
+          "enable_thinking": null,
+          "mode": "provider_default"
+        },
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "sampling": {
+          "max_output_tokens": 2048,
+          "temperature": 0,
+          "top_p": 1
+        },
+        "seed": 11,
+        "serving": {
+          "api_key_env": null,
+          "base_url": null,
+          "chat_template_date": "2026-10-24",
+          "device": "cpu",
+          "dtype": "float32",
+          "local_files_only": true,
+          "server_revision": null,
+          "timeout_seconds": 120,
+          "trust_remote_code": false
+        },
+        "tokenizer": {
+          "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+          "encoding": null,
+          "id": "Qwen/Qwen2.5-0.5B-Instruct",
+          "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+        }
+      },
+      "effort": null,
+      "model_id": "qwen25-05b-hf",
+      "parser_version": "reasoning-final-answer-v1",
+      "prompt_version": "reasoning-structured-v1",
+      "strategy": "structured_reasoning"
+    }
+  ],
+  "artifact_type": "reasoning_dry_run_plan",
+  "assumptions": [
+    "All active arms share the entire frozen query/presentation cohort; no arm-specific dropping.",
+    "All arms use the common output cap, including rerun direct; base model records remain unchanged.",
+    "Old frozen BPE counts plus 64/chat and added instruction UTF-8 bytes are planning proxies, not measured HF/chat token counts or proven context bounds.",
+    "The UTF-8 instruction increment is exact; equating each added byte to a token is only an offline budgeting heuristic.",
+    "Provider reasoning tokens can consume the common output cap; adequate budget is not assumed.",
+    "Capability evidence is an explicit dated declaration, not a fresh provider availability check.",
+    "HTTP count methods are invoked twice per generation, but exact-last-payload caching reuses the first count; preflight counts are scoped per invocation.",
+    "Unknown prices/hardware costs are null; no unavailable native effort arm schedules a call."
+  ],
+  "cohort": {
+    "answer_cells": {
+      "4|distance_controlled|1": {
+        "forward|False": 1,
+        "forward|True": 1,
+        "reverse|False": 1,
+        "reverse|True": 1
+      },
+      "4|endpoint|None": {
+        "forward|False": 1,
+        "forward|True": 1,
+        "reverse|False": 1,
+        "reverse|True": 1
+      },
+      "4|internal|None": {
+        "forward|False": 1,
+        "forward|True": 1,
+        "reverse|False": 1,
+        "reverse|True": 1
+      }
+    },
+    "cohort_sha256": "dfcdf5796a2edc86bed8906149f0544ed884a60e2a4c3b9e20153df1ab0fcf6c",
+    "dataset_manifest_sha256": "08e45961a12a1e3a1731fdc29538c6883e41edaf8d6521224507d910e1c59c8f",
+    "dataset_version": "0.4.1",
+    "design_ids": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "designs_per_query": 4,
+    "eligible_for_confirmatory_evaluation": false,
+    "group_count": 4,
+    "groups": [
+      {
+        "id": 901,
+        "latent_instance_id": "ord-fe2a4080e1ba80835f52f20b275f122c3e9c3c0e6ec1ee9fec677b51a7c09453",
+        "n": 4,
+        "sample_index": 0
+      },
+      {
+        "id": 902,
+        "latent_instance_id": "ord-6cbecfe4b53417b49a1fa466caf81e02e59cada39117523506edfc3dd8ce4f24",
+        "n": 4,
+        "sample_index": 1
+      },
+      {
+        "id": 903,
+        "latent_instance_id": "ord-c6d5539bcda46dfe5af639416bf845da57c0bfee61f30101c58fb7d4410a44c5",
+        "n": 4,
+        "sample_index": 2
+      },
+      {
+        "id": 904,
+        "latent_instance_id": "ord-21dabaebc64335b3cbc81b8eb2a720a576943f8d573b418b44af3705dbe7753e",
+        "n": 4,
+        "sample_index": 3
+      }
+    ],
+    "human_review_status": "pending",
+    "prompt_count": 48,
+    "query_count": 12,
+    "query_ids": [
+      7101,
+      7102,
+      7103,
+      7104,
+      7105,
+      7106,
+      7107,
+      7108,
+      7109,
+      7110,
+      7111,
+      7112
+    ],
+    "query_strata": {
+      "4|distance_controlled|1": 4,
+      "4|endpoint|None": 4,
+      "4|internal|None": 4
+    },
+    "selection": {
+      "conditions": [
+        "canonical",
+        "equivalent"
+      ],
+      "distances": null,
+      "groups_per_size": 4,
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "name_controls": [
+        "native_shared"
+      ],
+      "query_types": [
+        "endpoint",
+        "internal",
+        "distance_controlled"
+      ],
+      "relations": [
+        "spatial_front"
+      ],
+      "sizes": [
+        4
+      ],
+      "split": "pilot"
+    }
+  },
+  "contains_model_results": false,
+  "dataset_manifest": "data/complete_grid/manifest.json",
+  "environment": {
+    "packages": {
+      "PyYAML": "6.0.3",
+      "huggingface-hub": "0.36.2",
+      "regex": "2026.9.29",
+      "tiktoken": "0.12.0",
+      "torch": null,
+      "transformers": "4.57.1",
+      "vllm": null
+    },
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.14"
+  },
+  "estimated_cost_total": null,
+  "execution_blockers": [
+    "selected_models_disabled"
+  ],
+  "generation_calls": 144,
+  "inference_version": "0.5.0",
+  "models": [
+    {
+      "enabled": false,
+      "family": "qwen2.5",
+      "id": "qwen25-05b-hf",
+      "limits": {
+        "context_tokens": 32768,
+        "max_output_tokens": 8192
+      },
+      "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "parameters_billion": 0.49,
+      "pricing": {
+        "as_of": null,
+        "cached_input_per_million": null,
+        "currency": null,
+        "input_per_million": null,
+        "output_per_million": null,
+        "source": null
+      },
+      "provider": "transformers",
+      "reasoning": {
+        "effort": null,
+        "enable_thinking": null,
+        "mode": "provider_default"
+      },
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "sampling": {
+        "max_output_tokens": 32,
+        "temperature": 0,
+        "top_p": 1
+      },
+      "seed": 11,
+      "serving": {
+        "api_key_env": null,
+        "base_url": null,
+        "chat_template_date": "2026-10-24",
+        "device": "cpu",
+        "dtype": "float32",
+        "local_files_only": true,
+        "server_revision": null,
+        "timeout_seconds": 120,
+        "trust_remote_code": false
+      },
+      "tokenizer": {
+        "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "encoding": null,
+        "id": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+      }
+    }
+  ],
+  "parser_versions": {
+    "direct": "strict-answer-v1",
+    "provider_effort": "strict-answer-v1",
+    "structured_reasoning": "reasoning-final-answer-v1",
+    "zero_shot_reasoning": "reasoning-final-answer-v1"
+  },
+  "plan_sha256": "680fc218ba4bbf8a77f9a8b253dbf285a843954b0be1d2277857e7a969bba7ed",
+  "policy": {
+    "backoff_initial_seconds": 1.0,
+    "backoff_max_seconds": 30.0,
+    "cache": false,
+    "max_attempts": 3,
+    "max_calls": 2000,
+    "max_estimated_cost": null,
+    "replicates": 1,
+    "requests_per_minute": 30,
+    "tokens_per_minute": 60000
+  },
+  "prompt_versions": {
+    "direct": "zero-shot-v1",
+    "provider_effort": "zero-shot-v1",
+    "structured_reasoning": "reasoning-structured-v1",
+    "zero_shot_reasoning": "reasoning-zero-shot-v1"
+  },
+  "reasoning_version": "0.8.0",
+  "schema_version": 1,
+  "settings": {
+    "capabilities": [],
+    "native_efforts": [
+      "none",
+      "low",
+      "medium",
+      "high"
+    ],
+    "output_budget": 2048,
+    "schema_version": 1,
+    "strategies": [
+      "direct",
+      "zero_shot_reasoning",
+      "structured_reasoning"
+    ]
+  },
+  "settings_sha256": "0495df4814491cff3ca88e89a4847c55f0fbbe8613ed298e948a34b03a2da1ba",
+  "source_files_sha256": {
+    "scripts/run_full.py": "dd223c93da341f0a653bbdb45f3bd7cb95151b1812ecb5ee9f27e202875631fc",
+    "scripts/run_pilot.py": "3514d276b8149d2c4b63d8e487d2f01d6a14c4e4d0b36f0ddf99c8a6b776c74f",
+    "src/analysis/__init__.py": "b6c4928d34bd11abc60058b06eb51e431f01bf33987af74638ee1200028bd9cb",
+    "src/analysis/__main__.py": "7922786f04cf1a19928b76748743b23ff2dff41420259c5b9c7c2e5d3425a486",
+    "src/analysis/io.py": "f87e6eb6f4981605465a92a47240e722f32dde3d437cb0870b760fb35cc88494",
+    "src/analysis/metrics.py": "54c8026a7ede03f27db71b4218d7fe26b12bbc58879f9d0eb4baeeafbbcbfd12",
+    "src/analysis/pipeline.py": "e8f0f75ff5277318984a22f9bba2c18b4a5e39ac2cebc345b11041e1b9dbc88d",
+    "src/analysis/reporting.py": "9ed883f6911918ee22737471832c1058456dee1d81266c7f853197662aba4872",
+    "src/analysis/statistics.py": "acfbe0c5dc12100227e9407d7f2e124b87fb6340d47e836a03618d03bac60722",
+    "src/inference/__init__.py": "44b1b07a44d8597102a4ccb5a2002b255fc1d955b5d855b2e5ca8b8d10fda9e9",
+    "src/inference/__main__.py": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7",
+    "src/inference/cli.py": "e1301faa6a636d580e2ed87de60bd6b5a560f8343dc076d6325bc1eca9dbf6bb",
+    "src/inference/config.py": "37af7df71ead7eb6daba69931d81972b4988a8bcffcb3d999333aedd821e6841",
+    "src/inference/dataset.py": "e4fe26afacf7b5f20fdeab563d2a313b33b037236648f864fed9ed75c2ec7cb7",
+    "src/inference/linguistic_review.py": "9c0286cc17730aaad5777593714efcd7c459eabcca7cdc6affa7cff00c8ffb14",
+    "src/inference/parser.py": "6275c2fc660021d665021b43194ac0ae54220b6b9eb5863a3fcc183e9db26b45",
+    "src/inference/planning.py": "a7afb129a928768e0372c652e225d31c9ef489ba99ff743143d342753343c688",
+    "src/inference/prompts.py": "fec769ff62010b47ac85e625df5b3a18f42eb863a19b8f8fb614aa4a7d8b3119",
+    "src/inference/providers.py": "663a22770f461ccedc2501072d949b61a6bac6a530f23009f77656cad394d33f",
+    "src/inference/runner.py": "f55df997db9ffd96236fd3c773f7533c39bc76ca4e52f71534ddb95448ce2e8f",
+    "src/inference/runtime.py": "f00d00424d31a9257fec53bb44f384088a86903fb9799c2354faa12f28c142a7",
+    "src/inference/storage.py": "4200880e58c4214c61066cfb29e8c3f757666c9182016b967d8885adf35070a5",
+    "src/reasoning/__init__.py": "e51cf8b1fd9a744b85d8fa615eb540c6e987fa21e97b2f29e59f20b3212940aa",
+    "src/reasoning/__main__.py": "5c24dfaf9d6c4c0daea4ffff8800915fbcc8586f00ffbbc43a40999cb0fa28ab",
+    "src/reasoning/analysis.py": "db28754f549df0c8b89b893d66743f5efac760d34ea9c983f0979fa83795657f",
+    "src/reasoning/io.py": "60e81a8e111bc020c1df9624f774487b26a4f44c098ac5e91bb0248bbe1ce632",
+    "src/reasoning/parser.py": "fe132f650de9b60b1a3593864dcf532c501a0d4d7cef11a49d99c919a6504cda",
+    "src/reasoning/planning.py": "1bb67d67d3b674db5f38f8023673f7f06559559907d72c604256a497671adcf2",
+    "src/reasoning/prompts.py": "e7db91d4a2eccecab043ab9bfe9a6beeee4d584a03222ad8c625e12a45bcd9a5",
+    "src/reasoning/runner.py": "9a3ba77a74e87fde77025d3cf357e91addeee293c36a8e0fcddf0ae94d0c9fa0"
+  },
+  "source_lengths": {
+    "cl100k_base": 9666,
+    "max_cl100k_base": 251,
+    "max_o200k_base": 200,
+    "o200k_base": 8194,
+    "prompts": 48,
+    "utf8_bytes": 30271
+  },
+  "stage": "pilot",
+  "unavailable_arms": [
+    {
+      "arm_id": "qwen25-05b-hf--provider_effort_none",
+      "capability_verified": false,
+      "effort": "none",
+      "generation_calls": 0,
+      "model_id": "qwen25-05b-hf",
+      "reason": "provider_adapter_does_not_support_native_effort",
+      "strategy": "provider_effort"
+    },
+    {
+      "arm_id": "qwen25-05b-hf--provider_effort_low",
+      "capability_verified": false,
+      "effort": "low",
+      "generation_calls": 0,
+      "model_id": "qwen25-05b-hf",
+      "reason": "provider_adapter_does_not_support_native_effort",
+      "strategy": "provider_effort"
+    },
+    {
+      "arm_id": "qwen25-05b-hf--provider_effort_medium",
+      "capability_verified": false,
+      "effort": "medium",
+      "generation_calls": 0,
+      "model_id": "qwen25-05b-hf",
+      "reason": "provider_adapter_does_not_support_native_effort",
+      "strategy": "provider_effort"
+    },
+    {
+      "arm_id": "qwen25-05b-hf--provider_effort_high",
+      "capability_verified": false,
+      "effort": "high",
+      "generation_calls": 0,
+      "model_id": "qwen25-05b-hf",
+      "reason": "provider_adapter_does_not_support_native_effort",
+      "strategy": "provider_effort"
+    }
+  ]
+}

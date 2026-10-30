@@ -1,0 +1,11 @@
+launched 2026-10-28T12:34:14Z pid 30338
+start qwen2.5:0.5b 2026-10-28T12:34:14Z
+m1_scope_limited_to_0.5b: launcher stopped 2026-10-28T14:05:36Z; 3b/7b/14b move to Colab A100
+done qwen2.5:0.5b 16618/16618 verified 2026-10-28T16:05Z (unique ids, 0 transport errors, parse_valid 1.000)
+ctx_sensitivity: 11 flagged n=128 TR prompts rerun at num_ctx=8192 -> identical prompt token counts and predictions; no input truncation occurred (results/p1/sensitivity_qwen2-5-0-5b_ctx8192.jsonl)
+awaiting colab legs: qwen2.5:3b, 7b, 14b (A100; results to MyDrive/turkish-cbe-p1/results/)
+done qwen2.5:3b (colab A100) 16618/16618 verified 2026-10-29 (digest ok, manifest sha ok, 0 dup/missing, parse_valid 16593, 25 invalid kept+flagged, 9 output truncations)
+done qwen2.5:7b (colab A100) 16618/16618 verified 2026-10-29 (digest ok, manifest sha ok, 0 dup/missing, parse_valid 16434, 184 invalid kept+flagged)
+awaiting colab leg: qwen2.5:14b
+done qwen2.5:14b (colab A100) 16618/16618 verified 2026-10-29 (digest ok, manifest sha ok, 247 invalid kept+flagged = TR output truncations)
+all_arms_complete 2026-10-29; integrity PASS (reports/inference_integrity_report.md); analysis results/p1/analysis; manuscript §7.7 + Fig.6 + App C.2 integrated

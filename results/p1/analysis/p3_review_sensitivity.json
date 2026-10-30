@@ -1,0 +1,43 @@
+{
+  "excluded_relation": "temporal_completion",
+  "reason": "two-reviewer linguistic review: P3 realization failed grammaticality for one reviewer; predeclared policy excludes it",
+  "comparison": "F2_tr_canonical_vs_P3",
+  "models": {
+    "qwen2.5:7b": {
+      "all_relations": {
+        "n_pairs": 1350,
+        "n_valid_pairs": 1308,
+        "delta_accuracy": -0.0787,
+        "boot_low": -0.1052670652131442,
+        "boot_high": -0.05501530312770776,
+        "inference": "cluster_bootstrap_contrast_exploratory"
+      },
+      "excluding_temporal_completion": {
+        "n_pairs": 1200,
+        "n_valid_pairs": 1162,
+        "delta_accuracy": -0.08,
+        "boot_low": -0.10540666795012625,
+        "boot_high": -0.055076468933675925,
+        "inference": "cluster_bootstrap_contrast_exploratory"
+      }
+    },
+    "qwen2.5:14b": {
+      "all_relations": {
+        "n_pairs": 1350,
+        "n_valid_pairs": 1349,
+        "delta_accuracy": -0.381,
+        "boot_low": -0.4176951494336415,
+        "boot_high": -0.3440463269845077,
+        "inference": "cluster_bootstrap_contrast_exploratory"
+      },
+      "excluding_temporal_completion": {
+        "n_pairs": 1200,
+        "n_valid_pairs": 1199,
+        "delta_accuracy": -0.4078,
+        "boot_low": -0.44558697514995715,
+        "boot_high": -0.36950777103142785,
+        "inference": "cluster_bootstrap_contrast_exploratory"
+      }
+    }
+  }
+}

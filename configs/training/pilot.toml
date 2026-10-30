@@ -1,0 +1,78 @@
+# Turkish-CBE Prompt 9; disabled plan, no training or model download.
+# Paper-inspired defaults are not a replication claim. JS weight/guard and
+# instance_centered advantage are explicit Turkish-CBE design choices.
+schema_version = 1
+profile = "pilot"
+seed = 42
+enable_execution = false
+model_registry = "configs/models.yaml"
+model_id = "qwen25-15b-hf"
+dataset_manifest = "data/complete_grid/manifest.json"
+arms = ["base", "sft_lora", "paired_sft", "sft_consistency", "grpo_correctness", "grpo_consistency"]
+
+[data]
+training_sizes = [4, 8]
+groups_per_size = 4
+training_relations = ["comparison_height", "comparison_speed", "comparison_weight"]
+heldout_relations = ["spatial_front", "spatial_right", "spatial_above"]
+query_types = ["endpoint", "internal", "distance_controlled"]
+conditions = ["canonical", "equivalent", "P1", "P2"]
+evaluation_sizes = [4, 8, 16, 32, 64, 128, 256, 512, 1024]
+evaluation_groups_per_size = 4
+evaluation_split = "test"
+grpo_min_n = 4
+grpo_max_instances = 8
+grpo_rollouts_per_view = 4
+
+[lora]
+rank = 16
+alpha = 32
+dropout = 0.05
+target_modules = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+
+[sft]
+learning_rate = 0.0002
+epochs = 1
+effective_batch_size = 16
+# Zero means epoch-driven; a positive value is the explicit step override.
+max_steps = 2
+
+[grpo]
+learning_rate = 0.00001
+beta = 0.0
+max_steps = 2
+advantage_mode = "prompt_normalized"
+temperature = 0.6
+top_p = 1.0
+
+[consistency]
+js_weight = 0.1
+guard = "detached_both_gold_probability_above_half"
+agreement_bonus_weight = 0.5
+
+[runtime]
+device = "cuda"
+dtype = "bfloat16"
+local_files_only = true
+weights_path = ""
+weights_manifest = ""
+# Administrative minimum, not a measured total-memory requirement or fit proof.
+minimum_free_gpu_memory_gib = 16.0
+
+[budget]
+max_optimizer_steps = 2
+max_wall_seconds = 600
+output_tokens = 32
+max_length = 1536
+optimizer = "adamw"
+scheduler = "cosine"
+warmup_ratio = 0.03
+# Omitted cost_per_gpu_hour/currency normalize to null; unknown is not free.
+
+[dependencies]
+# Explicit candidate pins verified against official versioned PyPI metadata;
+# this stack has not been validated for training on the current Mac.
+torch = "2.9.0"
+transformers = "4.57.1"
+peft = "0.17.1"
+accelerate = "1.11.0"

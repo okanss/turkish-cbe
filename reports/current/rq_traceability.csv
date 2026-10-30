@@ -1,0 +1,6 @@
+research_question,objective,table,status,observed_table_rows,hypothesis_supported,interpretation
+RQ1,Matched Turkish-English performance,table_3_turkish_english_comparison,results_pending,0,,"No validated corresponding model outcomes; no effect estimate, interval or significance claim."
+RQ2,Turkish morphosyntactic presentation robustness,table_4_morphosyntactic_robustness,results_pending,0,,"No validated corresponding model outcomes; no effect estimate, interval or significance claim."
+RQ3,Complexity and inference distance,table_6_complexity_inference_distance,results_pending,0,,"No validated corresponding model outcomes; no effect estimate, interval or significance claim."
+RQ4,"Lexical frequency, tokenization and answer bias",table_5_lexical_relation_analysis,results_pending,0,,"No validated corresponding model outcomes; no effect estimate, interval or significance claim."
+RQ5,Reasoning and optional training interventions,table_7_reasoning_training,results_pending,0,,"No validated corresponding model outcomes; no effect estimate, interval or significance claim."

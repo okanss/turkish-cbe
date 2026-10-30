@@ -1,0 +1,41 @@
+{
+ "validator_version": "p1-0.2.0",
+ "n_prompts": 16618,
+ "statuses": {
+  "pass": 11684,
+  "en_structural_only": 4934
+ },
+ "matched_groups": 2842,
+ "group_consistency_failures": 0,
+ "by_language_condition": {
+  "en:canonical": {
+   "en_structural_only": 2842
+  },
+  "en:equivalent": {
+   "en_structural_only": 2092
+  },
+  "tr:P1": {
+   "pass": 1350
+  },
+  "tr:P2": {
+   "pass": 1350
+  },
+  "tr:P3": {
+   "pass": 1350
+  },
+  "tr:P4": {
+   "pass": 1350
+  },
+  "tr:P5": {
+   "pass": 1350
+  },
+  "tr:canonical": {
+   "pass": 2842
+  },
+  "tr:equivalent": {
+   "pass": 2092
+  }
+ },
+ "scope_note": "Automatic agreement with the implemented closed grammar; not evidence of naturalness or human approval. 'not_normalizable' rows are the human-review residue.",
+ "failures": []
+}

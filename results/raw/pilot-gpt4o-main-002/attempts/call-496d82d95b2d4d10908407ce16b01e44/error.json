@@ -1,0 +1,1 @@
+{"ambiguous":false,"code":"quota_exhausted","raw_response":{"error":{"code":"organization_spend_limit_exceeded","message":"Your organization has reached its configured enforced spend limit. Update your limit at https://platform.openai.com/settings/organization/limits.","param":null,"type":"insufficient_quota"}},"retry_after_seconds":null,"retryable":false,"status_code":429}

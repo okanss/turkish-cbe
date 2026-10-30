@@ -1,0 +1,49 @@
+{
+  "items": 360,
+  "confirmatory_eligible": 344,
+  "excluded": 16,
+  "exclusion_reason_first_failing": {
+    "grammaticality": 16
+  },
+  "eligible_by_condition": {
+    "P1/yes": 36,
+    "P2/yes": 36,
+    "P3/no": 16,
+    "P3/yes": 128,
+    "P4/yes": 36,
+    "P5/yes": 36,
+    "canonical/yes": 36,
+    "equivalent/yes": 36
+  },
+  "agreement": {
+    "grammaticality": {
+      "n": 360,
+      "percent_agreement": 0.6167,
+      "cohen_kappa": 0.0
+    },
+    "naturalness": {
+      "n": 360,
+      "percent_agreement": 0.3306,
+      "cohen_kappa": 0.0603
+    },
+    "semantic_equivalence": {
+      "n": 324,
+      "percent_agreement": 1.0,
+      "cohen_kappa": null
+    },
+    "ambiguity": {
+      "n": 360,
+      "percent_agreement": 1.0,
+      "cohen_kappa": null
+    },
+    "grammaticality_binarized_ge4": {
+      "percent_agreement": 0.9556,
+      "cohen_kappa": 0.0
+    },
+    "naturalness_binarized_ge4": {
+      "percent_agreement": 0.5361,
+      "cohen_kappa": -0.0714
+    }
+  },
+  "policy": "predeclared: transformed items need grammaticality>=4 (both) and unanimous equivalence=yes; canonical items need grammaticality>=4 (both) and unanimous ambiguity=no"
+}

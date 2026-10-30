@@ -1,0 +1,19 @@
+item,check,status,scope
+1,Dataset leakage,pass_exact_instances,"Source order, alias order and visible prompt hashes disjoint; no distribution-free claim."
+2,Train/test latent separation,pass,All frozen source groups and query seeds replayed.
+3,Turkish semantic equivalence,bounded_formal_pass_human_pending,All normal-form metadata and stratified actual surfaces; shared-code parser limitation remains.
+4,Turkish morphology,bounded_tests_human_pending,Independent suffix fixtures; qualified naturalness judgments not supplied.
+5,Query direction/gold balance,pass,"Test cells50 each; non-test12/13, margins balanced."
+6,Endpoint versus internal/distance,pass_with_construct_limit,Strata remain separate; degree-only endpoint shortcut demonstrates n is not inference depth.
+7,Matched models/languages,design_pass_no_model_results,Frozen coordinates match; genuine multi-model responses do not exist.
+8,Invalid answers,pass_contract,Invalids wrong in marginal accuracy and retained in planned denominators.
+9,R+D+U identities,pass_exhaustive_small_domain,1458 independent Boolean/invalid/gold cases; joint-valid support only.
+10,Accuracy versus invariance support,pass_contract,All-planned versus joint-valid estimands labelled; common-four training sensitivity added.
+11,Truncation cost completion,limited_no_real_backend,"Neutral decoding recorded, context-invalid retained, unknown costs null; no genuine usage to certify."
+12,Paired statistical tests,pass_contract,"Exact McNemar integer oracle, dependent McNemar refusal, latent-cluster bootstrap."
+13,Multiplicity,pass_declared_scope,Holm within model/design/metric hypotheses; not study-wide FWER.
+14,Linguistic length/tokenizer confounding,open_design_limitation,"P4/P5 multiple transformations, language/scaffold/token differences, higher/lower overlap."
+15,Reproducibility,pass_cpu_scoped,All seed queries and output hashes checked; optional Torch/CUDA remains unexecuted.
+16,Call-level result lineage,no_real_runs_contract_only,Native raw/normalized/plan provenance and exact adapter identities enforced; no server attestation.
+17,Paper numerical claims,pass_construction_only,Published hash-bound construction counts; model performance remains NA.
+18,Inherited versus new methods,pass_draft_scope,CBE inheritance and Turkish/query/lexical/training extensions distinguished; no replication claim.

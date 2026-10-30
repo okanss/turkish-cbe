@@ -1,0 +1,20 @@
+[
+  {
+    "bytes": 173973,
+    "download_url": "https://files.pythonhosted.org/packages/89/a0/6cf41a19a1f2f3feab0e9c0b74134aa2ce6849093d5517a0c550fe37a648/pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl",
+    "file": "pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl",
+    "metadata_source": "https://pypi.org/pypi/PyYAML/6.0.3/json",
+    "package": "PyYAML",
+    "sha256": "fc09d0aa354569bc501d4e787133afc08552722d3ab34836a80547331bb5d4a0",
+    "version": "6.0.3"
+  },
+  {
+    "bytes": 173252,
+    "download_url": "https://files.pythonhosted.org/packages/b1/16/95309993f1d3748cd644e02e38b75d50cbc0d9561d21f390a76242ce073f/pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl",
+    "file": "pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl",
+    "metadata_source": "https://pypi.org/pypi/PyYAML/6.0.3/json",
+    "package": "PyYAML",
+    "sha256": "2283a07e2c21a2aa78d9c4442724ec1eb15f5e42a723b99cb3d822d48f5f7ad1",
+    "version": "6.0.3"
+  }
+]

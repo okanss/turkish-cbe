@@ -1,0 +1,35 @@
+# --- regenerable frozen-grid materializations (see REPRODUCIBILITY.md) ---
+# Rebuilt deterministically from the bound sources and plans; the binding
+# manifests (experiment_dataset_manifest.json, data/complete_grid/manifest.json)
+# and all frozen run manifests ARE tracked.
+data/test/
+data/training/
+data/development/
+data/pilot/
+data/latent/
+data/complete_grid/grid.sqlite
+
+# --- license-gated tokenizer assets (NOT redistributable) ---
+# meta-llama tokenizer files require accepting the Llama license on
+# Hugging Face; REPRODUCIBILITY.md documents how to fetch them.
+tokenizers/hf/
+
+# --- large binary training artifacts (plans/summaries/steps ARE tracked) ---
+results/training/runs/*/adapter/
+
+# --- expanded duplicate of the tracked colab zip ---
+colab/bundle/
+
+# --- reviewer working files (final merged CSVs + provenance ARE tracked) ---
+turkish_linguistic_review_OB.numbers
+
+# --- build/system noise ---
+__pycache__/
+*.pyc
+.DS_Store
+paper/main.aux
+paper/main.log
+paper/main.out
+paper/main.toc
+paper/main.bbl
+paper/main.blg

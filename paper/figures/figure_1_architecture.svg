@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="432pt" viewBox="0 0 792 432" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>Turkish-CBE architecture</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Turkish-CBE architecture</dc:title>
+    <dc:description>Methodological diagram; not experimental results. Human review status is separate.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Turkish-CBE</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 432 
+L 792 432 
+L 792 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 40.8672 259.9776 
+L 186.8328 259.9776 
+Q 201.8808 259.9776 201.8808 252.2016 
+L 201.8808 176.7744 
+Q 201.8808 168.9984 186.8328 168.9984 
+L 40.8672 168.9984 
+Q 25.8192 168.9984 25.8192 176.7744 
+L 25.8192 252.2016 
+Q 25.8192 259.9776 40.8672 259.9776 
+z
+" clip-path="url(#p68dc885eb1)" style="fill: #e8f1f8; stroke: #315b75; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 274.1112 166.6656 
+L 480.2688 166.6656 
+Q 495.3168 166.6656 495.3168 158.8896 
+L 495.3168 95.1264 
+Q 495.3168 87.3504 480.2688 87.3504 
+L 274.1112 87.3504 
+Q 259.0632 87.3504 259.0632 95.1264 
+L 259.0632 158.8896 
+Q 259.0632 166.6656 274.1112 166.6656 
+z
+" clip-path="url(#p68dc885eb1)" style="fill: #e8f1f8; stroke: #315b75; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 274.1112 333.8496 
+L 480.2688 333.8496 
+Q 495.3168 333.8496 495.3168 326.0736 
+L 495.3168 238.9824 
+Q 495.3168 231.2064 480.2688 231.2064 
+L 274.1112 231.2064 
+Q 259.0632 231.2064 259.0632 238.9824 
+L 259.0632 326.0736 
+Q 259.0632 333.8496 274.1112 333.8496 
+z
+" clip-path="url(#p68dc885eb1)" style="fill: #e8f1f8; stroke: #315b75; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 575.0712 259.9776 
+L 743.6088 259.9776 
+Q 758.6568 259.9776 758.6568 252.2016 
+L 758.6568 176.7744 
+Q 758.6568 168.9984 743.6088 168.9984 
+L 575.0712 168.9984 
+Q 560.0232 168.9984 560.0232 176.7744 
+L 560.0232 252.2016 
+Q 560.0232 259.9776 575.0712 259.9776 
+z
+" clip-path="url(#p68dc885eb1)" style="fill: #e8f1f8; stroke: #315b75; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 274.1112 415.4976 
+L 743.6088 415.4976 
+Q 758.6568 415.4976 758.6568 407.7216 
+L 758.6568 363.3984 
+Q 758.6568 355.6224 743.6088 355.6224 
+L 274.1112 355.6224 
+Q 259.0632 355.6224 259.0632 363.3984 
+L 259.0632 407.7216 
+Q 259.0632 415.4976 274.1112 415.4976 
+z
+" clip-path="url(#p68dc885eb1)" style="fill: #eaf3ea; stroke: #315b75; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle" x="396" y="49.7415" transform="rotate(-0 396 49.7415)">Turkish-CBE architecture</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(55.761719 204.149953)">Language-independent</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(73.186719 217.247375)">strict total order</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(77.366406 230.344797)">+ exact oracle</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(300.200938 123.218664)">Matched English presentations</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(322.099375 136.316086)">canonical / equivalent</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(300.675156 265.641242)">Matched Turkish presentations</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(333.63375 278.738664)">canonical / P1–P5</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(313.461875 291.836086)">linguistic transformations</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(319.711875 304.933508)">human review pending</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(589.655625 204.149953)">Versioned model evaluation</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(606.754062 217.247375)">strict answer parsing</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(594.678281 230.344797)">immutable raw responses</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 194.172282 211.043048 
+Q 230.472305 169.775654 265.738526 129.683528 
+" style="fill: none; stroke: #315b75; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 261.594939 131.365991 
+L 265.738526 129.683528 
+L 264.598345 134.007876 
+" style="fill: none; stroke: #315b75; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 194.314643 213.904468 
+Q 230.470456 247.534564 265.480165 280.098619 
+" style="fill: none; stroke: #315b75; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 263.913426 275.909904 
+L 265.480165 280.098619 
+L 261.18915 278.838781 
+" style="fill: none; stroke: #315b75; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 487.679692 128.446304 
+Q 527.669284 169.77526 566.570457 209.979343 
+" style="fill: none; stroke: #315b75; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 565.226304 205.713988 
+L 566.570457 209.979343 
+L 562.351681 208.495452 
+" style="fill: none; stroke: #315b75; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 487.816083 281.235876 
+Q 527.669232 247.53665 566.327157 214.848086 
+" style="fill: none; stroke: #315b75; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 561.981377 215.903642 
+L 566.327157 214.848086 
+L 564.564134 218.958044 
+" style="fill: none; stroke: #315b75; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(359.969375 381.770664)">Matched-pair CBE analysis: R, D, U, invariance, κ, coverage</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(373.362344 394.868086)">All-planned marginal accuracy; joint-valid pair metrics</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 659.34 257.314258 
+Q 659.34 307.80024 659.34 356.720974 
+" style="fill: none; stroke: #315b75; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 661.34 352.720974 
+L 659.34 356.720974 
+L 657.34 352.720974 
+" style="fill: none; stroke: #315b75; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(49.896 365.224469)">Same latent ID, query,</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(49.896 376.422281)">gold label, and split</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p68dc885eb1">
+   <rect x="19.8" y="25.92" width="752.4" height="388.8"/>
+  </clipPath>
+ </defs>
+</svg>

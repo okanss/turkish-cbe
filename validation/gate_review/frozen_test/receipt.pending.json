@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "artifact_type": "turkish_linguistic_review",
+  "status": "pending_human_review",
+  "reviewers": [
+    "<reviewer 1 full name>",
+    "<reviewer 2 full name>"
+  ],
+  "reviewer_qualification": "two_independent_turkish_proficient_reviewers",
+  "dataset_manifest_sha256": "08e45961a12a1e3a1731fdc29538c6883e41edaf8d6521224507d910e1c59c8f",
+  "samples": {
+    "path": "review_sample.csv",
+    "sha256": null,
+    "rows": 105
+  },
+  "note": "finalize_review_receipt sets status/sha256 only after every row carries two complete human decisions; never edit this file to 'approved' by hand"
+}

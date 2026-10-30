@@ -1,0 +1,67 @@
+{
+ "summary": {
+  "qwen2.5:0.5b": {
+   "measured_calls": 100,
+   "wall_seconds_for_sample": 70.4,
+   "median_call_seconds": 0.334,
+   "p90_call_seconds": 1.752,
+   "mean_call_seconds": 0.687,
+   "parse_valid_rate": 1.0,
+   "context_truncations": 0,
+   "median_prompt_tps": 1765.7,
+   "median_output_tps": 100.3,
+   "load_seconds": 0.004,
+   "min_free_bytes_seen": 61030400,
+   "max_swap_used_bytes": 1021774397.44
+  },
+  "qwen2.5:3b": {
+   "measured_calls": 100,
+   "wall_seconds_for_sample": 423.2,
+   "median_call_seconds": 2.105,
+   "p90_call_seconds": 11.27,
+   "mean_call_seconds": 4.215,
+   "parse_valid_rate": 1.0,
+   "context_truncations": 0,
+   "median_prompt_tps": 281.9,
+   "median_output_tps": 30.8,
+   "load_seconds": 13.204,
+   "min_free_bytes_seen": 29556736,
+   "max_swap_used_bytes": 2997815869.44
+  },
+  "qwen2.5:7b": {
+   "measured_calls": 100,
+   "wall_seconds_for_sample": 984.2,
+   "median_call_seconds": 5.012,
+   "p90_call_seconds": 25.935,
+   "mean_call_seconds": 9.819,
+   "parse_valid_rate": 0.99,
+   "context_truncations": 0,
+   "median_prompt_tps": 119.6,
+   "median_output_tps": 16.8,
+   "load_seconds": 10.107,
+   "min_free_bytes_seen": 55705600,
+   "max_swap_used_bytes": 7528314306.56
+  }
+ },
+ "estimates": {
+  "qwen2.5:0.5b": {
+   "planned_calls": 16618,
+   "optimistic_hours": 1.54,
+   "median_hours": 3.25,
+   "conservative_hours": 8.09
+  },
+  "qwen2.5:3b": {
+   "planned_calls": 16618,
+   "optimistic_hours": 9.72,
+   "median_hours": 19.54,
+   "conservative_hours": 52.02
+  },
+  "qwen2.5:7b": {
+   "planned_calls": 16618,
+   "optimistic_hours": 23.14,
+   "median_hours": 45.43,
+   "conservative_hours": 119.72
+  }
+ },
+ "planned_calls": 16618
+}

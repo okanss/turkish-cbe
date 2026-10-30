@@ -1,0 +1,73 @@
+{
+  "audit_scope": "Prompt11 independent statistics/publication probes",
+  "fixture_only": true,
+  "model_calls": 0,
+  "training_steps": 0,
+  "checks": [
+    {
+      "probe": "independent_exhaustive_boolean_invalid_denominators",
+      "cases": 1458,
+      "status": "pass"
+    },
+    {
+      "probe": "exact_mcnemar_independent_integer_oracle",
+      "cases": 960,
+      "status": "pass"
+    },
+    {
+      "probe": "dependent_rows_do_not_receive_ordinary_mcnemar_p_value",
+      "status": "pass"
+    },
+    {
+      "probe": "holm_missing_declared_hypothesis_keeps_family_slot",
+      "status": "pass"
+    },
+    {
+      "probe": "bootstrap_keeps_duplicate_latent_rows_as_one_resampling_cluster_and_is_order_stable",
+      "status": "pass",
+      "repeats": 2000
+    },
+    {
+      "probe": "training_arm_contrast_absence_counterexample",
+      "status": "confirmed_gap",
+      "available_tables": [
+        "endpoint_internal",
+        "invalid_token_relationship",
+        "language_complexity_interaction",
+        "language_differences",
+        "language_presentation_interaction",
+        "language_robustness",
+        "presentation_tests",
+        "profiles",
+        "relation_family_profiles",
+        "unavailable_contrasts"
+      ],
+      "base_R": [
+        0.0,
+        0.0
+      ],
+      "sft_R": [
+        1.0,
+        1.0
+      ],
+      "paired_training_effect_table_present": false
+    },
+    {
+      "probe": "all_published_output_file_hashes_sizes_and_no_results_flags",
+      "status": "pass",
+      "files_verified": 44
+    },
+    {
+      "probe": "paper_table_row_counts_and_performance_placeholders_rebuilt_from_evidence",
+      "status": "pass",
+      "tables": 7
+    }
+  ],
+  "exhaustive_metric_cases": 1458,
+  "exact_mcnemar_cases": 960,
+  "source_mutations": 0,
+  "limitations": [
+    "Synthetic counterexamples establish code contracts only; no model-performance or human linguistic validation is inferred.",
+    "Native provider execution is journal assertion, not external attestation."
+  ]
+}

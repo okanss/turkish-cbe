@@ -1,0 +1,44 @@
+[
+  {
+    "file": "certifi-2026.10.23-py3-none-any.whl",
+    "package": "certifi",
+    "sha256": "e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1",
+    "version": "2026.10.23"
+  },
+  {
+    "file": "charset_normalizer-3.5.2-cp312-cp312-macosx_10_13_universal2.whl",
+    "package": "charset_normalizer",
+    "sha256": "ed2a239c0ea213acc1908150a3037257083c7c083128f1a4cec2ec4b97dca491",
+    "version": "3.5.2"
+  },
+  {
+    "file": "idna-3.20-py3-none-any.whl",
+    "package": "idna",
+    "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+    "version": "3.20"
+  },
+  {
+    "file": "regex-2026.9.29-cp312-cp312-macosx_11_0_arm64.whl",
+    "package": "regex",
+    "sha256": "f57dc6b8fef170f105d2cf5cdce254f47b137d7755086cf7050f47e16582abba",
+    "version": "2026.9.29"
+  },
+  {
+    "file": "requests-2.34.2-py3-none-any.whl",
+    "package": "requests",
+    "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0",
+    "version": "2.34.2"
+  },
+  {
+    "file": "tiktoken-0.12.0-cp312-cp312-macosx_11_0_arm64.whl",
+    "package": "tiktoken",
+    "sha256": "2b90f5ad190a4bb7c3eb30c5fa32e1e182ca1ca79f05e49b448438c3e225a49b",
+    "version": "0.12.0"
+  },
+  {
+    "file": "urllib3-2.8.0-py3-none-any.whl",
+    "package": "urllib3",
+    "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3",
+    "version": "2.8.0"
+  }
+]

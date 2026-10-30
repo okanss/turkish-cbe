@@ -1,0 +1,4 @@
+# Packaging lock. Core uses stdlib; BPE extras use requirements-tokenizers.lock.
+# Verified against https://pypi.org/project/setuptools/84.1.0/ on 2026-10-23.
+setuptools==84.1.0 \
+    --hash=sha256:5231689c6ac8156cd155cfb98c3fd6fb252c3e7e9bd3d78b64d3c55f132624c9

@@ -1,0 +1,160 @@
+% Turkish-CBE manuscript — entry point (see Appendix C.2, "Rebuilding the manuscript").
+% Compile: latexmk -xelatex main.tex   (XeLaTeX + BibTeX; no model API,
+% model weights, or experiment execution is required).
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=2.6cm,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{texgyretermes}[
+  Extension=.otf,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  ItalicFont=*-italic,
+  BoldItalicFont=*-bolditalic]
+\setmathfont{texgyretermes-math.otf}
+\setmonofont[Scale=0.88]{DejaVuSansMono}[
+  Extension=.ttf,
+  UprightFont=*,
+  BoldFont=*-Bold]
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,calc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,allcolors=linkblue,unicode]{hyperref}
+
+\definecolor{linkblue}{HTML}{1F5C99}
+\definecolor{headingblue}{HTML}{234E70}
+\definecolor{stageblue}{HTML}{EAF1FB}
+\definecolor{stageborder}{HTML}{2A78D6}
+\definecolor{bandgreen}{HTML}{EAF6EF}
+\definecolor{bandborder}{HTML}{1BAF7A}
+\definecolor{exgray}{HTML}{F7F7F5}
+\definecolor{mutedink}{HTML}{555555}
+
+\usepackage{sectsty}
+\allsectionsfont{\color{headingblue}}
+
+\captionsetup{font=small,labelfont=bf}
+
+\newtheorem{proposition}{Proposition}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Turkish-CBE}
+\fancyhead[R]{\small Framework, audit, and pilot evaluation}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\newcommand{\inval}{\ensuremath{\bot}}
+
+\title{\textbf{Beyond Translation: Evaluating Logical Reasoning\\
+Competence in Large Language Models under Turkish\\
+Morphosyntactic Variations}\\[1.2ex]
+\large A Reproducible Framework, Construction Audit, and Pilot Evaluation}
+
+\author{Müge Oluçoğlu\\
+\small İzmir Bakırçay University\\
+\small ORCID: 0000-0002-0137-5854\\
+\small \texttt{muge.olucoglu@bakircay.edu.tr}
+\and
+Okan Bursa\textsuperscript{*}\\
+\small İzmir Bakırçay University\\
+\small ORCID: 0000-0002-5958-0279\\
+\small \texttt{okan.bursa@bakircay.edu.tr}\\
+\small \textsuperscript{*}Corresponding author}
+
+\date{\small Research manuscript draft \; \textbullet \; 27 October 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+\noindent
+Evaluating an answer in a single language and formulation provides an incomplete account of
+logical reasoning reliability. For Turkish, case marking, possessive constructions, phonologically
+conditioned suffixes, and flexible constituent order introduce meaningful evaluation dimensions that
+sentence translation alone does not control. We present Turkish-CBE, a reproducible framework for
+comparing answers to the same latent ordering problem across Turkish and English and across
+answer-preserving Turkish presentations. The framework separates an exact symbolic generator from
+linguistic realization, distinguishes endpoint from internal and distance-controlled queries, and
+evaluates both correctness and stability on explicitly declared denominators. The frozen design
+contains 3,000 latent orders, 23,200 source queries, and 5,637,600 derived prompt identities. We
+report construction statistics, independently measured lexical/tokenization features, and an
+executed exploratory pilot evaluation of two models on 3,024 matched prompts. All 18 canonical
+Turkish relation expressions have zero exact surface counts in the retained corpus measurement,
+despite positive lemma counts, illustrating the sensitivity of familiarity proxies to morphological
+realization. The pilot demonstrates the protocol's central measurement argument on real models: a
+small open model answers with perfect cross-presentation invariance that the paired decomposition
+exposes as a constant response per language (chance accuracy, chance correction undefined by
+design), while GPT-4o shows graded competence --- 72.0\% English versus 57.8\% Turkish accuracy,
+monotone decline with entity count and query distance, and a collapse to 36.9\% under one
+answer-preserving Turkish constituent-order alternative, the only effect that survives Holm
+correction at pilot power. A supplemental quantized local evaluation of the Qwen2.5 instruct family
+(0.5B--14B, 16,618 prompts per model across all nine relation families) reproduces this structure in
+open weights and locates its emergence: sub-7B models are constant responders, competence appears in
+English before Turkish, and the constituent-order collapse re-appears at 14B at $-38$ points of
+query-matched paired accuracy. We formulate the paired statistical protocol behind these measurements,
+show how valid-pair coverage bounds the interpretation of robustness, and distinguish the
+pooled-marginal CBE chance correction from conventional Cohen agreement. A completed two-reviewer
+Turkish linguistic review of 360 sampled stimuli finds unanimous semantic equivalence, excludes one
+construction on grammaticality, and leaves discourse naturalness contested; the constituent-order
+collapse survives removal of the excluded construction. The frozen-test evaluation remains the
+prerequisite for confirmatory answers to the research questions.
+\end{abstract}
+
+\vspace{0.6ex}
+\noindent\textbf{Keywords:} large language models; logical reasoning evaluation; Turkish;
+morphosyntax; cross-lingual evaluation; robustness; paired evaluation design; reproducibility;
+benchmark construction; chance-corrected agreement
+
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/methodology}
+\input{sections/statistics}
+\input{sections/design}
+\input{sections/results}
+\input{sections/pilot_results}
+\input{sections/discussion}
+\input{sections/limitations}
+\input{sections/conclusion}
+
+\section*{Author Contributions}
+%% TODO(submission): confirm the contribution split with both authors (CRediT taxonomy).
+Conceptualization, methodology, software, validation, formal analysis, data curation, and
+writing --- original draft: both authors. Supervision and writing --- review and editing:
+M.O.\ and O.B. All authors have read and agreed to the published version of the manuscript.
+
+\section*{Data and Code Availability}
+The complete framework --- the frozen grid construction, renderers, audited analysis and
+statistics modules, execution plans, run records of every executed evaluation (including failed
+attempts retained as provenance), review instruments with both reviewers' completed annotations,
+and the scripts that regenerate every table and figure in this manuscript --- will be shared in a
+public GitHub repository.
+%% TODO(submission): insert the repository URL (and an archival DOI if minted) once the
+%% repository is published.
+The frozen dataset manifest and all result files are hash-bound as described in Appendix~C.
+
+\section*{Funding}
+This research received no external funding.
+
+\section*{Conflicts of Interest}
+The authors declare no conflict of interest.
+
+\bibliographystyle{abbrvnat}
+\bibliography{main}
+
+\appendix
+\input{sections/appendix}
+
+\end{document}

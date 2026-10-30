@@ -1,0 +1,27 @@
+{
+ "summary": {
+  "qwen2.5:14b": {
+   "measured_calls": 100,
+   "wall_seconds_for_sample": 2744.6,
+   "median_call_seconds": 16.428,
+   "p90_call_seconds": 73.322,
+   "mean_call_seconds": 27.329,
+   "parse_valid_rate": 0.99,
+   "context_truncations": 0,
+   "median_prompt_tps": 44.6,
+   "median_output_tps": 5.9,
+   "load_seconds": 35.814,
+   "min_free_bytes_seen": 16138240,
+   "max_swap_used_bytes": 17935693250.56
+  }
+ },
+ "estimates": {
+  "qwen2.5:14b": {
+   "planned_calls": 16618,
+   "optimistic_hours": 75.83,
+   "median_hours": 126.69,
+   "conservative_hours": 338.46
+  }
+ },
+ "planned_calls": 16618
+}

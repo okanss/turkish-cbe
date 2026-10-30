@@ -1,0 +1,53 @@
+{
+  "analysis_version": "0.6.0",
+  "artifact_type": "cbe_analysis",
+  "config": {
+    "bootstrap_repeats": 2000,
+    "cluster": "latent_instance_id",
+    "confidence": 0.95,
+    "figures": true,
+    "replicate": 0,
+    "run_ids": [],
+    "seed": 20261024,
+    "strata": [
+      "n"
+    ]
+  },
+  "config_sha256": "3081ee83ef14384e3ca48313601e6bd98851ca95992e8e11cff992b04fd88f53",
+  "contains_model_results": false,
+  "eligible_for_confirmatory_evaluation": false,
+  "environment": {
+    "packages": {
+      "matplotlib": "3.10.7",
+      "numpy": "2.5.4"
+    },
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.14"
+  },
+  "files": [],
+  "human_review_status": [],
+  "input_runs": [],
+  "limitations": [
+    "Exploratory implementation; not an external preregistration.",
+    "Conditional metrics share joint-valid support; marginal accuracy retains failures.",
+    "Intervals are pointwise, not simultaneous; partial undefined bootstrap intervals remain null.",
+    "Model families remain separated by model and revision; token associations are descriptive."
+  ],
+  "message": "No recorded model runs; no performance tables, p-values or figures were created.",
+  "n_invalid_responses": 0,
+  "n_missing_responses": 0,
+  "n_observed_model_responses": 0,
+  "n_planned_responses": 0,
+  "source_files_sha256": {
+    "src/analysis/__init__.py": "b6c4928d34bd11abc60058b06eb51e431f01bf33987af74638ee1200028bd9cb",
+    "src/analysis/__main__.py": "7922786f04cf1a19928b76748743b23ff2dff41420259c5b9c7c2e5d3425a486",
+    "src/analysis/io.py": "f87e6eb6f4981605465a92a47240e722f32dde3d437cb0870b760fb35cc88494",
+    "src/analysis/metrics.py": "54c8026a7ede03f27db71b4218d7fe26b12bbc58879f9d0eb4baeeafbbcbfd12",
+    "src/analysis/pipeline.py": "e8f0f75ff5277318984a22f9bba2c18b4a5e39ac2cebc345b11041e1b9dbc88d",
+    "src/analysis/reporting.py": "59b33fb2879a6ade4f0f329d93e4ebc8fa20a2afcc740a5982adc0eb8b274b5f",
+    "src/analysis/statistics.py": "acfbe0c5dc12100227e9407d7f2e124b87fb6340d47e836a03618d03bac60722"
+  },
+  "status": "no_model_results",
+  "synthetic": false,
+  "table_rows": {}
+}

@@ -1,0 +1,3100 @@
+{
+  "artifact_type": "independent_data_language_audit",
+  "contains_model_results": false,
+  "scope": "All frozen source groups/queries/metadata; all component normal forms and cross-split prompt hashes; stratified bounded surface replays; AI inspection is not human linguistic approval.",
+  "dataset_manifest_sha256": "08e45961a12a1e3a1731fdc29538c6883e41edaf8d6521224507d910e1c59c8f",
+  "checks": {
+    "sqlite_quick_check": "ok",
+    "foreign_key_violations": 0,
+    "counts": {
+      "groups": 3000,
+      "queries": 23200,
+      "designs": 243,
+      "components": 729000,
+      "measurements": 5637600,
+      "comparison_rules": 351
+    },
+    "source_chains_checked": 3000,
+    "seed_endpoint_replays": 3000,
+    "cross_split_exact_source_order_duplicates": 0,
+    "cross_split_aliased_order_duplicates": 0,
+    "aliased_orders_checked": 18000,
+    "query_rank_gold_distance_replays": 23200,
+    "query_types": {
+      "endpoint": 3000,
+      "internal": 3000,
+      "distance_controlled": 17200
+    },
+    "balanced_strata_checked": 251,
+    "balance_max_cell_difference": 1,
+    "test_every_cell_50": true,
+    "non_test_cells_12_or_13": true,
+    "balance": [
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 128,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 256,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 512,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 1024,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 128,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 128,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 16,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 16,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 128,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 256,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 256,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 32,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 32,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 4,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 4,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 4,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 128,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 256,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 512,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 512,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 64,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 64,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "development",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 8,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "development",
+        "n": 8,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 128,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 128,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 16,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 16,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 32,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 32,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 4,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 4,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 4,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 64,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 64,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 8,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "pilot",
+        "n": 8,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 128,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 256,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 512,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 1024,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 128,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 128,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 16,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 16,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 128,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 256,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 256,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 32,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 32,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 4,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 4,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 4,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 128,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 256,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 512,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 512,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 64,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 64,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 8,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "test",
+        "n": 8,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 128,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 256,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 512,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 1024,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 128,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 128,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 128,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 16,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 16,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 16,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 128,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 256,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 256,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 256,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 32,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 32,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 32,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 4,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 4,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 4,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 128,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 256,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 64,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 512,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 512,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 512,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 16,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 32,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 64,
+        "query_type": "distance_controlled",
+        "controlled_distance": 8,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 64,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 64,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 12,
+          "forward|True": 13,
+          "reverse|False": 13,
+          "reverse|True": 12
+        }
+      },
+      {
+        "split": "training",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 1,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 2,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 8,
+        "query_type": "distance_controlled",
+        "controlled_distance": 4,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 8,
+        "query_type": "endpoint",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      },
+      {
+        "split": "training",
+        "n": 8,
+        "query_type": "internal",
+        "controlled_distance": null,
+        "cells": {
+          "forward|False": 13,
+          "forward|True": 12,
+          "reverse|False": 12,
+          "reverse|True": 13
+        }
+      }
+    ],
+    "component_normal_forms_verified": 729000,
+    "query_design_cardinality_errors": 0,
+    "bilingual_presentation_plan_mismatches": 0,
+    "cross_split_visible_prompt_hash_overlap": 0,
+    "stratified_surface_source_groups": 33,
+    "stratified_actual_surface_components_replayed": 8019,
+    "stratified_actual_surface_clauses_reparsed": 1543293,
+    "stratified_actual_prompt_hashes_replayed": 24057,
+    "stratified_replay_sha256": "aae42adbcb6ffa630a70a2a924b59530efa2ad31b2a3a8fbb53532a5ca228c15",
+    "linguistic_review_csv": {
+      "rows": 252,
+      "source_contexts": 36,
+      "relations": {
+        "spatial_front": 28,
+        "spatial_right": 28,
+        "spatial_above": 28,
+        "temporal_arrival": 28,
+        "temporal_completion": 28,
+        "comparison_height": 28,
+        "comparison_speed": 28,
+        "comparison_weight": 28,
+        "ranking": 28
+      },
+      "variants": {
+        "P0": 36,
+        "P1": 36,
+        "P2": 36,
+        "P3": 36,
+        "P4": 36,
+        "P5": 36,
+        "P6": 36
+      },
+      "all_surface_premises_reparsed": 1260,
+      "human_reviews_completed": 0,
+      "human_status": "pending",
+      "AI_screen": {
+        "inspected_rows": 216,
+        "inspection_unit": "first premise + complete query for all P0/P2/P3/P4/P5/P6 rows; P1 inspected computationally",
+        "status": "no definite grammar error detected in bounded AI screen; marked P3 postverbal subjects and spatial-P4 position descriptions need native human naturalness judgments",
+        "human_approval": false
+      },
+      "same_renderer_and_morphology_shared_by_parser": true
+    },
+    "independent_suffix_gold_fixtures": 12
+  },
+  "limitations": [
+    "No native human linguistic approval is claimed. Existing 252 rows cover 36 source contexts at n=4/8 and remain unannotated.",
+    "Closed parser shares suffix routines with renderer; independently specified 12 suffix fixtures mitigate but do not remove shared-system error risk.",
+    "Exact ID/order/text isolation excludes duplicate instances; all strict total-order chains are abstractly isomorphic by design. This is not distribution-free out-of-family generalization.",
+    "Endpoint n-1 distance is a latent graph distance, not a demonstrated lower bound on model computational reasoning depth. Degree-based endpoint shortcuts remain possible.",
+    "Language and presentation lengths/tokenization remain design confounds, and P4/P5 are multi-feature interventions.",
+    "Full training held-out evaluation has no explicit linguistic approval gate in current frozen training source. User must not bypass review via a raised max_calls."
+  ],
+  "elapsed_seconds": 37.936
+}

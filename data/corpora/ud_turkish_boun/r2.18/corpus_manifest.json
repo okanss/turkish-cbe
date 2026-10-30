@@ -1,0 +1,51 @@
+{
+  "attribution": "UD Turkish BOUN/TABILAB contributors listed in retained README.md; texts from Turkish National Corpus.",
+  "contains_model_results": false,
+  "corpus_id": "UD_Turkish-BOUN",
+  "files": [
+    {
+      "bytes": 4462,
+      "path": "README.md",
+      "role": "source_readme",
+      "sha256": "b3dfa89603a5cc303eeef758f9384596b30d321a632f95a14fef843791a9292e",
+      "source_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Turkish-BOUN/0def94a229dcbc28d32192b0138b560c075c6d87/README.md"
+    },
+    {
+      "bytes": 202,
+      "path": "LICENSE.txt",
+      "role": "license",
+      "sha256": "899b1804a12ebc090b96339614eede1b64b686721b650a71430b55b5235f7f79",
+      "source_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Turkish-BOUN/0def94a229dcbc28d32192b0138b560c075c6d87/LICENSE.txt"
+    },
+    {
+      "bytes": 7975961,
+      "path": "tr_boun-ud-train.conllu",
+      "role": "train",
+      "sha256": "ae54aef82e69cb7ccc54703a07e2ebcde66c2e4453a5debfac1eb78dfed60e9f",
+      "source_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Turkish-BOUN/0def94a229dcbc28d32192b0138b560c075c6d87/tr_boun-ud-train.conllu"
+    },
+    {
+      "bytes": 977609,
+      "path": "tr_boun-ud-dev.conllu",
+      "role": "dev",
+      "sha256": "b3531bb26337b3ef258796e6948d2c3469e71704613b9373cd87f341409e2d8d",
+      "source_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Turkish-BOUN/0def94a229dcbc28d32192b0138b560c075c6d87/tr_boun-ud-dev.conllu"
+    },
+    {
+      "bytes": 965937,
+      "path": "tr_boun-ud-test.conllu",
+      "role": "test",
+      "sha256": "c7f234f6a7c1b7025f8cab9025239286836e971b653fb1dd3f266a84ac74dbeb",
+      "source_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Turkish-BOUN/0def94a229dcbc28d32192b0138b560c075c6d87/tr_boun-ud-test.conllu"
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_url": "https://universaldependencies.org/treebanks/tr_boun/index.html",
+  "retrieved_date": "2026-10-25",
+  "revision": "0def94a229dcbc28d32192b0138b560c075c6d87",
+  "schema_version": 1,
+  "scope": "All three corpus partitions used only for independent lexical frequency. News/nonfiction treebank selection; not general Turkish or model training distribution.",
+  "source_url": "https://github.com/UniversalDependencies/UD_Turkish-BOUN/tree/0def94a229dcbc28d32192b0138b560c075c6d87",
+  "version": "r2.18"
+}

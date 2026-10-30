@@ -1,0 +1,123 @@
+\section{Correctness, Invariance, and Statistical Inference}
+
+\subsection{Denominators and the paired outcome decomposition}
+
+For $N$ planned matched presentation pairs, let $a_{ik} \in \{0, 1, \inval\}$ be the strictly parsed answer
+to presentation $k \in \{0, 1\}$, where $\inval$ denotes invalid or missing output. Marginal correctness is
+$C_{ik} = \mathbf{1}\{a_{ik} = y_i^{*}\}$, with invalid answers wrong. Define
+$V_i = \mathbf{1}\{a_{i0} \ne \inval,\, a_{i1} \ne \inval\}$ and $M = \sum_i V_i$. The marginal accuracies
+and valid-pair coverage are
+\begin{equation}
+  \widehat{A}_k = \frac{1}{N} \sum_{i=1}^{N} C_{ik},
+  \qquad
+  \widehat{v} = \frac{M}{N}.
+  \label{eq:marginals}
+\end{equation}
+For $M > 0$, the paired CBE quantities use exactly the same jointly valid support:
+\begin{align}
+  \widehat{R} &= \frac{1}{M} \sum_i V_i\, C_{i0} C_{i1}, \label{eq:R}\\
+  \widehat{D} &= \frac{1}{M} \sum_i V_i\, (1 - C_{i0})(1 - C_{i1}), \label{eq:D}\\
+  \widehat{U} &= \frac{1}{M} \sum_i V_i\, \mathbf{1}\{C_{i0} \ne C_{i1}\}. \label{eq:U}
+\end{align}
+Consequently,
+\begin{equation}
+  \widehat{R} + \widehat{D} + \widehat{U} = 1,
+  \qquad
+  \widehat{A}_{\mathrm{valid}} = \widehat{R} + \widehat{U}/2,
+  \qquad
+  \widehat{I} = \widehat{R} + \widehat{D}.
+  \label{eq:identities}
+\end{equation}
+Here $\widehat{A}_{\mathrm{valid}}$ is the mean of the two accuracies \emph{on jointly valid pairs}. It is
+not automatically $(\widehat{A}_0 + \widehat{A}_1)/2$ on the full planned sample. Binary gold labels shared
+within each pair imply that $D$ is shared-wrong agreement, whereas $U$ is presentation dependence.
+
+For $N > 0$ and $M > 0$, strict robust correctness retains all planned pairs:
+\begin{equation}
+  \widehat{R}_{\mathrm{strict}} = \frac{\sum_i V_i\, C_{i0} C_{i1}}{N} = \widehat{v}\, \widehat{R}.
+  \label{eq:strict}
+\end{equation}
+The equality exposes selective coverage directly. It does not assert that marginal accuracy equals coverage
+times valid-pair accuracy: pairs with one valid, correct answer can still contribute to a marginal. Both
+response-level invalid rates and pair coverage must accompany every conditional profile. If $M = 0$ and
+$N > 0$, strict robustness is zero while conditional $R$ is undefined; the product identity is used only
+when $R$ is defined. Empty conditional denominators are undefined, not zero.
+
+\subsection{Chance correction and its interpretation}
+
+At a fixed complexity and declared model/condition stratum, define $q$ as the pooled YES/EVET rate over the
+$2M$ jointly valid answers. The retained CBE reference is
+\begin{equation}
+  I_e = q^2 + (1 - q)^2,
+  \qquad
+  \kappa_{\mathrm{CBE}} = \frac{\widehat{I} - I_e}{1 - I_e}.
+  \label{eq:kappa}
+\end{equation}
+Constant outputs make $I_e = 1$, so the coefficient is undefined. High raw agreement from a constant answer
+is therefore not evidence of competence. The chance correction is related to the general idea of agreement
+beyond chance \citep{cohen1960kappa}, but its pooled reference is not identical to the separate-marginal
+reference in conventional Cohen kappa. Appendix~\ref{app:identities} derives the difference. Neither
+reference identifies an internal reasoning mechanism or proves stochastic independence.
+
+A valid-pair mean accuracy alone bounds but does not determine robustness. From the nonnegative outcome
+masses,
+\begin{equation}
+  \max(0,\, 2A_{\mathrm{valid}} - 1) \le R \le A_{\mathrm{valid}}.
+  \label{eq:bounds}
+\end{equation}
+Likewise, invariance cannot identify the division between correct and shared-wrong agreement. These
+algebraic observations explain why accuracy, $R$, $D$, $U$, coverage, and chance correction should be
+presented jointly rather than ranked as interchangeable notions of reliability.
+
+\subsection{Paired inference, dependence, and multiplicity}
+
+The primary cross-language accuracy effect is
+\begin{equation}
+  \widehat{\Delta}_{\mathrm{TR-EN}} = N^{-1} \sum_i \bigl(C_{i,\mathrm{TR}} - C_{i,\mathrm{EN}}\bigr),
+  \label{eq:delta}
+\end{equation}
+using identical planned coordinates and counting invalid answers wrong. Effects are evaluated within
+declared model, size, query-type/distance, relation, presentation, and name-control strata. Any pooled
+summary must specify whether it weights derived queries, latent orders, or size levels; those are different
+estimands. Paired McNemar inference \citep{mcnemar1947} compares discordant correctness outcomes when
+matched units are independent. The exact conditional version uses a binomial reference on discordant pairs.
+Repeated queries or presentations from one latent order violate ordinary row-level independence; such rows
+require cluster-aware uncertainty rather than an unqualified McNemar $p$-value.
+
+Confidence intervals use 2,000 matched latent-order bootstrap replicates, preserving every dependent
+query/presentation record and resampling within declared size strata. This extends the resampling principle
+\citep{efron1979bootstrap} to the clustered design \citep{field2007clustered}. Wilson intervals
+\citep{wilson1927} are useful binomial summaries for $R$ only under an appropriate independent-Bernoulli
+interpretation; when rows share latent orders, dependence-aware bootstrap intervals carry the inferential
+interpretation. Intervals are pointwise, not simultaneous bands.
+
+Holm correction \citep{holm1979} applies within predeclared model/design/metric families, with missing
+planned hypotheses retaining their correction slots. The implementation is not study-wide familywise
+control across every size, relation, distance, and intervention. Confirmatory families must be specified
+before outcomes are observed. For base--adapter comparisons, all-planned accuracy, strict $R$, and coverage
+are primary; common-four-valid differences in conditional $R$, invariance, and kappa are explicitly labeled
+sensitivity analyses and report both arms' valid support.
+
+\subsection{Lexical associations and identifiable effects}
+
+For each relation direction, the predicted YES/EVET rate is the number of parsed affirmative answers divided
+by the number of parsed responses in that direction. Its denominator, planned gold-label balance, and
+invalid rate must be shown together. This descriptive rate may use lone valid responses; it is distinct from
+the pooled $q$ in Equation~\eqref{eq:kappa}, which uses jointly valid pairs only. A direction-specific
+accuracy change and invariance change need not agree.
+
+Frequency--accuracy and tokenization--invariance analyses were executed on the pilot outcomes
+(Section~\ref{sec:pilot}) but remain unidentified there, because a single relation family supplies at most
+two lexical units per cell. Spearman association \citep{spearman1904} can summarize monotone relations, but
+a handful of repeated lexical units does not create independent observations through prompt replication. A
+multivariable specification may include model, relation family, $\log_2 n$, query distance, and prompt
+length, with uncertainty clustered by latent order and appropriate attention to lexical reuse. Saturated
+model-by-vocabulary effects may absorb all between-term frequency variation; unsupported or collinear fits
+must remain unavailable, and the retained pilot outputs record them as such rather than as coefficients.
+
+We distinguish a total paired language contrast from an estimate adjusted for token length. Length may lie
+on a pathway by which language changes the presented input, so adjustment changes the question rather than
+automatically correcting a nuisance. These are descriptive associational analyses, not identification of a
+causal frequency or morphology effect. No lexical-association coefficient is promoted to a finding in the
+current article; the executed pilot specifications are retained with their explicit unidentifiability
+statuses.

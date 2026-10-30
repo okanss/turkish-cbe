@@ -1,0 +1,24 @@
+{
+  "package": "frozen_test",
+  "rows": 105,
+  "cells": {
+    "spatial_front / canonical / native_shared": 53,
+    "spatial_front / equivalent / native_shared": 52
+  },
+  "sizes": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "query_types": [
+    "endpoint"
+  ],
+  "csv_sha256": "913b9066427b41c3dbf0705bac1041bac5e5d34c43b17b060c493b20c2858263",
+  "grid_manifest_sha256": "08e45961a12a1e3a1731fdc29538c6883e41edaf8d6521224507d910e1c59c8f"
+}

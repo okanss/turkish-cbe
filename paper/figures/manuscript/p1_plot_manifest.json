@@ -1,0 +1,20 @@
+{
+  "sources": {
+    "p1_accuracy_by_axis": {
+      "path": "results/p1/analysis/p1_accuracy_by_axis.csv",
+      "sha256": "3599b6ade1ba0629943cc09500270f8702b6ca52fee7ef614ab926bd4ee26aee"
+    },
+    "p1_paired_tests": {
+      "path": "results/p1/analysis/p1_paired_tests.csv",
+      "sha256": "0dd40c8bca62a6b7e62f45cb915eb4b7b91acbdf9ddc8397f304b4f1f9b2ab1c"
+    },
+    "p1_coverage": {
+      "path": "results/p1/analysis/p1_coverage.csv",
+      "sha256": "8890dbd3fae154d44a3a5008936efed17624d3325c1184c1c8d83e121d117c1f"
+    }
+  },
+  "assets": {
+    "fig6_p1_quantized_scaling.pdf": "a89ed14b1f81a6dcef90419af72246b7ae66ff21065401b99d000d0870a428ff"
+  },
+  "note": "P1 supplemental quantized local evaluation (Ollama Q4_K_M); exploratory pending the two-reviewer linguistic review; never pooled with registered-provider results."
+}

@@ -1,0 +1,1700 @@
+[
+  {
+    "directions": [
+      {
+        "direction": "before",
+        "english_expression": "Ayşe is in front of Bora.",
+        "english_question": "Is Ayşe in front of Bora?",
+        "english_term": "in front of",
+        "expression": "Ayşe, Bora'nın önündedir.",
+        "lemma": "ön",
+        "lemma_tokens": [
+          "ön"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin konumu, Bora'nın konumunun önündedir.",
+          "attribute_lemma_tokens": [
+            "ön"
+          ],
+          "attribute_lexeme_changed": false,
+          "attribute_predicate": "önündedir",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_morpheme_functions": [
+            "root",
+            "third_person_possessive",
+            "buffer_n",
+            "locative",
+            "assertive_copula"
+          ],
+          "canonical_morphemes": [
+            "ön",
+            "ü",
+            "n",
+            "de",
+            "dir"
+          ],
+          "canonical_predicate": "önündedir",
+          "possessive_locative_without_copula": "önünde",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'nın önünde midir?",
+          "query_lemma_tokens": [
+            "ön"
+          ],
+          "query_predicate": "önünde midir",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ö",
+            "ü",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "önündedir",
+          "önünde midir"
+        ],
+        "term": "önündedir"
+      },
+      {
+        "direction": "after",
+        "english_expression": "Ayşe is behind Bora.",
+        "english_question": "Is Ayşe behind Bora?",
+        "english_term": "behind",
+        "expression": "Ayşe, Bora'nın arkasındadır.",
+        "lemma": "arka",
+        "lemma_tokens": [
+          "arka"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin konumu, Bora'nın konumunun arkasındadır.",
+          "attribute_lemma_tokens": [
+            "arka"
+          ],
+          "attribute_lexeme_changed": false,
+          "attribute_predicate": "arkasındadır",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_morpheme_functions": [
+            "root",
+            "third_person_possessive",
+            "buffer_n",
+            "locative",
+            "assertive_copula"
+          ],
+          "canonical_morphemes": [
+            "arka",
+            "sı",
+            "n",
+            "da",
+            "dır"
+          ],
+          "canonical_predicate": "arkasındadır",
+          "possessive_locative_without_copula": "arkasında",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'nın arkasında mıdır?",
+          "query_lemma_tokens": [
+            "arka"
+          ],
+          "query_predicate": "arkasında mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "arkasındadır",
+          "arkasında mıdır"
+        ],
+        "term": "arkasındadır"
+      }
+    ],
+    "family": "spatial",
+    "human_review_status": "pending",
+    "relation_id": "spatial_front",
+    "source": "frozen renderers.turkish and renderers.english"
+  },
+  {
+    "directions": [
+      {
+        "direction": "before",
+        "english_expression": "Ayşe is to the right of Bora.",
+        "english_question": "Is Ayşe to the right of Bora?",
+        "english_term": "to the right of",
+        "expression": "Ayşe, Bora'nın sağındadır.",
+        "lemma": "sağ",
+        "lemma_tokens": [
+          "sağ"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin konumu, Bora'nın konumunun sağındadır.",
+          "attribute_lemma_tokens": [
+            "sağ"
+          ],
+          "attribute_lexeme_changed": false,
+          "attribute_predicate": "sağındadır",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_morpheme_functions": [
+            "root",
+            "third_person_possessive",
+            "buffer_n",
+            "locative",
+            "assertive_copula"
+          ],
+          "canonical_morphemes": [
+            "sağ",
+            "ı",
+            "n",
+            "da",
+            "dır"
+          ],
+          "canonical_predicate": "sağındadır",
+          "possessive_locative_without_copula": "sağında",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'nın sağında mıdır?",
+          "query_lemma_tokens": [
+            "sağ"
+          ],
+          "query_predicate": "sağında mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ğ",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "sağındadır",
+          "sağında mıdır"
+        ],
+        "term": "sağındadır"
+      },
+      {
+        "direction": "after",
+        "english_expression": "Ayşe is to the left of Bora.",
+        "english_question": "Is Ayşe to the left of Bora?",
+        "english_term": "to the left of",
+        "expression": "Ayşe, Bora'nın solundadır.",
+        "lemma": "sol",
+        "lemma_tokens": [
+          "sol"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin konumu, Bora'nın konumunun solundadır.",
+          "attribute_lemma_tokens": [
+            "sol"
+          ],
+          "attribute_lexeme_changed": false,
+          "attribute_predicate": "solundadır",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_morpheme_functions": [
+            "root",
+            "third_person_possessive",
+            "buffer_n",
+            "locative",
+            "assertive_copula"
+          ],
+          "canonical_morphemes": [
+            "sol",
+            "u",
+            "n",
+            "da",
+            "dır"
+          ],
+          "canonical_predicate": "solundadır",
+          "possessive_locative_without_copula": "solunda",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'nın solunda mıdır?",
+          "query_lemma_tokens": [
+            "sol"
+          ],
+          "query_predicate": "solunda mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "solundadır",
+          "solunda mıdır"
+        ],
+        "term": "solundadır"
+      }
+    ],
+    "family": "spatial",
+    "human_review_status": "pending",
+    "relation_id": "spatial_right",
+    "source": "frozen renderers.turkish and renderers.english"
+  },
+  {
+    "directions": [
+      {
+        "direction": "before",
+        "english_expression": "Ayşe is above Bora.",
+        "english_question": "Is Ayşe above Bora?",
+        "english_term": "above",
+        "expression": "Ayşe, Bora'nın üstündedir.",
+        "lemma": "üst",
+        "lemma_tokens": [
+          "üst"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin konumu, Bora'nın konumunun üstündedir.",
+          "attribute_lemma_tokens": [
+            "üst"
+          ],
+          "attribute_lexeme_changed": false,
+          "attribute_predicate": "üstündedir",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_morpheme_functions": [
+            "root",
+            "third_person_possessive",
+            "buffer_n",
+            "locative",
+            "assertive_copula"
+          ],
+          "canonical_morphemes": [
+            "üst",
+            "ü",
+            "n",
+            "de",
+            "dir"
+          ],
+          "canonical_predicate": "üstündedir",
+          "possessive_locative_without_copula": "üstünde",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'nın üstünde midir?",
+          "query_lemma_tokens": [
+            "üst"
+          ],
+          "query_predicate": "üstünde midir",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ü",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "üstündedir",
+          "üstünde midir"
+        ],
+        "term": "üstündedir"
+      },
+      {
+        "direction": "after",
+        "english_expression": "Ayşe is below Bora.",
+        "english_question": "Is Ayşe below Bora?",
+        "english_term": "below",
+        "expression": "Ayşe, Bora'nın altındadır.",
+        "lemma": "alt",
+        "lemma_tokens": [
+          "alt"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin konumu, Bora'nın konumunun altındadır.",
+          "attribute_lemma_tokens": [
+            "alt"
+          ],
+          "attribute_lexeme_changed": false,
+          "attribute_predicate": "altındadır",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_morpheme_functions": [
+            "root",
+            "third_person_possessive",
+            "buffer_n",
+            "locative",
+            "assertive_copula"
+          ],
+          "canonical_morphemes": [
+            "alt",
+            "ı",
+            "n",
+            "da",
+            "dır"
+          ],
+          "canonical_predicate": "altındadır",
+          "possessive_locative_without_copula": "altında",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'nın altında mıdır?",
+          "query_lemma_tokens": [
+            "alt"
+          ],
+          "query_predicate": "altında mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "altındadır",
+          "altında mıdır"
+        ],
+        "term": "altındadır"
+      }
+    ],
+    "family": "spatial",
+    "human_review_status": "pending",
+    "relation_id": "spatial_above",
+    "source": "frozen renderers.turkish and renderers.english"
+  },
+  {
+    "directions": [
+      {
+        "direction": "before",
+        "english_expression": "Ayşe arrived before Bora.",
+        "english_question": "Did Ayşe arrive before Bora?",
+        "english_term": "before",
+        "expression": "Ayşe, Bora'dan önce gelmiştir.",
+        "lemma": "önce",
+        "lemma_tokens": [
+          "önce"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin geliş zamanı, Bora'nın geliş zamanından daha erkendir.",
+          "attribute_lemma_tokens": [
+            "erken"
+          ],
+          "attribute_lexeme_changed": true,
+          "attribute_predicate": "daha erkendir",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "önce gelmiştir",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'dan önce gelmiş midir?",
+          "query_lemma_tokens": [
+            "önce"
+          ],
+          "query_predicate": "önce gelmiş midir",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ö",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "önce gelmiştir",
+          "önce gelmiş midir",
+          "daha erkendir"
+        ],
+        "term": "önce gelmiştir"
+      },
+      {
+        "direction": "after",
+        "english_expression": "Ayşe arrived after Bora.",
+        "english_question": "Did Ayşe arrive after Bora?",
+        "english_term": "after",
+        "expression": "Ayşe, Bora'dan sonra gelmiştir.",
+        "lemma": "sonra",
+        "lemma_tokens": [
+          "sonra"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin geliş zamanı, Bora'nın geliş zamanından daha geçtir.",
+          "attribute_lemma_tokens": [
+            "geç"
+          ],
+          "attribute_lexeme_changed": true,
+          "attribute_predicate": "daha geçtir",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "sonra gelmiştir",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'dan sonra gelmiş midir?",
+          "query_lemma_tokens": [
+            "sonra"
+          ],
+          "query_predicate": "sonra gelmiş midir",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ç",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "sonra gelmiştir",
+          "sonra gelmiş midir",
+          "daha geçtir"
+        ],
+        "term": "sonra gelmiştir"
+      }
+    ],
+    "family": "temporal",
+    "human_review_status": "pending",
+    "relation_id": "temporal_arrival",
+    "source": "frozen renderers.turkish and renderers.english"
+  },
+  {
+    "directions": [
+      {
+        "direction": "before",
+        "english_expression": "Task Ayşe finished before task Bora.",
+        "english_question": "Did task Ayşe finish before task Bora?",
+        "english_term": "before",
+        "expression": "Ayşe adlı görev, Bora adlı görevden önce tamamlanmıştır.",
+        "lemma": "önce",
+        "lemma_tokens": [
+          "önce"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe adlı görevin tamamlanma zamanı, Bora adlı görevin tamamlanma zamanından daha erkendir.",
+          "attribute_lemma_tokens": [
+            "erken"
+          ],
+          "attribute_lexeme_changed": true,
+          "attribute_predicate": "daha erkendir",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "önce tamamlanmıştır",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe adlı görev, Bora adlı görevden önce tamamlanmış mıdır?",
+          "query_lemma_tokens": [
+            "önce"
+          ],
+          "query_predicate": "önce tamamlanmış mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ö",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "önce tamamlanmıştır",
+          "önce tamamlanmış mıdır",
+          "daha erkendir"
+        ],
+        "term": "önce tamamlanmıştır"
+      },
+      {
+        "direction": "after",
+        "english_expression": "Task Ayşe finished after task Bora.",
+        "english_question": "Did task Ayşe finish after task Bora?",
+        "english_term": "after",
+        "expression": "Ayşe adlı görev, Bora adlı görevden sonra tamamlanmıştır.",
+        "lemma": "sonra",
+        "lemma_tokens": [
+          "sonra"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe adlı görevin tamamlanma zamanı, Bora adlı görevin tamamlanma zamanından daha geçtir.",
+          "attribute_lemma_tokens": [
+            "geç"
+          ],
+          "attribute_lexeme_changed": true,
+          "attribute_predicate": "daha geçtir",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "sonra tamamlanmıştır",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe adlı görev, Bora adlı görevden sonra tamamlanmış mıdır?",
+          "query_lemma_tokens": [
+            "sonra"
+          ],
+          "query_predicate": "sonra tamamlanmış mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ç",
+            "ö",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "sonra tamamlanmıştır",
+          "sonra tamamlanmış mıdır",
+          "daha geçtir"
+        ],
+        "term": "sonra tamamlanmıştır"
+      }
+    ],
+    "family": "temporal",
+    "human_review_status": "pending",
+    "relation_id": "temporal_completion",
+    "source": "frozen renderers.turkish and renderers.english"
+  },
+  {
+    "directions": [
+      {
+        "direction": "before",
+        "english_expression": "Ayşe is taller than Bora.",
+        "english_question": "Is Ayşe taller than Bora?",
+        "english_term": "taller than",
+        "expression": "Ayşe, Bora'dan daha uzundur.",
+        "lemma": "uzun",
+        "lemma_tokens": [
+          "uzun"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin boyu, Bora'nın boyundan daha uzundur.",
+          "attribute_lemma_tokens": [
+            "uzun"
+          ],
+          "attribute_lexeme_changed": false,
+          "attribute_predicate": "daha uzundur",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "daha uzundur",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'dan daha uzun mudur?",
+          "query_lemma_tokens": [
+            "uzun"
+          ],
+          "query_predicate": "daha uzun mudur",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "daha uzundur",
+          "daha uzun mudur"
+        ],
+        "term": "daha uzundur"
+      },
+      {
+        "direction": "after",
+        "english_expression": "Ayşe is shorter than Bora.",
+        "english_question": "Is Ayşe shorter than Bora?",
+        "english_term": "shorter than",
+        "expression": "Ayşe, Bora'dan daha kısadır.",
+        "lemma": "kısa",
+        "lemma_tokens": [
+          "kısa"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin boyu, Bora'nın boyundan daha kısadır.",
+          "attribute_lemma_tokens": [
+            "kısa"
+          ],
+          "attribute_lexeme_changed": false,
+          "attribute_predicate": "daha kısadır",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "daha kısadır",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'dan daha kısa mıdır?",
+          "query_lemma_tokens": [
+            "kısa"
+          ],
+          "query_predicate": "daha kısa mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "daha kısadır",
+          "daha kısa mıdır"
+        ],
+        "term": "daha kısadır"
+      }
+    ],
+    "family": "comparison",
+    "human_review_status": "pending",
+    "relation_id": "comparison_height",
+    "source": "frozen renderers.turkish and renderers.english"
+  },
+  {
+    "directions": [
+      {
+        "direction": "before",
+        "english_expression": "Ayşe is faster than Bora.",
+        "english_question": "Is Ayşe faster than Bora?",
+        "english_term": "faster than",
+        "expression": "Ayşe, Bora'dan daha hızlıdır.",
+        "lemma": "hızlı",
+        "lemma_tokens": [
+          "hızlı"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin hızı, Bora'nın hızından daha yüksektir.",
+          "attribute_lemma_tokens": [
+            "yüksek"
+          ],
+          "attribute_lexeme_changed": true,
+          "attribute_predicate": "daha yüksektir",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "daha hızlıdır",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'dan daha hızlı mıdır?",
+          "query_lemma_tokens": [
+            "hızlı"
+          ],
+          "query_predicate": "daha hızlı mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ü",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "daha hızlıdır",
+          "daha hızlı mıdır",
+          "daha yüksektir"
+        ],
+        "term": "daha hızlıdır"
+      },
+      {
+        "direction": "after",
+        "english_expression": "Ayşe is slower than Bora.",
+        "english_question": "Is Ayşe slower than Bora?",
+        "english_term": "slower than",
+        "expression": "Ayşe, Bora'dan daha yavaştır.",
+        "lemma": "yavaş",
+        "lemma_tokens": [
+          "yavaş"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin hızı, Bora'nın hızından daha düşüktür.",
+          "attribute_lemma_tokens": [
+            "düşük"
+          ],
+          "attribute_lexeme_changed": true,
+          "attribute_predicate": "daha düşüktür",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "daha yavaştır",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'dan daha yavaş mıdır?",
+          "query_lemma_tokens": [
+            "yavaş"
+          ],
+          "query_predicate": "daha yavaş mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ü",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "daha yavaştır",
+          "daha yavaş mıdır",
+          "daha düşüktür"
+        ],
+        "term": "daha yavaştır"
+      }
+    ],
+    "family": "comparison",
+    "human_review_status": "pending",
+    "relation_id": "comparison_speed",
+    "source": "frozen renderers.turkish and renderers.english"
+  },
+  {
+    "directions": [
+      {
+        "direction": "before",
+        "english_expression": "Ayşe is heavier than Bora.",
+        "english_question": "Is Ayşe heavier than Bora?",
+        "english_term": "heavier than",
+        "expression": "Ayşe, Bora'dan daha ağırdır.",
+        "lemma": "ağır",
+        "lemma_tokens": [
+          "ağır"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin ağırlığı, Bora'nın ağırlığından daha fazladır.",
+          "attribute_lemma_tokens": [
+            "fazla"
+          ],
+          "attribute_lexeme_changed": true,
+          "attribute_predicate": "daha fazladır",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "daha ağırdır",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'dan daha ağır mıdır?",
+          "query_lemma_tokens": [
+            "ağır"
+          ],
+          "query_predicate": "daha ağır mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ğ",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "daha ağırdır",
+          "daha ağır mıdır",
+          "daha fazladır"
+        ],
+        "term": "daha ağırdır"
+      },
+      {
+        "direction": "after",
+        "english_expression": "Ayşe is lighter than Bora.",
+        "english_question": "Is Ayşe lighter than Bora?",
+        "english_term": "lighter than",
+        "expression": "Ayşe, Bora'dan daha hafiftir.",
+        "lemma": "hafif",
+        "lemma_tokens": [
+          "hafif"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin ağırlığı, Bora'nın ağırlığından daha azdır.",
+          "attribute_lemma_tokens": [
+            "az"
+          ],
+          "attribute_lexeme_changed": true,
+          "attribute_predicate": "daha azdır",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "daha hafiftir",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'dan daha hafif midir?",
+          "query_lemma_tokens": [
+            "hafif"
+          ],
+          "query_predicate": "daha hafif midir",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ğ",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "daha hafiftir",
+          "daha hafif midir",
+          "daha azdır"
+        ],
+        "term": "daha hafiftir"
+      }
+    ],
+    "family": "comparison",
+    "human_review_status": "pending",
+    "relation_id": "comparison_weight",
+    "source": "frozen renderers.turkish and renderers.english"
+  },
+  {
+    "directions": [
+      {
+        "direction": "before",
+        "english_expression": "Ayşe is ranked higher than Bora.",
+        "english_question": "Is Ayşe ranked higher than Bora?",
+        "english_term": "higher than",
+        "expression": "Ayşe, Bora'dan daha üst sıradadır.",
+        "lemma": "üst",
+        "lemma_tokens": [
+          "üst"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin sırası, Bora'nın sırasından daha üsttedir.",
+          "attribute_lemma_tokens": [
+            "üst"
+          ],
+          "attribute_lexeme_changed": false,
+          "attribute_predicate": "daha üsttedir",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "daha üst sıradadır",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'dan daha üst sırada mıdır?",
+          "query_lemma_tokens": [
+            "üst"
+          ],
+          "query_predicate": "daha üst sırada mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ü",
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "daha üst sıradadır",
+          "daha üst sırada mıdır",
+          "daha üsttedir"
+        ],
+        "term": "daha üst sıradadır"
+      },
+      {
+        "direction": "after",
+        "english_expression": "Ayşe is ranked lower than Bora.",
+        "english_question": "Is Ayşe ranked lower than Bora?",
+        "english_term": "lower than",
+        "expression": "Ayşe, Bora'dan daha alt sıradadır.",
+        "lemma": "alt",
+        "lemma_tokens": [
+          "alt"
+        ],
+        "morphology": {
+          "attribute_expression": "Ayşe'nin sırası, Bora'nın sırasından daha alttadır.",
+          "attribute_lemma_tokens": [
+            "alt"
+          ],
+          "attribute_lexeme_changed": false,
+          "attribute_predicate": "daha alttadır",
+          "attribute_variant": "P4; morphology, syntax and sometimes lexical changes jointly",
+          "canonical_lemma_scope": "question relation and canonical premise lexeme; excludes P4 alternate lexemes",
+          "canonical_predicate": "daha alt sıradadır",
+          "proper_name_suffix_inventory": [
+            "dan",
+            "den",
+            "in",
+            "nin",
+            "nın",
+            "ten",
+            "ün",
+            "ın"
+          ],
+          "proper_name_suffixes": {
+            "Ahmet": {
+              "ablative": "Ahmet'ten",
+              "genitive": "Ahmet'in"
+            },
+            "Ayşe": {
+              "ablative": "Ayşe'den",
+              "genitive": "Ayşe'nin"
+            },
+            "Bora": {
+              "ablative": "Bora'dan",
+              "genitive": "Bora'nın"
+            },
+            "Gökçe": {
+              "ablative": "Gökçe'den",
+              "genitive": "Gökçe'nin"
+            },
+            "Işıl": {
+              "ablative": "Işıl'dan",
+              "genitive": "Işıl'ın"
+            },
+            "Özgür": {
+              "ablative": "Özgür'den",
+              "genitive": "Özgür'ün"
+            },
+            "İlker": {
+              "ablative": "İlker'den",
+              "genitive": "İlker'in"
+            }
+          },
+          "query_expression": "Ayşe, Bora'dan daha alt sırada mıdır?",
+          "query_lemma_tokens": [
+            "alt"
+          ],
+          "query_predicate": "daha alt sırada mıdır",
+          "sound_rules": {
+            "apostrophe": "ASCII apostrophe separates suffixes of proper names; common relation nouns have none",
+            "buffers": "Genitive -n- after vowel-final names; positional possessive/buffer sequences listed literally",
+            "consonant_harmony": "Ablative d→t after f,s,t,k,ç,ş,h,p; exact name spelling is preserved",
+            "scope": "Declared names and frozen positional/attribute forms, not a general morphological analyser",
+            "vowel_harmony": "Four-way high-vowel harmony in -(n)In; two-way harmony in -DAn; frozen positional/copula forms"
+          },
+          "turkish_characters": [
+            "ı",
+            "ş"
+          ],
+          "validation_scope": "frozen renderer helpers; human linguistic review pending"
+        },
+        "surface_forms": [
+          "daha alt sıradadır",
+          "daha alt sırada mıdır",
+          "daha alttadır"
+        ],
+        "term": "daha alt sıradadır"
+      }
+    ],
+    "family": "ranking",
+    "human_review_status": "pending",
+    "relation_id": "ranking",
+    "source": "frozen renderers.turkish and renderers.english"
+  }
+]

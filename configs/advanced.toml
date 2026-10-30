@@ -1,0 +1,67 @@
+# Complete, offline planning configuration; no experiments can be executed.
+# Units: latent queries per n/seed, split equally across four query cells.
+schema_version = 1
+protocol_id = "tr_cbe_v0_1"
+stage = "advanced"
+status = "planning_only"
+task = "ordering_endpoint"
+relation = "front_behind"
+seeds = [201,202,203]
+sizes = [4,8,16,32,64,128]
+instances_per_size_per_seed = 200
+languages = ["tr", "en"]
+prompting = ["direct","reasoning"]
+pending_gates = ["generator_oracle_renderer_missing", "linguistic_review_missing", "model_snapshots_unselected", "dataset_not_frozen", "preregistration_and_power_review_pending"]
+
+[[presentations]]
+language = "tr"
+variant = "canonical"
+
+[[presentations]]
+language = "tr"
+variant = "converse"
+
+[[presentations]]
+language = "en"
+variant = "canonical"
+
+[[presentations]]
+language = "en"
+variant = "converse"
+
+[[models]]
+slot = "model_1"
+provider = "UNSELECTED"
+model_id = "UNSELECTED"
+revision = "UNSELECTED"
+tokenizer_revision = "UNSELECTED"
+
+[[models]]
+slot = "model_2"
+provider = "UNSELECTED"
+model_id = "UNSELECTED"
+revision = "UNSELECTED"
+tokenizer_revision = "UNSELECTED"
+
+[repeats]
+fraction = 0.1
+total_observations = 2
+seed = 9201
+
+# Proposed values; provider capability checks are a future execution gate.
+[decoding]
+temperature = 0.0
+top_p = 1.0
+max_output_tokens = 1024
+reasoning_effort = "none"
+seed_policy = "record_if_supported"
+
+[analysis]
+bootstrap_resamples = 5000
+seed = 9202
+alpha = 0.05
+multiplicity = "holm"
+
+[training]
+enabled = false
+

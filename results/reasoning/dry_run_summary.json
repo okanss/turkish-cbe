@@ -1,0 +1,631 @@
+{
+  "actual_generation_calls": 0,
+  "actual_model_downloads": 0,
+  "artifact_type": "reasoning_dry_run_summary",
+  "assumptions": [
+    "Input token figures are offline proxies, not measured new chat/tokenizer counts.",
+    "Output values are upper limits, not observed consumption.",
+    "Costs use configured dated prices; unknown model/hardware/count costs remain null.",
+    "Actual execution remains blocked by disabled examples, budget and full-pilot approval controls."
+  ],
+  "contains_model_results": false,
+  "native_effort_support": "unverified_for_all_six_disabled_examples",
+  "not_a_model_selection": true,
+  "plans": {
+    "full": {
+      "active_planned_arms": 18,
+      "actual_generation_calls": 0,
+      "answer_cells": {
+        "1024|distance_controlled|1": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "1024|distance_controlled|128": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "1024|distance_controlled|16": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "1024|distance_controlled|2": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "1024|distance_controlled|256": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "1024|distance_controlled|32": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "1024|distance_controlled|4": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "1024|distance_controlled|512": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "1024|distance_controlled|64": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "1024|distance_controlled|8": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "1024|endpoint|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "1024|internal|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "128|distance_controlled|1": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "128|distance_controlled|16": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "128|distance_controlled|2": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "128|distance_controlled|32": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "128|distance_controlled|4": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "128|distance_controlled|64": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "128|distance_controlled|8": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "128|endpoint|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "128|internal|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "16|distance_controlled|1": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "16|distance_controlled|2": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "16|distance_controlled|4": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "16|distance_controlled|8": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "16|endpoint|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "16|internal|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "256|distance_controlled|1": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "256|distance_controlled|128": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "256|distance_controlled|16": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "256|distance_controlled|2": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "256|distance_controlled|32": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "256|distance_controlled|4": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "256|distance_controlled|64": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "256|distance_controlled|8": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "256|endpoint|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "256|internal|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "32|distance_controlled|1": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "32|distance_controlled|16": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "32|distance_controlled|2": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "32|distance_controlled|4": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "32|distance_controlled|8": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "32|endpoint|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "32|internal|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "4|distance_controlled|1": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "4|endpoint|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "4|internal|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "512|distance_controlled|1": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "512|distance_controlled|128": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "512|distance_controlled|16": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "512|distance_controlled|2": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "512|distance_controlled|256": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "512|distance_controlled|32": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "512|distance_controlled|4": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "512|distance_controlled|64": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "512|distance_controlled|8": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "512|endpoint|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "512|internal|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "64|distance_controlled|1": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "64|distance_controlled|16": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "64|distance_controlled|2": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "64|distance_controlled|32": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "64|distance_controlled|4": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "64|distance_controlled|8": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "64|endpoint|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "64|internal|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "8|distance_controlled|1": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "8|distance_controlled|2": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "8|distance_controlled|4": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "8|endpoint|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        },
+        "8|internal|None": {
+          "forward|False": 50,
+          "forward|True": 50,
+          "reverse|False": 50,
+          "reverse|True": 50
+        }
+      },
+      "cohort_sha256": "bae4010c66b8a9a1c1691f36a80bf7ee541d20791447d07c06edd0003184dcd8",
+      "common_output_budget": 2048,
+      "configured_disabled_models": 6,
+      "estimated_cost_total": null,
+      "estimated_input_tokens_all_arms_proxy": 6854692842,
+      "execution_blockers": [
+        "call_budget_exceeded",
+        "completed_real_pilot_and_explicit_approval_required",
+        "selected_models_disabled"
+      ],
+      "file_sha256": "424d6ccdeac500ee1b1d1b21b00eb0b9108e7e7c8708311c1b696ed62099c0ed",
+      "known_priced_subset_estimate_usd": 6345.914017499999,
+      "maximum_output_tokens_all_arms": 2093875200,
+      "path": "results/reasoning/plans/full.json",
+      "plan_sha256": "2ea547726c23e2792c9cb8ca818a2de4f0454b8b97dd5f6400b6fc13968d39ec",
+      "planned_generation_calls": 1022400,
+      "priced_arms": 3,
+      "query_strata": {
+        "1024|distance_controlled|1": 200,
+        "1024|distance_controlled|128": 200,
+        "1024|distance_controlled|16": 200,
+        "1024|distance_controlled|2": 200,
+        "1024|distance_controlled|256": 200,
+        "1024|distance_controlled|32": 200,
+        "1024|distance_controlled|4": 200,
+        "1024|distance_controlled|512": 200,
+        "1024|distance_controlled|64": 200,
+        "1024|distance_controlled|8": 200,
+        "1024|endpoint|None": 200,
+        "1024|internal|None": 200,
+        "128|distance_controlled|1": 200,
+        "128|distance_controlled|16": 200,
+        "128|distance_controlled|2": 200,
+        "128|distance_controlled|32": 200,
+        "128|distance_controlled|4": 200,
+        "128|distance_controlled|64": 200,
+        "128|distance_controlled|8": 200,
+        "128|endpoint|None": 200,
+        "128|internal|None": 200,
+        "16|distance_controlled|1": 200,
+        "16|distance_controlled|2": 200,
+        "16|distance_controlled|4": 200,
+        "16|distance_controlled|8": 200,
+        "16|endpoint|None": 200,
+        "16|internal|None": 200,
+        "256|distance_controlled|1": 200,
+        "256|distance_controlled|128": 200,
+        "256|distance_controlled|16": 200,
+        "256|distance_controlled|2": 200,
+        "256|distance_controlled|32": 200,
+        "256|distance_controlled|4": 200,
+        "256|distance_controlled|64": 200,
+        "256|distance_controlled|8": 200,
+        "256|endpoint|None": 200,
+        "256|internal|None": 200,
+        "32|distance_controlled|1": 200,
+        "32|distance_controlled|16": 200,
+        "32|distance_controlled|2": 200,
+        "32|distance_controlled|4": 200,
+        "32|distance_controlled|8": 200,
+        "32|endpoint|None": 200,
+        "32|internal|None": 200,
+        "4|distance_controlled|1": 200,
+        "4|endpoint|None": 200,
+        "4|internal|None": 200,
+        "512|distance_controlled|1": 200,
+        "512|distance_controlled|128": 200,
+        "512|distance_controlled|16": 200,
+        "512|distance_controlled|2": 200,
+        "512|distance_controlled|256": 200,
+        "512|distance_controlled|32": 200,
+        "512|distance_controlled|4": 200,
+        "512|distance_controlled|64": 200,
+        "512|distance_controlled|8": 200,
+        "512|endpoint|None": 200,
+        "512|internal|None": 200,
+        "64|distance_controlled|1": 200,
+        "64|distance_controlled|16": 200,
+        "64|distance_controlled|2": 200,
+        "64|distance_controlled|32": 200,
+        "64|distance_controlled|4": 200,
+        "64|distance_controlled|8": 200,
+        "64|endpoint|None": 200,
+        "64|internal|None": 200,
+        "8|distance_controlled|1": 200,
+        "8|distance_controlled|2": 200,
+        "8|distance_controlled|4": 200,
+        "8|endpoint|None": 200,
+        "8|internal|None": 200
+      },
+      "source_dataset_manifest_sha256": "08e45961a12a1e3a1731fdc29538c6883e41edaf8d6521224507d910e1c59c8f",
+      "source_latent_groups": 1800,
+      "source_prompts_per_arm": 56800,
+      "source_queries": 14200,
+      "unavailable_native_effort_arms": 24,
+      "unknown_price_arms": 15
+    },
+    "pilot": {
+      "active_planned_arms": 18,
+      "actual_generation_calls": 0,
+      "answer_cells": {
+        "4|distance_controlled|1": {
+          "forward|False": 1,
+          "forward|True": 1,
+          "reverse|False": 1,
+          "reverse|True": 1
+        },
+        "4|endpoint|None": {
+          "forward|False": 1,
+          "forward|True": 1,
+          "reverse|False": 1,
+          "reverse|True": 1
+        },
+        "4|internal|None": {
+          "forward|False": 1,
+          "forward|True": 1,
+          "reverse|False": 1,
+          "reverse|True": 1
+        },
+        "8|distance_controlled|1": {
+          "forward|False": 1,
+          "forward|True": 1,
+          "reverse|False": 1,
+          "reverse|True": 1
+        },
+        "8|distance_controlled|2": {
+          "forward|False": 1,
+          "forward|True": 1,
+          "reverse|False": 1,
+          "reverse|True": 1
+        },
+        "8|distance_controlled|4": {
+          "forward|False": 1,
+          "forward|True": 1,
+          "reverse|False": 1,
+          "reverse|True": 1
+        },
+        "8|endpoint|None": {
+          "forward|False": 1,
+          "forward|True": 1,
+          "reverse|False": 1,
+          "reverse|True": 1
+        },
+        "8|internal|None": {
+          "forward|False": 1,
+          "forward|True": 1,
+          "reverse|False": 1,
+          "reverse|True": 1
+        }
+      },
+      "cohort_sha256": "e4c4fb47ab2cfa39c8c57e7eeb0004e4a564a25cd0c8283120c1b629a1915f33",
+      "common_output_budget": 2048,
+      "configured_disabled_models": 6,
+      "estimated_cost_total": null,
+      "estimated_input_tokens_all_arms_proxy": 1117350,
+      "execution_blockers": [
+        "call_budget_exceeded",
+        "selected_models_disabled"
+      ],
+      "file_sha256": "f80e4bed8b7134dfef3af642ff60f49c0ff978c59c408821fed2f67a818bc999",
+      "known_priced_subset_estimate_usd": 8.3298825,
+      "maximum_output_tokens_all_arms": 4718592,
+      "path": "results/reasoning/plans/pilot.json",
+      "plan_sha256": "b32a13bde51fcaf06a2af8f5792c78f70d48630dc1192fbd52d2c74c9da5722e",
+      "planned_generation_calls": 2304,
+      "priced_arms": 3,
+      "query_strata": {
+        "4|distance_controlled|1": 4,
+        "4|endpoint|None": 4,
+        "4|internal|None": 4,
+        "8|distance_controlled|1": 4,
+        "8|distance_controlled|2": 4,
+        "8|distance_controlled|4": 4,
+        "8|endpoint|None": 4,
+        "8|internal|None": 4
+      },
+      "source_dataset_manifest_sha256": "08e45961a12a1e3a1731fdc29538c6883e41edaf8d6521224507d910e1c59c8f",
+      "source_latent_groups": 8,
+      "source_prompts_per_arm": 128,
+      "source_queries": 32,
+      "unavailable_native_effort_arms": 24,
+      "unknown_price_arms": 15
+    }
+  },
+  "reasoning_version": "0.8.0"
+}

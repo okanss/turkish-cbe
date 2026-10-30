@@ -1,0 +1,31 @@
+{
+  "sources": {
+    "dataset_statistics": {
+      "path": "paper/tables/table_1_dataset_statistics.md",
+      "sha256": "181d4a3cd15b0ebc01068f3cfba2c963ecf63edec6c78ec4efe16dc0c0f6a2da"
+    },
+    "corpus_frequencies": {
+      "path": "results/lexical/with_llama/tables/corpus_frequencies.csv",
+      "sha256": "689f0cb54ce7045e94b2279f7436dc54a178a86bd70a31f113522198cfe3935e"
+    },
+    "tokenization_vocabulary": {
+      "path": "results/lexical/with_llama/tables/tokenization_vocabulary.csv",
+      "sha256": "eb35b82693d9c0f32fc23495ab9b8489a183c5e3b65848c8185914a6a073af9d"
+    },
+    "pilot_gpt4o_normalized": {
+      "path": "results/normalized/pilot-gpt4o-main-003.jsonl",
+      "sha256": "00d2b0c137046012a6750139295f149ac59a50b8f7ea228b06242e2d3df8c629"
+    },
+    "pilot_qwen_normalized": {
+      "path": "results/normalized/pilot-qwen05b-main-001.jsonl",
+      "sha256": "4f2bc322c58b3eb28e47dfa78a955fab5cbf5e1ded1572fd687fed3749caabc1"
+    }
+  },
+  "outputs": {
+    "fig2_construction_counts.pdf": "df13266531ed83cf3641fa11b57fc674dd84000e4ee956adbb50dadfcb4da2d3",
+    "fig3_lemma_frequencies.pdf": "5c73b05b1a7b5eec1915e4c5934bf18a42aa6c1f616dd037d35e24cc36e7a113",
+    "fig4_token_ratios.pdf": "62986130d0b4d8af2aedc67f6023fb77e96bca507ed82305d1470a9f0a54aa8a",
+    "fig5_pilot_gpt4o.pdf": "5f014f9faad70b70b4c630aafe27c223a71e4e6cb3650943f6ffba4de588d0b7"
+  },
+  "note": "Figures 2-4: construction/preprocessing measurements only. Figure 5: exploratory pilot model outcomes from the normalized run records (pilot split; human linguistic review pending)."
+}

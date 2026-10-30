@@ -1,0 +1,90 @@
+\section{Discussion}
+
+\subsection{From translation control to linguistic construct validity}
+
+Matching a latent order controls the intended proposition, but it does not ensure that two sentences are
+equally natural, equally familiar, or equally easy to parse. A Turkish postverbal constituent may preserve
+truth while changing discourse preference. A morphological alternative may alter word length and lexical
+realization at the same time. These distinctions connect Turkish-CBE to linguistic evaluation work
+\citep{ismayilzada2025morphology, basar2025turblimp, basar2026morphologyaware} without making grammatical
+acceptability interchangeable with logical accuracy. Human adjudication should therefore evaluate more than
+whether a parser recovers the expected relation.
+
+The zero exact surface counts illustrate a related measurement issue. An inflected, multiword canonical
+predicate can be absent under exact matching even when its constituent lemma is frequent. The difference is
+substantively meaningful for the feature definition, but neither variable directly measures exposure in a
+proprietary model's training corpus. Lemma ambiguity and corpus domain must remain part of the
+interpretation. Tokenizer studies likewise motivate explicit measurement \citep{rust2021tokenizer,
+ahia2023languages, petrov2023tokenizers}, not a presumption that subword length is the unique cause of an
+error.
+
+\subsection{Correct consistency versus stable error}
+
+The paired decomposition supports questions that a marginal accuracy table cannot answer. A small average
+difference between canonical and equivalent prompts can coexist with large, offsetting correct-to-wrong and
+wrong-to-correct flows. Conversely, agreement can improve because a model repeats a wrong label.
+Equations~\eqref{eq:identities}--\eqref{eq:strict} specify the evidence needed to distinguish these cases:
+shared-valid $R/D/U$, all-planned accuracy and strict $R$, invalid rates, and coverage. Comparisons that
+condition on different subsets can otherwise make a selectively valid model appear more robust.
+
+This interpretation also limits the role of chance correction. The pooled-marginal baseline discounts a
+particular independent-answer bias reference. It is not a causal model of failure, nor does a high
+coefficient show that the same inferential algorithm was applied across forms. Correctness and invariance
+remain behavioral properties. Explanation text adds another observation channel but not automatic access to
+the model's internal computation \citep{turpin2023unfaithful}.
+
+\subsection{Complexity and intervention claims}
+
+The endpoint shortcut makes a strong endpoint score ambiguous as evidence of transitive reasoning.
+Internal/distance-controlled questions reduce one specific shortcut while retaining a highly structured task
+family; they do not eliminate every efficient alternative strategy. Changes with $n$ may reflect retrieval,
+distraction, context length, or the distribution of queried distances. Any future complexity claim must
+therefore name its query stratum and input/presentation condition.
+
+Reasoning prompting may change token budgets and final-answer formatting as well as intermediate generation.
+Provider reasoning effort is a different intervention from an explicit verbal instruction. Similarly, SFT or
+GRPO may strengthen a learned vocabulary mapping without producing broad transfer. Prior work on prompting,
+aggregation, and adaptation \citep{wei2022cot, wang2023selfconsistency, hu2021lora, shao2024deepseekmath}
+supplies methodological options, not evidence for an effect in this benchmark. A finite improvement can
+extend successful coverage without establishing competence throughout the family.
+
+\subsection{What the pilot evidence adds}
+
+The pilot runs convert three of this article's methodological arguments from anticipation into observation.
+First, the degenerate-responder case is real: Qwen2.5-0.5B attains perfect raw invariance by answering
+constantly per language, and only the joint presentation of $R$, $D$, $U$, and the undefined
+$\kappa_{\mathrm{CBE}}$ distinguishes this from robustness. Any evaluation protocol that reports agreement
+without the decomposition would have certified this model. Second, the two failure channels that the
+decomposition separates both occur in a frontier model: moving gpt-4o from English to Turkish raises
+presentation dependence $U$ while leaving shared error $D$ nearly unchanged, whereas the P3 construction
+collapses agreement to chance --- different mechanisms that a marginal accuracy table cannot distinguish.
+Third, the power analysis behind the frozen-test sample sizes is vindicated in both directions:
+eight-pair strata detect nothing for the consistently negative Turkish--English contrast, while the P3
+effect is large enough to survive Holm correction even at pilot scale. The lexical join adds a fourth
+observation: the direction asymmetry of Table~\ref{tab:direction} aligns with measured frequency and
+tokenization asymmetries, yet the single-relation cohort leaves every association formally unidentified ---
+the specifications return recorded refusals, not coefficients, exactly as the protocol requires.
+
+The pilot equally illustrates the interpretive discipline the framework imposes. The P3 deficit is measured
+on precisely the condition whose naturalness most depends on human review; before that review, a model
+failure and a stimulus artifact were observationally equivalent, and the completed review
+(Section~\ref{sec:review}) now separates them in part --- grammaticality and meaning preservation are
+certified, naturalness stays contested. The endpoint
+$>$ internal $>$ distance-controlled ordering is consistent with the endpoint-shortcut analysis above, and
+the below-baseline accuracy at large $d$ shows a systematic directional error, but both observations cover
+one relation family on shared latent orders. The supplemental quantized sweep extends the same structure
+to nine relation families and four scales --- and its sharpest result, the $-38$-point query-matched P3
+collapse at 14B, lands on the same naturalness-contested condition, so the residual naturalness ambiguity
+scales with it. These are reasons to run the confirmatory design, not conclusions from it.
+
+\subsection{Status of the scientific claims}
+
+The supported conclusions are restricted to the constructed design, recorded preprocessing measurements,
+and the exploratory pilot runs of Section~\ref{sec:pilot}. The framework makes comparison units, linguistic
+transformations, missingness, and inferential assumptions explicit. It also exposes gaps that must be
+filled: human review, frozen-test model calls under the declared primary test families, and the reviewed
+base-versus-adapter evaluation of the already-trained optional adaptation arms. Neither an expected directional hypothesis nor a
+favorable narrative is substituted for missing outcomes; the pilot's suggestive Turkish--English direction
+is reported with its failure to reach per-stratum significance, not promoted beyond it. This separation
+allows future empirical findings, including null or adverse effects, to be incorporated without changing
+the underlying definitions after observing results.

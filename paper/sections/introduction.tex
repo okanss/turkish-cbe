@@ -1,0 +1,50 @@
+\section{Introduction}
+
+A logical conclusion can remain unchanged when its premises are reordered, a relation is expressed through
+its converse, or a language uses a different grammatical realization. A model that changes its answer under
+such transformations presents a different evaluation problem from a model that consistently reaches the
+wrong conclusion. Aggregate accuracy obscures both distinctions: equal scores can conceal failures on
+different instances, while high agreement can arise from repeating a biased answer. Behavioral tests and
+consistency evaluations therefore complement conventional task-level scores \citep{ribeiro2020checklist,
+elazar2021pararel}.
+
+The problem is particularly consequential for multilingual evaluation. Turkish expresses grammatical
+relations through productive suffixation and morphophonological alternations, and permits constituent-order
+choices whose discourse effects are not captured by a literal translation. Computational descriptions of
+Turkish morphology formalize the interaction between morphotactics and phonological realization
+\citep{oflazer1994turkish}. Recent Turkish evaluations investigate morphological compositionality,
+linguistic minimal pairs, and surface-form confounders \citep{ismayilzada2025morphology,
+basar2025turblimp, basar2026morphologyaware}. These studies motivate controlled linguistic testing, but
+they do not establish how equivalent Turkish formulations affect transitive ordering inference. That
+question requires its own matched design and genuine model outcomes.
+
+Competence-Based Evaluation (CBE) treats correctness across presentations of a parameterized problem
+family as a behavioral requirement \citep{jiang2026cbe}. We adopt this framing and extend it to
+Turkish--English matching, morphosyntactic interventions, lexical measurements, and query-distance
+controls. The object of comparison is the same latent instance and question, rather than unrelated
+language-specific test items. A failure on one equivalent formulation falsifies the corresponding
+finite-instance requirement; success on a finite sample does not certify an unbounded reasoning competence
+or reveal its internal implementation.
+
+Turkish-CBE addresses five research questions. RQ1 concerns the paired Turkish--English accuracy
+difference. RQ2 concerns sensitivity to answer-preserving Turkish presentations. RQ3 separates entity
+count from query distance and query type. RQ4 examines associations among relation vocabulary, independent
+corpus frequency, tokenization, and predicted-answer bias. RQ5 asks whether reasoning prompting or
+optional adaptation improves correct consistency as well as accuracy. We specify estimands and controls
+for these questions without presupposing that Turkish is harder, that morphology causes an error, or that
+an intervention necessarily helps.
+
+The present article has four contributions. First, it describes a deterministic, language-independent
+ordering generator with exact answers and split-level separation of latent instances. Second, it specifies
+Turkish rendering and bilingual matching with explicit limits on what automatic semantic checks can
+establish. Third, it provides a denominator-aware reliability analysis and reproducible visual audit of the
+constructed data and measured lexical features. Fourth, it reports an executed exploratory pilot evaluation
+of two models (Section~\ref{sec:pilot}) that exercises the complete gated protocol and demonstrates, on
+real model behavior, why the paired decomposition is necessary: one model achieves perfect raw invariance
+by answering constantly, while another loses robust correctness under a single answer-preserving Turkish
+construction. A supplemental quantized local evaluation of four open-weight scales across all nine
+relation families (Section~\ref{sec:p1-local}) reproduces this structure and locates its emergence with
+scale. A completed two-reviewer linguistic review of the sampled stimuli
+(Section~\ref{sec:review}) backs their grammaticality and meaning preservation while leaving
+naturalness contested; because only the pilot split was used and no execution-gate receipt was issued,
+the manuscript makes no confirmatory claim of a language gap, prompting gain, or training benefit.

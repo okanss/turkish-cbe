@@ -1,0 +1,27 @@
+# Turkish-CBE Prompt 8. Offline planning only; no model is selected or enabled.
+schema_version = 1
+output_budget = 2048
+strategies = ["direct", "zero_shot_reasoning", "structured_reasoning"]
+native_efforts = ["none", "low", "medium", "high"]
+
+# No existing snapshot has a verified native-effort declaration here. All four
+# requested D levels are therefore recorded unavailable with zero planned calls.
+capabilities = []
+
+# A capability declaration must name provider/model_id/revision exactly and
+# supply evidence_url (HTTPS), verified_on (quoted YYYY-MM-DD), supported_efforts,
+# and sampling_restrictions for EVERY supported level. Example shape only:
+# [[capabilities]]
+# provider = "openai"
+# model_id = "FULL-DATED-MODEL-SNAPSHOT"
+# revision = "FULL-DATED-MODEL-SNAPSHOT"
+# evidence_url = "https://developers.openai.com/api/docs/models/EXACT-MODEL"
+# verified_on = "2026-10-25"
+# supported_efforts = ["low"]
+# [capabilities.sampling_restrictions.low]
+# temperature = "must_be_null"
+# top_p = "must_be_null"
+#
+# A must_be_null restriction BLOCKS an incompatible configured request. The
+# planner never deletes temperature/top_p or changes another arm automatically.
+# Set common sampling fields explicitly in the selected model registry first.

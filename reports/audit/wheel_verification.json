@@ -1,0 +1,571 @@
+{
+  "commands": [
+    {
+      "plan_path": "reports/audit/plans/inference_pilot.json",
+      "result": {
+        "actual_generation_calls": 0,
+        "contains_model_results": false,
+        "dry_run": true,
+        "execution_blockers": [
+          "selected_models_disabled"
+        ],
+        "model_budgets": [
+          {
+            "actual_new_message_token_count": null,
+            "auxiliary_token_count_requests": 0,
+            "chat_count_exact": false,
+            "cost": {
+              "amount": null,
+              "currency": null,
+              "pricing_as_of": null,
+              "pricing_source": null,
+              "status": "unknown"
+            },
+            "estimated_input_tokens": 3750,
+            "generation_calls": 16,
+            "maximum_auxiliary_token_count_requests": 0,
+            "maximum_generated_tokens": 512,
+            "maximum_generation_attempts": 48,
+            "model_id": "qwen25-05b-hf",
+            "potential_context_overflow": false,
+            "token_estimate_method": "frozen_old_prompt_o200k_base_proxy_plus_64_per_new_chat"
+          }
+        ],
+        "plan_sha256": "28ecb74dffbcb11f45c8d6fc1cb5a1c6546439020d9f2d84719c4456dc78bb02",
+        "planned_generation_calls": 16
+      },
+      "sha256": "9e83a14827e8f44148e5a1743ff8d9a7e0186f540f574fca520ec576d1b2eadb",
+      "stage": "inference_pilot"
+    },
+    {
+      "plan_path": "reports/audit/plans/inference_full.json",
+      "result": {
+        "actual_generation_calls": 0,
+        "contains_model_results": false,
+        "dry_run": true,
+        "execution_blockers": [
+          "selected_models_disabled",
+          "completed_real_pilot_and_explicit_approval_required"
+        ],
+        "model_budgets": [
+          {
+            "actual_new_message_token_count": null,
+            "auxiliary_token_count_requests": 0,
+            "chat_count_exact": false,
+            "cost": {
+              "amount": null,
+              "currency": null,
+              "pricing_as_of": null,
+              "pricing_source": null,
+              "status": "unknown"
+            },
+            "estimated_input_tokens": 3799,
+            "generation_calls": 16,
+            "maximum_auxiliary_token_count_requests": 0,
+            "maximum_generated_tokens": 512,
+            "maximum_generation_attempts": 48,
+            "model_id": "qwen25-05b-hf",
+            "potential_context_overflow": false,
+            "token_estimate_method": "frozen_old_prompt_o200k_base_proxy_plus_64_per_new_chat"
+          }
+        ],
+        "plan_sha256": "e3bc90e866cda6967221998eba8a767cde50b19aa8cdc5e785529637df8b8d94",
+        "planned_generation_calls": 16
+      },
+      "sha256": "e5659cebbe23e1713894d0a0bc4bd0e4debbb91f91f111e40153ec74bf9cf232",
+      "stage": "inference_full"
+    },
+    {
+      "plan_path": "reports/audit/plans/reasoning_pilot.json",
+      "result": {
+        "actual_generation_calls": 0,
+        "arm_budgets": [
+          {
+            "actual_new_message_token_count": null,
+            "arm_id": "qwen25-05b-hf--direct",
+            "auxiliary_http_count_assumption": "local tokenizer; no token-count HTTP request",
+            "auxiliary_token_count_requests": 0,
+            "chat_count_exact": false,
+            "cost": {
+              "amount": null,
+              "currency": null,
+              "pricing_as_of": null,
+              "pricing_source": null,
+              "status": "unknown"
+            },
+            "count_input_tokens_method_invocations_per_generation": 1,
+            "effort": null,
+            "estimated_input_tokens": 11266,
+            "generation_calls": 48,
+            "instruction_bytes_used_as_proxy_tokens": 0,
+            "instruction_overhead_utf8_bytes": {
+              "en": 0,
+              "tr": 0
+            },
+            "maximum_auxiliary_token_count_requests": 0,
+            "maximum_generated_tokens": 98304,
+            "maximum_generation_attempts": 144,
+            "maximum_preflight_http_requests_per_arm_invocation": 0,
+            "model_id": "qwen25-05b-hf",
+            "nominal_preflight_http_requests_per_arm_invocation": 0,
+            "potential_context_overflow": false,
+            "preflight_budget_scope": "one invocation only; unused/completed arms make no request; repeated resumes are not bounded globally",
+            "source_prompt_counts_by_language": {
+              "en": 24,
+              "tr": 24
+            },
+            "strategy": "direct",
+            "token_estimate_method": "frozen_old_prompt_o200k_base_plus_64_chat_heuristic_plus_exact_added_instruction_bytes_as_token_proxy"
+          },
+          {
+            "actual_new_message_token_count": null,
+            "arm_id": "qwen25-05b-hf--zero_shot_reasoning",
+            "auxiliary_http_count_assumption": "local tokenizer; no token-count HTTP request",
+            "auxiliary_token_count_requests": 0,
+            "chat_count_exact": false,
+            "cost": {
+              "amount": null,
+              "currency": null,
+              "pricing_as_of": null,
+              "pricing_source": null,
+              "status": "unknown"
+            },
+            "count_input_tokens_method_invocations_per_generation": 1,
+            "effort": null,
+            "estimated_input_tokens": 22258,
+            "generation_calls": 48,
+            "instruction_bytes_used_as_proxy_tokens": 10992,
+            "instruction_overhead_utf8_bytes": {
+              "en": 232,
+              "tr": 226
+            },
+            "maximum_auxiliary_token_count_requests": 0,
+            "maximum_generated_tokens": 98304,
+            "maximum_generation_attempts": 144,
+            "maximum_preflight_http_requests_per_arm_invocation": 0,
+            "model_id": "qwen25-05b-hf",
+            "nominal_preflight_http_requests_per_arm_invocation": 0,
+            "potential_context_overflow": false,
+            "preflight_budget_scope": "one invocation only; unused/completed arms make no request; repeated resumes are not bounded globally",
+            "source_prompt_counts_by_language": {
+              "en": 24,
+              "tr": 24
+            },
+            "strategy": "zero_shot_reasoning",
+            "token_estimate_method": "frozen_old_prompt_o200k_base_plus_64_chat_heuristic_plus_exact_added_instruction_bytes_as_token_proxy"
+          },
+          {
+            "actual_new_message_token_count": null,
+            "arm_id": "qwen25-05b-hf--structured_reasoning",
+            "auxiliary_http_count_assumption": "local tokenizer; no token-count HTTP request",
+            "auxiliary_token_count_requests": 0,
+            "chat_count_exact": false,
+            "cost": {
+              "amount": null,
+              "currency": null,
+              "pricing_as_of": null,
+              "pricing_source": null,
+              "status": "unknown"
+            },
+            "count_input_tokens_method_invocations_per_generation": 1,
+            "effort": null,
+            "estimated_input_tokens": 29002,
+            "generation_calls": 48,
+            "instruction_bytes_used_as_proxy_tokens": 17736,
+            "instruction_overhead_utf8_bytes": {
+              "en": 389,
+              "tr": 350
+            },
+            "maximum_auxiliary_token_count_requests": 0,
+            "maximum_generated_tokens": 98304,
+            "maximum_generation_attempts": 144,
+            "maximum_preflight_http_requests_per_arm_invocation": 0,
+            "model_id": "qwen25-05b-hf",
+            "nominal_preflight_http_requests_per_arm_invocation": 0,
+            "potential_context_overflow": false,
+            "preflight_budget_scope": "one invocation only; unused/completed arms make no request; repeated resumes are not bounded globally",
+            "source_prompt_counts_by_language": {
+              "en": 24,
+              "tr": 24
+            },
+            "strategy": "structured_reasoning",
+            "token_estimate_method": "frozen_old_prompt_o200k_base_plus_64_chat_heuristic_plus_exact_added_instruction_bytes_as_token_proxy"
+          }
+        ],
+        "contains_model_results": false,
+        "dry_run": true,
+        "execution_blockers": [
+          "selected_models_disabled"
+        ],
+        "plan_sha256": "680fc218ba4bbf8a77f9a8b253dbf285a843954b0be1d2277857e7a969bba7ed",
+        "planned_generation_calls": 144,
+        "unavailable_arms": [
+          {
+            "arm_id": "qwen25-05b-hf--provider_effort_none",
+            "capability_verified": false,
+            "effort": "none",
+            "generation_calls": 0,
+            "model_id": "qwen25-05b-hf",
+            "reason": "provider_adapter_does_not_support_native_effort",
+            "strategy": "provider_effort"
+          },
+          {
+            "arm_id": "qwen25-05b-hf--provider_effort_low",
+            "capability_verified": false,
+            "effort": "low",
+            "generation_calls": 0,
+            "model_id": "qwen25-05b-hf",
+            "reason": "provider_adapter_does_not_support_native_effort",
+            "strategy": "provider_effort"
+          },
+          {
+            "arm_id": "qwen25-05b-hf--provider_effort_medium",
+            "capability_verified": false,
+            "effort": "medium",
+            "generation_calls": 0,
+            "model_id": "qwen25-05b-hf",
+            "reason": "provider_adapter_does_not_support_native_effort",
+            "strategy": "provider_effort"
+          },
+          {
+            "arm_id": "qwen25-05b-hf--provider_effort_high",
+            "capability_verified": false,
+            "effort": "high",
+            "generation_calls": 0,
+            "model_id": "qwen25-05b-hf",
+            "reason": "provider_adapter_does_not_support_native_effort",
+            "strategy": "provider_effort"
+          }
+        ]
+      },
+      "sha256": "29ec0f883d77e5b443aa8782ec15cabf6a89c63414d08528c2d4fdca509e0400",
+      "stage": "reasoning_pilot"
+    },
+    {
+      "plan_path": "reports/audit/plans/reasoning_full.json",
+      "result": {
+        "actual_generation_calls": 0,
+        "arm_budgets": [
+          {
+            "actual_new_message_token_count": null,
+            "arm_id": "qwen25-05b-hf--direct",
+            "auxiliary_http_count_assumption": "local tokenizer; no token-count HTTP request",
+            "auxiliary_token_count_requests": 0,
+            "chat_count_exact": false,
+            "cost": {
+              "amount": null,
+              "currency": null,
+              "pricing_as_of": null,
+              "pricing_source": null,
+              "status": "unknown"
+            },
+            "count_input_tokens_method_invocations_per_generation": 1,
+            "effort": null,
+            "estimated_input_tokens": 11397,
+            "generation_calls": 48,
+            "instruction_bytes_used_as_proxy_tokens": 0,
+            "instruction_overhead_utf8_bytes": {
+              "en": 0,
+              "tr": 0
+            },
+            "maximum_auxiliary_token_count_requests": 0,
+            "maximum_generated_tokens": 98304,
+            "maximum_generation_attempts": 144,
+            "maximum_preflight_http_requests_per_arm_invocation": 0,
+            "model_id": "qwen25-05b-hf",
+            "nominal_preflight_http_requests_per_arm_invocation": 0,
+            "potential_context_overflow": false,
+            "preflight_budget_scope": "one invocation only; unused/completed arms make no request; repeated resumes are not bounded globally",
+            "source_prompt_counts_by_language": {
+              "en": 24,
+              "tr": 24
+            },
+            "strategy": "direct",
+            "token_estimate_method": "frozen_old_prompt_o200k_base_plus_64_chat_heuristic_plus_exact_added_instruction_bytes_as_token_proxy"
+          },
+          {
+            "actual_new_message_token_count": null,
+            "arm_id": "qwen25-05b-hf--zero_shot_reasoning",
+            "auxiliary_http_count_assumption": "local tokenizer; no token-count HTTP request",
+            "auxiliary_token_count_requests": 0,
+            "chat_count_exact": false,
+            "cost": {
+              "amount": null,
+              "currency": null,
+              "pricing_as_of": null,
+              "pricing_source": null,
+              "status": "unknown"
+            },
+            "count_input_tokens_method_invocations_per_generation": 1,
+            "effort": null,
+            "estimated_input_tokens": 22389,
+            "generation_calls": 48,
+            "instruction_bytes_used_as_proxy_tokens": 10992,
+            "instruction_overhead_utf8_bytes": {
+              "en": 232,
+              "tr": 226
+            },
+            "maximum_auxiliary_token_count_requests": 0,
+            "maximum_generated_tokens": 98304,
+            "maximum_generation_attempts": 144,
+            "maximum_preflight_http_requests_per_arm_invocation": 0,
+            "model_id": "qwen25-05b-hf",
+            "nominal_preflight_http_requests_per_arm_invocation": 0,
+            "potential_context_overflow": false,
+            "preflight_budget_scope": "one invocation only; unused/completed arms make no request; repeated resumes are not bounded globally",
+            "source_prompt_counts_by_language": {
+              "en": 24,
+              "tr": 24
+            },
+            "strategy": "zero_shot_reasoning",
+            "token_estimate_method": "frozen_old_prompt_o200k_base_plus_64_chat_heuristic_plus_exact_added_instruction_bytes_as_token_proxy"
+          },
+          {
+            "actual_new_message_token_count": null,
+            "arm_id": "qwen25-05b-hf--structured_reasoning",
+            "auxiliary_http_count_assumption": "local tokenizer; no token-count HTTP request",
+            "auxiliary_token_count_requests": 0,
+            "chat_count_exact": false,
+            "cost": {
+              "amount": null,
+              "currency": null,
+              "pricing_as_of": null,
+              "pricing_source": null,
+              "status": "unknown"
+            },
+            "count_input_tokens_method_invocations_per_generation": 1,
+            "effort": null,
+            "estimated_input_tokens": 29133,
+            "generation_calls": 48,
+            "instruction_bytes_used_as_proxy_tokens": 17736,
+            "instruction_overhead_utf8_bytes": {
+              "en": 389,
+              "tr": 350
+            },
+            "maximum_auxiliary_token_count_requests": 0,
+            "maximum_generated_tokens": 98304,
+            "maximum_generation_attempts": 144,
+            "maximum_preflight_http_requests_per_arm_invocation": 0,
+            "model_id": "qwen25-05b-hf",
+            "nominal_preflight_http_requests_per_arm_invocation": 0,
+            "potential_context_overflow": false,
+            "preflight_budget_scope": "one invocation only; unused/completed arms make no request; repeated resumes are not bounded globally",
+            "source_prompt_counts_by_language": {
+              "en": 24,
+              "tr": 24
+            },
+            "strategy": "structured_reasoning",
+            "token_estimate_method": "frozen_old_prompt_o200k_base_plus_64_chat_heuristic_plus_exact_added_instruction_bytes_as_token_proxy"
+          }
+        ],
+        "contains_model_results": false,
+        "dry_run": true,
+        "execution_blockers": [
+          "completed_real_pilot_and_explicit_approval_required",
+          "selected_models_disabled"
+        ],
+        "plan_sha256": "bae4e1df98ef28d1f84159a6fee50c3ae0e6b7d633995440f76eb65d3133add3",
+        "planned_generation_calls": 144,
+        "unavailable_arms": [
+          {
+            "arm_id": "qwen25-05b-hf--provider_effort_none",
+            "capability_verified": false,
+            "effort": "none",
+            "generation_calls": 0,
+            "model_id": "qwen25-05b-hf",
+            "reason": "provider_adapter_does_not_support_native_effort",
+            "strategy": "provider_effort"
+          },
+          {
+            "arm_id": "qwen25-05b-hf--provider_effort_low",
+            "capability_verified": false,
+            "effort": "low",
+            "generation_calls": 0,
+            "model_id": "qwen25-05b-hf",
+            "reason": "provider_adapter_does_not_support_native_effort",
+            "strategy": "provider_effort"
+          },
+          {
+            "arm_id": "qwen25-05b-hf--provider_effort_medium",
+            "capability_verified": false,
+            "effort": "medium",
+            "generation_calls": 0,
+            "model_id": "qwen25-05b-hf",
+            "reason": "provider_adapter_does_not_support_native_effort",
+            "strategy": "provider_effort"
+          },
+          {
+            "arm_id": "qwen25-05b-hf--provider_effort_high",
+            "capability_verified": false,
+            "effort": "high",
+            "generation_calls": 0,
+            "model_id": "qwen25-05b-hf",
+            "reason": "provider_adapter_does_not_support_native_effort",
+            "strategy": "provider_effort"
+          }
+        ]
+      },
+      "sha256": "dc33d5d68045522199fb9659e8b560877ace8a8af7025d307a67ec3ea5ddad85",
+      "stage": "reasoning_full"
+    },
+    {
+      "arm_count": 6,
+      "plan_path": "reports/audit/plans/training_pilot.json",
+      "sha256": "52fd0ffed0b45eb10f2a856fd2f9f184eab70318999b80cd3fc2c17d9a332432",
+      "stage": "training_pilot"
+    },
+    {
+      "arm_count": 6,
+      "plan_path": "reports/audit/plans/training_reference.json",
+      "sha256": "cfa2ce788b1980cccccc8c226ab2a71f2ff0bbebfd53ce0fd9b24e9e66b201f8",
+      "stage": "training_reference"
+    },
+    {
+      "arm_count": 6,
+      "plan_path": "reports/audit/plans/training_matched_steps.json",
+      "sha256": "4b08f8a8c9d801706df87967d1a6c607cc1a442f2376a0bcc7b7f52d710981bd",
+      "stage": "training_matched_steps"
+    }
+  ],
+  "console_scripts": [
+    "turkish-cbe",
+    "turkish-cbe-analyse",
+    "turkish-cbe-audit",
+    "turkish-cbe-build-dataset",
+    "turkish-cbe-complete-grid",
+    "turkish-cbe-evaluate",
+    "turkish-cbe-generate",
+    "turkish-cbe-lexical",
+    "turkish-cbe-paper",
+    "turkish-cbe-reasoning",
+    "turkish-cbe-render-review",
+    "turkish-cbe-train"
+  ],
+  "duration_seconds": 54.785995041020215,
+  "historical_execution_plans_refused_current_source": true,
+  "installed_audit": {
+    "input_files": 51,
+    "source_files": 87,
+    "statistics_and_checklist_equal_source_run": true,
+    "status": "not_ready_for_empirical_publication"
+  },
+  "installed_source_count": 87,
+  "model_calls": 0,
+  "network_attempts": 0,
+  "optimizer_steps": 0,
+  "package_version": "0.11.0",
+  "source_files": {
+    "analysis/__init__.py": "b6c4928d34bd11abc60058b06eb51e431f01bf33987af74638ee1200028bd9cb",
+    "analysis/__main__.py": "7922786f04cf1a19928b76748743b23ff2dff41420259c5b9c7c2e5d3425a486",
+    "analysis/io.py": "f87e6eb6f4981605465a92a47240e722f32dde3d437cb0870b760fb35cc88494",
+    "analysis/lexical_bias/__init__.py": "1a033d902d157e8df77ba78052b664e07ed3b9602888ba683b2247d0fce8095e",
+    "analysis/lexical_bias/__main__.py": "3de70c62dce6e84130611dde9f4d2bc959fd939af4c8e06daa811db9dd541124",
+    "analysis/lexical_bias/bias.py": "b95b324f9e7bbe9c8301f3987095cae9b70154879561f73fb7f34a2e5f89a291",
+    "analysis/lexical_bias/catalog.py": "74b153a2dd9d351b36f751658b532309ef6a068d0051b061d291558c0b802225",
+    "analysis/lexical_bias/corpus.py": "50272c9ec9e8607822002295f0616afd880bb81fef7fdcc7ed00e73662a19b8e",
+    "analysis/lexical_bias/statistics.py": "9a028267d59831adb563ba01c72a86a03da7cc9aef978dd164c55f9472bd6509",
+    "analysis/lexical_bias/tokenization.py": "ca86dce8eed649956ce9ff998514447b74eb1b695080163bd2e064daae26d77e",
+    "analysis/metrics.py": "54c8026a7ede03f27db71b4218d7fe26b12bbc58879f9d0eb4baeeafbbcbfd12",
+    "analysis/pipeline.py": "e8f0f75ff5277318984a22f9bba2c18b4a5e39ac2cebc345b11041e1b9dbc88d",
+    "analysis/reporting.py": "9ed883f6911918ee22737471832c1058456dee1d81266c7f853197662aba4872",
+    "analysis/statistics.py": "acfbe0c5dc12100227e9407d7f2e124b87fb6340d47e836a03618d03bac60722",
+    "complete_grid/__init__.py": "7f71fab1ed85f0d7991d34a865183ab30e5ec56a07483e0de173cb84a5d87082",
+    "complete_grid/dataset_builder.py": "b292e8deaa06304906399a5594596780fafbfc3c11bb34fb3e24d3d379ec5c4a",
+    "complete_grid/grid_design.py": "a49c1fb12b96af2aa4c76b8cf50c1a0b984f55952c64a7f44a8606f1a2f8424a",
+    "complete_grid/model_tokens.py": "c87bf63fec539df2ca2759d196943a6a83b9a1a051c3ea82ed6bb79c7e9c8f74",
+    "complete_grid/parallel.py": "1d5af2267e9e81347e8663f4383c18ee3ad177e69f702d7948175d6a36809722",
+    "complete_grid/surface_reader.py": "66ebd24d57f975bfe187ebfae29ed856e63ece35da8bf1dd3b2bf49f960d1a1f",
+    "complete_grid/text_lengths.py": "2c96692af6152ad366b57db0d31a1085df0ff08f608a38d42010f10a8da5c4b0",
+    "data_generation/__init__.py": "9dcc8dda891fccc13981945b1186291949e49d2f5bf1df7c4e03b45dbae9ec21",
+    "data_generation/__main__.py": "cd2521f2ce776a2814b310d446ff4137bc37e9ab56bc825fe9717a915566c937",
+    "data_generation/dataset.py": "a3e5080fce738afc1050aacab0a6ebe0e5e7b86bd92ddce5c06421aedbb92330",
+    "data_generation/entities.py": "5b931fa4ab30f30c04d5b5b8ce7236d55c007fb9b58305bac5eff4622ed98832",
+    "data_generation/generator.py": "0febb7717f8e6ddc2a00f76468b9fd05155bdbf4949575e750bdf502e13ae17e",
+    "data_generation/oracle.py": "9fd6345e4627e72c5ff9eed53261e432966f2f97266b91f8f4ab7192adaedb69",
+    "data_generation/validation.py": "41330370b17ac4ba47610c943cfc53e17ad21daaec45f3c230d63c3b3f3d89f9",
+    "experiments/__init__.py": "cb644f80a094c9ae1808c68655b8628b5cdaaa58ecbf796eb84a6fe5b6307ac6",
+    "experiments/dataset_builder.py": "745ee1cd734150003c9aa2598751387453254549de03916dc9083f1e2b2d88ac",
+    "experiments/names.py": "2408f79886ba17305a0821291e3d1fc13d86dba7d2a780ebf056ec5b38d3b761",
+    "experiments/pairing.py": "2314a65e5182247a5c5ddec31a2fcde7a91746386593423b875d2cd84a7e4969",
+    "experiments/surface_reader.py": "15c12789ea9f41b3fb61fdf60585ed0bbea7223a4aacb5ea227ade1a4263fcb5",
+    "experiments/token_lengths.py": "f5b10e20200478b8fd689b29653c75ebd6b7a47d329a1a941688374ffb1e6a5e",
+    "inference/__init__.py": "44b1b07a44d8597102a4ccb5a2002b255fc1d955b5d855b2e5ca8b8d10fda9e9",
+    "inference/__main__.py": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7",
+    "inference/cli.py": "e1301faa6a636d580e2ed87de60bd6b5a560f8343dc076d6325bc1eca9dbf6bb",
+    "inference/config.py": "37af7df71ead7eb6daba69931d81972b4988a8bcffcb3d999333aedd821e6841",
+    "inference/dataset.py": "e4fe26afacf7b5f20fdeab563d2a313b33b037236648f864fed9ed75c2ec7cb7",
+    "inference/linguistic_review.py": "9c0286cc17730aaad5777593714efcd7c459eabcca7cdc6affa7cff00c8ffb14",
+    "inference/parser.py": "6275c2fc660021d665021b43194ac0ae54220b6b9eb5863a3fcc183e9db26b45",
+    "inference/planning.py": "a7afb129a928768e0372c652e225d31c9ef489ba99ff743143d342753343c688",
+    "inference/prompts.py": "fec769ff62010b47ac85e625df5b3a18f42eb863a19b8f8fb614aa4a7d8b3119",
+    "inference/providers.py": "663a22770f461ccedc2501072d949b61a6bac6a530f23009f77656cad394d33f",
+    "inference/runner.py": "f55df997db9ffd96236fd3c773f7533c39bc76ca4e52f71534ddb95448ce2e8f",
+    "inference/runtime.py": "f00d00424d31a9257fec53bb44f384088a86903fb9799c2354faa12f28c142a7",
+    "inference/storage.py": "4200880e58c4214c61066cfb29e8c3f757666c9182016b967d8885adf35070a5",
+    "publication/__init__.py": "ec77e9c9add97effda368407ab835ab8168e06832b96738cd061dbe38d16af51",
+    "publication/__main__.py": "dbdc44ae5684383e09185c0639592ea9227db25ebaf0d3e3e5715cf5f4b6e977",
+    "publication/evidence.py": "a5d6de8bc47dd6590f4d626a3c590b0d319b5de38257e7b9ecdd452fd59a13a3",
+    "publication/figures.py": "6bf22414ce635dd0704a7b31d035cc13840a174959e62d5aaf0253e08f8e9438",
+    "publication/manuscript.py": "9ee581ae58dea2c15eca545a980d0d1c53ff10e9e9299b0a13c3e2c86d153e76",
+    "publication/tables.py": "1014981a69a9019f43d8c7fd77e70ceabedde1aa56c73c4923e53db661c25853",
+    "reasoning/__init__.py": "e51cf8b1fd9a744b85d8fa615eb540c6e987fa21e97b2f29e59f20b3212940aa",
+    "reasoning/__main__.py": "5c24dfaf9d6c4c0daea4ffff8800915fbcc8586f00ffbbc43a40999cb0fa28ab",
+    "reasoning/analysis.py": "db28754f549df0c8b89b893d66743f5efac760d34ea9c983f0979fa83795657f",
+    "reasoning/io.py": "60e81a8e111bc020c1df9624f774487b26a4f44c098ac5e91bb0248bbe1ce632",
+    "reasoning/parser.py": "fe132f650de9b60b1a3593864dcf532c501a0d4d7cef11a49d99c919a6504cda",
+    "reasoning/planning.py": "1bb67d67d3b674db5f38f8023673f7f06559559907d72c604256a497671adcf2",
+    "reasoning/prompts.py": "e7db91d4a2eccecab043ab9bfe9a6beeee4d584a03222ad8c625e12a45bcd9a5",
+    "reasoning/runner.py": "9a3ba77a74e87fde77025d3cf357e91addeee293c36a8e0fcddf0ae94d0c9fa0",
+    "renderers/__init__.py": "6b9f8413d561242ccf943f82fee520143552e9c25882088a618c75d783d25e36",
+    "renderers/english.py": "03e4718802553ca85ca82260fac997b4273c66729059ad36c41e47d7c5a2d3e7",
+    "renderers/morphology.py": "db3ea21be43c5f0138ba103d3ef83b27b603dbafd4a28d1039f04b2d66022a12",
+    "renderers/review.py": "278d564e8f1fc8b72681ad253ed0d3f0ac3e3c5fc867919d21d174a3fe431f77",
+    "renderers/turkish.py": "e178fc134bc9063ba62456e42b66142ad775b9f347412561dbd9407bed6505af",
+    "research_audit/__init__.py": "3fbb3ea069d13913ed4aee2f1673f5d26cc9e61c5c05a76c6f2a729127d01159",
+    "research_audit/__main__.py": "404af153c381e5170cbcc4391a8c4dc8b1ff5c9a91755a5a055a9028bb782415",
+    "research_audit/data_checks.py": "0974e8e95ecf89a56c4202f39fb49e353ac9b4fbabde5db6f44aa2d2f7a9a458",
+    "research_audit/statistics_checks.py": "28bfc8f4b4d84b6cdf175f3f83f235ebf87c3e5acef36f56e252215f965c704e",
+    "training/__init__.py": "de89e2c4f46d1118591dac7057dd158235915e58143f38ed81b4fbbb5e0323a3",
+    "training/__main__.py": "7e77da723a5406564902ebe4479a3744ab1ad9586f3e37caa520e982be48f9bf",
+    "training/comparison.py": "33b553822e81d43d5776ed56c2b536b364cbffd1ecfdb6d6a58bea3b613341b1",
+    "training/config.py": "3af305987fa7adea7e7e1bb4b3ce2580148d5e09ae084d016dcb18ff9d4de5e8",
+    "training/data.py": "c8569183a0b081717865b95577357b6fa8fbb4b0b2e666abef9ce70b430be95f",
+    "training/engine.py": "1a20092e652ffbf9c73cde468c74136c9323138e35cb931058269817284a7fe6",
+    "training/evaluation.py": "de0dbedbc333501dd6c02f420b4aa9e7ef2759f5b16a3baed79e3d8832635728",
+    "training/hardware.py": "88d7f12b53285852c6d4fce53f823a57574e2b042e23e2dd51f2e7bcd3e8fcfc",
+    "training/objectives.py": "8b96c1c43381796cf4976d8dbfb4db4021993d6857609c31767dbc654ce0eea9",
+    "training/planning.py": "85f8b1bb146cd2de02363be5c764875125dc893263cb78b8e516c98c28b447e8",
+    "training/reporting.py": "2a936ec7dafb1590e694344e82502aafe260a0d45d1e6d726ddfa94c039217da",
+    "turkish_cbe/__init__.py": "1cdd078cf9e57475c10c70c6ad7121f54656876df5d5ab3b734aca51be9f5bc0",
+    "turkish_cbe/__main__.py": "121d4863114d0937b1001f0d319259309e5812b356d2828f867137fa1fd1f641",
+    "turkish_cbe/config.py": "eb91842da85fd1e30113396787e437b505d9af6dfc267c26901d33d8a787743e",
+    "turkish_cbe/provenance.py": "c65802bbd90e8c68b21b359b9d9d64fcf4875ff8c61ab2620f1b8c4c7283bccb",
+    "validation/__init__.py": "3b77a93b51a1d940c32a43157e3268bc9ac8e59acce4ffffd423f6d34491e9b3",
+    "validation/semantic_equivalence.py": "58568be761722df21db2c4347547229ba4bff509b7a504e082f2961b318530da"
+  },
+  "training_evaluation_dry_run": {
+    "actual_generation_calls": 0,
+    "arm": "base",
+    "contains_model_results": false,
+    "linguistic_review_required": true,
+    "maximum_output_tokens": 327168,
+    "over_call_budget": true,
+    "planned_generation_calls": 10224,
+    "status": "evaluation_dry_run",
+    "training_blockers": [
+      "cuda_free_memory_unverified",
+      "cuda_runtime_not_explicitly_verified",
+      "cuda_unavailable_or_unverified",
+      "execution_not_enabled",
+      "missing_dependency:accelerate",
+      "missing_dependency:peft",
+      "missing_dependency:torch",
+      "missing_weights_path",
+      "model_registry_entry_disabled",
+      "native_cuda_bfloat16_unavailable_or_unverified"
+    ]
+  },
+  "valid": true,
+  "wheel_bytes": 308185,
+  "wheel_sha256": "7944e38a643ea0a0cd4167f8e8e43f5ae3848b02778efed2cbb7fd4230ab72ae"
+}

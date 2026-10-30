@@ -1,0 +1,386 @@
+{
+  "actual_optimizer_steps": 0,
+  "arm_states": [
+    {
+      "arm": "base",
+      "budget": {
+        "actual_cost": null,
+        "actual_gpu_seconds": null,
+        "actual_optimizer_steps": 0,
+        "actual_training_tokens": null,
+        "advantage_mode": null,
+        "agreement_weight": 0.0,
+        "arm": "base",
+        "exact_planned_training_tokens": 0,
+        "exposure_scope": "supervised rows; repeated epochs/cycling are exposures, not new examples",
+        "js_weight": 0.0,
+        "maximum_accounted_forward_tokens": 0,
+        "maximum_training_token_exposures": 0,
+        "parameter_update_budget": 0,
+        "planned_optimizer_steps": 0,
+        "planned_sequence_exposures": 0,
+        "state": "planned_not_executed",
+        "trainable_parameters": 0,
+        "unique_query_relation_units_available": 0,
+        "unique_surface_rows_available": 0,
+        "unique_training_latents_available": 0
+      },
+      "evaluation": "not_executed",
+      "observed_training": null,
+      "training": "no_training_base"
+    },
+    {
+      "arm": "sft_lora",
+      "budget": {
+        "actual_cost": null,
+        "actual_gpu_seconds": null,
+        "actual_optimizer_steps": 0,
+        "actual_training_tokens": null,
+        "advantage_mode": null,
+        "agreement_weight": 0.0,
+        "arm": "sft_lora",
+        "exact_planned_training_tokens": null,
+        "exposure_scope": "supervised rows; repeated epochs/cycling are exposures, not new examples",
+        "js_weight": 0.0,
+        "maximum_accounted_forward_tokens": 49152,
+        "maximum_training_token_exposures": 49152,
+        "parameter_update_budget": null,
+        "planned_optimizer_steps": 2,
+        "planned_sequence_exposures": 32,
+        "state": "planned_not_executed",
+        "trainable_parameters": null,
+        "unique_query_relation_units_available": 96,
+        "unique_surface_rows_available": 96,
+        "unique_training_latents_available": 8
+      },
+      "evaluation": "not_executed",
+      "observed_training": null,
+      "training": "no_training_evidence_in_report"
+    },
+    {
+      "arm": "paired_sft",
+      "budget": {
+        "actual_cost": null,
+        "actual_gpu_seconds": null,
+        "actual_optimizer_steps": 0,
+        "actual_training_tokens": null,
+        "advantage_mode": null,
+        "agreement_weight": 0.0,
+        "arm": "paired_sft",
+        "exact_planned_training_tokens": null,
+        "exposure_scope": "supervised rows; repeated epochs/cycling are exposures, not new examples",
+        "js_weight": 0.0,
+        "maximum_accounted_forward_tokens": 49152,
+        "maximum_training_token_exposures": 49152,
+        "parameter_update_budget": null,
+        "planned_optimizer_steps": 2,
+        "planned_sequence_exposures": 32,
+        "state": "planned_not_executed",
+        "trainable_parameters": null,
+        "unique_query_relation_units_available": 96,
+        "unique_surface_rows_available": 192,
+        "unique_training_latents_available": 8
+      },
+      "evaluation": "not_executed",
+      "observed_training": null,
+      "training": "no_training_evidence_in_report"
+    },
+    {
+      "arm": "sft_consistency",
+      "budget": {
+        "actual_cost": null,
+        "actual_gpu_seconds": null,
+        "actual_optimizer_steps": 0,
+        "actual_training_tokens": null,
+        "advantage_mode": null,
+        "agreement_weight": 0.0,
+        "arm": "sft_consistency",
+        "exact_planned_training_tokens": null,
+        "exposure_scope": "supervised rows; repeated epochs/cycling are exposures, not new examples",
+        "js_weight": 0.1,
+        "maximum_accounted_forward_tokens": 147456,
+        "maximum_training_token_exposures": 49152,
+        "parameter_update_budget": null,
+        "planned_optimizer_steps": 2,
+        "planned_sequence_exposures": 32,
+        "state": "planned_not_executed",
+        "trainable_parameters": null,
+        "unique_query_relation_units_available": 96,
+        "unique_surface_rows_available": 192,
+        "unique_training_latents_available": 8
+      },
+      "evaluation": "not_executed",
+      "observed_training": null,
+      "training": "no_training_evidence_in_report"
+    },
+    {
+      "arm": "grpo_correctness",
+      "budget": {
+        "actual_cost": null,
+        "actual_gpu_seconds": null,
+        "actual_optimizer_steps": 0,
+        "actual_training_tokens": null,
+        "advantage_mode": "prompt_normalized",
+        "agreement_weight": 0.0,
+        "arm": "grpo_correctness",
+        "exact_planned_training_tokens": null,
+        "exposure_scope": "rollout samples; four views and G=4",
+        "js_weight": 0.0,
+        "maximum_accounted_forward_tokens": 147456,
+        "maximum_training_token_exposures": 49152,
+        "parameter_update_budget": null,
+        "planned_optimizer_steps": 2,
+        "planned_sequence_exposures": 32,
+        "state": "planned_not_executed",
+        "trainable_parameters": null,
+        "unique_query_relation_units_available": 8,
+        "unique_surface_rows_available": 32,
+        "unique_training_latents_available": 8
+      },
+      "evaluation": "not_executed",
+      "observed_training": null,
+      "training": "no_training_evidence_in_report"
+    },
+    {
+      "arm": "grpo_consistency",
+      "budget": {
+        "actual_cost": null,
+        "actual_gpu_seconds": null,
+        "actual_optimizer_steps": 0,
+        "actual_training_tokens": null,
+        "advantage_mode": "prompt_normalized",
+        "agreement_weight": 0.5,
+        "arm": "grpo_consistency",
+        "exact_planned_training_tokens": null,
+        "exposure_scope": "rollout samples; four views and G=4",
+        "js_weight": 0.0,
+        "maximum_accounted_forward_tokens": 147456,
+        "maximum_training_token_exposures": 49152,
+        "parameter_update_budget": null,
+        "planned_optimizer_steps": 2,
+        "planned_sequence_exposures": 32,
+        "state": "planned_not_executed",
+        "trainable_parameters": null,
+        "unique_query_relation_units_available": 8,
+        "unique_surface_rows_available": 32,
+        "unique_training_latents_available": 8
+      },
+      "evaluation": "not_executed",
+      "observed_training": null,
+      "training": "no_training_evidence_in_report"
+    }
+  ],
+  "artifact_type": "training_comparison_report",
+  "bootstrap_repeats": 2000,
+  "config_sha256": "b9bbe7eae247cba985603eddc62c82f3b1ed7fdfb65f525ea3be8fa1b6ff6b5f",
+  "contains_model_results": false,
+  "contains_training_run": false,
+  "eligible_for_confirmatory_evaluation": false,
+  "evaluated_arms": [],
+  "files": [],
+  "input_evaluations": [],
+  "lexical_overlap_audit": {
+    "catalog_prefix_cautions": [
+      {
+        "left": "ön",
+        "review": "human_required",
+        "right": "önce",
+        "scope": "catalog-wide lexical prefix only; not automatic lemma equivalence"
+      }
+    ],
+    "clean_content_holdout": true,
+    "clean_content_holdout_scope": "controlled predicate/query lexicon only; full relation contexts audited separately",
+    "clean_full_context_holdout": false,
+    "entity_and_prompt_scaffold": "excluded; shared names/instructions do not identify a latent instance",
+    "family_overlap": [],
+    "full_context_requires_human_review": true,
+    "heldout_families": [
+      "spatial"
+    ],
+    "human_review_status": "pending",
+    "languages": {
+      "en": {
+        "content_token_overlap": [],
+        "context_audit": {
+          "scope": "complete frozen relation context text; exact surface words, no inferred stemming",
+          "shared_content_tokens": [
+            "higher",
+            "lower"
+          ],
+          "shared_stopwords": [
+            "a",
+            "and",
+            "are",
+            "only",
+            "the",
+            "to"
+          ],
+          "shared_task_scaffold": [
+            "every",
+            "people",
+            "refer",
+            "s",
+            "same"
+          ],
+          "task_scaffold_inventory": [
+            "compared",
+            "conditions",
+            "different",
+            "every",
+            "fixed",
+            "mean",
+            "means",
+            "measured",
+            "one",
+            "people",
+            "person",
+            "refer",
+            "s",
+            "same",
+            "units"
+          ]
+        },
+        "exact_lemma_overlap": [],
+        "exact_phrase_overlap": [],
+        "heldout_lemmas": [
+          "above",
+          "behind",
+          "below",
+          "in front of",
+          "to the left of",
+          "to the right of"
+        ],
+        "stopword_inventory": [
+          "a",
+          "all",
+          "an",
+          "and",
+          "anyone",
+          "are",
+          "for",
+          "from",
+          "in",
+          "is",
+          "of",
+          "on",
+          "only",
+          "or",
+          "than",
+          "that",
+          "the",
+          "to",
+          "under",
+          "which",
+          "with",
+          "without"
+        ],
+        "stopword_overlap": [],
+        "training_lemmas": [
+          "faster than",
+          "heavier than",
+          "lighter than",
+          "shorter than",
+          "slower than",
+          "taller than"
+        ]
+      },
+      "tr": {
+        "content_token_overlap": [],
+        "context_audit": {
+          "scope": "complete frozen relation context text; exact surface words, no inferred stemming",
+          "shared_content_tokens": [],
+          "shared_stopwords": [
+            "daha",
+            "ve",
+            "yalnız"
+          ],
+          "shared_task_scaffold": [
+            "aynı",
+            "bütün",
+            "demektir",
+            "karşılaştırılır",
+            "kişilerin",
+            "sabit"
+          ],
+          "task_scaffold_inventory": [
+            "aynı",
+            "bütün",
+            "demektir",
+            "göre",
+            "karşılaştırılır",
+            "kişiler",
+            "kişilerin",
+            "sabit",
+            "tek"
+          ]
+        },
+        "exact_lemma_overlap": [],
+        "exact_phrase_overlap": [],
+        "heldout_lemmas": [
+          "alt",
+          "arka",
+          "sağ",
+          "sol",
+          "ön",
+          "üst"
+        ],
+        "stopword_inventory": [
+          "bir",
+          "bu",
+          "daha",
+          "her",
+          "için",
+          "mi",
+          "midir",
+          "mu",
+          "mudur",
+          "mü",
+          "müdür",
+          "mı",
+          "mıdır",
+          "ve",
+          "veya",
+          "yalnız"
+        ],
+        "stopword_overlap": [
+          "midir",
+          "mıdır"
+        ],
+        "training_lemmas": [
+          "ağır",
+          "hafif",
+          "hızlı",
+          "kısa",
+          "uzun",
+          "yavaş"
+        ]
+      }
+    },
+    "morphology_scope": "closed renderer variants, not a stemmer or human linguistic approval",
+    "normalization": "NFC; Turkish-aware case; exact content words/phrases",
+    "scope": "canonical/equivalent/P1/P2: both converse directions, exact lexical/query surface forms; no P4",
+    "training_families": [
+      "comparison"
+    ]
+  },
+  "limitations": [
+    "Planned steps/tokens are not actual training usage.",
+    "Equal optimizer steps do not equalize GPU time, tokens or number of unique examples.",
+    "Held-out predicate vocabulary is clean; English contexts share higher/lower.",
+    "No selection of a training seed or checkpoint on the frozen test set is allowed.",
+    "Improvement on a finite benchmark does not prove family-wide competence."
+  ],
+  "missing_evaluation_arms": [
+    "base",
+    "sft_lora",
+    "paired_sft",
+    "sft_consistency",
+    "grpo_correctness",
+    "grpo_consistency"
+  ],
+  "plan_sha256": "27c5046ed46eb8e801fcdf12088d48792ef2248be15a0167542965e95caa4fcc",
+  "seed": 42,
+  "status": "no_training_or_model_results",
+  "table_rows": {},
+  "training_version": "0.9.0"
+}
