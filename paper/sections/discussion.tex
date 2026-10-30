@@ -1,90 +1,133 @@
 \section{Discussion}
+\label{sec:discussion}
 
-\subsection{From translation control to linguistic construct validity}
+Table~\ref{tab:findings} consolidates the main empirical findings of Section~\ref{sec:pilot}; the
+subsections below synthesize what they establish and where their interpretive boundaries lie. All findings are exploratory and describe the evaluated models, cohorts, and settings.
 
-Matching a latent order controls the intended proposition, but it does not ensure that two sentences are
-equally natural, equally familiar, or equally easy to parse. A Turkish postverbal constituent may preserve
-truth while changing discourse preference. A morphological alternative may alter word length and lexical
-realization at the same time. These distinctions connect Turkish-CBE to linguistic evaluation work
-\citep{ismayilzada2025morphology, basar2025turblimp, basar2026morphologyaware} without making grammatical
-acceptability interchangeable with logical accuracy. Human adjudication should therefore evaluate more than
-whether a parser recovers the expected relation.
+\begin{table}[t]
+  \centering
+  \caption{Consolidated exploratory findings. ``Sweep'' denotes the supplemental quantized Qwen2.5
+  evaluation (16,618 matched prompts per model, pilot split, all nine relation families); paired effects
+  are query-matched with latent-cluster bootstrap 95\% intervals. pp = percentage points.}
+  \label{tab:findings}
+  \small
+  \setlength{\tabcolsep}{4.5pt}
+  \begin{tabular}{@{}p{0.105\linewidth}p{0.29\linewidth}p{0.295\linewidth}p{0.175\linewidth}@{}}
+    \toprule
+    Dimension & Main observation & Supporting evidence & Interpretation \\
+    \midrule
+    Model scale & All-planned accuracy rises from chance to 69.2\% across 0.5B--14B &
+      Sweep: 49.3\%, 50.2\%, 58.7\%, 69.2\% (Fig.~\ref{fig:p1scaling}a) &
+      Scale-associated discrimination in the evaluated family \\
+    Language & English accuracy exceeds Turkish once models discriminate &
+      14B: 76.4\% vs.\ 66.1\%; paired gap $-7.5$\,pp [$-12.6$, $-2.0$]; 7B: $-17.6$\,pp
+      [$-24.1$, $-10.6$] & Language-dependent behavior on matched problems \\
+    Presentation & P3 constituent order produces a large accuracy decrease &
+      14B: $-38.1$\,pp [$-41.8$, $-34.4$], discordant 554 vs.\ 40; $-40.8$\,pp [$-44.6$, $-37.0$] after
+      the review exclusion & Constituent-order sensitivity on meaning-preserving input \\
+    Complexity & Accuracy decreases monotonically with entity count &
+      14B Turkish: 83.9\% at $n{=}4$ to 50.8\% at $n{=}128$ (Fig.~\ref{fig:p1scaling}c) &
+      Input-size sensitivity \\
+    Naming & Shared symbolic labels reduce accuracy at 14B &
+      $-11.7$\,pp, McNemar $b{=}59$, $c{=}24$, Holm $p = 3.8\times10^{-4}$ &
+      Entity-representation sensitivity \\
+    Invariance & Constant responders show perfect agreement without competence &
+      0.5B: $R = 0.017$, $U = 0.970$ on EN--TR pairs; $\kappa_{\mathrm{CBE}}$ undefined &
+      Stability is not competence \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
-The zero exact surface counts illustrate a related measurement issue. An inflected, multiword canonical
-predicate can be absent under exact matching even when its constituent lemma is frequent. The difference is
-substantively meaningful for the feature definition, but neither variable directly measures exposure in a
-proprietary model's training corpus. Lemma ambiguity and corpus domain must remain part of the
-interpretation. Tokenizer studies likewise motivate explicit measurement \citep{rust2021tokenizer,
-ahia2023languages, petrov2023tokenizers}, not a presumption that subword length is the unique cause of an
-error.
-
-\subsection{Correct consistency versus stable error}
+\subsection{Correctness and presentation invariance are distinct}
 
 The paired decomposition supports questions that a marginal accuracy table cannot answer. A small average
 difference between canonical and equivalent prompts can coexist with large, offsetting correct-to-wrong and
-wrong-to-correct flows. Conversely, agreement can improve because a model repeats a wrong label.
+wrong-to-correct flows; conversely, agreement can improve because a model repeats a wrong label.
 Equations~\eqref{eq:identities}--\eqref{eq:strict} specify the evidence needed to distinguish these cases:
-shared-valid $R/D/U$, all-planned accuracy and strict $R$, invalid rates, and coverage. Comparisons that
-condition on different subsets can otherwise make a selectively valid model appear more robust.
+shared-valid $R/D/U$, all-planned accuracy and strict $R$, invalid rates, and coverage. The evaluated models
+realize both failure modes. Qwen2.5-0.5B attains perfect raw invariance by answering near-constantly per
+language (Turkish \emph{hay\i{}r} on 95.8\% of Turkish calls, \emph{yes} on 99.8\% of English calls), and
+its English--Turkish pairs show the degenerate signature in pure form: $R = 0.017$ with $U = 0.970$, because
+the two constant answers disagree and exactly one side is scored correct on almost every pair. Any protocol
+that reported agreement without the decomposition would have certified this model. The chance correction
+has a correspondingly limited role: constant outputs make $\kappa_{\mathrm{CBE}}$ undefined by construction,
+and its pooled-marginal baseline discounts one particular independent-answer bias reference without
+modeling failure causally or proving stochastic independence. Correctness and invariance remain behavioral
+properties; explanation text adds an observation channel, not access to the model's internal computation
+\citep{turpin2023unfaithful}.
 
-This interpretation also limits the role of chance correction. The pooled-marginal baseline discounts a
-particular independent-answer bias reference. It is not a causal model of failure, nor does a high
-coefficient show that the same inferential algorithm was applied across forms. Correctness and invariance
-remain behavioral properties. Explanation text adds another observation channel but not automatic access to
-the model's internal computation \citep{turpin2023unfaithful}.
+\subsection{Turkish constituent-order sensitivity}
 
-\subsection{Complexity and intervention claims}
+The P3 result is the sharpest finding. On query-matched pairs, the alternative constituent construction
+costs the 14B model 38.1 points of paired accuracy (95\% CI $[-41.8, -34.4]$\,pp; 554 vs.\ 40 discordant
+pairs), taking Turkish P3 accuracy below the balanced baseline, with a credible $-7.9$\,pp precursor already
+at 7B and no effect in the constant responders; the registered pilot found the same collapse in GPT-4o
+(36.9\% under P3). The completed review (Section~\ref{sec:review}) bounds its interpretation from both
+sides. On one side, both reviewers unanimously judged the sampled transformations meaning-preserving, and
+the one construction that failed grammaticality for one reviewer (\emph{temporal\_completion} under P3) is
+removed by a sensitivity reanalysis in which the effect persists and deepens ($-40.8$\,pp,
+$[-44.6, -37.0]$). A pure stimulus-grammaticality artifact is therefore ruled out for the retained
+constructions. On the other side, the reviewers' naturalness judgments genuinely differ (P3 medians 4
+vs.\ 2), so the transformations cannot be claimed uniformly natural in every discourse context; this
+documented linguistic variation qualifies, but does not invalidate, the finding. The supported conclusion
+is that the evaluated models exhibit substantial behavioral sensitivity to meaning-preserving Turkish
+constituent-order variation, including constructions both human reviewers accepted as grammatical. The
+effect does not by itself identify \emph{which} capacity fails---logical inference, syntactic parsing, or
+the representation of discourse-atypical input---only that a competent human reader of the same sentences
+does not lose the ability to evaluate the stated facts.
 
-The endpoint shortcut makes a strong endpoint score ambiguous as evidence of transitive reasoning.
-Internal/distance-controlled questions reduce one specific shortcut while retaining a highly structured task
-family; they do not eliminate every efficient alternative strategy. Changes with $n$ may reflect retrieval,
-distraction, context length, or the distribution of queried distances. Any future complexity claim must
-therefore name its query stratum and input/presentation condition.
+\subsection{Model scale and multilingual reasoning}
 
-Reasoning prompting may change token budgets and final-answer formatting as well as intermediate generation.
-Provider reasoning effort is a different intervention from an explicit verbal instruction. Similarly, SFT or
-GRPO may strengthen a learned vocabulary mapping without producing broad transfer. Prior work on prompting,
-aggregation, and adaptation \citep{wei2022cot, wang2023selfconsistency, hu2021lora, shao2024deepseekmath}
-supplies methodological options, not evidence for an effect in this benchmark. A finite improvement can
-extend successful coverage without establishing competence throughout the family.
+The evaluated Qwen2.5 family progresses from strongly biased, near-constant response behavior (0.5B, 3B)
+toward discriminative performance, in English before Turkish (7B: 71.4\% vs.\ 53.4\%) and then in both
+(14B: 76.4\% vs.\ 66.1\%). Scale is associated with higher accuracy, a narrower but persistent language
+gap, and---critically---\emph{increasing} absolute presentation sensitivity: the P3 deficit grows from
+nothing (constant responders) through $-7.9$\,pp (7B) to $-38.1$\,pp (14B), and per-stratum
+$\kappa_{\mathrm{CBE}}$ for canonical-versus-equivalent decays with complexity at 14B (0.57 at $n{=}4$ to
+0.12 at $n{=}128$). Improved canonical accuracy therefore does not guarantee equivalent robustness across
+alternative linguistic presentations: the most capable evaluated model is simultaneously the most
+presentation-sensitive in absolute terms. We do not claim that 7B marks a universal emergence threshold,
+that parameter count is the sole causal factor, or that the pattern extends beyond this family; the
+supplemental experiments use quantized weights from a single model lineage, and response bias, instruction
+tuning, and training data co-vary with scale.
 
-\subsection{What the pilot evidence adds}
+\subsection{Complexity and entity representation}
 
-The pilot runs convert three of this article's methodological arguments from anticipation into observation.
-First, the degenerate-responder case is real: Qwen2.5-0.5B attains perfect raw invariance by answering
-constantly per language, and only the joint presentation of $R$, $D$, $U$, and the undefined
-$\kappa_{\mathrm{CBE}}$ distinguishes this from robustness. Any evaluation protocol that reports agreement
-without the decomposition would have certified this model. Second, the two failure channels that the
-decomposition separates both occur in a frontier model: moving gpt-4o from English to Turkish raises
-presentation dependence $U$ while leaving shared error $D$ nearly unchanged, whereas the P3 construction
-collapses agreement to chance --- different mechanisms that a marginal accuracy table cannot distinguish.
-Third, the power analysis behind the frozen-test sample sizes is vindicated in both directions:
-eight-pair strata detect nothing for the consistently negative Turkish--English contrast, while the P3
-effect is large enough to survive Holm correction even at pilot scale. The lexical join adds a fourth
-observation: the direction asymmetry of Table~\ref{tab:direction} aligns with measured frequency and
-tokenization asymmetries, yet the single-relation cohort leaves every association formally unidentified ---
-the specifications return recorded refusals, not coefficients, exactly as the protocol requires.
+The endpoint shortcut makes a strong endpoint score ambiguous as evidence of transitive reasoning;
+internal and distance-controlled questions reduce that specific shortcut without eliminating every
+efficient strategy. Within those boundaries, the exploratory profiles are consistent: accuracy declines
+monotonically with entity count in every discriminating model (14B Turkish reaches chance at $n{=}128$),
+the pilot's endpoint $>$ internal $>$ distance-controlled ordering matches the shortcut analysis, and
+below-baseline accuracy at large query distance indicates a systematic directional error rather than noise.
+Changes with $n$ may still reflect retrieval, distraction, context length, or the distribution of queried
+distances. Entity representation matters independently: replacing native Turkish names with shared symbolic
+labels costs the 14B model 11.7 points (the only Holm-surviving McNemar result in the sweep), while English
+transliteration of the same names costs nothing measurable---so the deficit is not explained by
+transliteration alone. The pilot's direction asymmetry (Table~\ref{tab:direction}) aligns suggestively with
+measured frequency and tokenization asymmetries, but the single-relation cohort leaves every lexical
+association formally unidentified, and the retained specifications record refusals rather than
+coefficients, exactly as the protocol requires.
 
-The pilot equally illustrates the interpretive discipline the framework imposes. The P3 deficit is measured
-on precisely the condition whose naturalness most depends on human review; before that review, a model
-failure and a stimulus artifact were observationally equivalent, and the completed review
-(Section~\ref{sec:review}) now separates them in part --- grammaticality and meaning preservation are
-certified, naturalness stays contested. The endpoint
-$>$ internal $>$ distance-controlled ordering is consistent with the endpoint-shortcut analysis above, and
-the below-baseline accuracy at large $d$ shows a systematic directional error, but both observations cover
-one relation family on shared latent orders. The supplemental quantized sweep extends the same structure
-to nine relation families and four scales --- and its sharpest result, the $-38$-point query-matched P3
-collapse at 14B, lands on the same naturalness-contested condition, so the residual naturalness ambiguity
-scales with it. These are reasons to run the confirmatory design, not conclusions from it.
+\subsection{Implications for multilingual benchmark design}
 
-\subsection{Status of the scientific claims}
+These findings argue that multilingual reasoning benchmarks should report matched correctness and
+presentation stability rather than accuracy alone. An accuracy-only leaderboard would have ranked the
+constant responders near chance---correctly---but would also have certified their perfect cross-presentation
+agreement had invariance been reported without correctness, and it would have missed that the strongest
+evaluated model loses more than a third of its paired accuracy under one meaning-preserving Turkish
+construction. Matching latent instances across languages, holding answers fixed under transformation,
+declaring denominators, and separating $R$, $D$, and $U$ are each individually simple; their combination is
+what makes the failure modes visible. The same structure also disciplines interpretation: measured zeros in
+corpus frequency, tokenization ratios, and naturalness disagreement are reported as measured properties
+with explicit scopes, not converted into causal explanations \citep{rust2021tokenizer, ahia2023languages,
+petrov2023tokenizers}.
 
-The supported conclusions are restricted to the constructed design, recorded preprocessing measurements,
-and the exploratory pilot runs of Section~\ref{sec:pilot}. The framework makes comparison units, linguistic
-transformations, missingness, and inferential assumptions explicit. It also exposes gaps that must be
-filled: human review, frozen-test model calls under the declared primary test families, and the reviewed
-base-versus-adapter evaluation of the already-trained optional adaptation arms. Neither an expected directional hypothesis nor a
-favorable narrative is substituted for missing outcomes; the pilot's suggestive Turkish--English direction
-is reported with its failure to reach per-stratum significance, not promoted beyond it. This separation
-allows future empirical findings, including null or adverse effects, to be incorporated without changing
-the underlying definitions after observing results.
+\subsection{Scope of the empirical evidence}
+
+All model results are exploratory: pilot-split cohorts, one quantized model family in the sweep, no issued
+execution-gate receipts, and no frozen-test evaluation. The framework's inferential machinery was sized for
+the frozen test, and the pilot vindicates that sizing in both directions---eight-pair strata detect nothing
+for the consistently negative Turkish--English contrast, while the P3 effect survives Holm correction even
+at pilot scale. Null, adverse, or non-replicating confirmatory outcomes remain possible and would be
+incorporated without changing definitions after observing results; Section~\ref{sec:limitations} records
+the limitations and Section~\ref{sec:future} the confirmatory agenda.

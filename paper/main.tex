@@ -51,16 +51,16 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\small Turkish-CBE}
-\fancyhead[R]{\small Framework, audit, and pilot evaluation}
+\fancyhead[R]{\small Reasoning accuracy and morphosyntactic robustness}
 \fancyfoot[C]{\small\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
 \newcommand{\inval}{\ensuremath{\bot}}
 
-\title{\textbf{Beyond Translation: Evaluating Logical Reasoning\\
-Competence in Large Language Models under Turkish\\
-Morphosyntactic Variations}\\[1.2ex]
-\large A Reproducible Framework, Construction Audit, and Pilot Evaluation}
+\title{\textbf{Turkish-CBE: Evaluating Logical Reasoning Accuracy\\
+and Morphosyntactic Robustness in Large Language Models}\\[1.2ex]
+\large A Controlled Turkish--English Benchmark with Correctness-Aware\\
+\large Robustness Evaluation}
 
 \author{Müge Oluçoğlu\\
 \small İzmir Bakırçay University\\
@@ -73,7 +73,7 @@ Okan Bursa\textsuperscript{*}\\
 \small \texttt{okan.bursa@bakircay.edu.tr}\\
 \small \textsuperscript{*}Corresponding author}
 
-\date{\small Research manuscript draft \; \textbullet \; 27 October 2026}
+\date{\small Research manuscript draft (GPTreview revision) \; \textbullet \; 30 October 2026}
 
 \begin{document}
 \maketitle
@@ -81,36 +81,24 @@ Okan Bursa\textsuperscript{*}\\
 
 \begin{abstract}
 \noindent
-Evaluating an answer in a single language and formulation provides an incomplete account of
-logical reasoning reliability. For Turkish, case marking, possessive constructions, phonologically
-conditioned suffixes, and flexible constituent order introduce meaningful evaluation dimensions that
-sentence translation alone does not control. We present Turkish-CBE, a reproducible framework for
-comparing answers to the same latent ordering problem across Turkish and English and across
-answer-preserving Turkish presentations. The framework separates an exact symbolic generator from
-linguistic realization, distinguishes endpoint from internal and distance-controlled queries, and
-evaluates both correctness and stability on explicitly declared denominators. The frozen design
-contains 3,000 latent orders, 23,200 source queries, and 5,637,600 derived prompt identities. We
-report construction statistics, independently measured lexical/tokenization features, and an
-executed exploratory pilot evaluation of two models on 3,024 matched prompts. All 18 canonical
-Turkish relation expressions have zero exact surface counts in the retained corpus measurement,
-despite positive lemma counts, illustrating the sensitivity of familiarity proxies to morphological
-realization. The pilot demonstrates the protocol's central measurement argument on real models: a
-small open model answers with perfect cross-presentation invariance that the paired decomposition
-exposes as a constant response per language (chance accuracy, chance correction undefined by
-design), while GPT-4o shows graded competence --- 72.0\% English versus 57.8\% Turkish accuracy,
-monotone decline with entity count and query distance, and a collapse to 36.9\% under one
-answer-preserving Turkish constituent-order alternative, the only effect that survives Holm
-correction at pilot power. A supplemental quantized local evaluation of the Qwen2.5 instruct family
-(0.5B--14B, 16,618 prompts per model across all nine relation families) reproduces this structure in
-open weights and locates its emergence: sub-7B models are constant responders, competence appears in
-English before Turkish, and the constituent-order collapse re-appears at 14B at $-38$ points of
-query-matched paired accuracy. We formulate the paired statistical protocol behind these measurements,
-show how valid-pair coverage bounds the interpretation of robustness, and distinguish the
-pooled-marginal CBE chance correction from conventional Cohen agreement. A completed two-reviewer
-Turkish linguistic review of 360 sampled stimuli finds unanimous semantic equivalence, excludes one
-construction on grammaticality, and leaves discourse naturalness contested; the constituent-order
-collapse survives removal of the excluded construction. The frozen-test evaluation remains the
-prerequisite for confirmatory answers to the research questions.
+Accuracy on a single language and a single formulation is an incomplete account of logical reasoning
+reliability: a model may answer correctly only under one grammatical realization of a problem, or may
+appear stable merely by repeating a biased answer. We present Turkish-CBE, a deterministic, reproducible
+benchmark that renders the same latent ordering problem as matched Turkish and English prompts and as
+answer-preserving Turkish presentation transformations (constituent order, converse constructions,
+case/possessive alternatives), with exact symbolic answers, controlled entity counts and query distances,
+and split-level separation of latent orders. A correctness-aware evaluation decomposes paired outcomes
+into robust correctness, shared error, and presentation dependence on declared denominators,
+distinguishing correct consistency from constant-response invariance. We report an exploratory evaluation
+of GPT-4o and the Qwen2.5 instruct family (0.5B--14B; 16,618 matched prompts per model in a supplemental
+quantized sweep). Sub-7B models are near-constant responders whose perfect invariance carries no
+competence; discrimination emerges in English before Turkish; and a truth-preserving Turkish
+constituent-order alternative (P3) costs the 14B model 38.1 points of query-matched paired accuracy
+(cluster-bootstrap 95\% CI [34.4, 41.8]), echoing GPT-4o's pilot collapse to 36.9\%. A completed
+two-reviewer linguistic review of 360 sampled stimuli finds unanimous semantic equivalence, excludes one
+construction on grammaticality---after which the P3 effect persists at 40.8 points---and records
+contested naturalness. Reasoning reliability should therefore be evaluated jointly over accuracy and
+meaning-preserving presentation robustness; confirmatory frozen-test evaluation remains future work.
 \end{abstract}
 
 \vspace{0.6ex}

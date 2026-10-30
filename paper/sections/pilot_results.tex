@@ -1,12 +1,15 @@
-\section{Pilot Model Evaluation}
+\section{Exploratory Model Evaluation and Linguistic Validation}
 \label{sec:pilot}
 
-This section reports the first genuine model outcomes obtained under the framework: two complete pilot
-runs of 1,512 calls each, executed on 27 October 2026 on the pilot split. Both runs fall below the
-declared large-run policy threshold, and the human linguistic review of the Turkish stimuli remains
-pending. Every result in this section is therefore \emph{exploratory}: it exercises the full execution and
-analysis machinery and motivates the confirmatory design, but it does not answer RQ1--RQ5 confirmatorily,
-and no frozen-test evaluation has been performed.
+This section reports the genuine model outcomes obtained under the framework and their linguistic
+validation, in chronological order: two complete registered pilot runs of 1,512 calls each, executed on
+27 October 2026 on the pilot split (the first six subsections below); a supplemental quantized evaluation
+of four open-weight scales over 16,618 matched prompts each (Section~\ref{sec:p1-local}); and the
+subsequently completed two-reviewer Turkish linguistic review of 360 stimuli sampled from the same frozen
+prompt population (Section~\ref{sec:review}). Every model result in this section is \emph{exploratory}: the
+runs exercise the full execution and analysis machinery and motivate the confirmatory design, but the
+execution-gate receipts for confirmatory authorization were not issued, no frozen-test evaluation has been
+performed, and RQ1--RQ5 are not answered confirmatorily.
 
 \subsection{Runs, shared cohort, and execution integrity}
 
@@ -60,9 +63,9 @@ perfectly robust; the joint presentation of $R$, $D$, $U$, and the chance correc
 responder whose ``consistency'' consists entirely of shared correct-by-chance and shared wrong answers.
 No competence claim, positive or negative, beyond this behavioral characterization is made for the model.
 
-\subsection{gpt-4o: graded competence and a presentation cliff}
+\subsection{GPT-4o: graded competence and a presentation cliff}
 
-All 1,512 gpt-4o answers were valid and in the requested language, so all-planned and valid-pair
+All 1,512 GPT-4o answers were valid and in the requested language, so all-planned and valid-pair
 denominators coincide and valid-pair coverage is 1 in every stratum below. Figure~\ref{fig:pilot}
 summarizes the marginal structure. Pooled all-planned accuracy is 72.0\% on English ($N = 336$) and
 57.8\% on Turkish ($N = 1{,}176$). The two English conditions agree closely (canonical 71.4\%, equivalent
@@ -92,7 +95,7 @@ against balanced gold labels, i.e.\ Turkish errors skew toward \emph{EVET}.
 
 \begin{table}[t]
   \centering
-  \caption{Pooled descriptive paired profiles for gpt-4o (168 jointly valid pairs per row; valid-pair
+  \caption{Pooled descriptive paired profiles for GPT-4o (168 jointly valid pairs per row; valid-pair
   coverage 1.0, so Equations~\eqref{eq:identities}--\eqref{eq:strict} coincide with their all-planned
   counterparts). $q$ is the pooled affirmative rate of Equation~\eqref{eq:kappa}. Pooling crosses size and
   query-type strata, so these values are summaries of the executed cohort, not stratum estimands;
@@ -139,18 +142,18 @@ intervals accompany every reported stratum in the released tables; pooled values
 The retained lexical pipeline was additionally executed joined to both completed runs, producing the
 declared answer-share diagnostics, lexical-direction profiles, Spearman associations, and controlled
 regression specifications on the pilot observations. Its most interpretable output is a pronounced
-\emph{direction asymmetry} in gpt-4o (Table~\ref{tab:direction}): against balanced gold labels, queries
+\emph{direction asymmetry} in GPT-4o (Table~\ref{tab:direction}): against balanced gold labels, queries
 asked with the inverse predicate (Turkish \emph{arkasındadır}, English \emph{behind}) are answered
 affirmatively far more often and less accurately than forward queries (\emph{önündedir} / \emph{in front
 of}). The asymmetry appears in both languages and is largest in Turkish, where the inverse-direction
 affirmative share reaches 0.793; it accounts for most of the pooled Turkish affirmative bias reported
 above. The predeclared response-tendency diagnostic flags Qwen2.5-0.5B in every stratum (excessive
-\emph{no} in Turkish, excessive \emph{yes} in English), while gpt-4o pools within thresholds overall and
+\emph{no} in Turkish, excessive \emph{yes} in English), while GPT-4o pools within thresholds overall and
 crosses the affirmative threshold only in inverse-direction Turkish strata.
 
 \begin{table}[t]
   \centering
-  \caption{Direction-specific pilot diagnostics for gpt-4o (all planned gold labels balanced at 0.500;
+  \caption{Direction-specific pilot diagnostics for GPT-4o (all planned gold labels balanced at 0.500;
   all answers valid). Forward queries use \emph{önündedir} / \emph{in front of}; inverse queries use
   \emph{arkasındadır} / \emph{behind}. These are descriptive shares on one relation family; direction
   changes the lexical predicate, the construction, and tokenization together, so no single cause is
@@ -250,7 +253,7 @@ constant responders (Figure~\ref{fig:p1scaling}b). Per-stratum agreement decays 
 $n{=}128$), and for canonical-versus-P3 it turns negative at $n{=}16$ and $n{=}32$: systematic answer
 flips, not noise. Second, the complexity decay: 14B Turkish accuracy falls monotonically from 83.9\% at
 $n{=}4$ to 50.8\% --- chance --- at $n{=}128$ (English 94.1\% to 67.0\%; Figure~\ref{fig:p1scaling}c),
-mirroring the gpt-4o pilot curve. The naming family, whose pairs are cluster-unique and therefore admit
+mirroring the GPT-4o pilot curve. The naming family, whose pairs are cluster-unique and therefore admit
 exact inference, adds one Holm-surviving result: at 14B, replacing native Turkish entity names with shared
 symbolic labels costs $11.7$ points (McNemar $b{=}59$, $c{=}24$, Holm-adjusted $p = 3.8\times10^{-4}$),
 while English transliteration of the same names costs nothing measurable --- once competence exists,
@@ -291,21 +294,16 @@ per-item decisions, and agreement statistics are released with the framework
 (\texttt{validation/review\_results/}); the separate execution-gate receipts for runs above the declared
 call threshold were not issued, so no evaluation in this manuscript claims confirmatory status.
 
-\subsection{What the pilot does and does not establish}
+\subsection{What this evaluation does and does not establish}
 
-The pilot establishes that the end-to-end protocol --- immutable planning, gated execution, strict
-parsing, paired analysis with declared denominators, and multiplicity control --- runs unmodified on both
-a local and a provider-hosted model, and that the paired decomposition discriminates in practice between a
-degenerate constant responder and a model with graded, presentation-sensitive competence. The
-supplemental quantized sweep (Section~\ref{sec:p1-local}) extends this to all nine relation families and
-four open-weight scales and finds the same qualitative structure --- emergence, a language gap, the P3
-cliff, and complexity decay --- in a fully local, digest-pinned execution. Neither evaluation establishes
-a confirmed Turkish--English gap, a morphology effect, or a complexity law: everything remains on the
-pilot split; strata share latent orders; and the supplemental arm is quantized and therefore not
-precision-comparable to registered snapshots. The completed review (Section~\ref{sec:review}) resolves
-part of the P3 ambiguity the construction audit flagged: the cliff survives, indeed deepens, on stimuli
-unanimously certified meaning-preserving and grammatical outside one excluded construction, so a pure
-stimulus-grammaticality artifact is ruled out; contested discourse naturalness remains the live residual
-explanation that only naturalness-controlled stimuli could remove. These results size and motivate, but
-do not replace, the preregistered frozen-test
+These experiments establish that the end-to-end protocol --- immutable planning, gated execution, strict
+parsing, paired analysis with declared denominators, and multiplicity control --- runs unmodified on local,
+provider-hosted, and quantized local models, and that the paired decomposition discriminates in practice
+between degenerate constant responders and models with graded, presentation-sensitive competence, with the
+same qualitative structure recurring from the registered pilot to the digest-pinned nine-relation sweep.
+They do not establish a confirmed Turkish--English gap, a morphology effect, or a complexity law:
+everything remains on the pilot split; strata share latent orders; and the supplemental arm is quantized
+and therefore not precision-comparable to registered snapshots. Section~\ref{sec:discussion} synthesizes
+the findings and their interpretive boundaries, including what the completed review does and does not
+resolve about P3. These results size and motivate, but do not replace, the preregistered frozen-test
 evaluation.
