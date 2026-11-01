@@ -39,3 +39,6 @@ paper/main_GPTreview.out
 paper/main_GPTreview.toc
 paper/main_GPTreview.bbl
 paper/main_GPTreview.blg
+
+# local downloads of the repo itself
+turkish-cbe-*.zip
