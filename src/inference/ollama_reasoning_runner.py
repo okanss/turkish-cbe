@@ -18,10 +18,12 @@ Usage (structured arm; the direct arm already exists in results/p1/):
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import datetime
 import hashlib
 import json
 import sys
+import threading
 import time
 import urllib.error
 import urllib.request
@@ -162,8 +164,10 @@ def main(argv=None) -> int:
     parser.add_argument("--num-ctx", type=int, default=8192)
     parser.add_argument("--num-predict", type=int, default=4096)
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--timeout", type=float, default=300.0)
+    parser.add_argument("--timeout", type=float, default=600.0)
     parser.add_argument("--retries", type=int, default=3)
+    parser.add_argument("--workers", type=int, default=1,
+                        help="concurrent /api/chat requests (match OLLAMA_NUM_PARALLEL)")
     parser.add_argument("--limit", type=int, default=None,
                         help="stop after N new calls (benchmark/smoke use)")
     parser.add_argument("--progress-every", type=int, default=25)
@@ -183,31 +187,74 @@ def main(argv=None) -> int:
                "num_ctx": args.num_ctx, "num_predict": args.num_predict}
     print(json.dumps({"model": args.model, **digest, "manifest_rows": len(rows),
                       "already_completed": len(done), "to_run": len(pending),
-                      "options": options}), flush=True)
+                      "workers": args.workers, "options": options}), flush=True)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     header = {"record_kind": "run_header", "runner_version": RUNNER_VERSION,
               "timestamp": _utc(), "model": args.model, **digest,
               "manifest": str(args.manifest), "manifest_sha256": manifest_sha,
               "requested_options": options, "strategy": args.strategy,
+              "workers": args.workers,
               "arm_label": "revision_followup_reasoning; supplemental quantized arm; exploratory"}
+    write_lock = threading.Lock()
     with args.output.open("a", encoding="utf-8") as sink:
         sink.write(json.dumps(header, ensure_ascii=False) + "\n")
         sink.flush()
         started = time.monotonic()
-        for index, row in enumerate(pending, 1):
-            if args.pause_file is not None and args.pause_file.exists():
-                print(f"[{_utc()}] pause requested; {index - 1} new calls written, "
+        if args.workers <= 1:
+            for index, row in enumerate(pending, 1):
+                if args.pause_file is not None and args.pause_file.exists():
+                    print(f"[{_utc()}] pause requested; {index - 1} new calls written, "
+                          "checkpoint is consistent — exiting 75", flush=True)
+                    return 75
+                record = run_one(args.model, row, options, args.timeout, args.retries, args.strategy)
+                sink.write(json.dumps(record, ensure_ascii=False) + "\n")
+                sink.flush()
+                if index % args.progress_every == 0 or index == len(pending):
+                    rate = index / (time.monotonic() - started)
+                    remaining = (len(pending) - index) / rate if rate else float("inf")
+                    print(f"[{_utc()}] {args.model}: {index}/{len(pending)} "
+                          f"({rate:.2f} calls/s, ~{remaining/60:.1f} min left)",
+                          flush=True)
+        else:
+            completed = 0
+            row_iter = iter(pending)
+            paused = False
+            with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
+                in_flight: set[concurrent.futures.Future] = set()
+                for _ in range(min(args.workers, len(pending))):
+                    row = next(row_iter, None)
+                    if row is not None:
+                        in_flight.add(pool.submit(
+                            run_one, args.model, row, options, args.timeout, args.retries, args.strategy
+                        ))
+                while in_flight:
+                    done_futs, in_flight = concurrent.futures.wait(
+                        in_flight, return_when=concurrent.futures.FIRST_COMPLETED
+                    )
+                    for fut in done_futs:
+                        record = fut.result()
+                        with write_lock:
+                            sink.write(json.dumps(record, ensure_ascii=False) + "\n")
+                            sink.flush()
+                            completed += 1
+                            if completed % args.progress_every == 0 or completed == len(pending):
+                                rate = completed / (time.monotonic() - started)
+                                remaining = (len(pending) - completed) / rate if rate else float("inf")
+                                print(f"[{_utc()}] {args.model}: {completed}/{len(pending)} "
+                                      f"({rate:.2f} calls/s, ~{remaining/60:.1f} min left)",
+                                      flush=True)
+                        if args.pause_file is not None and args.pause_file.exists():
+                            paused = True
+                        elif not paused:
+                            nxt = next(row_iter, None)
+                            if nxt is not None:
+                                in_flight.add(pool.submit(
+                                    run_one, args.model, nxt, options, args.timeout, args.retries, args.strategy
+                                ))
+            if paused:
+                print(f"[{_utc()}] pause requested; {completed} new calls written, "
                       "checkpoint is consistent — exiting 75", flush=True)
                 return 75
-            record = run_one(args.model, row, options, args.timeout, args.retries, args.strategy)
-            sink.write(json.dumps(record, ensure_ascii=False) + "\n")
-            sink.flush()
-            if index % args.progress_every == 0 or index == len(pending):
-                rate = index / (time.monotonic() - started)
-                remaining = (len(pending) - index) / rate if rate else float("inf")
-                print(f"[{_utc()}] {args.model}: {index}/{len(pending)} "
-                      f"({rate:.2f} calls/s, ~{remaining/60:.1f} min left)",
-                      flush=True)
     return 0
 
 

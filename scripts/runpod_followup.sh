@@ -13,6 +13,10 @@ EXPECTED_DIGEST_PREFIX="7cdf5a01"
 
 export OLLAMA_MODELS="${OLLAMA_MODELS:-/workspace/ollama_models}"
 export OLLAMA_HOST="127.0.0.1:11434"
+export OLLAMA_NUM_PARALLEL="${OLLAMA_NUM_PARALLEL:-12}"
+export OLLAMA_MAX_QUEUE="${OLLAMA_MAX_QUEUE:-512}"
+export OLLAMA_FLASH_ATTENTION=1
+WORKERS="${WORKERS:-$OLLAMA_NUM_PARALLEL}"
 mkdir -p "$OLLAMA_MODELS"
 
 echo "=== [$(date -u '+%Y-%m-%d %H:%M:%S UTC')] Starting Turkish-CBE R1 followup on RunPod ==="
@@ -107,12 +111,14 @@ fi
 MONITOR_PID=$!
 trap 'kill "$MONITOR_PID" 2>/dev/null || true' EXIT
 
-echo "Running full structured-reasoning follow-up (resumable)..."
+echo "Running full structured-reasoning follow-up (resumable, workers=$WORKERS)..."
 PYTHONPATH=src python3 -m inference.ollama_reasoning_runner \
     --manifest "$MANIFEST" \
     --model "$MODEL" \
     --strategy structured_reasoning \
     --output "$OUTPUT_JSONL" \
+    --workers "$WORKERS" \
+    --timeout 600 \
     --progress-every 25
 
 kill "$MONITOR_PID" 2>/dev/null || true

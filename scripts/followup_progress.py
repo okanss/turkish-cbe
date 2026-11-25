@@ -59,7 +59,24 @@ def main() -> int:
     avg_wall = (sum(walls) / len(walls)) if walls else 0.0
     avg_tok = (sum(out_toks) / len(out_toks)) if out_toks else 0.0
     remaining = max(0, total - done)
-    eta_hours = (remaining * avg_wall) / 3600.0 if avg_wall else 0.0
+
+    # Effective throughput from recent record timestamps (accurate under parallel workers)
+    ts_list = []
+    for r in recs.values():
+        ts = r.get("timestamp")
+        if isinstance(ts, str):
+            try:
+                ts_list.append(datetime.datetime.fromisoformat(ts.replace("Z", "+00:00")))
+            except ValueError:
+                pass
+    ts_list.sort()
+    eff_sec_per_prompt = avg_wall
+    if len(ts_list) >= 10:
+        recent = ts_list[-min(100, len(ts_list)):]
+        span = (recent[-1] - recent[0]).total_seconds()
+        if span > 1.0:
+            eff_sec_per_prompt = span / (len(recent) - 1)
+    eta_hours = (remaining * eff_sec_per_prompt) / 3600.0 if eff_sec_per_prompt else 0.0
 
     digest = headers[-1].get("digest", "unknown")[:12] if headers else "unknown"
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
