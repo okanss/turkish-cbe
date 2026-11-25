@@ -1,19 +1,19 @@
 # Revision R1 Follow-Up Progress (Structured Reasoning)
 
-- **Updated:** 2026-11-25 12:04:26 UTC
+- **Updated:** 2026-11-25 13:10:34 UTC
 - **Status:** RUNNING
 - **Model:** `qwen2.5:14b` (digest: `7cdf5a0187d5`)
-- **Completed:** 917 / 2025 (45.3%)
-- **Valid / Invalid:** 698 / 219 (23.88% invalid)
-- **Truncated / Transport errors:** 62 / 0
-- **Avg latency / prompt:** 84.42 s
-- **Avg output tokens / prompt:** 712.3
-- **Estimated remaining time:** 1.99 hours (1108 prompts left)
+- **Completed:** 1154 / 2025 (57.0%)
+- **Valid / Invalid:** 878 / 276 (23.92% invalid)
+- **Truncated / Transport errors:** 75 / 0
+- **Avg latency / prompt:** 91.39 s
+- **Avg output tokens / prompt:** 687.6
+- **Estimated remaining time:** 1.78 hours (871 prompts left)
 
 ## Interim Accuracy by Condition (completed prompts only)
 
 | Condition | Completed | Valid | Correct | Accuracy (all done) |
 |---|---:|---:|---:|---:|
-| EN P0 | 323 | 252 | 246 | 76.2% |
-| TR P0 | 306 | 224 | 180 | 58.8% |
-| TR P3 | 288 | 222 | 124 | 43.1% |
+| EN P0 | 390 | 297 | 290 | 74.4% |
+| TR P0 | 397 | 298 | 238 | 59.9% |
+| TR P3 | 367 | 283 | 161 | 43.9% |
