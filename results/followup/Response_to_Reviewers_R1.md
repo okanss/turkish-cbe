@@ -57,7 +57,7 @@ We thank Reviewer 1 for the positive evaluation of the benchmark design and for 
 
 **Response & Revisions:**
 - **Abstract, Table 1, Sections 7.7, 8.3, 8.6, and Section 10 (Conclusions):** Replaced categorical "truth-preserving" / "answer-preserving" phrasing with cautious wording throughout—specifically *"Turkish morphosyntactic variants designed to preserve the gold answer"* in the Abstract and *"designed to preserve truth conditions and judged meaning-preserving in the reviewed sample"* for P3.
-- Explicitly noted in the Abstract, Section 7.7, Section 8.3, and Section 10 (Conclusions) that the single construction excluded on grammaticality grounds (`temporal_completion`) was itself a P3 realization, and that inter-reviewer naturalness ratings for P3 diverged sharply (medians 4 vs. 2; κ = 0.06), so the P3 deficit may reflect sensitivity to discourse-atypical word order as much as logical inference failure.
+- Explicitly noted in the Abstract, Section 7.7, Section 8.3, and Section 10 (Conclusions) that the single construction excluded on grammaticality grounds (`temporal_completion`) was itself a P3 realization, and that P3 naturalness ratings diverged sharply: for P3, the two reviewers' median naturalness ratings were 4 and 2, and only 6 of the 144 P3 items received a naturalness rating of at least 4 from both reviewers, so the P3 deficit may reflect sensitivity to discourse-atypical word order as much as logical inference failure.
 
 ---
 
@@ -103,7 +103,7 @@ We thank Reviewer 2 for the thorough critique, especially for emphasizing concre
 
 **Response & Revisions:**
 - **Direct-answer audit (Sections 5.2, 7.6, 8.5, 9.1, and Table 12):** We audited all 247 invalid 14B responses and showed that 245 occur on Turkish n = 128 prompts (244 emitting EVET/HAYIR followed by truncated explanation), separating response-budget truncation from accuracy decline (Table 12: 50.8% all-planned vs. 57.8% valid-only at n = 128). We explicitly acknowledge in Sections 5.2, 8.5, and 9.1 that the direct-answer protocol probes immediate verdicts rather than explicit multi-step derivations.
-- **Explicit stepwise-reasoning test (Section 7.8, Table 14):** To test directly whether the P3 and complexity effects are artifacts of the 32-token bare-answer limit, we executed the structured stepwise-reasoning follow-up with a 4,096-token output budget (details under Comment 5a below).
+- **Explicit stepwise-reasoning test (Section 7.8, Table 14):** We tested whether the P3 and entity-count patterns persisted under structured prompting with a 4,096-token output budget. Because both the instruction and the budget changed, the experiment cannot isolate their individual effects (details under Comment 5a below).
 
 ---
 
