@@ -47,7 +47,7 @@ We thank Reviewer 1 for the positive evaluation of the benchmark design and for 
 
 **Response & Revisions:**
 - We adopted the second option consistently in both the figure and text:
-  - **Figure 6(a):** Added an explicit in-panel label (`Shaded: Wilson bands, descriptive only (not inferential)`) and expanded the caption to state that Wilson bands are descriptive binomial precision summaries that treat prompts sharing a latent order as independent, therefore understate uncertainty, and carry no inferential interpretation, directing readers to **Table 11** for latent-order cluster-bootstrap intervals of the language contrasts.
+  - **Figure 6(a):** Added an explicit in-panel label (`Shaded: Wilson 95% (descriptive only)`) and expanded the caption to state that Wilson bands are descriptive binomial precision summaries that treat prompts sharing a latent order as independent, therefore understate uncertainty, and carry no inferential interpretation, directing readers to **Table 11** for latent-order cluster-bootstrap intervals of the language contrasts.
   - **Section 4.3:** Reinforced the distinction between descriptive Wilson summaries and dependence-aware cluster-bootstrap inference.
 
 ---
