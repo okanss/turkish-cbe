@@ -9,7 +9,7 @@
 
 Dear Academic Editor,
 
-We thank you and both reviewers for the careful, constructive assessment of our manuscript. We have revised the manuscript to address every methodological, empirical, and editorial concern raised in Round 1. In addition to revising the text and tables throughout, we executed the targeted explicit stepwise-reasoning follow-up requested by Reviewer 2 on a matched 2,025-prompt subset (149 latent orders; `Qwen2.5-14B-Instruct`, identical `Q4_K_M` weights, 4,096-token budget) and audited all denominators, invalid-response rates, and estimands across the entire manuscript.
+We thank you and all three reviewers for the careful, constructive assessment of our manuscript. We have revised the manuscript to address every methodological, empirical, and editorial concern raised in Round 1. In addition to revising the text and tables throughout, we executed the targeted explicit stepwise-reasoning follow-up requested by Reviewer 2 on a matched 2,025-prompt subset (149 latent orders; `Qwen2.5-14B-Instruct`, identical `Q4_K_M` weights, 4,096-token budget) and audited all denominators, invalid-response rates, and estimands across the entire manuscript.
 
 Where a reviewer raised an empirical limitation that requires new large-scale runs outside the scope of this exploratory study—specifically confirmatory frozen-test evaluation and multi-family / full-precision model sweeps—we did not overclaim resolution; instead, we narrowed the empirical claims consistently across the Abstract, Sections 7.9, 8, and 9, and stated explicitly what remains future work.
 
@@ -18,7 +18,7 @@ We enclose:
 2. A **clean submission PDF** (`Beyond_Translation_R1_clean.pdf`) compiled from the same LaTeX sources (`beyond-translation-mdpi-R1.zip`).
 3. Full code, manifests, run records, and analysis outputs in the now-public companion repository: https://github.com/okanss/turkish-cbe (including the new structured-reasoning follow-up on branch `revision-r1-followup`).
 
-Point-by-point responses to both reviewers follow below.
+Point-by-point responses to all three reviewers follow below.
 
 Sincerely,  
 Müge Oluçoğlu and Okan Bursa
@@ -152,3 +152,47 @@ We thank Reviewer 2 for the thorough critique, especially for emphasizing concre
 
 **Response & Revisions:**
 - **Sections 5.2, 7.1, 7.6, 7.9, Appendix C, and Appendix D:** Removed internal jargon such as *"execution-gate receipt"* from the main text, moved failed API attempts, detailed provenance logs, and a compact terminology glossary to **Appendix C**, and moved the two-step training backend check to **Appendix D**. Rewrote the opening of **Section 7.9** so it leads directly with the three substantive empirical findings and their interpretive boundaries rather than project-infrastructure language.
+
+---
+
+## Responses to Reviewer 3
+
+We thank Reviewer 3 for the clear, helpful suggestions on related-work synthesis, morphosyntactic classification, paired-analysis definitions, baseline context for GPT-4o's P3 drop, and the implications of contested naturalness.
+
+### Comment 1: Reiterate how Turkish-CBE uniquely integrates diverse prior areas to close the research gap
+**Summary of comment:** Strengthen Related Work by explicitly synthesizing how Turkish-CBE combines the reported research areas to address the study's specific gap.
+
+**Response & Revisions:**
+- **Section 2.5 (*Synthesis: Integrating Prior Strands to Close the Research Gap*):** Added a dedicated closing subsection to Related Work that explicitly contrasts the four reviewed strands—synthetic English reasoning oracles, metamorphic/consistency testing, multilingual and Turkish linguistic benchmarks, and tokenization/frequency/prompting studies—and shows how Turkish-CBE uniquely integrates them into one split-separated, deterministic framework pairing controlled within-Turkish morphosyntactic transformations with denominator-aware paired outcome decomposition and native-speaker adjudication.
+
+---
+
+### Comment 2: Explicit examples and grammatical classification of Turkish morphosyntactic transformations (P3, P4, P5, etc.)
+**Summary of comment:** Expand the Methodology section with explicit examples and a detailed grammatical classification explaining how the Turkish morphosyntactic variants (e.g., P3, P4, P5) are generated and what linguistic characteristics they exhibit.
+
+**Response & Revisions:**
+- **Section 3.2 (Table 2 and grammatical classification):** Added **Table 2**, presenting verbatim stimuli drawn from the frozen manifest for the exact same latent order across EN canonical and Turkish P0–P5 (plus the complete P0/P3 prompts and the excluded `temporal_completion` P3 item). Immediately following Table 2, we added an itemized **grammatical classification of P1–P5** explaining each transformation's linguistic mechanism: linear premise/entity reordering (P1), subject–complement swapping with lexical converse predicates (P2), postverbal-subject constituent-order inversion / *devrik cümle* preserving grammatical roles via case and possessive agreement while shifting discourse typicality (P3), genitive–possessive nominalized-referent framing with proper-noun apostrophes, buffer consonants, and vowel/consonant harmony (P4), and compound composition of P1+P2+P4 (P5).
+
+---
+
+### Comment 3: Elaborate on the correctness-aware paired analysis, definitions of R, D, U, and computational steps
+**Summary of comment:** Provide a dedicated methodology sub-section with clear definitions, exact formulas, and computational steps for robust correctness (R), shared error (D), and presentation dependence (U).
+
+**Response & Revisions:**
+- **Section 4.1 (*Correctness-Aware Paired Analysis: Definitions, Formulas, and Computation*) and Section 3.4 cross-reference:** Retitled Section 4.1 explicitly to highlight the correctness-aware paired analysis, linked directly to it from the end of Section 3.4, and added a structured four-step computational recipe right after Equations (5)–(10). The section gives exact definitions and formulas for all-planned marginal accuracy and valid-pair coverage v̂ = M/N (Equation 5), robust correctness R (Equation 6: proportion of jointly valid pairs answered correctly in both presentations), shared error D (Equation 7: proportion answered incorrectly in both), presentation dependence U (Equation 8: sum of the two discordant cell proportions of the paired 2×2 table, with R + D + U = 1), strict robust correctness R_strict = v̂ · R (Equation 10), chance-corrected agreement κ_CBE (Equation 11), and both all-planned and jointly valid accuracy differences (Equations 13–14).
+
+---
+
+### Comment 4: Provide the baseline accuracy alongside GPT-4o's "pilot collapse to 36.9%"
+**Summary of comment:** State the baseline accuracy (e.g., canonical Turkish accuracy) whenever mentioning GPT-4o's collapse to 36.9% so the magnitude of the drop is immediately clear.
+
+**Response & Revisions:**
+- **Abstract, Section 7.3, Section 8.1, and Section 8.3:** Added the canonical Turkish baseline (**67.9%**) and exact magnitude (**−31.0 percentage points**; English canonical **71.4%**) directly alongside every mention of GPT-4o's 36.9% P3 accuracy—including in the Abstract (*"echoing GPT-4o's pilot collapse to 36.9% from 67.9% on canonical Turkish (−31.0 percentage points)"*), Section 7.3, Section 8.1, and Section 8.3.
+
+---
+
+### Comment 5: Discuss the implications of "contested naturalness" judgments in relation to model performance and limitations
+**Summary of comment:** Explore and discuss the implications of divergent naturalness judgments—acknowledging that models may struggle with variations humans perceive as less natural even when grammatical and meaning-preserving.
+
+**Response & Revisions:**
+- **Section 7.7 (Results), Section 8.3 (Discussion), Section 9.1 (Limitations), and Section 9.2 (Future Work):** Expanded the discussion of contested P3 naturalness (medians 4 vs. 2; only 6 of 144 P3 items rated ≥ 4 by both reviewers) in direct relation to model performance. We explicitly note two complementary implications: (1) because large language models are pretrained predominantly on canonical SOV Turkish prose, postverbal-subject (*devrik*) variants—even when unanimously judged grammatical and meaning-preserving—belong to discourse-marked registers with lower distributional frequency, so models may fail due to surface unfamiliarity or parsing fragility rather than purely logical inability; and (2) as an explicit limitation, without naturalness-stratified stimuli and human task-accuracy baselines, the present study cannot apportion the P3 reduction between logical-inference failure and sensitivity to discourse-atypical word order, which we list as a priority for future confirmatory work (Section 9.2).
